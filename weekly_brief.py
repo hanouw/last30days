@@ -13,6 +13,7 @@ import datetime as dt
 import html
 import json
 import os
+import re
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -284,10 +285,13 @@ Output in Korean Markdown with these sections:
 - AI: notable model, product, research, or policy items.
 - 개발 이슈: platform, language, framework, security, infra, or ecosystem changes.
 - 흥미로운 개발 도구: tools worth trying or watching.
-- 이번 주에 볼 링크: 8-12 best links with short reasons.
+- 이번 주에 볼 링크: 8-12 best links with short reasons. Each bullet must be a Markdown link to the original URL.
 - 신뢰도 메모: mention source gaps or weak evidence.
 
-Every concrete claim should include a source link in Markdown.
+Use normal Markdown only: headings, bullets, numbered lists, bold, and inline links.
+Do not use footnotes or citation markers such as [^1], [1], or "source 1".
+Every concrete claim should include an inline Markdown link like [title](https://example.com), not a footnote.
+If a claim is not important enough to link inline, keep it general.
 
 Evidence:
 {evidence_block(items, tz)}
@@ -404,66 +408,85 @@ def fallback_synthesis(items: list[Item], tz: ZoneInfo) -> str:
     return "\n".join(lines)
 
 
+def strip_footnotes(text: str) -> str:
+    text = re.sub(r"\[\^\d+\]", "", text)
+    text = re.sub(r"^\[\^\d+\]:.*$", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\s?\[\d+\](?=[\s.,;:]|$)", "", text)
+    text = re.sub(r"^\[\d+\]:.*$", "", text, flags=re.MULTILINE)
+    return text
+
+
+def format_inline(text: str) -> str:
+    text = strip_footnotes(text)
+    pattern = re.compile(r"(\[([^\]]+)\]\((https?://[^)\s]+)\)|\*\*([^*]+)\*\*)")
+    result = []
+    cursor = 0
+    for match in pattern.finditer(text):
+        result.append(html.escape(text[cursor : match.start()]))
+        if match.group(2) and match.group(3):
+            label = html.escape(match.group(2))
+            url = html.escape(match.group(3), quote=True)
+            result.append(f'<a href="{url}">{label}</a>')
+        elif match.group(4):
+            result.append(f"<strong>{html.escape(match.group(4))}</strong>")
+        cursor = match.end()
+    result.append(html.escape(text[cursor:]))
+    return "".join(result)
+
+
+def close_lists(output: list[str], list_stack: list[str]) -> None:
+    while list_stack:
+        output.append(f"</{list_stack.pop()}>")
+
+
 def markdown_to_html(markdown: str) -> str:
     lines = markdown.splitlines()
     output: list[str] = []
-    in_list = False
+    list_stack: list[str] = []
     for raw in lines:
         line = raw.strip()
         if not line:
-            if in_list:
-                output.append("</ul>")
-                in_list = False
+            close_lists(output, list_stack)
             continue
-        if line.startswith("## "):
-            if in_list:
-                output.append("</ul>")
-                in_list = False
-            output.append(f"<h2>{html.escape(line[3:])}</h2>")
+
+        if re.match(r"^\[\^\d+\]:", line):
+            continue
+
+        if line.startswith("### "):
+            close_lists(output, list_stack)
+            output.append(f"<h3>{format_inline(line[4:])}</h3>")
+        elif line.startswith("## "):
+            close_lists(output, list_stack)
+            output.append(f"<h2>{format_inline(line[3:])}</h2>")
         elif line.startswith("- "):
-            if not in_list:
+            if list_stack != ["ul"]:
+                close_lists(output, list_stack)
                 output.append("<ul>")
-                in_list = True
-            output.append(f"<li>{linkify(html.escape(line[2:]))}</li>")
+                list_stack.append("ul")
+            output.append(f"<li>{format_inline(line[2:])}</li>")
+        elif re.match(r"^\d+\.\s+", line):
+            if list_stack != ["ol"]:
+                close_lists(output, list_stack)
+                output.append("<ol>")
+                list_stack.append("ol")
+            item = re.sub(r"^\d+\.\s+", "", line)
+            output.append(f"<li>{format_inline(item)}</li>")
         else:
-            if in_list:
-                output.append("</ul>")
-                in_list = False
-            output.append(f"<p>{linkify(html.escape(line))}</p>")
-    if in_list:
-        output.append("</ul>")
+            close_lists(output, list_stack)
+            output.append(f"<p>{format_inline(line)}</p>")
+    close_lists(output, list_stack)
     return "\n".join(output)
-
-
-def linkify(text: str) -> str:
-    # Handles Markdown links after escaping: [label](url)
-    result = ""
-    index = 0
-    while index < len(text):
-        start = text.find("[", index)
-        if start == -1:
-            result += text[index:]
-            break
-        mid = text.find("](", start)
-        end = text.find(")", mid)
-        if mid == -1 or end == -1:
-            result += text[index:]
-            break
-        result += text[index:start]
-        label = text[start + 1 : mid]
-        url = text[mid + 2 : end]
-        if url.startswith(("http://", "https://")):
-            result += f'<a href="{url}">{label}</a>'
-        else:
-            result += text[start : end + 1]
-        index = end + 1
-    return result
 
 
 def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.datetime, tz: ZoneInfo) -> str:
     generated = dt.datetime.now(tz).strftime("%Y-%m-%d %H:%M")
     start_label = start.astimezone(tz).strftime("%Y-%m-%d")
     end_label = end.astimezone(tz).strftime("%Y-%m-%d")
+    source_links = "\n".join(
+        f'<li><a href="{html.escape(item.url, quote=True)}">{html.escape(item.title)}</a>'
+        f' <span>{html.escape(item.source)} · {item.published.astimezone(tz).strftime("%Y-%m-%d")}</span></li>'
+        for item in items[:12]
+    )
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -543,10 +566,18 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
       padding-top: 22px;
       letter-spacing: 0;
     }}
+    h3 {{
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }}
     h2:first-child {{
       border-top: 0;
       margin-top: 0;
       padding-top: 0;
+    }}
+    strong {{
+      font-weight: 750;
     }}
     ul {{
       padding-left: 22px;
@@ -560,6 +591,15 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
     }}
     .sources {{
       margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }}
+    .source-links {{
+      border-top: 1px solid var(--line);
+      margin-top: 30px;
+      padding-top: 22px;
+    }}
+    .source-links span {{
       color: var(--muted);
       font-size: 13px;
     }}
@@ -580,6 +620,12 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
     </header>
     <article>
       {markdown_to_html(markdown)}
+      <section class="source-links">
+        <h2>원문 링크</h2>
+        <ul>
+          {source_links}
+        </ul>
+      </section>
     </article>
     <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
   </main>
