@@ -127,63 +127,42 @@
     <header>
       <div class="badge">Weekly Brief</div>
       <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
-      <div class="meta">기간: 2026-05-03 - 2026-05-10 (Asia/Seoul) · 생성: 2026-05-10 22:18 · 수집 항목: 235개</div>
+      <div class="meta">기간: 2026-05-03 - 2026-05-10 (Asia/Seoul) · 생성: 2026-05-10 22:37 · 수집 항목: 235개</div>
     </header>
     <article>
-      <h2>이번 주 핵심 요약</h2>
-<p>*   <strong>Gemma 4, 멀티 토큰 예측 드래프터로 추론 속도 향상</strong>: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Gemma 4의 추론 속도 개선</a>은 LLM의 성능 향상에 중요한 진전입니다.</p>
-<p>*   <strong>Claude Code, DeepSeek V4 Pro와 연동</strong>: <a href="https://github.com/aattaran/deepclaude">DeepClaude</a>는 Claude Code와 강력한 LLM을 결합하여 코드 관련 작업의 효율성을 높일 수 있습니다.</p>
-<p>*   <strong>OpenAI, 저지연 음성 AI 제공 방식 공개</strong>: <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">OpenAI의 저지연 음성 AI 확장성</a>은 실시간 음성 인터페이스 개발에 중요한 인사이트를 제공합니다.</p>
-<p>*   <strong>LLM, 문서 위임 시 데이터 손상 가능성</strong>: <a href="https://arxiv.org/abs/2604.15597">LLM이 문서를 위임받을 때 발생할 수 있는 문제</a>는 LLM 활용 시 데이터 무결성을 보장하는 방안에 대한 주의를 환기시킵니다.</p>
-<p>*   <strong>Gemini API, 멀티모달 파일 검색 지원 확대</strong>: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Gemini API의 멀티모달 파일 검색 기능</a>은 더 풍부한 데이터 처리 및 검색 기능을 제공합니다.</p>
+      <p># 주간 개발자 브리핑 (2026-05-03 ~ 2026-05-10)</p>
+<h2>이번 주 핵심 요약</h2>
+<p>*   <strong>Gemma 4, 멀티 토큰 예측 드래프터로 추론 속도 향상</strong>: 더 빠른 AI 모델 추론은 애플리케이션 성능 향상에 직접적인 영향을 미칩니다. <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Accelerating Gemma 4: faster inference with multi-token prediction drafters</a></p>
+<p>*   <strong>DeepSeek V4 Pro와 Claude Code를 결합한 DeepClaude 에이전트 루프 등장</strong>: AI 에이전트 간의 상호작용 및 코드 생성 능력 향상 가능성을 보여줍니다. <a href="https://github.com/aattaran/deepclaude">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a></p>
+<p>*   <strong>OpenAI, 저지연 음성 AI를 대규모로 제공하는 방법 공개</strong>: 실시간 음성 AI 서비스의 기술적 구현과 확장성에 대한 인사이트를 제공합니다. <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">How OpenAI delivers low-latency voice AI at scale</a></p>
+<p>*   <strong>LLM 위임 시 문서 손상 가능성 제기</strong>: LLM 활용 시 발생할 수 있는 잠재적 위험에 대한 경고는 신중한 접근의 필요성을 강조합니다. <a href="https://arxiv.org/abs/2604.15597">LLMs corrupt your documents when you delegate</a></p>
+<p>*   <strong>Gemini API 파일 검색 기능, 멀티모달 지원 확장</strong>: 다양한 형태의 데이터를 이해하고 검색하는 AI 기능의 발전은 데이터 처리 및 분석 능력을 향상시킵니다. <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Gemini API File Search is now multimodal</a></p>
+<p>*   <strong>Claude Code의 HTML 활용 가능성 탐구</strong>: 특정 도메인에서의 LLM 활용 가능성과 그 효과를 보여줍니다. <a href="https://twitter.com/trq212/status/2052809885763747935">Using Claude Code: The unreasonable effectiveness of HTML</a></p>
 <h2>AI</h2>
-<p>*   <strong>Gemma 4, 멀티 토큰 예측 드래프터로 추론 속도 향상</strong>: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Gemma 4</a>는 멀티 토큰 예측 드래프터를 사용하여 추론 속도를 높였습니다.</p>
-<p>*   <strong>DeepClaude, Claude Code와 DeepSeek V4 Pro 연동</strong>: <a href="https://github.com/aattaran/deepclaude">DeepClaude</a>는 Claude Code와 DeepSeek V4 Pro를 결합한 에이전트 루프를 구현했습니다.</p>
-<p>*   <strong>OpenAI, 저지연 음성 AI 확장성 공개</strong>: <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">OpenAI</a>는 대규모 환경에서 저지연 음성 AI를 제공하는 방법을 공유했습니다.</p>
-<p>*   <strong>LLM, 문서 위임 시 데이터 손상 가능성</strong>: <a href="https://arxiv.org/abs/2604.15597">LLM이 문서를 위임받을 때 발생할 수 있는 문제</a>에 대한 연구가 발표되었습니다.</p>
-<p>*   <strong>Gemini API, 멀티모달 파일 검색 지원 확대</strong>: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Gemini API의 파일 검색 기능</a>이 멀티모달 기능을 지원하도록 확장되었습니다.</p>
-<p>*   <strong>SpaceXAI, Anthropic에 Colossus 1 접근 권한 제공</strong>: <a href="https://twitter.com/xai/status/2052060350770515978">SpaceXAI</a>는 Anthropic에 Colossus 1 접근 권한을 제공할 예정입니다.</p>
-<p>*   <strong>Claude Code, 사용량 제한 상향 및 SpaceX와 계약</strong>: <a href="https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex/">Anthropic</a>은 Claude Code의 사용량 제한을 상향하고 SpaceX와의 계약을 언급했습니다.</p>
+<p>*   <strong>Gemma 4</strong>: 멀티 토큰 예측 드래프터를 통해 추론 속도를 가속화하는 새로운 기술이 발표되었습니다. <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Accelerating Gemma 4: faster inference with multi-token prediction drafters</a></p>
+<p>*   <strong>DeepClaude</strong>: DeepSeek V4 Pro와 Claude Code를 결합한 에이전트 루프가 개발되었습니다. <a href="https://github.com/aattaran/deepclaude">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a></p>
+<p>*   <strong>OpenAI 음성 AI</strong>: 저지연 음성 AI를 대규모로 제공하는 기술적 접근 방식이 공유되었습니다. <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">How OpenAI delivers low-latency voice AI at scale</a></p>
+<p>*   <strong>LLM 문서 손상</strong>: LLM에 문서 위임 시 발생할 수 있는 데이터 손상 가능성에 대한 연구가 공개되었습니다. <a href="https://arxiv.org/abs/2604.15597">LLMs corrupt your documents when you delegate</a></p>
+<p>*   <strong>Gemini API</strong>: 파일 검색 기능이 멀티모달로 확장되어 다양한 데이터 처리가 가능해졌습니다. <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Gemini API File Search is now multimodal</a></p>
+<p>*   <strong>Claude Code CVE-2026-39861</strong>: 심볼릭 링크를 통한 샌드박스 이스케이프 취약점이 발견되었습니다. <a href="https://github.com/advisories/GHSA-vp62-r36r-9xqp">Claude Code CVE-2026-39861:sandbox escape via symlink</a></p>
+<p>*   <strong>SpaceXAI &amp; Anthropic</strong>: SpaceXAI가 Anthropic에 Colossus 1 접근 권한을 제공할 예정입니다. <a href="https://twitter.com/xai/status/2052060350770515978">SpaceXAI will provide Anthropic with access to Colossus 1</a></p>
+<p>*   <strong>Adam</strong>: 임베딩 가능한 크로스 플랫폼 AI 에이전트 라이브러리가 공개되었습니다. <a href="https://github.com/sqliteai/adam">Show HN: Adam – An embeddable cross-platform AI agent library</a></p>
+<p>*   <strong>Kstack</strong>: Claude Code를 위한 모니터링/문제 해결 스킬 팩이 공개되었습니다. <a href="https://github.com/kubetail-org/kstack">Show HN: Kstack – Skill pack for monitoring/troubleshooting K8s in Claude Code</a></p>
 <h2>개발 이슈</h2>
-<p>*   <strong>OpenAI, WebRTC 문제</strong>: <a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI의 WebRTC 관련 문제</a>가 논의되었습니다.</p>
-<p>*   <strong>GitHub Copilot, 커밋 메시지 업데이트</strong>: <a href="https://github.com/microsoft/vscode/issues/314311">GitHub Copilot</a>의 커밋 메시지 관련 업데이트가 있었습니다.</p>
-<p>*   <strong>Vercel AI SDK, Vue, Svelte, RSC, React 업데이트</strong>: <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.177">Vercel AI SDK</a> 관련 Vue, Svelte, RSC, React 라이브러리가 업데이트되었습니다.</p>
-<p>*   <strong>Langchain, 다양한 버전 업데이트 및 보안 패치</strong>: <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.18">Langchain</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D0.3.86">Langchain-core</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.7">Langchain-classic</a> 등 다양한 버전이 업데이트되었으며, 보안 취약점(CVE-2026-34070)에 대한 패치가 포함되었습니다.</p>
-<p>*   <strong>OpenAI Python SDK, v2.36.0 릴리스</strong>: <a href="https://github.com/openai/openai-python/releases/tag/v2.36.0">OpenAI Python SDK</a>가 v2.36.0으로 업데이트되었습니다.</p>
-<p>*   <strong>Anthropic SDK Python, v0.100.0 릴리스</strong>: <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0">Anthropic SDK Python</a>이 v0.100.0으로 업데이트되었습니다.</p>
-<p>*   <strong>VS Code, 1.119.0 릴리스</strong>: <a href="https://code.visualstudio.com/updates/v1_119">VS Code</a>가 1.119.0 버전으로 업데이트되었습니다.</p>
-<p>*   <strong>Claude Code, 심볼릭 링크를 통한 샌드박스 탈출 취약점</strong>: <a href="https://github.com/advisories/GHSA-vp62-r36r-9xqp">Claude Code</a>에서 심볼릭 링크를 통한 샌드박스 탈출 취약점(CVE-2026-39861)이 발견되었습니다.</p>
+<p>*   <strong>OpenAI WebRTC 문제</strong>: WebRTC 기술과 관련된 OpenAI의 잠재적 문제점이 제기되었습니다. <a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI’s WebRTC problem</a></p>
+<p>*   <strong>GitHub Copilot 커밋 메시지</strong>: Copilot이 생성한 코드에 대한 &quot;Co-authored-by&quot; 태그 업데이트 관련 논의가 있었습니다. <a href="https://github.com/microsoft/vscode/issues/314311">Update on &quot;Co-authored-by: Copilot&quot; in commit messages</a></p>
+<p>*   <strong>Vercel AI SDK</strong>: Vue, Svelte, RSC, React 등 다양한 프레임워크를 위한 AI SDK의 패치 버전 업데이트가 있었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.177">vercel/ai: @ai-sdk/vue@3.0.177</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.177">vercel/ai: @ai-sdk/svelte@4.0.177</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%402.0.177">vercel/ai: @ai-sdk/rsc@2.0.177</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.179">vercel/ai: @ai-sdk/react@3.0.179</a>, <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.177">vercel/ai: ai@6.0.177</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.186">vercel/ai: @ai-sdk/vue@2.0.186</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%403.0.186">vercel/ai: @ai-sdk/svelte@3.0.186</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%401.0.188">vercel/ai: @ai-sdk/rsc@1.0.188</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%402.0.188">vercel/ai: @ai-sdk/react@2.0.188</a>, <a href="https://github.com/vercel/ai/releases/tag/ai%405.0.186">vercel/ai: ai@5.0.186</a></p>
+<p>*   <strong>Langchain 업데이트</strong>: langchain, langchain-core, langchain-classic, langchain-fireworks, langchain-mistralai 등 다양한 langchain 관련 라이브러리의 업데이트가 있었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.18">langchain==1.2.18</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D0.3.86">langchain-core==0.3.86</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.30">langchain==0.3.30</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.7">langchain-classic==1.0.7</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.0a2">langchain==1.3.0a2</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.29">langchain==0.3.29</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D0.3.85">langchain-core==0.3.85</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.3.3">langchain-core==1.3.3</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.3.1">langchain-fireworks==1.3.1</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.1.4">langchain-mistralai==1.1.4</a></p>
+<p>*   <strong>OpenAI Python SDK</strong>: v2.36.0 및 v2.35.1 버전이 릴리스되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v2.36.0">openai-python: v2.36.0</a>, <a href="https://github.com/openai/openai-python/releases/tag/v2.35.1">openai-python: v2.35.1</a></p>
+<p>*   <strong>Anthropic Python SDK</strong>: v0.100.0, v0.99.0, v0.98.1, v0.98.0 버전이 릴리스되었습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0">anthropic-sdk-python: v0.100.0</a>, <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0">anthropic-sdk-python: v0.99.0</a>, <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.98.1">anthropic-sdk-python: v0.98.1</a>, <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.98.0">anthropic-sdk-python: v0.98.0</a></p>
+<p>*   <strong>VS Code 1.119.0</strong>: 새로운 버전이 릴리스되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.119.0">microsoft/vscode: 1.119.0</a></p>
 <h2>흥미로운 개발 도구</h2>
-<p>*   <strong>DeepClaude</strong>: <a href="https://github.com/aattaran/deepclaude">Claude Code와 DeepSeek V4 Pro를 결합한 에이전트 루프</a>입니다.</p>
-<p>*   <strong>Git for AI Agents</strong>: <a href="https://github.com/regent-vcs/re_gent">AI 에이전트를 위한 Git</a> 도구입니다.</p>
-<p>*   <strong>Adam</strong>: <a href="https://github.com/sqliteai/adam">임베딩 가능한 크로스 플랫폼 AI 에이전트 라이브러리</a>입니다.</p>
-<p>*   <strong>Kstack</strong>: <a href="https://github.com/kubetail-org/kstack">Kubernetes 모니터링/문제 해결을 위한 스킬 팩</a>입니다.</p>
-<p>*   <strong>imgui_bundle</strong>: <a href="https://github.com/pthom/imgui_bundle">JavaScript나 서버 없이 브라우저에서 Python GUI 앱을 실행</a>할 수 있는 도구입니다.</p>
+<p>*   <strong>DeepClaude</strong>: Claude Code와 DeepSeek V4 Pro를 결합한 에이전트 루프입니다. <a href="https://github.com/aattaran/deepclaude">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a></p>
+<p>*   <strong>Git for AI Agents (re_gent)</strong>: AI 에이전트를 위한 Git과 유사한 버전 관리 도구입니다. <a href="https://github.com/regent-vcs/re_gent">Show HN: Git for AI Agents</a></p>
+<p>*   <strong>imgui_bundle</strong>: JavaScript나 서버 없이 브라우저에서 Python GUI 앱을 실행할 수 있는 도구입니다. <a href="https://github.com/pthom/imgui_bundle">Show HN: Full Python GUI apps in the browser – no JavaScript, no server</a></p>
+<p>*   <strong>Adam</strong>: 임베딩 가능한 크로스 플랫폼 AI 에이전트 라이브러리입니다. <a href="https://github.com/sqliteai/adam">Show HN: Adam – An embeddable cross-platform AI agent library</a></p>
 <h2>이번 주에 볼 링크</h2>
-<p>*   <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Accelerating Gemma 4: faster inference with multi-token prediction drafters</a> - Gemma 4의 추론 속도 개선에 대한 자세한 내용입니다.</p>
-<p>*   <a href="https://github.com/aattaran/deepclaude">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a> - Claude Code와 DeepSeek V4 Pro를 결합한 흥미로운 프로젝트입니다.</p>
-<p>*   <a href="https://twitter.com/trq212/status/2052809885763747935">Using Claude Code: The unreasonable effectiveness of HTML</a> - Claude Code와 HTML의 예상치 못한 시너지에 대한 트윗입니다.</p>
-<p>*   <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">How OpenAI delivers low-latency voice AI at scale</a> - OpenAI의 저지연 음성 AI 기술에 대한 설명입니다.</p>
-<p>*   <a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI’s WebRTC problem</a> - OpenAI가 겪고 있는 WebRTC 관련 문제에 대한 분석입니다.</p>
-<p>*   <a href="https://arxiv.org/abs/2604.15597">LLMs corrupt your documents when you delegate</a> - LLM 위임 시 발생할 수 있는 문서 손상 위험에 대한 연구입니다.</p>
-<p>*   <a href="https://github.com/angelos-p/llm-from-scratch">Train Your Own LLM from Scratch</a> - 직접 LLM을 훈련시키는 방법에 대한 가이드입니다.</p>
-<p>*   <a href="https://www.b-list.org/weblog/2026/apr/09/llms/">Let&#x27;s talk about LLMs</a> - LLM에 대한 심도 있는 논의입니다.</p>
-<p>*   <a href="https://daringfireball.net/2026/05/y_combinators_stake_in_openai">Y Combinator&#x27;s Stake in OpenAI (0.6%?)</a> - Y Combinator와 OpenAI의 지분 관계에 대한 분석입니다.</p>
-<p>*   <a href="https://www.lelanthran.com/chap15/content.html">LLMs Are Not a Higher Level of Abstraction</a> - LLM의 추상화 수준에 대한 고찰입니다.</p>
-<p>*   <a href="https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/">OpenAI, Google, and Microsoft Back Bill to Fund &#x27;AI Literacy&#x27; in Schools</a> - AI 리터러시 교육 지원에 대한 소식입니다.</p>
-<p>*   <a href="https://github.com/bschoepke/ableton-live-mcp">Show HN: Ableton Live MCP</a> - Ableton Live 컨트롤러에 대한 Show HN입니다.</p>
-<p>*   <a href="https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy/">OpenAI president forced to read his personal diary entries to jury</a> - OpenAI 사장 관련 법정 소식입니다.</p>
-<p>*   <a href="https://github.com/regent-vcs/re_gent">Show HN: Git for AI Agents</a> - AI 에이전트용 Git 도구입니다.</p>
-<p>*   <a href="https://github.com/microsoft/vscode/issues/314311">Update on &quot;Co-authored-by: Copilot&quot; in commit messages</a> - Copilot 커밋 메시지 관련 업데이트입니다.</p>
-<p>*   <a href="https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/">Can LLMs model real-world systems in TLA+?</a> - LLM이 TLA+로 실제 시스템을 모델링할 수 있는지에 대한 논의입니다.</p>
-<p>*   <a href="https://unsloth.ai/blog/nvidia-collab">Making LLM Training Faster with Unsloth and NVIDIA</a> - Unsloth와 NVIDIA를 활용한 LLM 훈련 속도 향상 방법입니다.</p>
-<p>*   <a href="https://academy.dair.ai/blog/wiki-builder-claude-code-plugin">Wiki Builder: Skill to Build LLM Knowledge Bases</a> - LLM 지식 베이스 구축을 위한 Wiki Builder입니다.</p>
-<p>*   <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Gemini API File Search is now multimodal</a> - Gemini API의 멀티모달 파일 검색 기능 확장입니다.</p>
-<p>*   [Mark Cuban: OpenAI Will Never Return the $1T It&#x27;s Investing [video]](https://www.youtube.com/watch?v=oEVHNvE_jDw) - Mark Cuban의 OpenAI 투자에 대한 영상입니다.</p>
-<p>*   <a href="https://subq.ai/introducing-subq">SubQ: a sub-quadratic LLM with 12M-token context</a> - 12M 토큰 컨텍스트를 가진 SubQ LLM 소개입니다.</p>
-<p>*   <a href="https://ahk.cardor.dev">Agent-harness-kit scaffolding for multi-agent workflows (MCP, provider-agnostic)</a> - 멀티 에이전트 워크플로우를 위한 Agent-harness-kit입니다.</p>
-<p>*   <a href="https://news.ycombinator.com/item?id=48026211">Ask HN: Is there a term for feeling sad about forced AI adoption?</a> - AI 강제 도입에 대한 감정에 대한 질문입니다.</p>
-<p>*   [SpaceXAI will provide Anthropic with access to Colossus 1](https://twitter.com/xai/status/20520603507705159</p>
+<p>*   <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Accelerating Gemma 4: faster inference with multi-token prediction drafters</a> - Gemma 4의 추론 속도</p>
       <section class="source-links">
         <h2>원문 링크</h2>
         <ul>
@@ -191,8 +170,8 @@
 <li><a href="https://github.com/aattaran/deepclaude">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a> <span>Hacker News / Claude Code · 2026-05-04</span></li>
 <li><a href="https://twitter.com/trq212/status/2052809885763747935">Using Claude Code: The unreasonable effectiveness of HTML</a> <span>Hacker News / Claude Code · 2026-05-09</span></li>
 <li><a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">How OpenAI delivers low-latency voice AI at scale</a> <span>Hacker News / OpenAI · 2026-05-05</span></li>
-<li><a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI’s WebRTC problem</a> <span>Hacker News / OpenAI · 2026-05-08</span></li>
 <li><a href="https://arxiv.org/abs/2604.15597">LLMs corrupt your documents when you delegate</a> <span>Hacker News / LLM · 2026-05-09</span></li>
+<li><a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI’s WebRTC problem</a> <span>Hacker News / OpenAI · 2026-05-08</span></li>
 <li><a href="https://github.com/angelos-p/llm-from-scratch">Train Your Own LLM from Scratch</a> <span>Hacker News / LLM · 2026-05-05</span></li>
 <li><a href="https://www.b-list.org/weblog/2026/apr/09/llms/">Let&#x27;s talk about LLMs</a> <span>Hacker News / LLM · 2026-05-05</span></li>
 <li><a href="https://daringfireball.net/2026/05/y_combinators_stake_in_openai">Y Combinator&#x27;s Stake in OpenAI (0.6%?)</a> <span>Hacker News / OpenAI · 2026-05-05</span></li>
