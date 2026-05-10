@@ -426,7 +426,7 @@ def format_inline(text: str) -> str:
         if match.group(2) and match.group(3):
             label = html.escape(match.group(2))
             url = html.escape(match.group(3), quote=True)
-            result.append(f'<a href="{url}">{label}</a>')
+            result.append(f'<a href="{url}" target="_blank" rel="noreferrer">{label}</a>')
         elif match.group(4):
             result.append(f"<strong>{html.escape(match.group(4))}</strong>")
         cursor = match.end()
