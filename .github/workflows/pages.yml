@@ -1,0 +1,59 @@
+name: Build Weekly Brief Pages
+
+on:
+  schedule:
+    # Sunday 09:00 Asia/Seoul is Sunday 00:00 UTC.
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate static brief site
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRIEF_TIMEZONE: Asia/Seoul
+          BRIEF_DAYS: "7"
+          HN_QUERIES: ${{ vars.HN_QUERIES }}
+          FEED_URLS: ${{ vars.FEED_URLS }}
+          GITHUB_REPOS: ${{ vars.GITHUB_REPOS }}
+        run: python build_pages.py --keep 4
+
+      - name: Commit generated pages
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update weekly AI dev brief"
+          file_pattern: public/index.html public/briefs/*.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
