@@ -79,11 +79,14 @@
       font-weight: 700;
       margin: 0 0 12px;
     }
-    .list {
+    .list,
+    .brief-grid {
       display: grid;
       gap: 8px;
     }
-    .brief-link {
+    .brief-link,
+    .brief-card {
+      display: block;
       width: 100%;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -92,25 +95,28 @@
       cursor: pointer;
       padding: 12px;
       text-align: left;
+      text-decoration: none;
     }
-    .brief-link[aria-current="true"] {
+    .brief-link:hover,
+    .brief-card:hover {
       border-color: var(--accent);
       color: var(--accent);
-      font-weight: 700;
     }
-    .brief-link span {
+    .brief-link span,
+    .brief-card span {
       display: block;
       color: var(--muted);
       font-size: 12px;
       font-weight: 400;
       margin-top: 2px;
     }
-    iframe {
-      width: 100%;
-      min-height: calc(100vh - 112px);
+    .intro {
+      background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--panel);
+      padding: 18px;
+      margin-bottom: 12px;
+      color: var(--muted);
     }
     .empty {
       background: var(--panel);
@@ -147,7 +153,6 @@
         place-items: center;
         flex: 0 0 auto;
       }
-      iframe { min-height: calc(100vh - 92px); }
     }
   </style>
 </head>
@@ -163,13 +168,16 @@
         <button id="menu" class="menu" type="button" aria-label="브리프 목록 열기">☰</button>
         <h1>AI, 개발 이슈, 개발 도구 주간 브리프</h1>
       </header>
-      <section id="viewer"></section>
+      <section>
+        <div class="intro">브리프는 새 탭에서 열립니다. 모바일에서는 왼쪽 메뉴에서 최근 4주 브리프를 선택할 수 있습니다.</div>
+        <div id="brief-grid" class="brief-grid"></div>
+      </section>
     </main>
   </div>
   <script>
     const briefs = __BRIEFS_JSON__;
     const list = document.getElementById('brief-list');
-    const viewer = document.getElementById('viewer');
+    const grid = document.getElementById('brief-grid');
     const menu = document.getElementById('menu');
     const backdrop = document.getElementById('backdrop');
 
@@ -177,30 +185,26 @@
       document.body.classList.toggle('nav-open', open);
     }
 
-    function showBrief(brief, button) {
-      document.querySelectorAll('.brief-link').forEach((item) => item.removeAttribute('aria-current'));
-      if (button) button.setAttribute('aria-current', 'true');
-      const iframe = document.createElement('iframe');
-      iframe.title = brief.title || brief.stamp;
-      iframe.src = brief.htmlUrl;
-      viewer.replaceChildren(iframe);
-      setNav(false);
+    function briefAnchor(brief, className) {
+      const anchor = document.createElement('a');
+      anchor.className = className;
+      anchor.href = brief.htmlUrl;
+      anchor.target = '_blank';
+      anchor.rel = 'noreferrer';
+      anchor.innerHTML = `${brief.stamp}<span>새 탭에서 열기</span>`;
+      anchor.addEventListener('click', () => setNav(false));
+      return anchor;
     }
 
     function renderList() {
       if (!briefs.length) {
         list.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다. Actions를 수동 실행하거나 첫 예약 실행을 기다리세요.</div>';
-        viewer.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다.</div>';
+        grid.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다.</div>';
         return;
       }
-      briefs.forEach((brief, index) => {
-        const button = document.createElement('button');
-        button.className = 'brief-link';
-        button.type = 'button';
-        button.innerHTML = `${brief.stamp}<span>저장된 브리프</span>`;
-        button.addEventListener('click', () => showBrief(brief, button));
-        list.appendChild(button);
-        if (index === 0) showBrief(brief, button);
+      briefs.forEach((brief) => {
+        list.appendChild(briefAnchor(brief, 'brief-link'));
+        grid.appendChild(briefAnchor(brief, 'brief-card'));
       });
     }
 
