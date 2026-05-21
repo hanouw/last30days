@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly AI/Dev Brief - 2026-05-17</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    strong {
+      font-weight: 750;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Weekly Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">기간: 2026-05-10 - 2026-05-17 (Asia/Seoul) · 생성: 2026-05-17 11:32 · 수집 항목: 228개</div>
+    </header>
+    <article>
+      <h2>이번 주 핵심 요약</h2>
+<ul>
+<li><strong>AI 코딩 에이전트의 유지보수 비용 절감 필요성 대두</strong>: AI 코딩 에이전트가 코드 작성뿐만 아니라 유지보수 비용 절감에도 기여해야 한다는 점이 강조되었습니다. 이는 개발 생산성 향상과 직결되는 중요한 문제입니다. <a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs" target="_blank" rel="noreferrer">AI 코딩 에이전트의 유지보수 비용 절감 필요성</a></li>
+<li><strong>대규모 코드베이스에서 Claude Code 활용 방안 논의</strong>: Claude Code가 대규모 코드베이스에서 어떻게 작동하는지에 대한 심층적인 논의가 있었습니다. 이는 복잡한 프로젝트에서 AI 도구를 효과적으로 사용하는 방법을 이해하는 데 중요합니다. <a href="https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start" target="_blank" rel="noreferrer">Claude Code의 대규모 코드베이스 활용 방안</a></li>
+<li><strong>OpenAI CEO 샘 알트먼, IPO 앞두고 정치권의 사업 거래 조사 직면</strong>: OpenAI의 IPO를 앞두고 샘 알트먼 CEO의 사업 거래가 공화당의 조사를 받고 있다는 소식은 회사의 미래와 투명성에 대한 중요한 질문을 던집니다. <a href="https://www.wsj.com/tech/ai/sam-altmans-business-dealings-under-gop-scrutiny-ahead-of-openais-ipo-52c1cc4d" target="_blank" rel="noreferrer">샘 알트먼의 사업 거래 조사</a></li>
+<li><strong>OpenAI 토큰 사용량 급증 및 ChatGPT 은행 계좌 연동 소식</strong>: 일부 개발자가 OpenAI 토큰에 상당한 비용을 지출하고 있으며, ChatGPT가 Plaid를 통해 은행 계좌와 연동된다는 소식은 AI 서비스의 상업적 활용 및 개인 금융 정보 연동에 대한 관심을 높입니다. <a href="https://twitter.com/steiphoto/status/2055346265869721905" target="_blank" rel="noreferrer">OpenAI 토큰 사용량 급증</a>, <a href="https://firethering.com/chatgpt-bank-account-plaid-openai/" target="_blank" rel="noreferrer">ChatGPT 은행 계좌 연동</a></li>
+<li><strong>하드웨어에 최적화된 로컬 LLM 탐색 도구 등장</strong>: 로컬 LLM을 하드웨어 성능에 맞춰 최적화할 수 있는 벤치마크 기반 도구가 공개되어, 개인 개발 환경에서의 LLM 활용성을 높일 수 있습니다. <a href="https://github.com/Andyyyy64/whichllm" target="_blank" rel="noreferrer">로컬 LLM 탐색 도구</a></li>
+<li><strong>Anthropic, 빌 &amp; 멜린다 게이츠 재단과 2억 달러 파트너십 체결</strong>: Anthropic이 게이츠 재단과 파트너십을 맺었다는 소식은 AI 기술이 사회 공헌 분야에 어떻게 활용될 수 있는지 보여주는 중요한 사례입니다. <a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noreferrer">Anthropic-게이츠 재단 파트너십</a></li>
+</ul>
+<h2>AI</h2>
+<ul>
+<li><strong>Claude Code</strong>: 대규모 코드베이스에서의 활용 방안과 모범 사례가 공유되었습니다. <a href="https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start" target="_blank" rel="noreferrer">Claude Code의 대규모 코드베이스 활용 방안</a></li>
+<li><strong>DeepSeek-V4-Flash</strong>: LLM 스티어링(steering)에 대한 관심을 다시 불러일으키고 있습니다. <a href="https://www.seangoedecke.com/steering-vectors/" target="_blank" rel="noreferrer">LLM 스티어링에 대한 관심</a></li>
+<li><strong>Gemini API File Search</strong>: 이제 멀티모달 기능을 지원합니다. <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/" target="_blank" rel="noreferrer">Gemini API File Search 멀티모달 지원</a></li>
+<li><strong>Statewright</strong>: AI 에이전트의 신뢰성을 높이는 시각적 상태 머신 도구가 공개되었습니다. <a href="https://github.com/statewright/statewright" target="_blank" rel="noreferrer">AI 에이전트 신뢰성 도구</a></li>
+<li><strong>UK Sovereign LLM Inference</strong>: 영국 정부 주도의 LLM 추론에 대한 내용이 있습니다. <a href="https://relax.ai/docs" target="_blank" rel="noreferrer">UK Sovereign LLM Inference</a></li>
+<li><strong>LLM Policy for Rust Compiler</strong>: Rust 컴파일러에 대한 LLM 정책 제안이 있었습니다. <a href="https://github.com/rust-lang/rust-forge/pull/1040" target="_blank" rel="noreferrer">Rust 컴파일러 LLM 정책</a></li>
+<li><strong>LLMorphism</strong>: 인간이 언어 모델로 인식되는 현상에 대한 학술적인 논의가 있습니다. <a href="https://arxiv.org/abs/2605.05419" target="_blank" rel="noreferrer">LLMorphism 논의</a></li>
+<li><strong>GLiGUARD</strong>: GLiNER 모델 개발사가 LLM 가드레일을 실행하기 위한 오픈소스 모델을 공개했습니다. <a href="https://pioneer.ai/blog/gliguard-16x-faster-safety-moderation-with-a-small-language-model" target="_blank" rel="noreferrer">LLM 가드레일 오픈소스 모델</a></li>
+</ul>
+<h2>개발 이슈</h2>
+<ul>
+<li><strong>Vercel AI SDK 업데이트</strong>: `ai-sdk/xai`, `ai-sdk/vue`, `ai-sdk/svelte`, `ai-sdk/rsc`, `ai-sdk/react`, `ai-sdk/llamaindex`, `ai-sdk/langchain`, `ai-sdk/google` 등 다양한 Vercel AI SDK 패키지가 업데이트되었습니다. 특히 `ai-sdk/xai`는 응답 처리 관련 버그 수정이 포함되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%403.0.91" target="_blank" rel="noreferrer">Vercel AI SDK 업데이트</a></li>
+<li><strong>OpenAI Python 라이브러리 업데이트</strong>: `openai-python` 라이브러리가 v2.37.0으로 업데이트되었으며, `service_tier` 파라미터가 추가되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v2.37.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 업데이트</a></li>
+<li><strong>Langchain 업데이트</strong>: `langchain`이 v1.3.1로, `langchain-core`가 v1.4.0으로 업데이트되었습니다. `langchain` v1.3.0에서는 에이전트 이벤트 스트리밍 지원이 추가되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.1" target="_blank" rel="noreferrer">Langchain 업데이트</a>, <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.4.0" target="_blank" rel="noreferrer">Langchain-core 업데이트</a></li>
+<li><strong>Anthropic SDK Python 업데이트</strong>: `anthropic-sdk-python`이 v0.102.0으로 업데이트되었으며, Beta Managed Agents Search Result Block 타입 및 캐시 진단 베타 지원이 추가되었습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0" target="_blank" rel="noreferrer">Anthropic SDK Python 업데이트</a></li>
+<li><strong>VS Code 업데이트</strong>: VS Code가 1.120.0 및 1.119.1 버전으로 업데이트되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.120.0" target="_blank" rel="noreferrer">VS Code 업데이트</a></li>
+<li><strong>LLM의 시스템 디자인 영향</strong>: LLM이 20년 된 시스템 디자인을 바꾸고 있다는 분석이 있습니다. <a href="https://zknill.io/posts/llms-are-breaking-20-year-old-system-design/" target="_blank" rel="noreferrer">LLM과 시스템 디자인</a></li>
+<li><strong>LLM 입력 토큰 70% 감소 도구</strong>: LLM의 입력 토큰을 줄여주는 도구가 공개되었습니다. <a href="https://adola.app/" target="_blank" rel="noreferrer">LLM 입력 토큰 감소 도구</a></li>
+</ul>
+<h2>흥미로운 개발 도구</h2>
+<ul>
+<li><strong>whichllm</strong>: 하드웨어에 맞는 로컬 LLM을 벤치마크로 순위를 매겨주는 도구입니다. <a href="https://github.com/Andyyyy64/whichllm" target="_blank" rel="noreferrer">whichllm</a></li>
+<li><strong>Statewright</strong>: AI 에이전트의 신뢰성을 시각적으로 관리할 수 있는 상태 머신 도구입니다. <a href="https://github.com/statewright/statewright" target="_blank" rel="noreferrer">Statewright</a></li>
+<li><strong>adamsreview</strong>: Claude Code를 위한 개선된 멀티 에이전트 PR 리뷰 도구입니다. <a href="https://github.com/adamjgmiller/adamsreview" target="_blank" rel="noreferrer">adamsreview</a></li>
+<li><strong>Sx</strong>: AI 스킬, MCP, 명령어를 위한 오픈소스 패키지 관리자입니다. <a href="https://github.com/sleuth-io/sx" target="_blank" rel="noreferrer">Sx</a></li>
+<li><strong>Torrix</strong>: 자체 호스팅 가능한 LLM 옵저버빌리티 도구로, Postgres나 Redis 없이 작동합니다. <a href="https://github.com/torrix-ai/install" target="_blank" rel="noreferrer">Torrix</a></li>
+<li><strong>E2a</strong>: AI 에이전트를 위한 오픈소스 이메일 게이트웨이입니다. <a href="https://github.com/Mnexa-AI/e2a" target="_blank" rel="noreferrer">E2a</a></li>
+</ul>
+<h2>이번 주에 볼 링크</h2>
+<ul>
+<li><a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs" target="_blank" rel="noreferrer">AI 코딩 에이전트의 유지보수 비용 절감 필요성</a> - AI 코딩 에이전트가 유지보수 비용 절감에 기여해야 하는 이유를 설명합니다.</li>
+<li><a href="https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start" target="_blank" rel="noreferrer">Claude Code의 대규모 코드베이스 활용 방안</a> - 대규모 코드베이스에서 Claude Code를 효과적으로 사용하는 방법을 다룹니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/sam-altmans-business-dealings-under-gop-scrutiny-ahead-of-openais-ipo-52c1cc4d" target="_blank" rel="noreferrer">샘 알트먼의 사업 거래 조사</a> - OpenAI IPO를 앞둔 샘 알트먼 CEO의 사업 거래에 대한 정치권의 조사를 보도합니다.</li>
+<li><a href="https://twitter.com/steipete/status/2055346265869721905" target="_blank" rel="noreferrer">OpenAI 토큰 사용량 급증</a> - 일부 개발자가 OpenAI 토큰에 상당한 비용을 지출하고 있음을 보여줍니다.</li>
+<li><a href="https://github.com/Andyyyy64/whichllm" target="_blank" rel="noreferrer">로컬 LLM 탐색 도구</a> - 하드웨어 성능에 맞춰 로컬 LLM을 선택할 수 있는 도구를 소개합니다.</li>
+<li><a href="https://firethering.com/chatgpt-bank-account-plaid-openai/" target="_blank" rel="noreferrer">ChatGPT 은행 계좌 연동</a> - ChatGPT가 Plaid를 통해 은행 계좌와 연동된다는 소식입니다.</li>
+<li><a href="https://www.seangoedecke.com/steering-vectors/" target="_blank" rel="noreferrer">LLM 스티어링에 대한 관심</a> - DeepSeek-V4-Flash 출시로 LLM 스티어링이 다시 주목받고 있음을 설명합니다.</li>
+<li><a href="https://github.com/DrCatHicks/learning-opportunities" target="_blank" rel="noreferrer">Claude Code 및 Codex 스킬 개발 기회</a> - Claude Code와 Codex를 활용한 학습 기회를 제공합니다.</li>
+<li><a href="https://relax.ai/docs" target="_blank" rel="noreferrer">UK Sovereign LLM Inference</a> - 영국 정부 주도의 LLM 추론에 대한 정보를 제공합니다.</li>
+<li><a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noreferrer">Anthropic-게이츠 재단 파트너십</a> - Anthropic과 빌 &amp; 멜린다 게이츠 재단의 2억 달러 파트너십을 발표합니다.</li>
+<li><a href="https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html" target="_blank" rel="noreferrer">Swift로 LLM 훈련하기</a> - Swift를 사용하여 LLM 훈련 성능을 향상시키는 과정을 설명합니다.</li>
+<li><a href="https://github.com/rust-lang/rust-forge/pull/1040" target="_blank" rel="noreferrer">Rust 컴파일러 LLM 정책</a> - Rust 컴파일러에 대한 LLM 정책 제안을 다룹니다.</li>
+<li><a href="https://zknill.io/posts/llms-are-breaking-20-year-old-system-design/" target="_blank" rel="noreferrer">LLM이 시스템 디자인을 바꾸는 방식</a> - LLM이 기존 시스템 디자인에 미치는 영향을 분석합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 정보는 트위터 링크를 통해 제공되어, 내용의 깊이나 공식적인 검증 수준이 다를 수 있습니다.</li>
+<li>GitHub 릴리스 정보는 기술적인 변경 사항에 초점을 맞추고 있으며, 사용자 경험이나 광범위한 영향에 대한 직접적인 분석은 포함하지 않습니다.</li>
+<li>일부 기사는 특정 매체에 의해 작성되었으며, 해당 매체의 관점이 반영될 수 있습니다.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
