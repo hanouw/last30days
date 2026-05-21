@@ -1,15 +1,15 @@
-# Weekly AI/Dev Brief
+# Daily AI/Dev Brief
 
-지난 7일 동안의 AI, 개발 이슈, 흥미로운 개발 도구 소식을 모아 매주 일요일 09:00 KST에 GitHub Pages 정적 사이트로 배포하는 개인용 자동화입니다.
+지난 1일 동안의 AI, 개발 이슈, 흥미로운 개발 도구 소식을 모아 매일 08:00 KST에 GitHub Pages 정적 사이트로 배포하는 개인용 자동화입니다.
 
 수집은 공개 RSS, Hacker News Algolia API, 지정한 GitHub 저장소 릴리스에서 합니다. `GEMINI_API_KEY`가 있으면 수집 근거만 사용해 한국어 요약을 만들고, 없으면 링크 중심의 기본 브리프를 생성합니다.
 
 ## 동작 방식
 
-1. GitHub Actions가 매주 일요일 09:00 KST에 실행됩니다.
+1. GitHub Actions가 매일 08:00 KST에 실행됩니다.
 2. `build_pages.py`가 최신 브리프를 생성해 `public/briefs/YYYY-MM-DD.html`에 저장합니다.
-3. `public/briefs/`에는 최근 4개 HTML만 남깁니다.
-4. `public/index.html`은 최근 4개 목록을 포함한 정적 페이지로 갱신됩니다.
+3. `public/briefs/`에는 최근 28개 HTML만 남깁니다.
+4. `public/index.html`은 최근 28개 목록을 포함한 정적 페이지로 갱신됩니다.
 5. GitHub Pages가 `public/` 폴더를 배포합니다.
 
 페이지 새로고침은 정적 HTML만 읽습니다. 새 수집과 Gemini 호출은 GitHub Actions 실행 시점에만 일어납니다.
@@ -25,7 +25,7 @@ python weekly_brief.py
 GitHub Pages용 정적 사이트까지 생성:
 
 ```powershell
-python build_pages.py --keep 4
+python build_pages.py --keep 28
 ```
 
 ## 내가 해야 할 일
@@ -35,7 +35,7 @@ python build_pages.py --keep 4
 3. 같은 화면의 `Variables`에 `GEMINI_MODEL`을 추가하고 값은 `gemini-2.5-flash-lite`로 둡니다. 생략해도 기본값으로 동작합니다.
 4. 저장소 `Settings > Pages`로 이동합니다.
 5. `Build and deployment`의 Source를 `GitHub Actions`로 설정합니다.
-6. `Actions` 탭에서 `Build Weekly Brief Pages` workflow를 수동 실행합니다.
+6. `Actions` 탭에서 `Build Daily Brief Pages` workflow를 수동 실행합니다.
 7. 실행이 끝나면 `Settings > Pages`에 표시되는 URL로 접속합니다.
 
 ## 선택 설정

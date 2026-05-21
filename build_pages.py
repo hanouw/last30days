@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the static GitHub Pages site for weekly briefs."""
+"""Build the static GitHub Pages site for daily briefs."""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ def build_index(public_dir: Path, keep: int) -> None:
     records = [
         {
             "stamp": brief_stamp(path),
-            "title": f"Weekly AI/Dev Brief - {brief_stamp(path)}",
+            "title": f"Daily AI/Dev Brief - {brief_stamp(path)}",
             "htmlUrl": f"briefs/{path.name}",
         }
         for path in html_files
@@ -40,7 +40,7 @@ def build_index(public_dir: Path, keep: int) -> None:
     )
 
 
-def build_site(public_dir: str = "public", keep: int = 4, generate: bool = True) -> dict[str, object]:
+def build_site(public_dir: str = "public", keep: int = 28, generate: bool = True) -> dict[str, object]:
     root = Path(public_dir)
     briefs_dir = root / "briefs"
     briefs_dir.mkdir(parents=True, exist_ok=True)
@@ -60,7 +60,7 @@ def build_site(public_dir: str = "public", keep: int = 4, generate: bool = True)
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build static GitHub Pages files.")
     parser.add_argument("--public-dir", default="public")
-    parser.add_argument("--keep", type=int, default=4)
+    parser.add_argument("--keep", type=int, default=28)
     parser.add_argument("--no-generate", action="store_true")
     args = parser.parse_args()
 

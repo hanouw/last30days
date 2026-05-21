@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Weekly AI/developer issue brief generator.
+"""Daily AI/developer issue brief generator.
 
 Collects recent links from public feeds, Hacker News, and selected GitHub
 releases, then writes a readable one-page HTML brief. If GEMINI_API_KEY is set,
@@ -275,7 +275,7 @@ def evidence_block(items: list[Item], tz: ZoneInfo, limit: int = 60) -> str:
 
 def synthesis_prompt(items: list[Item], start: dt.datetime, end: dt.datetime, tz: ZoneInfo) -> str:
     return f"""
-You are writing a concise Korean weekly briefing for one software developer.
+You are writing a concise Korean daily briefing for one software developer.
 Use only the evidence below. Do not invent facts.
 
 Period: {start.astimezone(tz).strftime('%Y-%m-%d %H:%M')} to {end.astimezone(tz).strftime('%Y-%m-%d %H:%M')} ({tz.key})
@@ -488,7 +488,7 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weekly AI/Dev Brief - {end_label}</title>
+  <title>Daily AI/Dev Brief - {end_label}</title>
   <style>
     :root {{
       color-scheme: light dark;
@@ -601,7 +601,7 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
 <body>
   <main>
     <header>
-      <div class="badge">Weekly Brief</div>
+      <div class="badge">Daily Brief</div>
       <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
       <div class="meta">기간: {start_label} - {end_label} ({tz.key}) · 생성: {generated} · 수집 항목: {len(items)}개</div>
     </header>
@@ -616,7 +616,7 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
 
 
 def generate_brief(days: int | None = None) -> GeneratedBrief:
-    days = days or int(os.getenv("BRIEF_DAYS", "7"))
+    days = days or int(os.getenv("BRIEF_DAYS", "1"))
     tz = ZoneInfo(os.getenv("BRIEF_TIMEZONE", "Asia/Seoul"))
     now = dt.datetime.now(tz)
     end = now.astimezone(dt.timezone.utc)
@@ -662,8 +662,8 @@ def write_brief_files(brief: GeneratedBrief, output_dir: str) -> dict[str, str |
 
 
 def run() -> int:
-    parser = argparse.ArgumentParser(description="Generate a weekly AI/developer brief.")
-    parser.add_argument("--days", type=int, default=int(os.getenv("BRIEF_DAYS", "7")))
+    parser = argparse.ArgumentParser(description="Generate a daily AI/developer brief.")
+    parser.add_argument("--days", type=int, default=int(os.getenv("BRIEF_DAYS", "1")))
     parser.add_argument("--output-dir", default=os.getenv("OUTPUT_DIR", "out"))
     args = parser.parse_args()
 

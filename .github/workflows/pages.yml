@@ -1,9 +1,9 @@
-name: Build Weekly Brief Pages
+name: Build Daily Brief Pages
 
 on:
   schedule:
-    # Sunday 09:00 Asia/Seoul is Sunday 00:00 UTC.
-    - cron: "0 0 * * 0"
+    # Daily 08:00 Asia/Seoul is 23:00 UTC on the previous day.
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,16 +35,16 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRIEF_TIMEZONE: Asia/Seoul
-          BRIEF_DAYS: "7"
+          BRIEF_DAYS: "1"
           HN_QUERIES: ${{ vars.HN_QUERIES }}
           FEED_URLS: ${{ vars.FEED_URLS }}
           GITHUB_REPOS: ${{ vars.GITHUB_REPOS }}
-        run: python build_pages.py --keep 4
+        run: python build_pages.py --keep 28
 
       - name: Commit generated pages
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update weekly AI dev brief"
+          commit_message: "Update daily AI dev brief"
           file_pattern: public/index.html public/briefs/*.html
 
       - name: Configure Pages
