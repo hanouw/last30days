@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-05-25</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    strong {
+      font-weight: 750;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">기간: 2026-05-24 - 2026-05-25 (Asia/Seoul) · 생성: 2026-05-25 08:59 · 수집 항목: 82개</div>
+    </header>
+    <article>
+      <h2>이번 주 핵심 요약</h2>
+<ul>
+<li><strong>LLM 에이전트의 백엔드 코드 생성 시 제약 조건 붕괴 문제:</strong> LLM 에이전트가 백엔드 코드를 생성할 때 발생하는 잠재적인 취약점과 문제점을 다루고 있어, 코드 생성 모델의 신뢰성 확보에 대한 중요성을 시사합니다. <a href="https://arxiv.org/abs/2605.06445" target="_blank" rel="noreferrer">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></li>
+<li><strong>로컬 LLM의 성능 향상을 위한 질문 방식 개선:</strong> 로컬 LLM이 답변 전에 질문을 하도록 학습시키면 성능이 향상된다는 연구는, LLM과의 상호작용 방식을 최적화하여 더 나은 결과를 얻을 수 있음을 보여줍니다. <a href="https://www.xda-developers.com/local-llm-clarifying-questions-system-prompt/" target="_blank" rel="noreferrer">Local LLMs perform better when you teach them to ask before they answer</a></li>
+<li><strong>Anthropic의 Claude Code 시스템 프롬프트 원격 주입 기능:</strong> Anthropic이 Claude Code에서 시스템 프롬프트를 원격으로 주입할 수 있게 되었다는 소식은, LLM 서비스의 관리 및 제어 방식에 대한 새로운 가능성을 제시합니다. <a href="https://news.ycombinator.com/item?id=48259288" target="_blank" rel="noreferrer">Tell HN: Claude Code now allows Anthropic to remotely inject system prompts</a></li>
+<li><strong>Anthropic의 Mythos, 1만 개 이상의 취약점 발견:</strong> Anthropic의 Mythos가 1만 개 이상의 취약점을 발견했다는 사실은, AI 기반 보안 분석 도구의 잠재력과 소프트웨어 보안 강화에 대한 기여를 보여줍니다. <a href="https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/" target="_blank" rel="noreferrer">Anthropic Says Mythos Has Found More Than 10k Vulnerabilities</a></li>
+<li><strong>AI 에이전트의 VM 사용에 대한 논의:</strong> AI 에이전트가 가상 머신(VM)을 사용하지 않으려는 경향에 대한 논의는, AI 에이전트의 실행 환경 및 아키텍처 설계에 대한 통찰을 제공합니다. <a href="https://zachsmith.ai/blog/agents-dont-want-vms/" target="_blank" rel="noreferrer">Agents Dont Want VMs</a></li>
+<li><strong>안드레이 카파시, Anthropic 합류:</strong> OpenAI 공동 창립자인 안드레이 카파시가 Anthropic에 합류했다는 소식은, AI 분야의 주요 인재 이동과 해당 기업의 연구 개발 방향에 대한 관심을 높입니다. <a href="https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude" target="_blank" rel="noreferrer">OpenAI co-founder Andrej Karpathy joins Anthropic</a></li>
+</ul>
+<h2>AI</h2>
+<ul>
+<li><strong>LLM 에이전트의 백엔드 코드 생성 취약점:</strong> <a href="https://arxiv.org/abs/2605.06445" target="_blank" rel="noreferrer">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a> 논문은 LLM 에이전트가 백엔드 코드를 생성할 때 발생하는 제약 조건 붕괴 문제를 다룹니다.</li>
+<li><strong>로컬 LLM 성능 향상:</strong> 로컬 LLM이 질문을 먼저 하도록 학습시키면 성능이 향상된다는 연구 결과가 있습니다. <a href="https://www.xda-developers.com/local-llm-clarifying-questions-system-prompt/" target="_blank" rel="noreferrer">Local LLMs perform better when you teach them to ask before they answer</a></li>
+<li><strong>Claude Code 시스템 프롬프트 원격 주입:</strong> Anthropic이 Claude Code에서 시스템 프롬프트를 원격으로 주입할 수 있게 되었습니다. <a href="https://news.ycombinator.com/item?id=48259288" target="_blank" rel="noreferrer">Tell HN: Claude Code now allows Anthropic to remotely inject system prompts</a></li>
+<li><strong>Mythos, 1만 개 이상 취약점 발견:</strong> Anthropic의 Mythos가 1만 개 이상의 취약점을 발견했습니다. <a href="https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/" target="_blank" rel="noreferrer">Anthropic Says Mythos Has Found More Than 10k Vulnerabilities</a></li>
+<li><strong>AI 에이전트의 VM 사용:</strong> AI 에이전트가 VM을 사용하지 않으려는 경향에 대한 논의가 있습니다. <a href="https://zachsmith.ai/blog/agents-dont-want-vms/" target="_blank" rel="noreferrer">Agents Dont Want VMs</a></li>
+<li><strong>안드레이 카파시, Anthropic 합류:</strong> OpenAI 공동 창립자인 안드레이 카파시가 Anthropic에 합류했습니다. <a href="https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude" target="_blank" rel="noreferrer">OpenAI co-founder Andrej Karpathy joins Anthropic</a></li>
+<li><strong>AI 리더십 시나리오:</strong> 2028년 글로벌 AI 리더십에 대한 두 가지 시나리오가 제시되었습니다. <a href="https://www.anthropic.com/research/2028-ai-leadership" target="_blank" rel="noreferrer">2028: Two scenarios for global AI leadership</a></li>
+<li><strong>AI 에이전트용 웹 브라우저:</strong> AI 에이전트를 위한 Firefox 포크 기반의 웹 브라우저가 등장했습니다. <a href="https://blog.adafruit.com/2026/05/19/ai-agents-just-got-their-own-web-browser-via-a-firefox-fork/" target="_blank" rel="noreferrer">AI agents just got their own web browser via a Firefox fork</a></li>
+<li><strong>LLM 추론 효율화:</strong> SSV(Sparse Speculative Verification)를 통한 효율적인 LLM 추론에 대한 연구가 있습니다. <a href="https://arxiv.org/abs/2605.19893" target="_blank" rel="noreferrer">SSV: Sparse Speculative Verification for Efficient LLM Inference</a></li>
+<li><strong>AI 코딩 토큰 사용량 추적:</strong> Codex/Claude 로그를 위한 로컬 TUI 도구가 개발되었습니다. <a href="https://github.com/peterxcli/ccost" target="_blank" rel="noreferrer">Find where your AI coding tokens went: local TUI for Codex/Claude logs</a></li>
+<li><strong>AI 에이전트 권한 관리:</strong> OAuth가 AI 에이전트의 활동을 제대로 파악하지 못하는 문제에 대한 논의가 있습니다. <a href="https://www.tryagentgate.com/" target="_blank" rel="noreferrer">Authorization layer for AI agents (OAuth has no idea what your agent is doing)</a></li>
+<li><strong>AI 에이전트의 파괴적 명령어 실행 방지:</strong> AI 에이전트가 파괴적인 터미널 명령어를 실행하는 것을 방지하는 도구가 있습니다. <a href="https://github.com/7Majesty-M/terminal-guardian-mcp" target="_blank" rel="noreferrer">Preventing AI agents from executing destructive terminal commands</a></li>
+<li><strong>AI 콘텐츠 워터마킹:</strong> OpenAI와 Nvidia가 Google의 SynthID를 사용하여 AI 콘텐츠를 워터마킹하고 있습니다. <a href="https://firethering.com/openai-nvidia-using-google-synthid-ai-watermarking/" target="_blank" rel="noreferrer">OpenAI and Nvidia Are Using Google&#x27;s SynthID to Watermark AI Content</a></li>
+<li><strong>LLM 학습 경로:</strong> AI 연구자가 되기 위한 8단계 커리큘럼이 제시되었습니다. <a href="https://github.com/barvhaim/llm-learning-path" target="_blank" rel="noreferrer">Structured LLM Learning Path, from Zero to AI Researcher, 8-Phase Curriculum</a></li>
+<li><strong>중국 LLM 경쟁력:</strong> 중국이 LLM 경쟁에서 뒤처지고 있지만 AI 분야에서는 여전히 승리할 수 있다는 분석이 있습니다. <a href="https://www.scmp.com/tech/big-tech/article/3354394/china-losing-llm-race-it-can-still-win-ai-ex-tencent-ai-lead-says" target="_blank" rel="noreferrer">China behind in LLM race but it can still win in AI, ex-Tencent AI lead says</a></li>
+</ul>
+<h2>개발 이슈</h2>
+<ul>
+<li><strong>LLM 에이전트의 백엔드 코드 생성 시 제약 조건 붕괴:</strong> LLM 에이전트가 백엔드 코드를 생성할 때 발생하는 잠재적인 취약점과 문제점을 다루고 있습니다. <a href="https://arxiv.org/abs/2605.06445" target="_blank" rel="noreferrer">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></li>
+<li><strong>로컬 LLM의 성능 향상:</strong> 로컬 LLM이 답변 전에 질문을 하도록 학습시키면 성능이 향상된다는 연구가 있습니다. <a href="https://www.xda-developers.com/local-llm-clarifying-questions-system-prompt/" target="_blank" rel="noreferrer">Local LLMs perform better when you teach them to ask before they answer</a></li>
+<li><strong>Claude Code 시스템 프롬프트 원격 주입:</strong> Anthropic이 Claude Code에서 시스템 프롬프트를 원격으로 주입할 수 있게 되었습니다. <a href="https://news.ycombinator.com/item?id=48259288" target="_blank" rel="noreferrer">Tell HN: Claude Code now allows Anthropic to remotely inject system prompts</a></li>
+<li><strong>AI 에이전트의 VM 사용:</strong> AI 에이전트가 가상 머신(VM)을 사용하지 않으려는 경향에 대한 논의가 있습니다. <a href="https://zachsmith.ai/blog/agents-dont-want-vms/" target="_blank" rel="noreferrer">Agents Dont Want VMs</a></li>
+<li><strong>AI 에이전트용 웹 브라우저:</strong> AI 에이전트를 위한 Firefox 포크 기반의 웹 브라우저가 등장했습니다. <a href="https://blog.adafruit.com/2026/05/19/ai-agents-just-got-their-own-web-browser-via-a-firefox-fork/" target="_blank" rel="noreferrer">AI agents just got their own web browser via a Firefox fork</a></li>
+<li><strong>LLM 추론 효율화:</strong> SSV(Sparse Speculative Verification)를 통한 효율적인 LLM 추론에 대한 연구가 있습니다. <a href="https://arxiv.org/abs/2605.19893" target="_blank" rel="noreferrer">SSV: Sparse Speculative Verification for Efficient LLM Inference</a></li>
+<li><strong>AI 코딩 토큰 사용량 추적:</strong> Codex/Claude 로그를 위한 로컬 TUI 도구가 개발되었습니다. <a href="https://github.com/peterxcli/ccost" target="_blank" rel="noreferrer">Find where your AI coding tokens went: local TUI for Codex/Claude logs</a></li>
+<li><strong>AI 에이전트 권한 관리:</strong> OAuth가 AI 에이전트의 활동을 제대로 파악하지 못하는 문제에 대한 논의가 있습니다. <a href="https://www.tryagentgate.com/" target="_blank" rel="noreferrer">Authorization layer for AI agents (OAuth has no idea what your agent is doing)</a></li>
+<li><strong>AI 에이전트의 파괴적 명령어 실행 방지:</strong> AI 에이전트가 파괴적인 터미널 명령어를 실행하는 것을 방지하는 도구가 있습니다. <a href="https://github.com/7Majesty-M/terminal-guardian-mcp" target="_blank" rel="noreferrer">Preventing AI agents from executing destructive terminal commands</a></li>
+<li><strong>AI 에이전트의 컨텍스트 공유:</strong> 원격 에이전트 간 파일/이미지 공유를 위한 CLI 도구가 있습니다. <a href="https://github.com/mupt-ai/context-drop" target="_blank" rel="noreferrer">Show HN: Context-drop – CLI tool to to share files/images between remote agents</a></li>
+<li><strong>AI 지원 Python 유지보수:</strong> AI 지원 Python 코드의 유지보수성을 높이기 위한 방안이 논의되고 있습니다. <a href="https://kayhan.dev/posts/014-letting-agents-write-code-without-ratcheting-up-risk/" target="_blank" rel="noreferrer">A maintainability ratchet for AI-assisted Python</a></li>
+<li><strong>LLM 제약 조건 추출기:</strong> Python, SwiftUI, Lua를 위한 시맨틱 추출기가 개발되었습니다. <a href="https://github.com/whitecell-dev/Semantic-Extractor/tree/main" target="_blank" rel="noreferrer">From source code 2 LLM constraints:a semantic extractor for Python, SwiftUI, Lua</a></li>
+</ul>
+<h2>흥미로운 개발 도구</h2>
+<ul>
+<li><strong>Claude Code를 위한 토큰 사용량 추적 도구:</strong> <a href="https://github.com/peterxcli/ccost" target="_blank" rel="noreferrer">ccost</a>는 Claude Code 로그를 분석하여 토큰 사용량을 시각화하는 로컬 TUI 도구입니다.</li>
+<li><strong>AI 에이전트 간 파일/이미지 공유 CLI:</strong> <a href="https://github.com/mupt-ai/context-drop" target="_blank" rel="noreferrer">Context-drop</a>은 원격 에이전트 간에 파일과 이미지를 쉽게 공유할 수 있도록 돕는 CLI 도구입니다.</li>
+<li><strong>AI 에이전트 터미널 명령어 보호:</strong> <a href="https://github.com/7Majesty-M/terminal-guardian-mcp" target="_blank" rel="noreferrer">terminal-guardian-mcp</a>는 AI 에이전트가 의도치 않게 파괴적인 터미널 명령어를 실행하는 것을 방지합니다.</li>
+<li><strong>LLM 요구사항 매퍼:</strong> <a href="https://llmrequirements.com/" target="_blank" rel="noreferrer">llmrequirements.com</a>은 로컬 LLM을 하드웨어에 매핑하고 하드웨어를 LLM에 매핑하는 데 도움을 주는 도구입니다.</li>
+<li><strong>ArXiv AI 에이전트 인터페이스:</strong> 브라우저 비전 없이도 ArXiv를 AI 에이전트 친화적인 인터페이스로 사용할 수 있게 해주는 도구입니다. <a href="https://mediause.dev/skills/arxiv" target="_blank" rel="noreferrer">Turned ArXiv into an AI-Agent-Friendly Interface (No Browser Vision Needed)</a></li>
+<li><strong>Pi AI 에이전트 툴킷 Mojo 포트:</strong> [pi-mojo](https://github</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
