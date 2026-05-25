@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-05-21</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    strong {
+      font-weight: 750;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">기간: 2026-05-20 - 2026-05-21 (Asia/Seoul) · 생성: 2026-05-21 12:39 · 수집 항목: 131개</div>
+    </header>
+    <article>
+      <h2>이번 주 핵심 요약</h2>
+<ul>
+<li><strong>OpenAI, IPO 준비 중</strong>: OpenAI가 곧 상장을 준비하고 있다는 소식이 여러 곳에서 보도되었습니다. 이는 AI 산업의 성장과 투자 환경에 큰 영향을 미칠 수 있습니다. <a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5" target="_blank" rel="noreferrer">OpenAI Is Preparing to File for an IPO Soon</a></li>
+<li><strong>Anthropic, 수익성 기대</strong>: Anthropic이 상당한 성장을 통해 첫 분기 수익을 달성할 것으로 예상됩니다. 이는 경쟁사들의 재정 건전성과 AI 시장의 성숙도를 보여줍니다. <a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4" target="_blank" rel="noreferrer">Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</a></li>
+<li><strong>AI, 수학 및 과학 난제 해결</strong>: OpenAI 모델이 이산 기하학의 핵심 추측을 반증하며 AI의 과학적 탐구 능력을 입증했습니다. 이는 AI가 복잡한 학문 분야에 기여할 수 있음을 시사합니다. <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank" rel="noreferrer">An OpenAI model has disproved a central conjecture in discrete geometry</a></li>
+<li><strong>AI 에이전트 활용 확대</strong>: 분산 시스템 테스트 및 문서 최적화 등 다양한 분야에서 AI 에이전트 활용에 대한 논의가 활발합니다. 이는 개발 워크플로우의 효율성을 높일 잠재력을 보여줍니다. <a href="https://github.com/shenli/distributed-system-testing" target="_blank" rel="noreferrer">Testing distributed systems with AI agents</a></li>
+<li><strong>개발 도구 및 라이브러리 업데이트</strong>: Vercel의 AI SDK 및 Langchain 등 주요 개발 도구들이 업데이트되었습니다. 이는 최신 AI 기능 및 개선 사항을 활용할 수 있음을 의미합니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.188" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@3.0.188</a></li>
+<li><strong>Andrej Karpathy, Anthropic 합류</strong>: OpenAI 공동 창립자인 Andrej Karpathy가 Anthropic에 합류했습니다. 이는 AI 연구 개발 분야의 인재 이동과 경쟁 구도에 영향을 줄 수 있습니다. <a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noreferrer">OpenAI co-founder Andrej Karpathy joins Anthropic</a></li>
+</ul>
+<h2>AI</h2>
+<ul>
+<li><strong>OpenAI 모델, 이산 기하학 난제 해결</strong>: OpenAI의 한 모델이 이산 기하학의 중요한 추측을 반증하는 데 성공했습니다. 이는 AI의 수학적, 과학적 문제 해결 능력을 보여주는 중요한 성과입니다. <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank" rel="noreferrer">An OpenAI model has disproved a central conjecture in discrete geometry</a></li>
+<li><strong>Anthropic, Colossus2 및 GB200 활용</strong>: Anthropic이 GB200을 사용하여 Colossus2를 확장할 계획입니다. 이는 AI 모델 학습 및 운영을 위한 컴퓨팅 자원 확보 경쟁을 보여줍니다. <a href="https://xcancel.com/nottombrown/status/2057194829986300375" target="_blank" rel="noreferrer">Anthropic is expanding to Colossus2. Will use GB200</a></li>
+<li><strong>PopuLoRA: LLM의 추론 자기 플레이</strong>: 추론 능력을 향상시키기 위해 LLM 집단을 공동으로 진화시키는 PopuLoRA 연구가 소개되었습니다. <a href="https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play" target="_blank" rel="noreferrer">PopuLoRA: Co-Evolving LLM Populations for Reasoning Self- Play</a></li>
+<li><strong>AI 에이전트, 분산 시스템 테스트 활용</strong>: AI 에이전트를 사용하여 분산 시스템을 테스트하는 방법론이 제시되었습니다. 이는 시스템 안정성 및 신뢰성 확보에 기여할 수 있습니다. <a href="https://github.com/shenli/distributed-system-testing" target="_blank" rel="noreferrer">Testing distributed systems with AI agents</a></li>
+</ul>
+<h2>개발 이슈</h2>
+<ul>
+<li><strong>Vercel AI SDK 업데이트</strong>: Vue, Svelte, RSC, React, LlamaIndex, Langchain, Google Vertex, Google 등 다양한 프레임워크 및 라이브러리를 지원하는 Vercel의 AI SDK가 업데이트되었습니다. 특히 Google SDK는 스트리밍 응답에서 `serviceTier`를 올바르게 읽도록 수정되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.188" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@3.0.188</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/google%403.0.78" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/google@3.0.78</a></li>
+<li><strong>Langchain-fireworks 업데이트</strong>: Langchain의 Fireworks 통합이 1.x SDK로 마이그레이션되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.0" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain-fireworks==1.4.0</a></li>
+<li><strong>VS Code 1.121.0 출시</strong>: Visual Studio Code의 새로운 버전이 출시되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.121.0" target="_blank" rel="noreferrer">microsoft/vscode: 1.121.0</a></li>
+<li><strong>GitHub Copilot 코드 검토, 분당 과금 시작</strong>: 6월 1일부터 GitHub Copilot 코드 검토 실행이 분당 과금됩니다. <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" target="_blank" rel="noreferrer">Starting June 1 Copilot code review runs will consume minutes on GitHub</a></li>
+<li><strong>Claude Code 샌드박스 우회 취약점</strong>: Anthropic Claude Code의 샌드박스 우회 취약점을 통해 데이터 유출이 가능하다는 보고가 있습니다. <a href="https://oddguan.com/blog/second-time-same-sandbox-anthropic-claude-code-network-allowlist-bypass-data-exfiltration/" target="_blank" rel="noreferrer">Anthropic Claude Code sandbox bypass allows second data exfiltration exploit</a></li>
+</ul>
+<h2>흥미로운 개발 도구</h2>
+<ul>
+<li><strong>Dari-docs</strong>: 병렬 코딩 에이전트를 사용하여 문서를 최적화하는 도구입니다. <a href="https://github.com/mupt-ai/dari-docs" target="_blank" rel="noreferrer">Show HN: Dari-docs – Optimize your docs using parallel coding agents</a></li>
+<li><strong>Agyn</strong>: AI 에이전트를 위한 오픈소스 Kubernetes 런타임입니다. <a href="https://github.com/agynio/platform" target="_blank" rel="noreferrer">Show HN: Agyn, an open-source Kubernetes runtime for AI agents</a></li>
+<li><strong>Aperion Shield</strong>: 파괴적인 AI 코딩 에이전트 작업을 차단하는 로컬 가드레일입니다. <a href="https://github.com/AperionAI/shield" target="_blank" rel="noreferrer">Aperion Shield: local guardrail that blocks destructive AI coding agent ops</a></li>
+</ul>
+<h2>이번 주에 볼 링크</h2>
+<ul>
+<li><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank" rel="noreferrer">An OpenAI model has disproved a central conjecture in discrete geometry</a> - OpenAI 모델이 이산 기하학의 난제를 해결했습니다.</li>
+<li><a href="https://mapofmetal.com/" target="_blank" rel="noreferrer">Map of Metal</a> - 메탈 음악의 지도를 탐색할 수 있는 흥미로운 프로젝트입니다.</li>
+<li><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html" target="_blank" rel="noreferrer">Learnings from 100K lines of Rust with AI (2025)</a> - AI와 함께 Rust 코드를 작성하며 얻은 경험을 공유합니다.</li>
+<li><a href="https://xcancel.com/nottombrown/status/2057194829986300375" target="_blank" rel="noreferrer">Anthropic is expanding to Colossus2. Will use GB200</a> - Anthropic의 컴퓨팅 자원 확장 계획입니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5" target="_blank" rel="noreferrer">OpenAI Is Preparing to File for an IPO Soon</a> - OpenAI의 IPO 준비 소식입니다.</li>
+<li><a href="https://github.com/shenli/distributed-system-testing" target="_blank" rel="noreferrer">Testing distributed systems with AI agents</a> - AI 에이전트를 활용한 분산 시스템 테스트 방법입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.188" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@3.0.188</a> - Vercel AI SDK Vue 패키지 업데이트입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.190" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/react@3.0.190</a> - Vercel AI SDK React 패키지 업데이트입니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.0" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain-fireworks==1.4.0</a> - Langchain Fireworks 통합 업데이트입니다.</li>
+<li><a href="https://github.com/microsoft/vscode/releases/tag/1.121.0" target="_blank" rel="noreferrer">microsoft/vscode: 1.121.0</a> - VS Code 최신 버전 출시 소식입니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4" target="_blank" rel="noreferrer">Mind-Blowing Growth Is About to Propel Anthropic into First Profitable Quarter</a> - Anthropic의 수익성 전망입니다.</li>
+<li><a href="https://theahmadosman.substack.com/p/gpu-memory-math-for-llms-2026-edition" target="_blank" rel="noreferrer">GPU Memory Math for LLMs: Formula That Tells You What Fits on Your GPU</a> - LLM을 위한 GPU 메모리 계산법입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 뉴스는 IPO 준비와 관련된 여러 출처에서 반복적으로 보도되고 있으며, 이는 해당 정보의 신뢰도를 높입니다.</li>
+<li>AI 모델의 과학적 발견에 대한 내용은 OpenAI의 공식 발표를 기반으로 하고 있습니다.</li>
+<li>개발 도구 업데이트는 GitHub 릴리스 노트를 기반으로 하며, 이는 비교적 신뢰할 수 있는 정보원입니다.</li>
+<li>일부 링크는 YouTube 영상이나 트위터 게시물과 같이 정보의 깊이가 제한적일 수 있습니다.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
