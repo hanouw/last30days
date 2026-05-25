@@ -61,3 +61,16 @@ Actions Secrets로 추가할 수 있습니다.
 HN_QUERIES=AI agent,MCP,Codex,Claude Code,Cursor,TypeScript,Next.js
 GITHUB_REPOS=openai/codex,microsoft/vscode,vercel/next.js,modelcontextprotocol/typescript-sdk
 ```
+
+## 개발자 해커톤/공모전 수집
+
+브리프 하단에 `개발자 해커톤·공모전` 섹션이 추가됩니다. 기본 수집처는 Linkareer, Wevity, Contest Korea, Thinkgood이며 HTML 목록에서 개발자 관련 키워드를 포함한 항목을 추립니다.
+
+Actions Variables로 조정할 수 있습니다.
+
+- `OPPORTUNITY_SOURCES`: 공모전/해커톤 목록 페이지 URL CSV
+- `OPPORTUNITY_KEYWORDS`: 개발자 관련 필터 키워드 CSV
+- `OPPORTUNITY_TYPE_KEYWORDS`: 해커톤/공모전으로 볼 유형 키워드 CSV
+- `OPPORTUNITY_EXCLUDE_KEYWORDS`: 채용/인턴처럼 제외할 키워드 CSV
+- `OPPORTUNITY_LIMIT`: 표시할 최대 항목 수, 기본값 `12`
+- `ENABLE_OPPORTUNITIES`: `0`으로 설정하면 공모전 수집을 끕니다.

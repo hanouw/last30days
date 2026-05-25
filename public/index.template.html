@@ -119,9 +119,7 @@
       padding: 18px;
       color: var(--muted);
     }
-    .backdrop {
-      display: none;
-    }
+    .backdrop { display: none; }
     @media (max-width: 760px) {
       .shell { display: block; }
       aside {
@@ -189,7 +187,7 @@
 
     function renderList() {
       if (!briefs.length) {
-        list.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다. Actions를 수동 실행하거나 첫 예약 실행을 기다리세요.</div>';
+        list.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다. Actions를 수동 실행하거나 다음 예약 실행을 기다려주세요.</div>';
         viewer.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다.</div>';
         return;
       }

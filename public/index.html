@@ -119,9 +119,7 @@
       padding: 18px;
       color: var(--muted);
     }
-    .backdrop {
-      display: none;
-    }
+    .backdrop { display: none; }
     @media (max-width: 760px) {
       .shell { display: block; }
       aside {
@@ -167,11 +165,7 @@
     </main>
   </div>
   <script>
-<<<<<<< HEAD
-    const briefs = [{"stamp": "2026-05-10", "title": "Daily AI/Dev Brief - 2026-05-10", "htmlUrl": "briefs/2026-05-10.html"}];
-=======
-    const briefs = [{"stamp": "2026-05-17", "title": "Weekly AI/Dev Brief - 2026-05-17", "htmlUrl": "briefs/2026-05-17.html"}, {"stamp": "2026-05-10", "title": "Weekly AI/Dev Brief - 2026-05-10", "htmlUrl": "briefs/2026-05-10.html"}];
->>>>>>> 921112f28d737c69acc33f5e268d94d68ea17374
+    const briefs = [{"stamp": "2026-05-17", "title": "Daily AI/Dev Brief - 2026-05-17", "htmlUrl": "briefs/2026-05-17.html"}, {"stamp": "2026-05-10", "title": "Daily AI/Dev Brief - 2026-05-10", "htmlUrl": "briefs/2026-05-10.html"}];
     const list = document.getElementById('brief-list');
     const viewer = document.getElementById('viewer');
     const menu = document.getElementById('menu');
@@ -193,7 +187,7 @@
 
     function renderList() {
       if (!briefs.length) {
-        list.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다. Actions를 수동 실행하거나 첫 예약 실행을 기다리세요.</div>';
+        list.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다. Actions를 수동 실행하거나 다음 예약 실행을 기다려주세요.</div>';
         viewer.innerHTML = '<div class="empty">아직 생성된 브리프가 없습니다.</div>';
         return;
       }

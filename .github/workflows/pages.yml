@@ -39,6 +39,11 @@ jobs:
           HN_QUERIES: ${{ vars.HN_QUERIES }}
           FEED_URLS: ${{ vars.FEED_URLS }}
           GITHUB_REPOS: ${{ vars.GITHUB_REPOS }}
+          OPPORTUNITY_SOURCES: ${{ vars.OPPORTUNITY_SOURCES }}
+          OPPORTUNITY_KEYWORDS: ${{ vars.OPPORTUNITY_KEYWORDS }}
+          OPPORTUNITY_TYPE_KEYWORDS: ${{ vars.OPPORTUNITY_TYPE_KEYWORDS }}
+          OPPORTUNITY_EXCLUDE_KEYWORDS: ${{ vars.OPPORTUNITY_EXCLUDE_KEYWORDS }}
+          OPPORTUNITY_LIMIT: ${{ vars.OPPORTUNITY_LIMIT || '12' }}
         run: python build_pages.py --keep 28
 
       - name: Commit generated pages
