@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-05-28</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 05-27 09:00 - 05-28 09:00 (Asia/Seoul)</span>
+        <span>생성: 2026-05-28 09:01</span>
+        <span>수집 항목: 130개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://simonwillison.net/2026/May/27/product-market-fit/" target="_blank" rel="noreferrer">Anthropic과 OpenAI가 제품-시장 적합성을 찾았다는 분석</a>은 AI 모델의 상업적 성공 가능성을 시사합니다.</li>
+<li><a href="https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/" target="_blank" rel="noreferrer">Erin Brockovich가 데이터 센터 추적 지도를 제작</a>했다는 소식은 AI 인프라의 물리적 영향에 대한 관심을 반영합니다.</li>
+<li><a href="https://arps18.github.io/posts/claude-code-mastery/" target="_blank" rel="noreferrer">Claude Code를 일상적으로 사용하는 방법</a>에 대한 논의는 AI 코딩 도구의 실용성을 보여줍니다.</li>
+<li><a href="https://phroneses.com/articles/build/notes/agents-cannot-maintain-systems.html" target="_blank" rel="noreferrer">AI 에이전트가 소프트웨어 시스템을 변경할 수 없는 이유</a>에 대한 탐구는 AI 자동화의 한계를 조명합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic" target="_blank" rel="noreferrer">Anthropic과 OpenAI가 AI 일자리 종말에 대해 서로 반박</a>하고 있다는 소식은 AI의 사회적 영향에 대한 논쟁을 보여줍니다.</li>
+<li><a href="https://www.reuters.com/business/openai-foundation-commits-250-million-help-workers-economies-navigate-ai-2026-05-27/" target="_blank" rel="noreferrer">OpenAI 재단이 AI로 인한 혼란을 돕기 위해 2억 5천만 달러를 약속</a>했다는 발표는 AI 전환에 대한 기업의 책임을 나타냅니다.</li>
+<li><a href="https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/" target="_blank" rel="noreferrer">AI 코딩 에이전트의 취약점에 대한 보고</a>는 AI 시스템의 보안 위험을 강조합니다.</li>
+<li><a href="https://thenewstack.io/aikido-ai-agents-security/" target="_blank" rel="noreferrer">AI 에이전트의 취약점과 관련된 오픈 소스 패키지의 치명적인 취약점</a>에 대한 뉴스는 AI 개발의 보안 측면을 부각합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.66" target="_blank" rel="noreferrer">vercel/ai 라이브러리의 @ai-sdk/openai@3.0.66 업데이트</a>는 OpenAI API의 웹 검색 기능 통합을 개선합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/amazon-bedrock%404.0.110" target="_blank" rel="noreferrer">vercel/ai 라이브러리의 @ai-sdk/amazon-bedrock@4.0.110 업데이트</a>는 Amazon Bedrock에서 도구 결과에 대한 문서 파일 지원을 수정합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.2" target="_blank" rel="noreferrer">langchain-ai/langchain의 langchain-fireworks==1.4.2 업데이트</a>는 Fireworks AI 모델의 콘텐츠 직렬화 문제를 해결합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/google%403.0.80" target="_blank" rel="noreferrer">vercel/ai 라이브러리의 @ai-sdk/google@3.0.80 업데이트</a>는 Gemini 3 모델의 도구 호출 재현 시 서명 누락 문제를 수정합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/Coral-Bricks-AI/coral-ai/tree/main/claude-code-token-xray" target="_blank" rel="noreferrer">Claude Code의 $200 플랜이 원시 API에 대한 17배 보조금이라는 분석</a>은 Claude Code의 가격 책정 모델을 검토합니다.</li>
+<li><a href="https://github.com/tejpalv/cc-wiki" target="_blank" rel="noreferrer">Claude Code 세션을 공유 가능한 지식 기반 위키로 전환하는 CC-Wiki</a>는 협업을 위한 새로운 도구를 제공합니다.</li>
+<li><a href="https://workplane.co" target="_blank" rel="noreferrer">인간과 AI를 위한 협업 파일 시스템인 Workplane</a>은 AI 기반 개발 환경을 제안합니다.</li>
+<li><a href="https://github.com/lyriks-io/unspaghettit" target="_blank" rel="noreferrer">AI 코딩 에이전트의 실행 가능한 동작 사양인 Unspaghettit</a>은 에이전트의 동작을 명확히 합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://simonwillison.net/2026/May/27/product-market-fit/" target="_blank" rel="noreferrer">Anthropic과 OpenAI가 제품-시장 적합성을 찾았다는 분석</a>은 AI 모델의 상업적 성공 가능성을 시사합니다.</li>
+<li><a href="https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/" target="_blank" rel="noreferrer">Erin Brockovich가 데이터 센터 추적 지도를 제작</a>했다는 소식은 AI 인프라의 물리적 영향에 대한 관심을 반영합니다.</li>
+<li><a href="https://arps18.github.io/posts/claude-code-mastery/" target="_blank" rel="noreferrer">Claude Code를 일상적으로 사용하는 방법</a>에 대한 논의는 AI 코딩 도구의 실용성을 보여줍니다.</li>
+<li><a href="https://phroneses.com/articles/build/notes/agents-cannot-maintain-systems.html" target="_blank" rel="noreferrer">AI 에이전트가 소프트웨어 시스템을 변경할 수 없는 이유</a>에 대한 탐구는 AI 자동화의 한계를 조명합니다.</li>
+<li><a href="https://brilliantmaps.com/cia-maps-1980s/" target="_blank" rel="noreferrer">1980년대 기밀 해제된 CIA 지도</a>는 과거의 지도 제작 기술을 보여줍니다.</li>
+<li><a href="https://tsduck.io/" target="_blank" rel="noreferrer">MPEG-TS 분석 및 조작을 위한 오픈 소스 툴킷 TSDuck</a>은 미디어 스트림 처리에 유용합니다.</li>
+<li><a href="https://help.delduca.org" target="_blank" rel="noreferrer">가족을 위한 비상 페이지</a>는 개인적인 안전 계획에 대한 아이디어를 제공합니다.</li>
+<li><a href="https://tasmap.app/" target="_blank" rel="noreferrer">Canva for Maps인 Tasmap</a>은 지도 제작을 위한 시각적 도구를 제공합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 AI의 미래와 일자리에 대한 논쟁적인 주제를 다루고 있어, 주관적인 의견이 포함될 수 있습니다.</li>
+<li>AI 코딩 에이전트의 보안 취약점에 대한 보고는 아직 초기 단계일 수 있으며, 추가적인 검증이 필요할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-29. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-29 접수중 21,639 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heigh</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202605140080" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 전국 대학생 공공데이터 활용 창업 경진대회</a> - Contest Korea. 0 주최 . 한국조폐공사, 경북대학교 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot;</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=12094" target="_blank" rel="noreferrer">뉴스와정보 [보도] 정선 여행 AI 영상 광고 공모전</a> - Contest Korea. 동영상 청년들의 목소리를 국회에 전달하는 가장 적인 방법! 2026년도 국회의장배 청년 토론대회 뉴스와정보</li>
+<li><a href="https://linkareer.com/activity/320087" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회</a> - Linkareer, D-98. 산업통상부 D-98 조회 3,297 댓글 0 &lt;div class=&quot;image-wrappe</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
