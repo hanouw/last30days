@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-04</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-03 10:42 - 06-04 10:42 (Asia/Seoul)</span>
+        <span>생성: 2026-06-04 10:43</span>
+        <span>수집 항목: 121개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/" target="_blank" rel="noreferrer">Google, 16GB RAM으로도 실행 가능한 Gemma 4 12B 모델 공개</a> - 이 모델은 다양한 기기에서 AI를 활용할 수 있는 가능성을 열어줍니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=48387095" target="_blank" rel="noreferrer">Hyper, 에이전트 개발을 위한 &#x27;컴퍼니 브레인&#x27; 출시</a> - 개발 생산성을 높이고 에이전트 기반 개발을 지원하는 새로운 도구입니다.</li>
+<li><a href="https://github.com/zaydmulani09/mnemo" target="_blank" rel="noreferrer">로컬 우선 AI 메모리 레이어 Mnemo 출시</a> - LLM을 위한 로컬 환경에서의 AI 메모리 관리를 Rust와 SQLite로 구현했습니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v2.41.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v2.41.0 업데이트</a> - Moderation API 기능이 추가되어 콘텐츠 안전성 관리에 유용합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/" target="_blank" rel="noreferrer">Google, 16GB RAM으로도 실행 가능한 Gemma 4 12B 모델 공개</a> - 이 모델은 다양한 기기에서 AI를 활용할 수 있는 가능성을 열어줍니다.</li>
+<li><a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic, Claude를 제품 전반에 걸쳐 통합하는 방법 공개</a> - AI 모델을 안전하고 효과적으로 서비스에 통합하는 기술적 접근 방식을 엿볼 수 있습니다.</li>
+<li><a href="https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/" target="_blank" rel="noreferrer">LLM을 이용한 앱 해킹 실험 결과 공개</a> - AI의 잠재적 보안 취약점을 파악하고 대비하는 데 중요한 정보를 제공합니다.</li>
+<li><a href="https://openai.com/index/frontier-safety-blueprint/" target="_blank" rel="noreferrer">OpenAI, 프론티어 AI 거버넌스 청사진 발표</a> - 미래 AI 기술의 안전하고 책임감 있는 개발 및 배포에 대한 방향성을 제시합니다.</li>
+<li><a href="https://www.geekwire.com/2026/inside-microsofts-project-solara-a-new-platform-for-devices-that-run-ai-agents-instead-of-apps/" target="_blank" rel="noreferrer">Microsoft, AI 에이전트가 앱 대신 실행되는 기기 플랫폼 &#x27;Project Solara&#x27; 공개</a> - AI 에이전트 중심의 새로운 컴퓨팅 패러다임을 제시합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=48387095" target="_blank" rel="noreferrer">Hyper, 에이전트 개발을 위한 &#x27;컴퍼니 브레인&#x27; 출시</a> - 개발 생산성을 높이고 에이전트 기반 개발을 지원하는 새로운 도구입니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v2.41.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v2.41.0 업데이트</a> - Moderation API 기능이 추가되어 콘텐츠 안전성 관리에 유용합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases" target="_blank" rel="noreferrer">Vercel AI SDK, Vue, Svelte, RSC, React, MCP, LlamaIndex, Langchain, Google Vertex, Gateway 등 다수 라이브러리 업데이트</a> - AI 기반 애플리케이션 개발을 위한 다양한 프레임워크 및 라이브러리의 최신 기능과 개선 사항을 확인할 수 있습니다.</li>
+<li><a href="https://akaganite.com" target="_blank" rel="noreferrer">Akaganite, 콘솔 개발자를 위한 관리형 Rust 툴체인 출시</a> - Xbox, PS5 등 콘솔 플랫폼 개발에 특화된 Rust 환경을 제공합니다.</li>
+<li><a href="https://arstechnica.com/ai/2026/06/ai-costs-how-much-github-copilot-users-react-to-new-usage-based-pricing-system/" target="_blank" rel="noreferrer">GitHub Copilot, 새로운 사용량 기반 가격 정책 도입</a> - AI 개발 도구의 비용 구조 변화에 대한 개발자들의 반응을 살펴볼 수 있습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/zaydmulani09/mnemo" target="_blank" rel="noreferrer">로컬 우선 AI 메모리 레이어 Mnemo 출시</a> - LLM을 위한 로컬 환경에서의 AI 메모리 관리를 Rust와 SQLite로 구현했습니다.</li>
+<li><a href="https://github.com/pixiebrix/agent-browser-shield" target="_blank" rel="noreferrer">Agent-browser-shield, 웹에서 AI 에이전트를 보호하는 무료 확장 프로그램 출시</a> - AI 에이전트의 웹 활동 중 보안을 강화하는 도구입니다.</li>
+<li><a href="https://github.com/skawld/skawld-sdk" target="_blank" rel="noreferrer">Skawld, 회사별 AI 에이전트 개발을 위한 오픈소스 SDK 출시</a> - 기업 맞춤형 AI 에이전트 개발을 간소화하는 SDK입니다.</li>
+<li><a href="https://github.com/LiteLLM-Labs/lite-harness" target="_blank" rel="noreferrer">LiteHarness, Claude Agent, OpenAI Agent, Pi AI를 위한 통합 SDK 출시</a> - 여러 AI 에이전트 플랫폼을 하나의 SDK로 통합하여 개발 편의성을 높입니다.</li>
+<li><a href="https://terraform-rag.io" target="_blank" rel="noreferrer">Terraform RAG, 모듈 인덱싱 및 컨벤션 추출을 위한 도구 출시</a> - Terraform 모듈 관리를 위한 새로운 접근 방식을 제공합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/" target="_blank" rel="noreferrer">Google, 16GB RAM으로도 실행 가능한 Gemma 4 12B 모델 공개</a> - 다양한 기기에서의 AI 활용 가능성 증대</li>
+<li><a href="https://news.ycombinator.com/item?id=48387095" target="_blank" rel="noreferrer">Hyper, 에이전트 개발을 위한 &#x27;컴퍼니 브레인&#x27; 출시</a> - 개발 생산성 향상 및 에이전트 개발 지원</li>
+<li><a href="https://github.com/zaydmulani09/mnemo" target="_blank" rel="noreferrer">로컬 우선 AI 메모리 레이어 Mnemo 출시</a> - LLM을 위한 로컬 AI 메모리 관리</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v2.41.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v2.41.0 업데이트</a> - Moderation API 추가로 콘텐츠 안전성 강화</li>
+<li><a href="https://github.com/vercel/ai/releases" target="_blank" rel="noreferrer">Vercel AI SDK 업데이트</a> - 다양한 AI 프레임워크 및 라이브러리 최신 기능 확인</li>
+<li><a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noreferrer">Anthropic, Claude 통합 방법 공개</a> - AI 모델 서비스 통합 기술 접근 방식</li>
+<li><a href="https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/" target="_blank" rel="noreferrer">LLM을 이용한 앱 해킹 실험 결과</a> - AI 보안 취약점 파악 및 대비 정보</li>
+<li><a href="https://akaganite.com" target="_blank" rel="noreferrer">Akaganite, 콘솔 개발자용 Rust 툴체인 출시</a> - Xbox, PS5 등 콘솔 개발 환경 지원</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 뉴스는 Hacker News의 토론 스레드를 기반으로 하며, 이는 초기 정보이거나 개인적인 의견일 수 있습니다.</li>
+<li>GitHub 릴리스 정보는 특정 버전 업데이트에 대한 기술적인 내용을 담고 있습니다.</li>
+<li>일부 링크는 개인 블로그나 포럼 게시물로, 정보의 깊이나 정확성은 출처에 따라 다를 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-22. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-22 접수중 35,325 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heigh</li>
+<li><a href="https://linkareer.com/activity/320897" target="_blank" rel="noreferrer">SK 이노베이션, 「AI 임팩트 솔루션」 공모전</a> - Linkareer, D-8. 큐네스티 D-8 조회 4,240 댓글 0 &lt;div class=&quot;swiper-sli</li>
+<li><a href="https://linkareer.com/activity/312166" target="_blank" rel="noreferrer">2026 경북 국제 AI·메타버스 영상 공모전 참가자를 모집합니다 !</a> - Linkareer, D-26. 경북테크노파크 D-26 조회 2,006 댓글 0 &lt;div clas</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202606020013" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 서울뷰티위크 비즈니스 밋업 피칭대회</a> - Contest Korea. 0 주최 . 서울시 대상 . 일반인 , 해당자 ▶ &lt;div class=&quot;date-detail&quot; style=&quot;t</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=12094" target="_blank" rel="noreferrer">뉴스와정보 [보도] 정선 여행 AI 영상 광고 공모전</a> - Contest Korea. 동영상 청년들의 목소리를 국회에 전달하는 가장 적인 방법! 2026년도 국회의장배 청년 토론대회 뉴스와정보</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
