@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-08</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-07 09:08 - 06-08 09:08 (Asia/Seoul)</span>
+        <span>생성: 2026-06-08 09:08</span>
+        <span>수집 항목: 90개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>LLM이 소프트웨어 엔지니어링 커리어에 미치는 영향에 대한 논의가 활발하며, 개발자들은 이에 대한 대책을 모색하고 있습니다. <a href="https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/" target="_blank" rel="noreferrer">LLMs are eroding my software engineering career and I don&#x27;t know what to do</a></li>
+<li>Claude와 같은 AI 모델이 디자인 작업에서 Figma를 대체할 정도로 유용성이 커지고 있습니다. <a href="https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/" target="_blank" rel="noreferrer">I design with Claude more than Figma now</a></li>
+<li>LLM을 활용하여 새로운 도메인을 학습하는 도구인 Lathe가 공개되어 주목받고 있습니다. <a href="https://github.com/devenjarvis/lathe" target="_blank" rel="noreferrer">Show HN: Lathe – Use LLMs to learn a new domain, not skip past it</a></li>
+<li>Anthropic과 OpenAI가 LLM 개발에 막대한 비용을 지출하고 있으며, 이는 서비스 가격에 영향을 미칠 수 있습니다. <a href="https://ea.rna.nl/2026/06/07/anthropic-openai-may-be-spending-more-than-1000-for-every-100-you-pay-them/" target="_blank" rel="noreferrer">Anthropic/OpenAI may be spending more than $1000 for every $100 you pay them</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>LLM이 인간과 유사한 속성을 가질 수 있다는 주장이 제기되며, 이는 게임과 같은 분야에도 적용될 수 있습니다. <a href="https://arxiv.org/abs/2605.31514" target="_blank" rel="noreferrer">If LLMs Have Human-Like Attributes, Then Does Age of Empires II</a></li>
+<li>OpenAI가 출시 이후 가장 큰 규모의 ChatGPT 개편을 준비하고 있다는 소식이 있습니다. <a href="https://www.ft.com/content/ca0f5f5e-fb9a-41a0-a2a9-0127e15b7db9" target="_blank" rel="noreferrer">OpenAI plots biggest ChatGPT overhaul since launch</a></li>
+<li>AI 에이전트가 코딩 문제를 해결하고 소프트웨어 엔지니어링의 다른 문제점들을 드러냈다는 분석이 나왔습니다. <a href="https://venturebeat.com/technology/agentic-ai-solved-coding-and-exposed-every-other-problem-in-software-engineering" target="_blank" rel="noreferrer">Agentic AI solved coding and exposed every other problem in SE</a></li>
+<li>LLM의 토큰과 토큰화에 대한 기본적인 개념을 설명하는 글이 공유되었습니다. <a href="https://bearisland.dev/posts/tokens-and-tokenization/" target="_blank" rel="noreferrer">What Are Tokens in LLMs?</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>SourceHut이 LLM 크롤러로 인해 서비스 중단을 겪었습니다. <a href="https://status.sr.ht/issues/2026-06-06-llms-again/" target="_blank" rel="noreferrer">SourceHut Disrupted by LLM Crawlers</a></li>
+<li>AMD가 Windows 게이밍 PC에서 CPU 점유율을 45% 가까이 달성하며 인텔과의 격차를 줄이고 있습니다. <a href="https://www.tomshardware.com/pc-components/cpus/amd-reaches-almost-45-percent-cpu-share-in-the-latest-steam-hardware-survey-for-windows-gaming-pcs-ryzen-is-steadily-gaining-ground-against-intels-legacy-domination" target="_blank" rel="noreferrer">AMD reaches almost 45% CPU share for Windows gaming PCs</a></li>
+<li>전체 IPv4 주소 공간이 매핑된 자료가 공개되었습니다. <a href="https://worldip.io/" target="_blank" rel="noreferrer">The complete IPv4 address space, mapped</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Claude Code를 100배 더 좋고 40% 더 효율적으로 만든 경험을 공유하는 글이 있습니다. <a href="https://claynicholson.com/blog/khlawde-code" target="_blank" rel="noreferrer">I made Claude Code 100x better and 40% more efficient</a></li>
+<li>AI 에이전트의 버전 관리를 위한 도구가 소개되었습니다. <a href="https://cognatoai.com" target="_blank" rel="noreferrer">Show HN: Version Control for AI Agents</a></li>
+<li>AI 에이전트가 응답할 때까지 채널을 추적하는 Persist가 공개되었습니다. <a href="https://persist.chat" target="_blank" rel="noreferrer">Show HN: Persist – an AI agent that follows up accrued channels till they reply</a></li>
+<li>독립된 VM에서 AI 에이전트를 실행하기 위한 서버리스 인프라 SVAHNAR가 소개되었습니다. <a href="https://www.svahnar.com/" target="_blank" rel="noreferrer">Show HN: SVAHNAR – Serverless infrastructure to run AI agents in isolated VMs</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/" target="_blank" rel="noreferrer">LLMs are eroding my software engineering career and I don&#x27;t know what to do</a> - LLM이 소프트웨어 엔지니어링 직무에 미치는 영향에 대한 심층적인 논의.</li>
+<li><a href="https://github.com/anthropics/claude-code/issues/65697" target="_blank" rel="noreferrer">Anthropic, please ship an official Claude Desktop for Linux</a> - Linux 사용자를 위한 Claude 데스크톱 애플리케이션 출시 요청.</li>
+<li><a href="https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/" target="_blank" rel="noreferrer">I design with Claude more than Figma now</a> - Claude를 디자인 작업에 Figma보다 더 많이 활용하는 경험 공유.</li>
+<li><a href="https://github.com/devenjarvis/lathe" target="_blank" rel="noreferrer">Show HN: Lathe – Use LLMs to learn a new domain, not skip past it</a> - LLM을 활용하여 새로운 분야를 깊이 있게 학습하는 도구 소개.</li>
+<li><a href="https://arxiv.org/abs/2605.31514" target="_blank" rel="noreferrer">If LLMs Have Human-Like Attributes, Then So Does Age of Empires II</a> - LLM의 인간 유사 속성과 게임 AI의 연관성 탐구.</li>
+<li><a href="https://ea.rna.nl/2026/06/07/anthropic-openai-may-be-spending-more-than-1000-for-every-100-you-pay-them/" target="_blank" rel="noreferrer">Anthropic/OpenAI may be spending more than $1000 for every $100 you pay them</a> - LLM 기업의 높은 운영 비용에 대한 분석.</li>
+<li><a href="https://worldip.io/" target="_blank" rel="noreferrer">The complete IPv4 address space, mapped</a> - IPv4 주소 공간 전체를 시각화한 자료.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1" target="_blank" rel="noreferrer">anthropics/anthropic-sdk-python: v0.107.1</a> - Anthropic Python SDK의 최신 릴리스 정보.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>LLM 기업의 높은 운영 비용에 대한 주장은 특정 웹사이트의 분석에 기반하며, 추가적인 검증이 필요할 수 있습니다. <a href="https://ea.rna.nl/2026/06/07/anthropic-openai-may-be-spending-more-than-1000-for-every-100-you-pay-them/" target="_blank" rel="noreferrer">Anthropic/OpenAI may be spending more than $1000 for every $100 you pay them</a></li>
+<li>LLM이 소프트웨어 엔지니어링 커리어를 위협한다는 주장은 개인적인 경험에 기반한 의견으로, 일반화하기에는 추가적인 데이터가 필요합니다. <a href="https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/" target="_blank" rel="noreferrer">LLMs are eroding my software engineering career and I don&#x27;t know what to do</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=106965" target="_blank" rel="noreferrer">제4회 문화체육관광 인공지능·데이터 활용 공모전</a> - Wevity, D-10. 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 대외활동/서포터즈 D-10 &lt;div clas</li>
+<li><a href="https://linkareer.com/activity/325800" target="_blank" rel="noreferrer">공모전 D-25 제4회 퀴즈노스 AI 영상 광고 공모전 Q 구구코니 팀으로 지원 가능한가요? A 임가영 안녕하세요. 팀으로 참여는 가능하나, 참가 신청서(구글폼) 제출 시에는 대표자 1인 정보로 작성해 주시기 바랍니다. 감사합니다.</a> - Linkareer, D-25. 대외활동 D-22 [미래에셋 금융서비스] 금용문 클라</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202606050002" target="_blank" rel="noreferrer">학문•과학•IT The 다양한 분야 제11회 모의유엔 UPR 대회</a> - Contest Korea. 0 주최 . 휴먼아시아 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; style=&quot;</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=12094" target="_blank" rel="noreferrer">뉴스와정보 [보도] 정선 여행 AI 영상 광고 공모전</a> - Contest Korea. 동영상 청년들의 목소리를 국회에 전달하는 가장 적인 방법! 2026년도 국회의장배 청년 토론대회 뉴스와정보</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
