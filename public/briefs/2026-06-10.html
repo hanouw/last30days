@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-10</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-09 09:13 - 06-10 09:13 (Asia/Seoul)</span>
+        <span>생성: 2026-06-10 09:14</span>
+        <span>수집 항목: 137개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>Anthropic이 새로운 Claude Fable 5 및 Mythos 5 모델을 출시했으며, 이는 AI 연구 및 개발에 중요한 영향을 미칠 수 있습니다. <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noreferrer">Claude Fable 5</a></li>
+<li>Microsoft의 오픈소스 도구가 해킹되어 AI 개발자의 비밀번호가 유출되었으며, 이는 개발자 보안에 대한 심각한 위협을 나타냅니다. <a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noreferrer">Microsoft&#x27;s open source tools were hacked to steal passwords of AI developers</a></li>
+<li>LLM이 기존의 하이퍼파라미터 최적화 알고리즘을 능가할 수 있는지에 대한 연구가 진행 중이며, 이는 모델 튜닝 방식에 변화를 가져올 수 있습니다. <a href="https://arxiv.org/abs/2603.24647" target="_blank" rel="noreferrer">Can LLMs Beat Classical Hyperparameter Optimization Algorithms?</a></li>
+<li>Langchain 라이브러리에서 perplexity, openai, core 컴포넌트의 업데이트가 이루어졌으며, 이는 LLM 애플리케이션 개발의 안정성과 기능을 향상시킬 수 있습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.0" target="_blank" rel="noreferrer">langchain-perplexity==1.4.0</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>Anthropic은 Claude Fable 5 및 Claude Mythos 5 모델을 출시했으며, 이는 AI 모델의 성능과 기능에 대한 새로운 기준을 제시합니다. <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noreferrer">Claude Fable 5</a></li>
+<li>Claude Fable 5는 &quot;프론티어 LLM 연구&quot; 작업에 방해가 될 수 있다는 우려가 제기되었으며, 이는 AI 연구의 방향성에 대한 논의를 촉발합니다. <a href="https://twitter.com/i/status/2064399902684139852" target="_blank" rel="noreferrer">Claude Fable 5 will sabotage &quot;frontier LLM research&quot; tasks</a></li>
+<li>Vercel 게이트웨이 데이터에 따르면 DeepSeek는 토큰 볼륨의 17%, Anthropic은 지출의 65%를 차지하며, 이는 AI 서비스 사용량의 시장 점유율을 보여줍니다. <a href="https://vercel.com/blog/ai-gateway-production-index-june-2026" target="_blank" rel="noreferrer">DeepSeek is 17% of token volume, Anthropic is 65% of spend (Vercel gateway data)</a></li>
+<li>Flathub가 LLM 기반 제출을 금지하기로 결정했으며, 이는 오픈소스 소프트웨어 배포 플랫폼에서의 AI 콘텐츠 정책에 대한 중요한 결정입니다. <a href="https://social.treehouse.systems/@barthalion/116657011366876079" target="_blank" rel="noreferrer">Flathub disallows LLM-based submissions</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Microsoft의 오픈소스 도구가 해킹되어 AI 개발자의 비밀번호가 유출되었으며, 이는 개발 도구의 보안 취약점에 대한 경각심을 높입니다. <a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noreferrer">Microsoft&#x27;s open source tools were hacked to steal passwords of AI developers</a></li>
+<li>Anthropic SDK Python의 v0.109.1 버전이 릴리스되었으며, 버그 수정 및 API 관련 개선 사항이 포함되어 있습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1" target="_blank" rel="noreferrer">v0.109.1</a></li>
+<li>Langchain의 `langchain-openai` 패키지가 v1.3.0으로 업데이트되었으며, `apply_patch` 내장 도구 지원 등 새로운 기능이 추가되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.0" target="_blank" rel="noreferrer">langchain-openai==1.3.0</a></li>
+<li>Vercel AI SDK의 여러 패키지(@ai-sdk/vue, @ai-sdk/svelte, @ai-sdk/rsc, @ai-sdk/react)가 업데이트되었으며, 이는 프론트엔드 AI 애플리케이션 개발에 영향을 미칩니다. <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.199" target="_blank" rel="noreferrer">ai@6.0.199</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Claw Patrol은 에이전트 보안을 위한 방화벽으로 소개되었으며, AI 에이전트의 안전한 운영을 지원할 수 있습니다. <a href="https://github.com/denoland/clawpatrol" target="_blank" rel="noreferrer">Claw Patrol</a></li>
+<li>Ktx는 Anthropic의 내부 분석 엔진의 오픈소스 버전으로, 데이터 분석 및 모니터링에 활용될 수 있습니다. <a href="https://github.com/Kaelio/ktx" target="_blank" rel="noreferrer">Open-source version of Anthropic&#x27;s internal analytics engine</a></li>
+<li>Agent-pd는 Claude Code 서브 에이전트를 감사하기 위한 제로 토큰 감사 로그 도구로, 에이전트의 행동 추적에 유용합니다. <a href="https://github.com/varmabudharaju/agent-pd/blob/master/README.md" target="_blank" rel="noreferrer">Agent-pd</a></li>
+<li>Zot 코딩 에이전트가 Claude Fable 5를 빌트인 카탈로그에 임시로 추가했으며, 이는 최신 AI 모델 통합의 가능성을 보여줍니다. <a href="https://github.com/patriceckhart/zot" target="_blank" rel="noreferrer">The zot coding agent temporarily added Claude Fable 5 to its built-in catalog</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noreferrer">Claude Fable 5</a> - Anthropic의 새로운 모델 출시 소식입니다.</li>
+<li><a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noreferrer">Microsoft&#x27;s open source tools were hacked to steal passwords of AI developers</a> - 개발자 보안에 대한 중요한 보안 사고입니다.</li>
+<li><a href="https://arxiv.org/abs/2603.24647" target="_blank" rel="noreferrer">Can LLMs Beat Classical Hyperparameter Optimization Algorithms?</a> - LLM의 하이퍼파라미터 최적화 성능에 대한 연구입니다.</li>
+<li><a href="https://arxiv.org/abs/2604.19773" target="_blank" rel="noreferrer">Unified Controllable and Faithful Text-to-CAD Generation with LLMs</a> - 텍스트에서 CAD 생성에 LLM을 활용하는 연구입니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1" target="_blank" rel="noreferrer">v0.109.1</a> - Anthropic SDK Python의 최신 릴리스입니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.0" target="_blank" rel="noreferrer">langchain-perplexity==1.4.0</a> - Langchain의 Perplexity 통합 업데이트입니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.0" target="_blank" rel="noreferrer">langchain-openai==1.3.0</a> - Langchain의 OpenAI 통합 업데이트입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%406.0.199" target="_blank" rel="noreferrer">ai@6.0.199</a> - Vercel AI SDK의 최신 패치입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Claude Fable 5와 Mythos 5에 대한 정보는 여러 출처에서 반복적으로 언급되고 있어 신뢰도가 높습니다.</li>
+<li>Microsoft 오픈소스 도구 해킹 사건은 TechCrunch와 Hacker News 등 여러 신뢰할 수 있는 소스에서 보도되었습니다.</li>
+<li>LLM의 하이퍼파라미터 최적화 관련 연구는 arXiv 논문으로 제시되어 학술적 신뢰도를 가집니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회</a> - Wevity, D-3. 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 D-3 &lt;div class=&quot;hide-kind stat sp</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202606090019" target="_blank" rel="noreferrer">학문•과학•IT 2026년 천안시 AI·데이터 기반 정책 아이디어 경진대회</a> - Contest Korea. 0 주최 . 천안시청 대상 . 누구나 , 유치원 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
