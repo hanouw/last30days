@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-11</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-10 09:15 - 06-11 09:15 (Asia/Seoul)</span>
+        <span>생성: 2026-06-11 09:15</span>
+        <span>수집 항목: 148개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=48477135" target="_blank" rel="noreferrer">Claude Desktop이 실행 시마다 1.8GB의 Hyper-V VM을 생성</a>하여 디스크 공간을 차지합니다.</li>
+<li><a href="https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/" target="_blank" rel="noreferrer">0.01유로의 은행 송금으로도 금융 AI 에이전트가 위험에 노출</a>될 수 있다는 점은 보안의 중요성을 강조합니다.</li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noreferrer">DiffusionGemma는 텍스트 생성 속도를 4배 향상</a>시켜 효율성을 높일 수 있습니다.</li>
+<li><a href="https://burr.apache.org/" target="_blank" rel="noreferrer">Apache Burr는 안정적인 AI 에이전트 및 애플리케이션 구축을 지원</a>하여 개발 생산성을 향상시킵니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated" target="_blank" rel="noreferrer">Anthropic의 모델 명명 규칙을 추론</a>하는 것은 모델 개발 방향을 이해하는 데 도움이 됩니다.</li>
+<li><a href="https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/" target="_blank" rel="noreferrer">보안 연구원들이 Anthropic의 Fable 모델에 적용된 안전 장치에 불만을 표출</a>하고 있어, AI 안전성에 대한 논의가 활발합니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-06-10/anthropic-ceo-says-government-should-be-able-to-block-new-models" target="_blank" rel="noreferrer">Anthropic CEO가 정부가 신규 모델 출시를 차단할 수 있어야 한다고 발언</a>하며 AI 규제에 대한 논의를 촉발합니다.</li>
+<li><a href="https://openai.com/index/prc-linked-influence-operations-ai-debates/" target="_blank" rel="noreferrer">PRC 관련 영향력 작전이 미국의 AI 토론을 표적으로 삼고 있다는 분석</a>은 AI 생태계의 외부 요인에 대한 경각심을 높입니다.</li>
+<li><a href="https://www.youtube.com/watch?v=wykPErJ8M-8" target="_blank" rel="noreferrer">WWDC26에서 MLX를 사용하여 Mac에서 로컬 에이전트 AI를 실행하는 방법</a>에 대한 영상은 로컬 AI 개발의 가능성을 보여줍니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/29045" target="_blank" rel="noreferrer">Claude Desktop이 실행 시마다 1.8GB의 Hyper-V VM을 생성</a>하는 문제는 리소스 관리 측면에서 개선이 필요합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.1.5" target="_blank" rel="noreferrer">Langchain의 최신 릴리스</a>는 다양한 라이브러리 업데이트를 포함하고 있어 프레임워크의 안정성과 기능 개선을 기대할 수 있습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%406.0.200" target="_blank" rel="noreferrer">Vercel AI SDK의 여러 패키지들이 업데이트</a>되어 프론트엔드 AI 개발에 필요한 기능과 안정성이 향상되었습니다.</li>
+<li><a href="https://github.com/microsoft/vscode/releases/tag/1.124.0" target="_blank" rel="noreferrer">VS Code의 최신 버전 릴리스</a>는 개발 환경의 지속적인 개선을 의미합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noreferrer">DiffusionGemma는 텍스트 생성 속도를 4배 향상</a>시켜 개발 생산성을 높일 수 있는 도구입니다.</li>
+<li><a href="https://burr.apache.org/" target="_blank" rel="noreferrer">Apache Burr는 안정적인 AI 에이전트 및 애플리케이션 구축을 지원</a>하는 프레임워크입니다.</li>
+<li><a href="https://riskkernel.com/" target="_blank" rel="noreferrer">Show HN: RiskKernel은 AI 에이전트를 중단하고 재시작할 때 이중 지불 없이 사용할 수 있게 해주는 도구</a>입니다.</li>
+<li><a href="https://github.com/ai-sns/openclaw-hermes-agent-network" target="_blank" rel="noreferrer">Show HN: OpenClaw와 Hermes Agent가 XMPP를 통해 서로 통신하는 프로젝트</a>는 에이전트 간 통신 방식에 대한 새로운 접근을 보여줍니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=48477135" target="_blank" rel="noreferrer">Eric Ries의 새 책 &quot;Incorruptible&quot; AMA</a>는 린 스타트업의 저자가 새로운 아이디어를 공유하는 자리입니다.</li>
+<li><a href="https://github.com/anthropics/claude-code/issues/29045" target="_blank" rel="noreferrer">Claude Desktop이 실행 시마다 1.8GB의 Hyper-V VM을 생성</a>하는 이슈는 리소스 사용량에 대한 논의를 제공합니다.</li>
+<li><a href="https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/" target="_blank" rel="noreferrer">0.01유로의 은행 송금으로도 금융 AI 에이전트가 위험에 노출</a>될 수 있다는 점은 AI 보안의 취약점을 보여줍니다.</li>
+<li><a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated" target="_blank" rel="noreferrer">Anthropic의 모델 명명 규칙을 추론</a>하는 글은 모델 개발 전략에 대한 통찰을 제공합니다.</li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noreferrer">DiffusionGemma는 텍스트 생성 속도를 4배 향상</a>시켜 효율적인 텍스트 생성을 가능하게 합니다.</li>
+<li><a href="https://burr.apache.org/" target="_blank" rel="noreferrer">Apache Burr는 안정적인 AI 에이전트 및 애플리케이션 구축을 지원</a>하는 프레임워크입니다.</li>
+<li><a href="https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/" target="_blank" rel="noreferrer">보안 연구원들이 Anthropic의 Fable 모델에 적용된 안전 장치에 불만을 표출</a>하고 있다는 소식은 AI 안전성에 대한 논쟁을 보여줍니다.</li>
+<li><a href="https://github.com/grzegorz-raczek-unit8/claude-quota" target="_blank" rel="noreferrer">macOS 메뉴 바에서 Claude Code 할당량을 표시하는 도구</a>는 사용자 편의성을 높입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://mg0x7b0x7be.github.io/anthropic-support-does-not-exist.html" target="_blank" rel="noreferrer">Anthropic의 지원이 존재하지 않는다는 주장</a>은 사용자 경험에 대한 부정적인 피드백을 나타냅니다.</li>
+<li><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noreferrer">Anthropic의 개인정보처리방침 변경으로 소비자 계정에 대한 연령/신원 확인이 필요</a>하다는 내용은 개인정보 보호 정책에 대한 주의를 환기시킵니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-15. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-15 접수중 51,420 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heigh</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 0 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://linkareer.com/activity/327510" target="_blank" rel="noreferrer">2026년 천안시 AI·데이터 기반 정책 아이디어 경진대회</a> - Linkareer, 8.31. ~8.31 조회 142 스크랩&lt;</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_event/egoread.php?bd=11&amp;seq=12190" target="_blank" rel="noreferrer">[이벤트] 내가 뽑는 최고의 전국민 AI 경진대회 홍보 숏폼!</a> - Contest Korea. &lt;a href=&quot;/boad/bd_event/e</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
