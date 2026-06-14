@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-14</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-13 09:06 - 06-14 09:06 (Asia/Seoul)</span>
+        <span>생성: 2026-06-14 09:07</span>
+        <span>수집 항목: 91개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noreferrer">Anthropic, 미국 정부의 보안 우려로 인해 AI 모델 접근을 중단했습니다.</a> 이는 AI 모델의 규제 및 접근성에 대한 중요한 논의를 촉발합니다.</li>
+<li><a href="https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html" target="_blank" rel="noreferrer">OpenAI가 주 법무장관 그룹의 조사를 받고 있습니다.</a> 이는 AI 기업의 투명성과 책임에 대한 우려를 강조합니다.</li>
+<li><a href="https://github.com/Paca-AI/paca" target="_blank" rel="noreferrer">Paca는 인간-AI 협업을 위한 경량 Jira 대안으로 출시되었습니다.</a> 이는 개발 워크플로우에서 AI 통합의 잠재력을 보여줍니다.</li>
+<li><a href="https://6it.dev/blog/on-cpu-physics-and-cpu-cycles-80730" target="_blank" rel="noreferrer">CPU 물리학과 CPU 사이클에 대한 논의가 진행 중입니다.</a> 이는 하드웨어 성능 최적화에 대한 통찰력을 제공합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&amp;reflink=desktopwebshare_permalink" target="_blank" rel="noreferrer">아마존 CEO의 미국 관리들과의 대화가 Anthropic 모델에 대한 단속을 촉발했습니다.</a> 이는 AI 기업과 정부 간의 관계에 대한 중요한 시사점을 제공합니다.</li>
+<li><a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noreferrer">Anthropic은 미국 정부의 보안 우려를 준수하기 위해 새로운 AI 도구 제공을 중단했습니다.</a> 이는 AI 기술의 책임감 있는 배포의 중요성을 강조합니다.</li>
+<li><a href="https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html" target="_blank" rel="noreferrer">OpenAI는 주 법무장관들의 조사 대상이 되었습니다.</a> 이는 AI 기업의 규제 환경에 대한 중요한 발전입니다.</li>
+<li><a href="https://www.theintrinsicperspective.com/p/dont-dethrone-consciousness" target="_blank" rel="noreferrer">LLM이 의식적이지 않으며, 그렇게 생각하는 것은 문화적으로 위험하다는 주장이 제기되었습니다.</a> 이는 AI의 본질과 인간 의식과의 관계에 대한 철학적 논쟁을 불러일으킵니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.2" target="_blank" rel="noreferrer">langchain-openai 라이브러리가 1.3.2 버전으로 업데이트되었습니다.</a> 이는 Langchain 생태계의 지속적인 개선을 나타냅니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.1" target="_blank" rel="noreferrer">langchain-openai 라이브러리가 1.3.1 버전으로 업데이트되었습니다.</a> 이는 Langchain의 지속적인 개발 및 유지보수를 보여줍니다.</li>
+<li><a href="https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B" target="_blank" rel="noreferrer">Rio 3.5 Open 397B 모델이 공개되었습니다.</a> 이는 오픈 소스 LLM의 발전을 보여주는 사례입니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/Paca-AI/paca" target="_blank" rel="noreferrer">Paca는 인간-AI 협업을 위한 경량 Jira 대안으로 출시되었습니다.</a> 이는 프로젝트 관리 및 협업 도구에 대한 새로운 접근 방식을 제공합니다.</li>
+<li><a href="https://github.com/dugubuyan/agent-nexus" target="_blank" rel="noreferrer">AgentNexus는 서비스 경계를 기준으로 LLM 에이전트를 조정하는 프레임워크입니다.</a> 이는 복잡한 AI 에이전트 시스템 구축을 위한 도구를 제공합니다.</li>
+<li><a href="https://github.com/YasserCR/galdor" target="_blank" rel="noreferrer">Galdor는 내장된 추적 및 재생 기능을 갖춘 Go LLM 에이전트 프레임워크입니다.</a> 이는 Go 언어를 사용하는 개발자에게 LLM 에이전트 개발을 용이하게 합니다.</li>
+<li><a href="https://github.com/ptobey/local-memory-mcp" target="_blank" rel="noreferrer">로컬 RAG 메모리 시스템이 출시되어 AI가 직접 쓸 수 있습니다.</a> 이는 AI 에이전트의 지속적인 학습 및 메모리 관리에 대한 새로운 가능성을 열어줍니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&amp;reflink=desktopwebshare_permalink" target="_blank" rel="noreferrer">Amazon CEO의 미국 관리들과의 대화가 Anthropic 모델에 대한 단속을 촉발했습니다.</a> - AI 규제에 대한 중요한 통찰력을 제공합니다.</li>
+<li><a href="https://github.com/Paca-AI/paca" target="_blank" rel="noreferrer">Paca – 인간-AI 협업을 위한 경량 Jira 대안</a> - 개발 워크플로우 개선에 도움이 될 수 있습니다.</li>
+<li><a href="https://www.theintrinsicperspective.com/p/dont-dethrone-consciousness" target="_blank" rel="noreferrer">LLM이 의식적이지 않으며, 그렇게 생각하는 것은 문화적으로 위험하다는 주장</a> - AI와 의식에 대한 흥미로운 논쟁을 다룹니다.</li>
+<li><a href="https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html" target="_blank" rel="noreferrer">OpenAI가 주 법무장관 그룹의 조사를 받고 있습니다.</a> - AI 기업의 규제 동향을 파악하는 데 중요합니다.</li>
+<li><a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noreferrer">Anthropic, 미국 정부의 보안 우려로 인해 AI 모델 접근을 중단했습니다.</a> - AI 모델의 접근성 및 보안에 대한 중요한 정보를 제공합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.2" target="_blank" rel="noreferrer">langchain-openai==1.3.2 릴리스</a> - Langchain 라이브러리 업데이트를 확인합니다.</li>
+<li><a href="https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B" target="_blank" rel="noreferrer">Rio 3.5 Open 397B – Rio de Janeiro 시 정부에서 제공</a> - 오픈 소스 LLM의 발전을 보여줍니다.</li>
+<li><a href="https://github.com/dugubuyan/agent-nexus" target="_blank" rel="noreferrer">AgentNexus – 서비스 경계를 기준으로 LLM 에이전트를 조정</a> - AI 에이전트 시스템 구축에 관심 있는 개발자에게 유용합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic 관련 뉴스는 여러 출처에서 반복적으로 보도되고 있으며, 이는 해당 사건의 중요성을 시사합니다.</li>
+<li>OpenAI 조사에 대한 보도는 여러 언론 매체에서 다루고 있어 신뢰도가 높습니다.</li>
+<li>CPU 물리학 및 CPU 사이클에 대한 일부 기사는 비교적 낮은 점수를 받았으나, 특정 기술 분야에 대한 깊이 있는 논의를 제공합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-12. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-12 접수중 58,485 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heigh</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 0 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
