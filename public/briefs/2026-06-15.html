@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-15</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-14 09:08 - 06-15 09:08 (Asia/Seoul)</span>
+        <span>생성: 2026-06-15 09:09</span>
+        <span>수집 항목: 111개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/nex-agi/Nex-N2/issues/4" target="_blank" rel="noreferrer">Rio de Janeiro&#x27;s &quot;homegrown&quot; LLM appears to be a merge of an existing model</a>는 자체 개발 LLM의 실제 구현에 대한 의문을 제기하며, 모델의 투명성과 출처에 대한 중요성을 강조합니다.</li>
+<li><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" rel="noreferrer">Making Claude a Chemist</a>는 Anthropic의 Claude 모델이 화학 분야에서 전문성을 갖추도록 발전하고 있음을 보여주며, 특정 도메인에 특화된 AI의 가능성을 시사합니다.</li>
+<li><a href="https://www.politico.com/news/2026/06/13/inside-the-whirlwind-24-hours-that-led-the-white-house-to-slap-export-controls-on-anthropic-00961519" target="_blank" rel="noreferrer">The whirlwind 24 hours that led to export controls on Anthropic</a>는 AI 기술에 대한 정부 규제와 국제 관계의 복잡성을 보여주며, 정책 결정의 신속성과 영향력을 이해하는 데 중요합니다.</li>
+<li><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noreferrer">Ponytail – make your AI agent think like the laziest senior dev in the room</a>는 AI 에이전트 개발에 있어 효율성과 실용적인 접근 방식을 강조하며, 개발 생산성 향상에 대한 통찰을 제공합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://github.com/nex-agi/Nex-N2/issues/4" target="_blank" rel="noreferrer">Rio de Janeiro&#x27;s &quot;homegrown&quot; LLM appears to be a merge of an existing model</a>는 지역 LLM 프로젝트의 실제 구현에 대한 의문을 제기합니다.</li>
+<li><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" rel="noreferrer">Making Claude a Chemist</a>는 Anthropic의 Claude 모델이 화학 분야의 전문성을 강화하는 연구를 발표했습니다.</li>
+<li><a href="https://www.politico.com/news/2026/06/13/inside-the-whirlwind-24-hours-that-led-the-white-house-to-slap-export-controls-on-anthropic-00961519" target="_blank" rel="noreferrer">The whirlwind 24 hours that led to export controls on Anthropic</a>는 미국 정부의 Anthropic에 대한 수출 통제 결정 과정을 다룹니다.</li>
+<li><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noreferrer">Ponytail – make your AI agent think like the laziest senior dev in the room</a>는 AI 에이전트 개발을 위한 새로운 접근 방식을 소개합니다.</li>
+<li><a href="https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/" target="_blank" rel="noreferrer">As Anthropic suspends access to new models, India debates its AI future</a>는 Anthropic의 서비스 중단이 인도 AI 정책에 미치는 영향을 조명합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.202" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@2.0.202</a>는 Vercel AI SDK의 Vue 컴포넌트 업데이트를 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%403.0.202" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/svelte@3.0.202</a>는 Vercel AI SDK의 Svelte 컴포넌트 업데이트를 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%401.0.204" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/rsc@1.0.204</a>는 Vercel AI SDK의 RSC(React Server Components) 관련 업데이트를 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%402.0.204" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/react@2.0.204</a>는 Vercel AI SDK의 React 컴포넌트 업데이트를 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.202" target="_blank" rel="noreferrer">vercel/ai: ai@5.0.202</a>는 Vercel AI SDK의 메인 패키지 업데이트를 포함합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noreferrer">Ponytail – make your AI agent think like the laziest senior dev in the room</a>는 AI 에이전트 개발을 위한 흥미로운 도구입니다.</li>
+<li><a href="https://github.com/afterburner-sh/afterburner" target="_blank" rel="noreferrer">Show HN: Afterburner – Capability-Sandboxed JavaScript/TS Runtime in Rust</a>는 Rust 기반의 JavaScript/TS 런타임입니다.</li>
+<li><a href="https://github.com/FarzamMohammadi/the-engineer" target="_blank" rel="noreferrer">Show HN: The Engineer – Drive Claude Code from a GitHub Issue to a Merged PR</a>는 Claude 코드를 GitHub 이슈에서 PR까지 관리하는 도구입니다.</li>
+<li><a href="https://velyr.io/" target="_blank" rel="noreferrer">Show HN: Velyr – an AI agent that finds and fixes conversion leaks on your site</a>는 웹사이트 전환 누수를 감지하고 수정하는 AI 에이전트입니다.</li>
+<li><a href="https://getpeek.dev" target="_blank" rel="noreferrer">Show HN: Peek – A Figma like DB GUI</a>는 Figma와 유사한 데이터베이스 GUI 도구입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/nex-agi/Nex-N2/issues/4" target="_blank" rel="noreferrer">Rio de Janeiro&#x27;s &quot;homegrown&quot; LLM appears to be a merge of an existing model</a> - 자체 개발 LLM의 실제 구현에 대한 의문점.</li>
+<li><a href="https://www.verysane.ai/p/did-anthropic-ask-for-this" target="_blank" rel="noreferrer">Did Anthropic ask for this?</a> - Anthropic 관련 흥미로운 질문.</li>
+<li><a href="https://www.anthropic.com/research/making-claude-a-chemist" target="_blank" rel="noreferrer">Making Claude a Chemist</a> - Claude의 화학 분야 전문성 강화 연구.</li>
+<li><a href="https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/" target="_blank" rel="noreferrer">EU Commission looking at practical consequences of Anthropic decision</a> - EU의 Anthropic 결정에 대한 실질적 영향 검토.</li>
+<li><a href="https://news.ycombinator.com/item?id=48529190" target="_blank" rel="noreferrer">FTX&#x27;s former Anthropic stake would be worth about $75B at today&#x27;s valuation</a> - FTX의 Anthropic 지분 가치 평가.</li>
+<li><a href="https://www.politico.com/news/2026/06/13/inside-the-whirlwind-24-hours-that-led-the-white-house-to-slap-export-controls-on-anthropic-00961519" target="_blank" rel="noreferrer">The whirlwind 24 hours that led to export controls on Anthropic</a> - Anthropic 수출 통제 결정 과정.</li>
+<li><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noreferrer">Ponytail – make your AI agent think like the laziest senior dev in the room</a> - AI 에이전트 개발 도구.</li>
+<li><a href="https://www.reuters.com/world/us/anthropic-staff-meet-white-house-officials-next-week-axios-reports-2026-06-14/" target="_blank" rel="noreferrer">Anthropic staff to meet White House officials next week</a> - Anthropic과 백악관 관계자 회동 예정.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://github.com/nex-agi/Nex-N2/issues/4" target="_blank" rel="noreferrer">Rio de Janeiro&#x27;s &quot;homegrown&quot; LLM appears to be a merge of an existing model</a>는 GitHub 이슈에서 제기된 내용으로, 추가적인 검증이 필요할 수 있습니다.</li>
+<li><a href="https://www.verysane.ai/p/did-anthropic-ask-for-this" target="_blank" rel="noreferrer">Did Anthropic ask for this?</a>는 개인 블로그 게시물로, 주관적인 해석이 포함될 수 있습니다.</li>
+<li><a href="https://twitter.com/PeteHegseth/status/2065897156226015690" target="_blank" rel="noreferrer">US Secretary of War Comments on Anthropic</a>는 트위터 게시물로, 공식적인 발표보다는 개인적인 의견일 가능성이 높습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-11. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-11 접수중 60,612 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 1 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
