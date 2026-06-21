@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-21</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-20 09:05 - 06-21 09:05 (Asia/Seoul)</span>
+        <span>생성: 2026-06-21 09:06</span>
+        <span>수집 항목: 88개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://blog.cloudflare.com/temporary-accounts/" target="_blank" rel="noreferrer">AI 에이전트의 임시 클라우드플레어 계정</a>은 AI 에이전트의 보안 및 격리를 강화하는 데 중요합니다.</li>
+<li><a href="https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community" target="_blank" rel="noreferrer">SMPTE 표준 무료 공개</a>는 미디어 기술 커뮤니티의 접근성을 높여 혁신을 촉진할 것입니다.</li>
+<li><a href="https://ianbarber.blog/2026/06/19/llms-are-complicated-now/" target="_blank" rel="noreferrer">LLM의 복잡성 증가</a>는 개발자가 모델을 이해하고 효과적으로 활용하는 데 있어 새로운 과제를 제시합니다.</li>
+<li><a href="https://www.argusred.com/cli" target="_blank" rel="noreferrer">펜 테스트를 수행하는 모델</a>은 보안 테스트의 자동화를 개선할 수 있는 잠재력을 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/" target="_blank" rel="noreferrer">John Jumper, Google DeepMind에서 Anthropic으로 이동</a>은 AI 연구 분야의 인재 이동을 보여줍니다.</li>
+<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long" target="_blank" rel="noreferrer">중국의 Fable 5급 AI 모델 출시 전망</a>은 글로벌 AI 경쟁 구도를 시사합니다.</li>
+<li><a href="https://thenextweb.com/news/trump-anthropic-not-national-security-threat-axios-interview" target="_blank" rel="noreferrer">Anthropic에 대한 트럼프의 입장 변화</a>는 AI 기업의 정치적 환경에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://ffacu.dev/blog/the-split-terminal-problem" target="_blank" rel="noreferrer">AI 에이전트 오케스트레이션 시스템의 부재</a>는 AI 에이전트 개발의 현재 과제를 드러냅니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues" target="_blank" rel="noreferrer">Claude Code의 드라이브 전체 스캔 문제</a>는 AI 코딩 도구의 개인 정보 보호 및 보안에 대한 우려를 제기합니다.</li>
+<li><a href="https://github.com/openai/codex/issues/28879" target="_blank" rel="noreferrer">Codex (GPT-5.5)의 토큰당 요금 10배 이상 인상</a>은 AI 서비스 비용 변동성을 보여줍니다.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/" target="_blank" rel="noreferrer">AI 에이전트를 실행하는 호스트를 RCE할 수 있는 AutoJack 취약점</a>은 AI 에이전트 보안의 심각성을 강조합니다.</li>
+<li><a href="https://medium.com/@mirshakirdah2/stop-treating-llms-like-databases-the-financial-case-for-event-driven-ai-889057e27461" target="_blank" rel="noreferrer">LLM을 데이터베이스처럼 취급하는 것에 대한 경고</a>는 LLM 활용 방식에 대한 새로운 관점을 제시합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://www.persona-chat.dev/" target="_blank" rel="noreferrer">Persona.js: 네이티브 WebMCP를 지원하는 바닐라 JS 에이전트 UI 라이브러리</a>는 프론트엔드 개발에 유용할 수 있습니다.</li>
+<li><a href="https://rorlikowski.github.io/stepyard/" target="_blank" rel="noreferrer">로컬 자동화 실행기 (LLM 단계 내장)</a>는 워크플로우 자동화에 새로운 접근 방식을 제공합니다.</li>
+<li><a href="https://github.com/BetaBots-LLC/callimachus" target="_blank" rel="noreferrer">Callimachus: AI 코딩 에이전트 기록에 대한 로컬 검색</a>은 개발자의 작업 기록 관리를 도울 수 있습니다.</li>
+<li><a href="https://agentline.cloud" target="_blank" rel="noreferrer">Agentline.cloud: AI 에이전트를 위한 전화번호 서비스</a>는 AI 에이전트의 커뮤니케이션 기능을 확장합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://blog.cloudflare.com/temporary-accounts/" target="_blank" rel="noreferrer">Temporary Cloudflare accounts for AI agents</a> - AI 에이전트의 보안 및 격리 강화에 대한 중요 정보입니다.</li>
+<li><a href="https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community" target="_blank" rel="noreferrer">SMPTE Makes Its Standards Freely Accessible</a> - 미디어 기술 표준 접근성 향상에 대한 내용입니다.</li>
+<li><a href="https://neuviemeporte.github.io/f15-se2/2026/06/20/needyou.html" target="_blank" rel="noreferrer">DOS Game &quot;F-15 Strike Eagle II&quot; reversing project needs DOS test pilots</a> - 레트로 게임 리버스 엔지니어링 프로젝트 참여 기회입니다.</li>
+<li><a href="https://ianbarber.blog/2026/06/19/llms-are-complicated-now/" target="_blank" rel="noreferrer">LLMs Are Complicated Now</a> - LLM의 복잡성에 대한 심층 분석입니다.</li>
+<li><a href="https://www.argusred.com/cli" target="_blank" rel="noreferrer">Show HN: We post-trained a model that pen tests instead of refusing</a> - 보안 테스트 자동화에 대한 새로운 접근 방식입니다.</li>
+<li><a href="https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/" target="_blank" rel="noreferrer">US Scientist John Jumper to Leave Google DeepMind for Anthropic</a> - AI 연구 분야의 주요 인재 이동 소식입니다.</li>
+<li><a href="https://www.persona-chat.dev/" target="_blank" rel="noreferrer">Show HN: Persona.js – a vanilla-JS agent UI library with native WebMCP (MIT)</a> - 프론트엔드 개발자를 위한 UI 라이브러리입니다.</li>
+<li><a href="https://thenextweb.com/news/trump-anthropic-not-national-security-threat-axios-interview" target="_blank" rel="noreferrer">Trump says he no longer views Anthropic as a threat after G7 meeting</a> - AI 기업과 정치권의 관계 변화에 대한 내용입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long" target="_blank" rel="noreferrer">Anthropic</a>과 같은 특정 회사에 대한 여러 출처에서 반복적으로 언급되고 있습니다.</li>
+<li><a href="https://www.forbes.com/sites/tylerroush/2026/06/18/spacex-stock-plunge-wipes-out-600-billion-after-cursor-deal-spooks-investors/" target="_blank" rel="noreferrer">SpaceX의 Cursor AI 코딩 에이전트 인수 발표 후 주가 폭락</a> 기사는 투자자 반응에 대한 내용을 다루고 있으나, 인수 자체에 대한 직접적인 기술적 세부 정보는 부족합니다.</li>
+<li><a href="https://github.com/anthropics/claude-code/issues" target="_blank" rel="noreferrer">Claude Code의 드라이브 전체 스캔 문제</a>는 GitHub 이슈 트래커에서 보고된 내용으로, 공식 발표보다는 사용자 피드백에 기반합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-5. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-5 마감임박 69,448 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heig</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 1 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://linkareer.com/activity/328417" target="_blank" rel="noreferrer">한솔그룹 AI숏폼 공모전</a> - Linkareer, D-42. 한솔그룹 D-42 조회 1,500 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;A</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
