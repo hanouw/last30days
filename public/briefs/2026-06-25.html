@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-25</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-24 09:12 - 06-25 09:12 (Asia/Seoul)</span>
+        <span>생성: 2026-06-25 09:13</span>
+        <span>수집 항목: 132개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank" rel="noreferrer">OpenAI, 브로드컴과 협력하여 자체 AI 칩 공개</a> - 자체 칩 개발은 AI 하드웨어 분야에서 OpenAI의 전략적 움직임을 보여줍니다.</li>
+<li><a href="https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/" target="_blank" rel="noreferrer">리드 호프먼, 스페이스X를 AI 기업으로 보지 않으며 xAI를 &#x27;완전한 재앙&#x27;이라 평가</a> - AI 업계 리더의 발언은 경쟁 구도와 기업 평가에 대한 통찰을 제공합니다.</li>
+<li><a href="https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html" target="_blank" rel="noreferrer">NSA, 앤트로픽과의 분쟁으로 Mythos 접근 권한 상실</a> - 주요 기관과 AI 기업 간의 협력 및 보안 문제는 중요한 사안입니다.</li>
+<li><a href="https://www.politico.eu/article/president-vs-parliament-roberta-metsola-overrides-meps-bid-force-child-abuse-law/" target="_blank" rel="noreferrer">유럽연합 집행위원회, MEP들의 반대에도 불구하고 &#x27;챗 컨트롤&#x27; 법안 강행</a> - AI 및 온라인 콘텐츠 규제에 대한 유럽의 움직임은 개발자에게 영향을 미칠 수 있습니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noreferrer">OpenAI와 브로드컴, LLM 최적화 추론 칩 공개</a> - 맞춤형 칩 개발은 AI 모델의 성능 향상과 효율성 증대에 기여할 것입니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic" target="_blank" rel="noreferrer">구글, 앤트로픽으로 이직하는 AI 연구원 두 명 추가 확보</a> - 인재 유출은 AI 연구 개발 경쟁의 현황을 보여줍니다.</li>
+<li><a href="https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/" target="_blank" rel="noreferrer">앤트로픽, 알리바바가 AI 모델 기능을 &#x27;불법적으로&#x27; 추출했다고 비난</a> - AI 모델의 지적 재산권 보호 및 보안 문제는 중요한 이슈입니다.</li>
+<li><a href="https://ebookaloud.com" target="_blank" rel="noreferrer">전자책을 사실적인 AI 음성으로 오디오북으로 변환하는 eBookaloud 출시</a> - AI를 활용한 콘텐츠 생성 도구의 발전은 새로운 가능성을 제시합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/06/23/openai-codex-bombards-ssds-with-needless-write-operations-costing-millions/5260402" target="_blank" rel="noreferrer">OpenAI Codex, 불필요한 쓰기 작업으로 SSD 수명 단축</a> - AI 모델의 효율적인 리소스 사용은 비용 및 성능 측면에서 중요합니다.</li>
+<li><a href="https://arxiv.org/abs/2605.29901" target="_blank" rel="noreferrer">LLM이 코드의 취약점을 식별하기 위해 &quot;안전&quot; 관련 뉴런 레이어를 사용</a> - AI의 보안 기능 연구는 코드 분석 및 보안 강화에 기여할 수 있습니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=48664360" target="_blank" rel="noreferrer">LLM이 자체적으로 사용자 정의 미들웨어 훅을 활성화/노출하지 않는 이유</a> - LLM 통합 및 확장성에 대한 논의는 개발자에게 유용한 정보를 제공합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.206" target="_blank" rel="noreferrer">Vercel AI SDK, Vue, Svelte, RSC, React, LlamaIndex, Langchain, Gateway용 패치 업데이트 출시</a> - AI 개발 프레임워크의 업데이트는 개발 생산성을 향상시킬 수 있습니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v2.44.0" target="_blank" rel="noreferrer">OpenAI Python SDK v2.44.0 출시, 인증 헤더 우선순위 버그 수정</a> - SDK 업데이트는 API 사용의 안정성을 높입니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.112.0" target="_blank" rel="noreferrer">Anthropic Python SDK v0.112.0 출시, 시스템 메시지 스트리밍 이벤트 지원 추가</a> - 새로운 기능 지원은 AI 모델과의 상호작용을 더욱 풍부하게 합니다.</li>
+<li><a href="https://code.visualstudio.com/updates/v1_126" target="_blank" rel="noreferrer">VS Code 1.126.0 릴리스</a> - 인기 있는 코드 에디터의 업데이트는 개발 환경 개선에 기여합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank" rel="noreferrer">OpenAI, 브로드컴과 협력하여 자체 AI 칩 공개</a> - AI 하드웨어 분야의 최신 동향을 파악할 수 있습니다.</li>
+<li><a href="https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/" target="_blank" rel="noreferrer">리드 호프먼, 스페이스X를 AI 기업으로 보지 않으며 xAI를 &#x27;완전한 재앙&#x27;이라 평가</a> - AI 업계 주요 인물의 견해를 들을 수 있습니다.</li>
+<li><a href="https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html" target="_blank" rel="noreferrer">NSA, 앤트로픽과의 분쟁으로 Mythos 접근 권한 상실</a> - AI와 국가 안보의 관계에 대한 뉴스를 확인할 수 있습니다.</li>
+<li><a href="https://www.politico.eu/article/president-vs-parliament-roberta-metsola-overrides-meps-bid-force-child-abuse-law/" target="_blank" rel="noreferrer">유럽연합 집행위원회, MEP들의 반대에도 불구하고 &#x27;챗 컨트롤&#x27; 법안 강행</a> - AI 규제 관련 유럽의 정책 변화를 알 수 있습니다.</li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noreferrer">OpenAI와 브로드컴, LLM 최적화 추론 칩 공개</a> - AI 하드웨어 기술 발전에 대한 정보를 얻을 수 있습니다.</li>
+<li><a href="https://joshmoody.org/blog/selfish-ai/" target="_blank" rel="noreferrer">LLM을 이기적으로 사용하는 사람들을 수동적으로 비난하는 방법</a> - AI 윤리 및 사회적 영향에 대한 흥미로운 관점을 제공합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.206" target="_blank" rel="noreferrer">Vercel AI SDK, Vue, Svelte, RSC, React, LlamaIndex, Langchain, Gateway용 패치 업데이트 출시</a> - 프론트엔드 및 AI 개발 관련 라이브러리 업데이트 정보를 확인할 수 있습니다.</li>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/06/23/openai-codex-bombards-ssds-with-needless-write-operations-costing-millions/5260402" target="_blank" rel="noreferrer">OpenAI Codex, 불필요한 쓰기 작업으로 SSD 수명 단축</a> - AI 모델의 실제 운영상의 문제점을 파악할 수 있습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 Hacker News의 점수와 댓글 수가 낮아 정보의 중요도가 상대적으로 낮을 수 있습니다.</li>
+<li>GitHub 릴리스는 특정 라이브러리의 업데이트 정보를 제공하지만, 전반적인 기술 트렌드에 대한 영향력은 제한적일 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107424" target="_blank" rel="noreferrer">2026 부산광역시 공공데이터•AI 활용 창업경진대회 SPECIAL IDEA</a> - Wevity, D-1. 분류 : 기획/아이디어, 광고/마케팅, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 취업/창업 부산광역시 D-1 마감임박 74,205 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 1 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://linkareer.com/activity/328417" target="_blank" rel="noreferrer">한솔그룹 AI숏폼 공모전</a> - Linkareer, D-38. 한솔그룹 D-38 조회 3,006 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;A</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
