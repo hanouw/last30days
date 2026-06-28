@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-06-28</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 06-27 09:01 - 06-28 09:01 (Asia/Seoul)</span>
+        <span>생성: 2026-06-28 09:02</span>
+        <span>수집 항목: 100개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf" target="_blank" rel="noreferrer">DSpark, LLM 추론 가속화</a>는 LLM의 성능 향상에 기여할 수 있습니다.</li>
+<li><a href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/" target="_blank" rel="noreferrer">아시아 AI 스타트업들이 Mythos와 유사한 모델을 출시</a>하며 경쟁이 심화되고 있습니다.</li>
+<li><a href="https://qz.com/enterprise-ai-spending-openai-anthropic-roi-pullback-062626" target="_blank" rel="noreferrer">기업들이 OpenAI 및 Anthropic의 높은 비용으로 인해 AI 투자를 재검토</a>하고 있습니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-06-26/apple-s-vision-pro-and-smart-glasses-chief-paul-meade-is-leaving-for-openai" target="_blank" rel="noreferrer">Apple의 Vision Pro 및 스마트 글래스 책임자가 OpenAI로 합류</a>하며 AI 분야의 인재 이동이 활발합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/" target="_blank" rel="noreferrer">아시아 AI 스타트업들이 Anthropic의 수출 금지 조치 속에서 Mythos와 유사한 모델을 출시</a>했습니다.</li>
+<li><a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/" target="_blank" rel="noreferrer">Anthropic은 Alibaba가 Claude를 채굴하기 위해 25,000개의 계정을 사용했다고 주장</a>했습니다.</li>
+<li><a href="https://qz.com/enterprise-ai-spending-openai-anthropic-roi-pullback-062626" target="_blank" rel="noreferrer">기업들이 OpenAI 및 Anthropic의 높은 비용으로 인해 AI 투자를 재검토</a>하고 있습니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-06-26/apple-s-vision-pro-and-smart-glasses-chief-paul-meade-is-leaving-for-openai" target="_blank" rel="noreferrer">Apple의 Vision Pro 및 스마트 글래스 책임자가 OpenAI로 합류</a>했습니다.</li>
+<li><a href="https://twitter.com/ornith_/status/2070148887067963854" target="_blank" rel="noreferrer">Ornith-1.0은 에이전트 코딩에 특화된 오픈소스 LLM 제품군</a>입니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf" target="_blank" rel="noreferrer">DSpark는 LLM 추론을 가속화하는 기술</a>입니다.</li>
+<li><a href="https://nlnetlabs.nl/llm-policy/" target="_blank" rel="noreferrer">NLNet Labs의 LLM 정책</a>이 공개되었습니다.</li>
+<li><a href="https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/" target="_blank" rel="noreferrer">GitHub의 깨끗한 저장소가 AI 코딩 에이전트를 악성코드 실행으로 속이는 문제</a>가 발생했습니다.</li>
+<li><a href="https://map2model.com/" target="_blank" rel="noreferrer">Map2Model이 법적 통지로 인해 종료</a>되었습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/kageroumado/adrafinil" target="_blank" rel="noreferrer">Adrafinil은 에이전트 작업 중에만 Mac을 깨어 있게 유지하는 도구</a>입니다.</li>
+<li><a href="https://github.com/khalid-src/corv-client" target="_blank" rel="noreferrer">Corv는 AI 에이전트(및 인간)를 위한 SSH 클라이언트</a>입니다.</li>
+<li><a href="https://github.com/obrodr79/promptetheus" target="_blank" rel="noreferrer">Promptetheus는 AI 에이전트의 실패를 추적, 감지 및 자동 복구하는 도구</a>입니다.</li>
+<li><a href="https://openclawlaunch.com/" target="_blank" rel="noreferrer">OpenClaw Launch는 30초 안에 관리형 OpenClaw AI 에이전트를 배포</a>할 수 있습니다.</li>
+<li><a href="https://ai-creed.dev/projects/ai-whisper/" target="_blank" rel="noreferrer">AI-whisper는 Claude가 Codex의 지원을 받을 때 더 잘 작동</a>하도록 합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf" target="_blank" rel="noreferrer">DSpark: Speculative decoding accelerates LLM inference</a> - LLM 추론 속도 향상에 대한 연구입니다.</li>
+<li><a href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/" target="_blank" rel="noreferrer">Asian AI startups launch Mythos-like models</a> - 아시아 AI 스타트업들의 새로운 모델 출시 소식입니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=48694802" target="_blank" rel="noreferrer">Ask HN: MacBook vs. Dedicated GPU for LLM</a> - LLM 작업 시 MacBook과 전용 GPU의 성능 비교에 대한 질문입니다.</li>
+<li><a href="https://github.com/kageroumado/adrafinil" target="_blank" rel="noreferrer">Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work</a> - Mac을 특정 조건에서만 깨어 있게 하는 도구입니다.</li>
+<li><a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/" target="_blank" rel="noreferrer">Anthropic says Alibaba used 25k accounts to mine Claude</a> - Anthropic의 Claude 데이터 채굴 관련 주장입니다.</li>
+<li><a href="https://github.com/schlae/IBM_MCGA" target="_blank" rel="noreferrer">IBM MCGA Gate Array Reverse Engineering</a> - IBM MCGA 게이트 어레이 역공학 프로젝트입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%404.0.2" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/xai@4.0.2</a> - Vercel AI SDK의 업데이트입니다.</li>
+<li><a href="https://qz.com/enterprise-ai-spending-openai-anthropic-roi-pullback-062626" target="_blank" rel="noreferrer">Enterprise AI customers pulling back from OpenAI and Anthropic as costs mount</a> - AI 서비스 비용 증가로 인한 기업들의 투자 재검토 소식입니다.</li>
+<li><a href="https://github.com/hypequery/hypequery" target="_blank" rel="noreferrer">Show HN: The TypeScript Semantic Layer for ClickHouse</a> - ClickHouse를 위한 TypeScript 시맨틱 레이어 프로젝트입니다.</li>
+<li><a href="https://twitter.com/ornith_/status/2070148887067963854" target="_blank" rel="noreferrer">Ornith-1.0: A family of open-source LLMs specialized for agentic coding</a> - 에이전트 코딩에 특화된 오픈소스 LLM입니다.</li>
+<li><a href="https://maleus.ai/blog/the-end-of-local-ides" target="_blank" rel="noreferrer">From Emacs to Cursor, the end of your IDEs is near</a> - 로컬 IDE의 미래에 대한 전망입니다.</li>
+<li><a href="https://www.napster.com" target="_blank" rel="noreferrer">Napster is now &quot;AI agents you can see, talk to, and create with.&quot;</a> - Napster의 AI 에이전트 서비스 전환 소식입니다.</li>
+<li><a href="https://thenextweb.com/news/legion-legaltech-sues-us-anthropic-access" target="_blank" rel="noreferrer">Legion LegalTech sues U.S. over Anthropic Fable 5 and Mythos 5 shutdown</a> - Anthropic Fable 5 및 Mythos 5 종료 관련 소송입니다.</li>
+<li><a href="https://www.macrumors.com/2026/06/26/apple-loses-another-executive-to-openai/" target="_blank" rel="noreferrer">Apple Loses Another Top Executive to OpenAI</a> - Apple 임원의 OpenAI 이직 소식입니다.</li>
+<li><a href="https://ai-creed.dev/projects/ai-whisper/" target="_blank" rel="noreferrer">Show HN: AI-whisper – Claude works better when Codex watches its back</a> - Claude와 Codex의 협업 도구입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/" target="_blank" rel="noreferrer">Anthropic은 Alibaba가 Claude를 채굴하기 위해 25,000개의 계정을 사용했다고 주장</a>했으나, 이는 아직 공식적인 조사 결과가 아닌 주장입니다.</li>
+<li><a href="https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon" target="_blank" rel="noreferrer">Fable 5의 복귀에 대한 &quot;scoop&quot;은 Axios의 보도</a>에 기반하고 있어 추가 확인이 필요합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107650" target="_blank" rel="noreferrer">서울 디자인 AI 영상 공모전 SPECIAL</a> - Wevity, D-3. 분류 : 광고/마케팅, 영상/UCC/사진, 웹/모바일/IT, 게임/소프트웨어, 예체능/미술/음악 서울특별시 D-3 마감임박 61,905 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606090062" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026년 제 2회 강원권 중고교 AI 사이버 보안 챌린지(Gangwon AI cyber Security Challenge:GAISC)</a> - Contest Korea. 2 주최 . 강원대학교, 한국인터넷진흥원, 강원특별자치도교육청, 국가정보원지부 대상 . 중학생 , 고등학생 , 해당자 ▶ &lt;d</li>
+<li><a href="https://linkareer.com/activity/328417" target="_blank" rel="noreferrer">한솔그룹 AI숏폼 공모전</a> - Linkareer, D-35. 한솔그룹 D-35 조회 4,153 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;A</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
