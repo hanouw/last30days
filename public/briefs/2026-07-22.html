@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-07-22</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 07-21 08:55 - 07-22 08:55 (Asia/Seoul)</span>
+        <span>생성: 2026-07-22 08:56</span>
+        <span>수집 항목: 155개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/" target="_blank" rel="noreferrer">OpenAI, Hugging Face 모델 평가 중 보안 사고 발생</a> - 모델 평가 과정에서 발생한 보안 사고는 AI 모델의 안전한 배포 및 관리에 대한 중요성을 강조합니다.</li>
+<li><a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63" target="_blank" rel="noreferrer">Anthropic, 저작권 침해 소송 합의 승인</a> - AI 모델 학습에 사용된 데이터의 저작권 문제는 AI 산업의 윤리적, 법적 기준을 재정립하는 계기가 될 것입니다.</li>
+<li><a href="https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git" target="_blank" rel="noreferrer">Jack Dorsey, 팀 채팅, AI 에이전트, Git 호스팅 결합한 Buzz 출시</a> - 개발 생산성 향상을 위한 통합 도구의 등장은 협업 방식의 변화를 예고합니다.</li>
+<li><a href="https://ads.openai.com/" target="_blank" rel="noreferrer">ChatGPT 광고 기능 도입</a> - AI 서비스의 수익화 모델 다변화는 관련 생태계의 성장에 영향을 미칠 수 있습니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/" target="_blank" rel="noreferrer">OpenAI, Hugging Face 모델 평가 중 보안 사고 발생</a> - OpenAI는 모델 평가 과정에서 발생한 보안 사고에 대해 설명하며, 이는 AI 모델의 안전한 배포 및 관리에 대한 중요성을 강조합니다.</li>
+<li><a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63" target="_blank" rel="noreferrer">Anthropic, 저작권 침해 소송 합의 승인</a> - Anthropic은 Claude 학습에 사용된 도서에 대한 저작권 침해 소송에서 15억 달러 합의를 승인받았으며, 이는 AI 학습 데이터의 법적, 윤리적 문제를 다룹니다.</li>
+<li><a href="https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git" target="_blank" rel="noreferrer">Jack Dorsey, 팀 채팅, AI 에이전트, Git 호스팅 결합한 Buzz 출시</a> - Jack Dorsey가 개발자 생산성 향상을 목표로 팀 채팅, AI 에이전트, Git 호스팅 기능을 통합한 Buzz를 출시했습니다.</li>
+<li><a href="https://ads.openai.com/" target="_blank" rel="noreferrer">OpenAI, ChatGPT 광고 기능 도입</a> - OpenAI는 ChatGPT에 광고 기능을 도입하여 새로운 수익 모델을 모색하고 있습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1" target="_blank" rel="noreferrer">Anthropic SDK for Python v0.117.1 릴리스</a> - Anthropic SDK for Python에 버그 수정 및 새로운 기능 지원이 포함된 업데이트가 있었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases" target="_blank" rel="noreferrer">Langchain, 다양한 AI 모델 통합 업데이트</a> - Langchain은 Anthropic, Fireworks, XAI, OpenAI 등 다양한 AI 모델에 대한 지원을 강화하는 업데이트를 릴리스했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases" target="_blank" rel="noreferrer">Vercel AI SDK 업데이트</a> - Vercel AI SDK는 워크플로우, Vue 등 다양한 컴포넌트에 대한 패치 및 업데이트를 진행했습니다.</li>
+<li><a href="https://github.com/modelcontextprotocol/typescript-sdk/releases" target="_blank" rel="noreferrer">ModelContextProtocol TypeScript SDK 베타 업데이트</a> - ModelContextProtocol TypeScript SDK가 베타 버전으로 업데이트되어 클라이언트 및 서버 기능이 개선되었습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/AlmanacCode/codealmanac/" target="_blank" rel="noreferrer">CodeAlmanac: 대화 기반 코드베이스 위키</a> - Karpathy 스타일의 코드베이스 위키를 대화 기록으로부터 생성하는 도구입니다.</li>
+<li><a href="https://help.trmnl.com/en/articles/14130438-ai-agent" target="_blank" rel="noreferrer">TRMNL AI Agent</a> - AI 에이전트 관련 정보를 제공하는 TRMNL의 문서입니다.</li>
+<li><a href="https://quiverkit.dev" target="_blank" rel="noreferrer">QuiverKit: 오프라인 개발 도구 모음</a> - 62개의 개발 도구를 오프라인으로 실행할 수 있는 도구 모음입니다.</li>
+<li><a href="https://orate.to/" target="_blank" rel="noreferrer">Orate: 온디바이스 신경망 TTS 큐</a> - Mac에서 온디바이스 신경망 기반의 텍스트 음성 변환 기능을 제공하는 도구입니다.</li>
+<li><a href="https://github.com/Observal/Observal" target="_blank" rel="noreferrer">OSS Cross-Harness: AI 에이전트용 셀프 호스팅 레지스트리 및 분석</a> - AI 에이전트의 셀프 호스팅 레지스트리 및 분석을 위한 도구입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/" target="_blank" rel="noreferrer">OpenAI, Hugging Face 모델 평가 중 보안 사고 발생</a> - 모델 평가 과정에서 발생한 보안 사고에 대한 OpenAI의 공식 발표입니다.</li>
+<li><a href="https://ads.openai.com/" target="_blank" rel="noreferrer">ChatGPT 광고 기능 도입</a> - ChatGPT를 통한 광고 집행에 대한 정보입니다.</li>
+<li><a href="https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git" target="_blank" rel="noreferrer">Jack Dorsey, 팀 채팅, AI 에이전트, Git 호스팅 결합한 Buzz 출시</a> - Jack Dorsey의 새로운 개발자 협업 도구 Buzz에 대한 소개입니다.</li>
+<li><a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63" target="_blank" rel="noreferrer">Anthropic, 저작권 침해 소송 합의 승인</a> - Anthropic의 저작권 관련 소송 합의 승인 소식입니다.</li>
+<li><a href="https://github.com/AlmanacCode/codealmanac/" target="_blank" rel="noreferrer">CodeAlmanac: 대화 기반 코드베이스 위키</a> - 개발자의 대화 기록을 활용하여 코드베이스 위키를 생성하는 프로젝트입니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=48989357" target="_blank" rel="noreferrer">Ask HN: Claude Code or Codex?</a> - Claude Code와 Codex에 대한 사용자들의 질문과 토론입니다.</li>
+<li><a href="https://sgnt.ai/p/show-hn-llm-spam/" target="_blank" rel="noreferrer">LLM 스팸봇이 Show HN 게시물을 더 좋아한 이유</a> - LLM 스팸봇이 개발자 커뮤니티 활동에 미치는 영향에 대한 분석입니다.</li>
+<li><a href="https://github.com/openlab-x/OpenCircuitX" target="_blank" rel="noreferrer">OpenCircuitX</a> - OpenAI 관련 프로젝트로 추정되는 GitHub 저장소입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Hugging Face 보안 사고 관련 기사들이 여러 출처에서 보도되었으나, 세부 내용에 약간의 차이가 있을 수 있습니다.</li>
+<li>Anthropic의 저작권 합의 관련 정보는 AP 통신 및 TechCrunch 등 여러 매체에서 보도되었으며, 법원 문서 링크도 제공되어 신뢰도가 높습니다.</li>
+<li>Jack Dorsey의 Buzz 출시에 대한 정보는 Hacker News와 관련 기사를 통해 확인되었습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=108707" target="_blank" rel="noreferrer">2026년 장애인 분야 해커톤 대회 (장애 플러스 기술) SPECIAL</a> - Wevity, D-3. 분류 : 기획/아이디어, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 대외활동/서포터즈 한국장애인재단 D-3 마감임박 52,519 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;</li>
+<li><a href="https://linkareer.com/activity/334248" target="_blank" rel="noreferrer">NHN 게임 X AI 해커톤</a> - Linkareer, D-20. NHN D-20 조회 2,590 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Advertisement&quot; role=&quot;ad</li>
+<li><a href="https://linkareer.com/activity/328417" target="_blank" rel="noreferrer">한솔그룹 AI숏폼 공모전</a> - Linkareer, D-12. 한솔그룹 D-12 조회 10,195 댓글 2 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;</li>
+<li><a href="https://linkareer.com/activity/334666" target="_blank" rel="noreferrer">2026년 철강 AI 영상광고 공모전</a> - Linkareer, D-19. 한국철강협회 D-19 조회 747 댓글 0 &lt;div class=&quot;swiper-sli</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202606150001" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026 인문가치 논문 공모전</a> - Contest Korea. 2 주최 . (재)한국정신문화재단 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; style=&quot;te</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
