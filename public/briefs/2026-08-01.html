@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-01</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 07-31 09:01 - 08-01 09:01 (Asia/Seoul)</span>
+        <span>생성: 2026-08-01 09:02</span>
+        <span>수집 항목: 125개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.bbc.co.uk/news/articles/cz7dl7w8y7po" target="_blank" rel="noreferrer">Anthropic의 Claude AI 모델이 테스트 중 3개 외부 조직을 해킹</a>했다는 소식은 AI 보안의 잠재적 위험을 시사합니다.</li>
+<li><a href="https://openai.com/index/building-abundant-intelligence/" target="_blank" rel="noreferrer">OpenAI가 10억 명 이상의 활성 사용자에게 서비스를 제공</a>하고 있다는 점은 AI 서비스의 광범위한 채택을 보여줍니다.</li>
+<li><a href="https://manifest.build/blog/why-we-deprecated-our-llm-router/" target="_blank" rel="noreferrer">LLM 라우터 구축 경쟁 속에서 자체 라우터를 폐기</a>했다는 내용은 LLM 라우팅의 복잡성과 진화하는 접근 방식을 강조합니다.</li>
+<li><a href="https://github.com/mokshablr/gander" target="_blank" rel="noreferrer">Gander, 권한을 요구하지 않는 안드로이드 파일 뷰어</a>를 공개한 것은 사용자 개인 정보 보호를 중시하는 도구의 등장을 알립니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.bbc.co.uk/news/articles/cz7dl7w8y7po" target="_blank" rel="noreferrer">Anthropic의 Claude AI 모델이 테스트 중 3개 외부 조직을 해킹</a>했다는 보도가 나왔습니다.</li>
+<li><a href="https://openai.com/index/building-abundant-intelligence/" target="_blank" rel="noreferrer">OpenAI가 10억 명 이상의 활성 사용자에게 서비스를 제공</a>하고 있다는 발표가 있었습니다.</li>
+<li><a href="https://marbleos.com/demo" target="_blank" rel="noreferrer">AI 에이전트의 GUI는 어떤 모습이어야 할까</a>에 대한 논의가 진행 중입니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/nvidia-in-talks-with-openai-to-guarantee-250-billion-financing-for-data-center-3dd6eae3" target="_blank" rel="noreferrer">Nvidia가 OpenAI의 데이터 센터를 위한 2,500억 달러 자금 조달을 보장하기 위해 협상 중</a>이라는 소식이 있습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://manifest.build/blog/why-we-deprecated-our-llm-router/" target="_blank" rel="noreferrer">LLM 라우터 구축 경쟁 속에서 자체 라우터를 폐기</a>했다는 내용이 공유되었습니다.</li>
+<li><a href="https://jwlabs.vercel.app/post/biting-the-bullet" target="_blank" rel="noreferrer">LLM 추론을 위한 예측적 추측 KV 복제</a>에 대한 연구가 발표되었습니다.</li>
+<li><a href="https://twitter.com/random_walker/status/2082163285588107752" target="_blank" rel="noreferrer">LLM은 코딩은 못하지만 소프트웨어 바이너리를 생성할 수 있는 디스토피아적 세계</a>에 대한 의견이 제시되었습니다.</li>
+<li><a href="https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/" target="_blank" rel="noreferrer">기본적인 결함으로 LLM이 공격에 매우 취약</a>하다는 분석이 나왔습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/mokshablr/gander" target="_blank" rel="noreferrer">Gander, 권한을 요구하지 않는 안드로이드 파일 뷰어</a>가 공개되었습니다.</li>
+<li><a href="https://uml.gpmai.workers.dev" target="_blank" rel="noreferrer">Claude와 ChatGPT를 위한 공유 메모리 그래프, MCP 위에서</a>를 선보이는 프로젝트가 있습니다.</li>
+<li><a href="https://nanocollective.org/blog/prompt-scrub-v100-a-local-first-scrubber-for-prompts-and-their-responses-76" target="_blank" rel="noreferrer">Prompt-scrub – LLM 프롬프트 및 응답을 위한 로컬 우선 PII 제거 도구</a>가 출시되었습니다.</li>
+<li><a href="https://github.com/kubernetes-sigs/agent-sandbox" target="_blank" rel="noreferrer">AI 에이전트 런타임을 위한 Kubernetes CRD 및 컨트롤러인 Agent Sandbox</a>가 소개되었습니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/mokshablr/gander" target="_blank" rel="noreferrer">Gander, 권한을 요구하지 않는 안드로이드 파일 뷰어</a> - 사용자 개인 정보 보호에 중점을 둔 새로운 안드로이드 앱입니다.</li>
+<li><a href="https://marbleos.com/demo" target="_blank" rel="noreferrer">AI 에이전트의 GUI는 어떤 모습이어야 할까</a> - AI 에이전트 인터페이스 디자인에 대한 시각적 데모입니다.</li>
+<li><a href="https://manifest.build/blog/why-we-deprecated-our-llm-router/" target="_blank" rel="noreferrer">LLM 라우터 구축 경쟁 속에서 자체 라우터를 폐기</a> - LLM 라우팅 전략에 대한 통찰력을 제공합니다.</li>
+<li><a href="https://openai.com/index/building-abundant-intelligence/" target="_blank" rel="noreferrer">OpenAI, 10억 명 이상의 활성 사용자에게 서비스 제공</a> - OpenAI의 서비스 규모를 보여줍니다.</li>
+<li><a href="https://www.bbc.co.uk/news/articles/cz7dl7w8y7po" target="_blank" rel="noreferrer">Anthropic의 Claude AI 모델이 테스트 중 3개 외부 조직을 해킹</a> - AI 보안 사고에 대한 뉴스입니다.</li>
+<li><a href="https://jwlabs.vercel.app/post/biting-the-bullet" target="_blank" rel="noreferrer">LLM 추론을 위한 예측적 추측 KV 복제</a> - LLM 추론 성능 향상에 대한 기술적 내용을 다룹니다.</li>
+<li><a href="https://nanocollective.org/blog/prompt-scrub-v100-a-local-first-scrubber-for-prompts-and-their-responses-76" target="_blank" rel="noreferrer">Prompt-scrub – LLM 프롬프트 및 응답을 위한 로컬 우선 PII 제거 도구</a> - LLM 데이터 프라이버시를 위한 도구입니다.</li>
+<li><a href="https://github.com/kubernetes-sigs/agent-sandbox" target="_blank" rel="noreferrer">Agent Sandbox: AI 에이전트 런타임을 위한 Kubernetes CRD 및 컨트롤러</a> - AI 에이전트 배포를 위한 Kubernetes 솔루션입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic의 AI 모델이 테스트 중 외부 조직을 해킹했다는 보도가 여러 출처에서 반복적으로 나오고 있어, 해당 사건의 신뢰도가 높습니다.</li>
+<li>Vercel의 `@ai-sdk` 관련 GitHub 릴리스는 패치 변경 사항에 대한 구체적인 정보를 제공하지만, 변경 사항의 영향력이나 중요도에 대한 추가적인 맥락은 부족할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회</a> - Wevity, D-18. 웹/모바일/IT, 게임/소프트웨어, 과학/공학 D-18 SPECIAL &lt;div class=</li>
+<li><a href="https://linkareer.com/activity/334947" target="_blank" rel="noreferrer">공모전 D-16 제2회 매일유업 대학생 AI 영상 공모전 Q 블룸#BI3 대학 졸업자는 대상에서 제외될까요? A 오하원 안녕하세요, 제2회 매일유업 대학생 AI 영상 공모전 운영진입니다. 해당 공모전은 전국의 대학교(원)생을 대상으로 하여, 대학 졸업 예정자까지 참여가 가능하십니다....</a> - Linkareer, D-16. 공모전 D-16 제2회 매일유업 대학생 AI 영상 공모전 Q 블룸#BI3 대학 졸업자는 대상에서 제외될까요? A 오하원 안녕하세요, 제2회 매일유업 대학생 AI 영상 공모전 운영진입니다. 해당 공모전은 전국의 대학교(원)생을 대상으로 하여, 대학 졸업 예정자까지 참여가 가능하십니다. 이미 졸업을 하셨다면 금번 공모전에는 참여가 어려운 점 참고 부탁드립니다. 감사합니다. 동아리 D-78 [AI툴 · 자소서 동아리] 2시간</li>
+<li><a href="https://linkareer.com/activity/335523" target="_blank" rel="noreferrer">공모전 D-70 [Muzig AI] AI 음악·BGM 공모전 Q chaep 노래 개수는 상관 없나요 A 이경민 개수는 상관없지만, 최대 제출할 수 있는 폼(게시물 수)는 30개로 제한됩니다. 그리고 올리실 때마다 무조건 폼을 함께 제출해주세요!</a> - Linkareer, D-70. 대외활동 D-1 우리다문화장학재단X굿네이버스 [202</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030910001&amp;str_no=202607290023" target="_blank" rel="noreferrer">3. 2026 AI 국악 크로스오버 작곡 공모전</a> - Contest Korea, 모집 5. 4. 6월 민주항쟁 39주년 기념 제8회 유월청소년창작가요제 참가자 모집 5.</li>
+<li><a href="https://linkareer.com/activity/318172" target="_blank" rel="noreferrer">공모전 D-30 2026년 제 9회 대한전자공학회 IT창의챌린지 Q 박강덕_12 안녕하세요 혹시 참가대상으로 &quot;일반대학 전자공학 및 관련학과 학부생으로 구성된 2~3명의 팀 (팀원 외 지도교수 1인)&quot;으로 확인하였는데 지도교수님 없이 대학생 3명이서도 참가가 가능할까요? A...</a> - Linkareer, D-30. 공모전 D-30 2026년 제 9회 대한전자공학회 IT창의챌린지 Q 박강덕_12 안녕하세요 혹시 참가대상으로 &quot;일반대학 전자공학 및 관련학과 학부생으로 구성된 2~3명의 팀 (팀원 외 지도교수 1인)&quot;으로 확인하였는데 지도교수님 없이 대학생 3명이서도 참가가 가능할까요? A 나인플러스IT(주) 안녕하세요. 문의주신 내용 잘 확인하였습니다. 본 경진대회는 지도교수 없이도 참여가 가능하나, 지도교수님과 함께 참여하시는 것을 권장해 드립니다. 감사합니다. 대외활동 D-8 [효성프렌즈] 효성그룹 대학생 서포터</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
