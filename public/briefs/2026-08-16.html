@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-16</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-15 08:19 - 08-16 08:19 (Asia/Seoul)</span>
+        <span>생성: 2026-08-16 08:19</span>
+        <span>수집 항목: 97개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html" target="_blank" rel="noreferrer">Debian, AI/LLM 기여에 대한 투표 시작</a>: 오픈소스 프로젝트의 AI 윤리 및 정책 방향 설정에 중요한 영향을 미칠 수 있습니다.</li>
+<li><a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3" target="_blank" rel="noreferrer">Netflix, GenRec를 통해 LLM 기반 추천 시스템 개발</a>: 대규모 서비스에서 LLM을 활용한 개인화 기술의 발전 가능성을 보여줍니다.</li>
+<li><a href="https://openai.com/policies/eu-privacy-policy-preview/" target="_blank" rel="noreferrer">OpenAI, 유럽 시장에 광고 출시 예정</a>: AI 기업의 수익 모델 다각화 및 시장 확대 전략을 엿볼 수 있습니다.</li>
+<li><a href="http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html" target="_blank" rel="noreferrer">Yadda 3.0.0, AI 에이전트 시대의 BDD 지원</a>: AI 에이전트와의 협업을 위한 테스트 및 개발 방법론의 진화를 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3" target="_blank" rel="noreferrer">Netflix, GenRec를 통해 LLM 기반 추천 시스템 개발</a>: 대규모 서비스에서 LLM을 활용한 개인화 기술의 발전 가능성을 보여줍니다.</li>
+<li><a href="https://openai.com/policies/eu-privacy-policy-preview/" target="_blank" rel="noreferrer">OpenAI, 유럽 시장에 광고 출시 예정</a>: AI 기업의 수익 모델 다각화 및 시장 확대 전략을 엿볼 수 있습니다.</li>
+<li><a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" target="_blank" rel="noreferrer">Anthropic, Claude의 새로운 워터마크 작동 방식 상세 설명</a>: AI 생성 콘텐츠의 출처 추적 및 신뢰성 확보를 위한 기술적 접근 방식을 보여줍니다.</li>
+<li><a href="https://www.theguardian.com/technology/2026/aug/13/ai-agents-arent-legally-responsible-for-any-harm-that-they-cause-experts-say-so-who-is" target="_blank" rel="noreferrer">AI 에이전트가 야기하는 피해에 대한 법적 책임 문제 논의</a>: AI 기술 발전과 함께 중요해지는 법적, 윤리적 고려 사항을 제시합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html" target="_blank" rel="noreferrer">Debian, AI/LLM 기여에 대한 투표 시작</a>: 오픈소스 프로젝트의 AI 윤리 및 정책 방향 설정에 중요한 영향을 미칠 수 있습니다.</li>
+<li><a href="http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html" target="_blank" rel="noreferrer">Yadda 3.0.0, AI 에이전트 시대의 BDD 지원</a>: AI 에이전트와의 협업을 위한 테스트 및 개발 방법론의 진화를 보여줍니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%404.0.40" target="_blank" rel="noreferrer">Vercel AI SDK, 텍스트 음성 변환 기능에 타임스탬프 및 발음 대체 옵션 추가</a>: AI 기반 음성 기술의 정교함과 사용자 정의 가능성이 향상되었습니다.</li>
+<li><a href="https://home.robusta.dev/blog/stop-using-cpu-limits" target="_blank" rel="noreferrer">Kubernetes CPU 제한 사용 중단 권고</a>: 컨테이너 오케스트레이션 환경에서의 성능 최적화 및 안정성 확보에 대한 실질적인 조언입니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://chenxiachan.github.io/thoughtdag/" target="_blank" rel="noreferrer">ThoughtDAG: LLM 대화를 위한 편집 가능한 컨텍스트 그래프</a>: LLM과의 상호작용을 시각화하고 관리하는 새로운 접근 방식을 제시합니다.</li>
+<li><a href="https://xenodium.com/agent-shell-0-73-updates#agent-shell-enters-the-chat" target="_blank" rel="noreferrer">Agent-shell: Emacs에서 AI 에이전트와 공급업체에 구애받지 않는 채팅</a>: 개발 환경 내에서 AI 에이전트와의 통합을 간소화하는 도구입니다.</li>
+<li><a href="https://flownie.com/" target="_blank" rel="noreferrer">Flownie: AI 에이전트 지원을 갖춘 오픈 소스 시각적 데이터 워크플로우 플랫폼</a>: 복잡한 데이터 파이프라인 구축을 위한 직관적인 도구를 제공합니다.</li>
+<li><a href="https://temporalstore.ai/blog-context-management.html" target="_blank" rel="noreferrer">TemporalStore: LLM 메모리를 관리하는 혁신적인 오픈 소스 엔진</a>: LLM의 장기 기억 및 컨텍스트 관리를 위한 솔루션을 제공합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://chenxiachan.github.io/thoughtdag/" target="_blank" rel="noreferrer">ThoughtDAG: LLM 대화를 위한 편집 가능한 컨텍스트 그래프</a> - LLM과의 상호작용을 시각화하고 관리하는 새로운 도구입니다.</li>
+<li><a href="https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html" target="_blank" rel="noreferrer">Debian, AI/LLM 기여에 대한 투표 시작</a> - 오픈소스 프로젝트의 AI 정책 방향을 결정하는 중요한 움직임입니다.</li>
+<li><a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3" target="_blank" rel="noreferrer">GenRec: Towards LLM-Native Recommendation at Netflix</a> - 넷플릭스의 LLM 기반 추천 시스템 개발 사례입니다.</li>
+<li><a href="https://www.bbc.com/news/articles/cz97ljy91zxo" target="_blank" rel="noreferrer">Why tech bosses keep sharing their manifestos about AI</a> - 기술 리더들의 AI에 대한 비전과 전략을 엿볼 수 있습니다.</li>
+<li><a href="http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html" target="_blank" rel="noreferrer">Yadda 3.0.0: BDD in the Age of AI Agents</a> - AI 에이전트 시대의 행동 주도 개발(BDD) 도구 업데이트입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%404.0.40" target="_blank" rel="noreferrer">Vercel AI SDK, 텍스트 음성 변환 기능 업데이트</a> - 음성 합성 기능의 개선 사항을 담고 있습니다.</li>
+<li><a href="https://www.cnbc.com/2026/08/14/open-ai-ipo-red-flag.html" target="_blank" rel="noreferrer">OpenAI talent exodus raises &#x27;huge red flag&#x27; ahead of IPO</a> - OpenAI의 IPO를 앞둔 인력 이탈 관련 소식입니다.</li>
+<li><a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" target="_blank" rel="noreferrer">Anthropic shares details about how Claude&#x27;s new watermarks will work</a> - Anthropic의 AI 콘텐츠 워터마킹 기술에 대한 설명입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI IPO 관련 기사들이 여러 출처에서 반복적으로 보도되고 있어, 해당 이슈에 대한 관심이 높음을 알 수 있습니다.</li>
+<li>Anthropic 관련 기사 중 일부는 CEO 배우자의 개인적인 사안을 다루고 있어, 기술적 내용보다는 기업 이미지와 관련된 정보로 판단됩니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회 SPECIAL</a> - Wevity, D-19. 분류 : 웹/모바일/IT, 게임/소프트웨어, 과학/공학 산업통상부 D-19 접수중 18,155 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;2026 제4회 충청남</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202608140006" target="_blank" rel="noreferrer">사진•영상•영화제 부산 AI 페스티벌 - AI 콘텐츠 공모전</a> - Contest Korea. 1 주최 . 부산광역시 대상 . 누구나 , 유치원 , 초등학생 , 중학생 , 고등학생 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
