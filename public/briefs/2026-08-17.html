@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-17</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-16 08:18 - 08-17 08:18 (Asia/Seoul)</span>
+        <span>생성: 2026-08-17 08:18</span>
+        <span>수집 항목: 95개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html" target="_blank" rel="noreferrer">Anthropic, 2분기 매출 115억 달러 돌파</a>는 AI 기업의 성장세를 보여줍니다.</li>
+<li><a href="https://littlelearner-ll.github.io/" target="_blank" rel="noreferrer">AI 모델의 5학년 수준 이하 자료 학습 결과</a>는 LLM 교육 방식의 새로운 가능성을 제시합니다.</li>
+<li><a href="https://www.anthropic.com/research/multiagent-systems" target="_blank" rel="noreferrer">멀티 에이전트 시스템의 패턴과 문제점</a>은 AI 협업의 복잡성을 탐구합니다.</li>
+<li><a href="https://arxiv.org/abs/2608.13328" target="_blank" rel="noreferrer">LLM의 성별 언어 편향</a>은 AI의 공정성 문제를 제기합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work" target="_blank" rel="noreferrer">Anthropic, Claude의 새로운 워터마크 작동 방식 상세 공개</a>는 AI 콘텐츠의 출처 추적 기술을 다룹니다.</li>
+<li><a href="https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust" target="_blank" rel="noreferrer">Anthropic CEO, AI에 대한 대중의 불신은 &#x27;신뢰의 위기&#x27;라고 발언</a>은 AI 윤리에 대한 논의를 촉발합니다.</li>
+<li><a href="https://github.com/vandith1/agent-guard" target="_blank" rel="noreferrer">AI 에이전트의 파괴적인 명령 실행을 막는 사전 실행 가드</a>는 AI 안전에 대한 중요한 도구입니다.</li>
+<li><a href="https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/" target="_blank" rel="noreferrer">Nvidia, OpenAI 인프라 자금 지원 규모 대폭 축소</a>는 AI 투자 환경 변화를 시사합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2607.28607" target="_blank" rel="noreferrer">LLM이 자체 의식을 주장하도록 유도하면 인간의 신념과 가치가 복원됨</a>은 LLM의 잠재적 영향력을 보여줍니다.</li>
+<li><a href="https://aicharts.grok.me/c/agent-tokens" target="_blank" rel="noreferrer">AI 에이전트가 채팅 턴보다 100배 더 많은 토큰을 소모할 수 있음</a>은 AI 에이전트의 효율성 문제를 지적합니다.</li>
+<li><a href="https://github.com/humanlayer/12-factor-agents" target="_blank" rel="noreferrer">12-Factor Agents – 안정적인 LLM 애플리케이션 구축 원칙</a>은 LLM 개발의 모범 사례를 제시합니다.</li>
+<li><a href="https://github.com/betocmn/widen" target="_blank" rel="noreferrer">Postgres GUI를 위한 네이티브 Widen, Apple의 온디바이스 LLM 사용</a>은 로컬 LLM 활용의 가능성을 보여줍니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/mldsveda/PyScrappy" target="_blank" rel="noreferrer">PyScrappy, 자체 복구 웹 스크래핑 선택기와 MCP 서버</a>는 웹 스크래핑 작업을 개선합니다.</li>
+<li><a href="https://huggingface.co/steadfastgaze/DeepSeek-V4-Flash-0731-Coder-56.8GB-MoEspressoV2" target="_blank" rel="noreferrer">DeepSeek V4 Flash를 57GB로 축소하여 Mac에서 컴파일러 작성</a>은 로컬 LLM의 성능을 보여줍니다.</li>
+<li><a href="https://github.com/yebiguo/ProofRun" target="_blank" rel="noreferrer">ProofRun, AI 코딩 에이전트를 위한 로컬 검증 영수증</a>은 AI 작업의 신뢰성을 높입니다.</li>
+<li><a href="https://github.com/dburnett11155-rgb/Tokencompress" target="_blank" rel="noreferrer">Tokencompress, AI 에이전트 도구 컨텍스트를 가지치기하는 Go CLI 및 MCP 사이드카</a>는 AI 에이전트의 효율성을 최적화합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing" target="_blank" rel="noreferrer">Anthropic의 &#x27;워터마크&#x27; 텍스트 변조는 글쓰기의 왜곡</a>은 AI 워터마크의 효과에 대한 비판적 시각을 제공합니다.</li>
+<li><a href="https://www.theguardian.com/us-news/2026/aug/16/california-openai-protester-wynd-kaufman" target="_blank" rel="noreferrer">AI 반대 시위로 처음 투옥된 인물의 메시지: &#x27;인간성을 되찾으세요&#x27;</a>는 AI에 대한 사회적 반향을 보여줍니다.</li>
+<li><a href="https://littlelearner-ll.github.io/" target="_blank" rel="noreferrer">LLM이 5학년 자료 외에는 보지 못하면 어떻게 될까?</a>는 LLM 학습 데이터의 중요성을 강조합니다.</li>
+<li><a href="https://arxiv.org/abs/2608.13328" target="_blank" rel="noreferrer">LLM의 성별 언어 편향</a>은 AI 모델의 편향성 문제를 다룹니다.</li>
+<li><a href="https://www.businessinsider.com/anthropic-ceo-dario-amodei-ai-public-opinion-cure-cancer-2026-8" target="_blank" rel="noreferrer">Anthropic CEO, AI가 대중을 사로잡는 방법은 암을 치료하는 것</a>은 AI의 사회적 기여에 대한 비전을 제시합니다.</li>
+<li><a href="https://github.com/sib-project/sib" target="_blank" rel="noreferrer">Sib - Git을 사용하여 대화를 저장하는 Unixy LLM 클라이언트</a>는 LLM 대화 관리의 새로운 접근 방식을 제안합니다.</li>
+<li><a href="https://openkoda.com/ai-agent-insurance-products/" target="_blank" rel="noreferrer">AI 에이전트 보험 상품: 새로운 물결</a>은 AI 기술 발전과 함께 등장하는 새로운 비즈니스 모델을 소개합니다.</li>
+<li><a href="https://jellebelletje.github.io/CARA/" target="_blank" rel="noreferrer">CARA – Microsoft 365 Copilot 채택을 위한 준비 상태 평가</a>는 기업의 AI 도입 준비를 돕는 도구입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 Anthropic의 재정 및 IPO 전망에 대한 소식통을 기반으로 하고 있어 추가 확인이 필요할 수 있습니다.</li>
+<li>LLM의 특정 학습 데이터셋에 대한 논의는 연구 결과에 따라 해석이 달라질 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회</a> - Wevity, D-2. 웹/모바일/IT, 게임/소프트웨어, 과학/공학 D-2 SPECIAL &lt;div class=&quot;</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202608080001" target="_blank" rel="noreferrer">9. 2026 제7회 청소년 IT경시대회</a> - Contest Korea. 10. 2026년 공무원연금공단 AI•공공데이터 대국민 시각화 경진대회 //--&gt; &lt;div class=&quot;listS</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
