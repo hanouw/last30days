@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-20</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-19 08:21 - 08-20 08:21 (Asia/Seoul)</span>
+        <span>생성: 2026-08-20 08:21</span>
+        <span>수집 항목: 148개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/77136" target="_blank" rel="noreferrer">Opus 5.0, Claude Code에서 인코히어런스 문제 심화</a>는 모델의 예측 불가능성을 높여 개발자에게 새로운 과제를 제시합니다.</li>
+<li><a href="https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/" target="_blank" rel="noreferrer">LLM 시대의 확장 가능한 소프트웨어</a>에 대한 논의는 미래 소프트웨어 아키텍처의 방향성을 제시합니다.</li>
+<li><a href="https://github.com/onecli/onecli" target="_blank" rel="noreferrer">OneCLI (YC S26) 출시</a>는 팀을 위한 OSS 샌드박스 에이전트 하니스를 제공하여 협업 개발 환경을 개선합니다.</li>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/08/19/openais-overhead-will-rise-20-percent-for-some-workloads-as-it-hardens-security/5289303" target="_blank" rel="noreferrer">OpenAI, 보안 강화로 인한 운영 비용 20% 증가</a>는 AI 보안의 중요성과 그에 따른 투자 필요성을 강조합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/77136" target="_blank" rel="noreferrer">Opus 5.0, Claude Code에서 인코히어런스 문제 심화</a>는 모델의 예측 불가능성을 높여 개발자에게 새로운 과제를 제시합니다.</li>
+<li><a href="https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/" target="_blank" rel="noreferrer">LLM 시대의 확장 가능한 소프트웨어</a>에 대한 논의는 미래 소프트웨어 아키텍처의 방향성을 제시합니다.</li>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/08/19/openais-overhead-will-rise-20-percent-for-some-workloads-as-it-hardens-security/5289303" target="_blank" rel="noreferrer">OpenAI, 보안 강화로 인한 운영 비용 20% 증가</a>는 AI 보안의 중요성과 그에 따른 투자 필요성을 강조합니다.</li>
+<li><a href="https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/" target="_blank" rel="noreferrer">Anthropic, 프론티어 AI 분야 첫 흑자 기록</a>은 AI 산업의 성장 가능성을 보여줍니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack" target="_blank" rel="noreferrer">OpenAI, 해킹 사건 이후 보안 변경 사항 발표</a>는 AI 시스템의 보안 취약점과 대응 방안에 대한 중요성을 시사합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/onecli/onecli" target="_blank" rel="noreferrer">OneCLI (YC S26) 출시</a>는 팀을 위한 OSS 샌드박스 에이전트 하니스를 제공하여 협업 개발 환경을 개선합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.0" target="_blank" rel="noreferrer">Vercel AI SDK, @ai-sdk/workflow@2.0.0 업데이트</a>는 워크플로우 지원을 강화하고 이전 버전에 대한 지원을 중단합니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0" target="_blank" rel="noreferrer">Anthropic SDK for Python v0.125.0 출시</a>는 관리형 에이전트 웹 검색 구성 및 자체 호스팅 샌드박스 메모리 기능을 추가합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.0" target="_blank" rel="noreferrer">Langchain-OpenAI v1.6.0 출시</a>는 표준 모델 예외 유형을 추가하고 예상치 못한 응답 유형에 대한 오류 처리를 개선합니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.3.1" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v3.3.1 업데이트</a>는 보안 수정 사항을 포함한 종속성을 업데이트합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/onecli/onecli" target="_blank" rel="noreferrer">OneCLI (YC S26)</a>는 팀을 위한 OSS 샌드박스 에이전트 하니스로, 협업 개발 환경을 개선할 수 있습니다.</li>
+<li><a href="https://demo.frugaltokens.com/" target="_blank" rel="noreferrer">Frugal Tokens</a>는 코딩 에이전트 전반의 비용 및 사용량을 탐색할 수 있는 도구입니다.</li>
+<li><a href="https://plugos.net/plugclaw/" target="_blank" rel="noreferrer">PlugClaw</a>는 모든 휴대폰 또는 PC에서 사용할 수 있는 개인 AI 에이전트 하드웨어입니다.</li>
+<li><a href="https://github.com/copilotkit/openbot" target="_blank" rel="noreferrer">Open Bot</a>은 모든 에이전트 하니스와 함께 작동하는 오픈 소스 Grok 봇입니다.</li>
+<li><a href="https://github.com/inxm-ai/inxm-local" target="_blank" rel="noreferrer">INXM // local</a>은 LLM을 런타임이 아닌 컴파일러로 사용하는 OSS 도구입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/77136" target="_blank" rel="noreferrer">Opus 5.0, Claude Code에서 인코히어런스 문제 심화</a> - Claude Code의 최신 이슈를 통해 모델의 성능 문제를 파악할 수 있습니다.</li>
+<li><a href="https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/" target="_blank" rel="noreferrer">LLM 시대의 확장 가능한 소프트웨어</a> - LLM 환경에서 소프트웨어 확장성에 대한 통찰력을 얻을 수 있습니다.</li>
+<li><a href="https://github.com/onecli/onecli" target="_blank" rel="noreferrer">OneCLI (YC S26)</a> - 팀 협업을 위한 새로운 OSS 샌드박스 에이전트 하니스를 살펴볼 수 있습니다.</li>
+<li><a href="https://pennypresses.net/home/map.php" target="_blank" rel="noreferrer">Pressed Penny Machine Map</a> - 흥미로운 데이터 시각화 프로젝트를 확인할 수 있습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.0" target="_blank" rel="noreferrer">Vercel AI SDK @ai-sdk/workflow@2.0.0 업데이트</a> - Vercel AI SDK의 최신 변경 사항을 확인할 수 있습니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0" target="_blank" rel="noreferrer">Anthropic SDK for Python v0.125.0 출시</a> - Anthropic Python SDK의 새로운 기능과 개선 사항을 확인할 수 있습니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.3.1" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v3.3.1 업데이트</a> - OpenAI Python 라이브러리의 최신 보안 업데이트를 확인할 수 있습니다.</li>
+<li><a href="https://demo.frugaltokens.com/" target="_blank" rel="noreferrer">Frugal Tokens</a> - LLM 에이전트의 비용 및 사용량을 탐색하는 데 유용한 도구입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack" target="_blank" rel="noreferrer">OpenAI, 해킹 사건 이후 보안 변경 사항 발표</a> 기사는 여러 출처에서 유사한 내용으로 보도되고 있어 신뢰도가 높습니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack" target="_blank" rel="noreferrer">OpenAI, 보안 강화로 인한 운영 비용 20% 증가</a> 기사는 OpenAI의 보안 강화 조치와 그로 인한 비용 증가에 대한 정보를 제공합니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack" target="_blank" rel="noreferrer">OpenAI, 해킹 사건 이후 보안 변경 사항 발표</a> 기사는 OpenAI의 보안 강화 조치와 그로 인한 비용 증가에 대한 정보를 제공합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회</a> - Wevity, D-12. 웹/모바일/IT, 게임/소프트웨어, 과학/공학 D-12 SPECIAL</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">2026 한화솔루션 AI 영상 공모전</a> - Linkareer, D-27. 스튜디오플레이 D-27 조회 764 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Adve</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030610001&amp;str_no=202608140037" target="_blank" rel="noreferrer">1. 내 AI와 만드는 디자인 웹사이트 공모전</a> - Contest Korea. 2. Energy Up! KIT 제2회 NET ZERO(지구ON;탄소OFF) 아이디어 챌린지 3.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
