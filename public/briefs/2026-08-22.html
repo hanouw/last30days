@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-22</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-21 08:22 - 08-22 08:22 (Asia/Seoul)</span>
+        <span>생성: 2026-08-22 08:22</span>
+        <span>수집 항목: 131개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/openai/codex/issues/37674" target="_blank" rel="noreferrer">Codex on AWS Bedrock bug</a>는 10배의 요금이 부과될 수 있는 심각한 문제를 야기하여 비용 관리에 주의가 필요합니다.</li>
+<li><a href="https://bastian.rieck.me/blog/2026/unix/" target="_blank" rel="noreferrer">LLM이 유닉스가 승리했음을 증명한다</a>는 LLM의 발전이 유닉스 철학의 지속적인 관련성을 시사하며 개발 방식에 대한 통찰을 제공합니다.</li>
+<li><a href="https://twitter.com/OpenAI/status/2090885187634905500" target="_blank" rel="noreferrer">OpenAI, GPT-5.6 Sol API 및 크레딧 가격 20% 이상 인하</a>는 AI 모델 접근성을 높여 더 많은 개발자가 최신 기술을 활용할 수 있게 합니다.</li>
+<li><a href="https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/" target="_blank" rel="noreferrer">과학자들이 우주의 가장 큰 2D 지도를 공개</a>는 우주론 연구에 중요한 진전을 나타내며, 이는 장기적으로 과학 기술 발전에 기여할 수 있습니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://github.com/openai/codex/issues/37674" target="_blank" rel="noreferrer">Codex on AWS Bedrock bug</a>는 10배의 요금이 부과될 수 있는 심각한 문제를 야기하여 비용 관리에 주의가 필요합니다.</li>
+<li><a href="https://twitter.com/OpenAI/status/2090885187634905500" target="_blank" rel="noreferrer">OpenAI, GPT-5.6 Sol API 및 크레딧 가격 20% 이상 인하</a>는 AI 모델 접근성을 높여 더 많은 개발자가 최신 기술을 활용할 수 있게 합니다.</li>
+<li><a href="https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/" target="_blank" rel="noreferrer">과학자들이 우주의 가장 큰 2D 지도를 공개</a>는 우주론 연구에 중요한 진전을 나타내며, 이는 장기적으로 과학 기술 발전에 기여할 수 있습니다.</li>
+<li><a href="https://www.reuters.com/business/anthropic-plans-change-enterprise-data-retention-policy-source-says-2026-08-20/" target="_blank" rel="noreferrer">Anthropic, 기업 데이터 보존 정책 변경 계획</a>은 데이터 프라이버시 및 보안에 대한 중요한 논의를 촉발합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://bastian.rieck.me/blog/2026/unix/" target="_blank" rel="noreferrer">LLM이 유닉스가 승리했음을 증명한다</a>는 LLM의 발전이 유닉스 철학의 지속적인 관련성을 시사하며 개발 방식에 대한 통찰을 제공합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%407.0.76" target="_blank" rel="noreferrer">vercel/ai 라이브러리</a>에 텍스트 및 추론 파트 ID 중복 방지 및 UI 메시지에 대한 nullish 메타데이터 스키마 허용과 같은 패치 변경 사항이 적용되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.6" target="_blank" rel="noreferrer">vercel/ai 라이브러리</a>에 대한 업데이트가 릴리스되었으며, 이는 의존성 업데이트를 포함합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.1" target="_blank" rel="noreferrer">langchain-perplexity</a> 라이브러리에 대한 업데이트가 릴리스되었으며, 이는 Perplexity API 모델 지원 및 기타 버그 수정을 포함합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/proliferate-ai/proliferate" target="_blank" rel="noreferrer">Proliferate</a>는 오픈 소스이며 자체 호스팅 가능한 Codex로, 다양한 코딩 에이전트에 적용할 수 있습니다.</li>
+<li><a href="https://github.com/alibaba/anolisa/blob/main/docs/user-guide/en/agent-observability/agentsight.md" target="_blank" rel="noreferrer">AgentSight</a>는 AI 에이전트를 위한 eBPF 관찰 도구로, 코드 변경 없이 사용할 수 있습니다.</li>
+<li><a href="https://github.com/ClachDev/Voro" target="_blank" rel="noreferrer">Voro</a>는 에이전트 코딩을 위한 주의 관리 도구입니다.</li>
+<li><a href="https://github.com/TryCaspian/caspian-sdk" target="_blank" rel="noreferrer">Caspian</a>은 AI 에이전트가 인간과 소통할 수 있도록 돕는 도구입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/openai/codex/issues/37674" target="_blank" rel="noreferrer">Codex on AWS Bedrock bug causing 10x charges</a> - AWS Bedrock에서 Codex 사용 시 예상치 못한 과금 문제가 발생할 수 있습니다.</li>
+<li><a href="https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/" target="_blank" rel="noreferrer">Quick impressions: A week of using Codex more than Claude</a> - Codex와 Claude 사용 경험을 비교하며 장단점을 파악할 수 있습니다.</li>
+<li><a href="https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/" target="_blank" rel="noreferrer">Scientists release biggest 2D map of the universe</a> - 우주론 연구의 최신 성과를 보여주는 2D 우주 지도를 확인할 수 있습니다.</li>
+<li><a href="https://bastian.rieck.me/blog/2026/unix/" target="_blank" rel="noreferrer">LLMs are proof that Unix won</a> - LLM의 발전이 유닉스 철학의 지속적인 영향력을 어떻게 보여주는지 설명합니다.</li>
+<li><a href="https://github.com/proliferate-ai/proliferate" target="_blank" rel="noreferrer">Show HN: Proliferate- open-source, self-hostable Codex for any coding agent</a> - 자체 호스팅 가능한 오픈 소스 Codex 솔루션을 소개합니다.</li>
+<li><a href="https://twitter.com/OpenAI/status/2090885187634905500" target="_blank" rel="noreferrer">OpenAI: We&#x27;re dropping API and credit pricing of GPT-5.6 Sol by over 20%</a> - OpenAI의 GPT-5.6 Sol 가격 인하 소식을 전합니다.</li>
+<li><a href="https://Argentic.network" target="_blank" rel="noreferrer">Show HN: Argentic – An L402 Lightning toll booth for AI scraping agents</a> - AI 스크래핑 에이전트를 위한 L402 라이트닝 결제 시스템을 소개합니다.</li>
+<li><a href="https://github.com/alibaba/anolisa/blob/main/docs/user-guide/en/agent-observability/agentsight.md" target="_blank" rel="noreferrer">Show HN: AgentSight – eBPF observability for AI agents, no code changes</a> - 코드 변경 없이 AI 에이전트의 관찰 가능성을 높이는 도구입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 Hacker News의 점수와 댓글 수가 상대적으로 낮아, 정보의 확산 정도나 중요도가 낮을 수 있습니다.</li>
+<li>GitHub 릴리스 정보는 특정 버전의 패치 변경 사항에 대한 기술적인 내용을 담고 있으나, 실제 개발 영향력은 추가적인 검토가 필요할 수 있습니다.</li>
+<li>OpenAI의 가격 인하 발표는 트위터 링크로 제공되어, 공식 발표 자료와 비교하여 신뢰도를 추가적으로 확인할 필요가 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회 SPECIAL</a> - Wevity, D-13. 분류 : 웹/모바일/IT, 게임/소프트웨어, 과학/공학 산업통상부 D-13 접수중 37,450 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;2026 제4회 충청남</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">2026 한화솔루션 AI 영상 공모전</a> - Linkareer, D-25. 스튜디오플레이 D-25 조회 1,350 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Ad</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030610001&amp;str_no=202608140037" target="_blank" rel="noreferrer">6. 내 AI와 만드는 디자인 웹사이트 공모전</a> - Contest Korea. 7. Energy Up! KIT 제2회 NET ZERO(지구ON;탄소OFF) 아이디어 챌린지 8.</li>
+<li><a href="https://linkareer.com/activity/342034" target="_blank" rel="noreferrer">[한국과학기술정보연구원] 2026 DATA·AI 분석 경진대회</a> - Linkareer, D-96. 한국과학기술정보연구원 D-96 조회 4,262 댓글 3 &lt;a class=&quot;image-link&quot; href=&quot;/activity/3</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
