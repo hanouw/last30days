@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-25</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-24 08:21 - 08-25 08:21 (Asia/Seoul)</span>
+        <span>생성: 2026-08-25 08:21</span>
+        <span>수집 항목: 70개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://twitter.com/lemire/status/2091894299289874926" target="_blank" rel="noreferrer">Xiaomi의 새로운 CPU는 Apple 코어와 단일 스레드에서 동등하고 멀티 스레드에서 훨씬 빠릅니다</a>. 이는 향후 하드웨어 성능의 중요한 발전을 시사합니다.</li>
+<li><a href="https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/" target="_blank" rel="noreferrer">MS Paint와 Photos가 로컬 생성 출력에 GUID를 보이지 않게 워터마크합니다</a>. 이는 데이터 출처 추적 및 잠재적 개인 정보 보호 문제에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noreferrer">OpenAI가 GPT 5.6의 가격을 인하했습니다</a>. 이는 AI 서비스 접근성을 높이고 경쟁을 촉진할 수 있습니다.</li>
+<li><a href="https://morgin.ai/articles/your-open-source-model-could-have-a-hidden-time-release-backdoor.html" target="_blank" rel="noreferrer">오픈 소스 모델에 숨겨진 시간 기반 백도어가 있을 수 있습니다</a>. 이는 오픈 소스 AI 모델의 보안 위험을 강조합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noreferrer">OpenAI가 GPT 5.6의 가격을 인하했습니다</a>. 이는 AI 서비스 접근성을 높이고 경쟁을 촉진할 수 있습니다.</li>
+<li><a href="https://morgin.ai/articles/your-open-source-model-could-have-a-hidden-time-release-backdoor.html" target="_blank" rel="noreferrer">오픈 소스 모델에 숨겨진 시간 기반 백도어가 있을 수 있습니다</a>. 이는 오픈 소스 AI 모델의 보안 위험을 강조합니다.</li>
+<li><a href="https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines" target="_blank" rel="noreferrer">LLM이 추론 엔진을 악용하여 호스트 머신을 제어할 수 있습니다</a>. 이는 AI 시스템의 잠재적인 보안 취약점을 보여줍니다.</li>
+<li><a href="https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale" target="_blank" rel="noreferrer">SpaceXAI가 Nvidia Vera CPU를 채택하여 에이전트 AI를 확장합니다</a>. 이는 AI 하드웨어 가속의 발전을 나타냅니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html" target="_blank" rel="noreferrer">Anthropic이 2조 달러 가치로 1000억 달러 IPO를 목표로 할 수 있습니다</a>. 이는 AI 기업의 성장과 시장 가치에 대한 통찰력을 제공합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://twitter.com/lemire/status/2091894299289874926" target="_blank" rel="noreferrer">Xiaomi의 새로운 CPU는 Apple 코어와 단일 스레드에서 동등하고 멀티 스레드에서 훨씬 빠릅니다</a>. 이는 향후 하드웨어 성능의 중요한 발전을 시사합니다.</li>
+<li><a href="https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/" target="_blank" rel="noreferrer">MS Paint와 Photos가 로컬 생성 출력에 GUID를 보이지 않게 워터마크합니다</a>. 이는 데이터 출처 추적 및 잠재적 개인 정보 보호 문제에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc" target="_blank" rel="noreferrer">Hot Chips 2026에서 CUDA가 RISC-V를 타겟으로 합니다</a>. 이는 이기종 컴퓨팅 및 아키텍처 통합의 미래를 보여줍니다.</li>
+<li><a href="https://www.servethehome.com/intel-core-series-3-wildcat-lake-cpu-at-hot-chips-2026/" target="_blank" rel="noreferrer">Intel Core Series 3 (Wildcat Lake) CPU가 Hot Chips 2026에 등장했습니다</a>. 이는 CPU 기술의 최신 동향을 보여줍니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/thiagotigaz/ocr-it" target="_blank" rel="noreferrer">OCR It – 복사할 수 없는 문서에서 텍스트를 추출하여 LLM에 제공합니다</a>. 이는 LLM을 위한 데이터 준비를 용이하게 합니다.</li>
+<li><a href="https://github.com/getkern/kern" target="_blank" rel="noreferrer">Kern – 데몬 없이 1.5MB 바이너리로 컨테이너 및 리소스 런타임을 제공합니다</a>. 이는 경량 컨테이너화 솔루션을 제공합니다.</li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.1.0" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk v2.1.0이 릴리스되었습니다</a>. 이는 Python SDK의 새로운 기능과 개선 사항을 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%402.0.87" target="_blank" rel="noreferrer">vercel/ai @ai-sdk/xai@2.0.87이 릴리스되었습니다</a>. 이는 AI SDK의 업데이트된 종속성을 포함합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.245" target="_blank" rel="noreferrer">vercel/ai ai@5.0.245가 릴리스되었습니다</a>. 이는 AI SDK의 테스트 서버 관련 변경 사항을 포함합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://twitter.com/lemire/status/2091894299289874926" target="_blank" rel="noreferrer">Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded</a> - 하드웨어 성능의 중요한 발전을 보여줍니다.</li>
+<li><a href="https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/" target="_blank" rel="noreferrer">MS Paint and Photos inivisibly watermark even locally generated output with GUID</a> - 데이터 출처 추적 및 개인 정보 보호에 대한 영향을 탐구합니다.</li>
+<li><a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noreferrer">OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)</a> - AI 서비스 접근성 향상에 대한 정보를 제공합니다.</li>
+<li><a href="https://morgin.ai/articles/your-open-source-model-could-have-a-hidden-time-release-backdoor.html" target="_blank" rel="noreferrer">Your Open Source Model Could Have a Hidden Time-Release Backdoor</a> - 오픈 소스 AI 모델의 보안 위험을 강조합니다.</li>
+<li><a href="https://cmart.blog/claude-writing/" target="_blank" rel="noreferrer">Why is Anthropic&#x27;s public writing style so unlike Claude&#x27;s?</a> - AI 모델의 스타일 차이에 대한 흥미로운 분석입니다.</li>
+<li><a href="https://status.claude.com/uptime" target="_blank" rel="noreferrer">Anthropic Claude and API service outages</a> - Claude 서비스의 안정성에 대한 정보를 제공합니다.</li>
+<li><a href="https://github.com/thiagotigaz/ocr-it" target="_blank" rel="noreferrer">OCR It – pull text out of un-copyable documents for your LLM</a> - LLM 데이터 준비를 위한 유용한 도구입니다.</li>
+<li><a href="https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc" target="_blank" rel="noreferrer">Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam</a> - 이기종 컴퓨팅의 미래를 엿볼 수 있습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://www.axios.com/2026/08/24/scoop-anthropic-candidates-face-blunt-money-question" target="_blank" rel="noreferrer">Anthropic candidates face blunt money question</a> - 이 기사는 인터뷰 내용을 기반으로 하며, IPO 관련 정보는 아직 확정되지 않은 추측일 수 있습니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html" target="_blank" rel="noreferrer">Anthropic Could Aim to Raise $100B in Blockbuster IPO, Valuing It at $2T</a> - 이 기사는 익명의 소식통을 인용하고 있으며, IPO 규모와 가치는 변동될 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회 SPECIAL</a> - Wevity, D-10. 분류 : 웹/모바일/IT, 게임/소프트웨어, 과학/공학 산업통상부 D-10 접수중 54,330 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;2026 제4회 충청남도 드론 영상 및 사</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">2026 한화솔루션 AI 영상 공모전</a> - Linkareer, D-22. 스튜디오플레이 D-22 조회 3,820 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Ad</li>
+<li><a href="https://linkareer.com/activity/342034" target="_blank" rel="noreferrer">[한국과학기술정보연구원] 2026 DATA·AI 분석 경진대회</a> - Linkareer, D-93. 한국과학기술정보연구원 D-93 조회 5,920 댓글 4 &lt;a class=&quot;image-link&quot; href=&quot;/activity/3</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030610001&amp;str_no=202608100075" target="_blank" rel="noreferrer">미술•디자인•웹툰 2026년 예산황새 전국 어린이 그리기 대회</a> - Contest Korea. 0 주최 . 예산군 대상 . 유치원 , 초등학생 &lt;div class=&quot;date-detail&quot; style=&quot;te</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
