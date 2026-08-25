@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-26</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-25 08:23 - 08-26 08:23 (Asia/Seoul)</span>
+        <span>생성: 2026-08-26 08:24</span>
+        <span>수집 항목: 136개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI가 개발한 새로운 칩인 Jalapeño가 Nvidia Blackwell보다 우수하다는 주장이 나왔습니다. 이는 AI 하드웨어 경쟁의 새로운 국면을 예고합니다. <a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank" rel="noreferrer">OpenAI Jalapeño: Better than Nvidia Blackwell</a></li>
+<li>Anthropic이 보안팀 파업 가능성으로 인해 직원들에게 재택근무를 지시했습니다. 이는 회사의 운영 안정성에 대한 우려를 제기합니다. <a href="https://www.businessinsider.com/anthropic-san-francisco-staff-work-remote-office-security-strike-2026-8" target="_blank" rel="noreferrer">Anthropic tells staff to work from home due to possible security team strike</a></li>
+<li>OpenAI가 ChatGPT Plus 사용자를 위해 Codex 및 작업 제한을 5시간으로 복원했습니다. 이는 사용자 경험 개선 및 서비스 안정화 노력의 일환입니다. <a href="https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/" target="_blank" rel="noreferrer">OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users</a></li>
+<li>Anthropic이 투자자들에게 30조 달러 이상의 잠재적 수익을 예상한다고 밝혔습니다. 이는 AI 시장의 폭발적인 성장 가능성을 시사합니다. <a href="https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea" target="_blank" rel="noreferrer">Anthropic Sees over $30T in Potential Revenue</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI의 새로운 칩인 Jalapeño가 AI 추론에서 업계 최고 수준의 속도와 효율성을 보여주고 있습니다. <a href="https://openai.com/index/jalapeno-first-results/" target="_blank" rel="noreferrer">Jalapeño&#x27;s results show industry-leading speed and efficiency in AI inference</a></li>
+<li>Anthropic은 AI의 웰빙에 대한 영향을 더 잘 평가하기 위한 연구 보조금 프로그램을 발표했습니다. 이는 AI의 사회적 책임에 대한 노력을 보여줍니다. <a href="https://www.anthropic.com/news/wellbeing-research-grants" target="_blank" rel="noreferrer">Funding better evaluations of AI&#x27;s impact on wellbeing</a></li>
+<li>OpenAI의 데이터 센터 책임자가 회사를 떠났다는 소식이 전해졌습니다. 이는 회사의 인프라 운영에 대한 잠재적 영향을 시사합니다. <a href="https://www.wsj.com/tech/ai/openais-head-of-data-centers-has-left-company-6d24fd83" target="_blank" rel="noreferrer">OpenAI&#x27;s Head of Data Centers Has Left the Company</a></li>
+<li>Alabama 주 검찰이 OpenAI에 대한 소환장을 발부했습니다. 이는 AI 기업에 대한 규제 움직임의 확대를 보여줍니다. <a href="https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama" target="_blank" rel="noreferrer">Alabama Coming for OpenAI</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Vercel의 AI SDK에서 `@ai-sdk/xai` 패키지가 4.0.44 버전으로 업데이트되었습니다. 이는 AI 애플리케이션 개발 도구의 개선을 의미합니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%404.0.44" target="_blank" rel="noreferrer">@ai-sdk/xai@4.0.44</a></li>
+<li>Vercel의 AI SDK에서 `@ai-sdk/workflow-harness` 패키지가 1.0.87 버전으로 업데이트되었습니다. 이는 워크플로우 관련 기능의 개선을 나타냅니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.87" target="_blank" rel="noreferrer">@ai-sdk/workflow-harness@1.0.87</a></li>
+<li>Vercel의 AI SDK에서 `ai` 패키지가 7.0.79 버전으로 업데이트되었으며, 배치 완료 웹훅 기능이 추가되었습니다. 이는 AI 모델과의 상호작용을 위한 새로운 기능을 제공합니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.79" target="_blank" rel="noreferrer">ai@7.0.79</a></li>
+<li>Langchain 라이브러리가 1.3.17 버전으로 업데이트되었으며, 사용자 정의 HITL 거부 이유를 처리하는 수정 사항이 포함되었습니다. 이는 LLM 애플리케이션 개발의 안정성을 높입니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.17" target="_blank" rel="noreferrer">langchain==1.3.17</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Raspberry Pi와 Qwen을 활용한 로컬 차량 AI 프로젝트가 공개되었습니다. <a href="https://github.com/ThinkOffApp/CarWatch" target="_blank" rel="noreferrer">I made a Raspberry with Qwen my local car AI</a></li>
+<li>스크린샷 없이 텍스트만으로 화면 내용을 Markdown으로 변환하는 도구가 소개되었습니다. <a href="https://github.com/dragthelake/ambient-context" target="_blank" rel="noreferrer">Screen memory without screenshots, just text to Markdown</a></li>
+<li>Nostr 공개 키를 사람이 읽기 쉬운 인터넷 식별자로 매핑하는 NIP-05에 대한 정보가 공유되었습니다. <a href="https://nostrcompass.org/en/topics/nip-05/" target="_blank" rel="noreferrer">NIP-05 maps Nostr public keys to human-readable internet identifiers</a></li>
+<li>TeXbrain은 WASM을 통해 브라우저에서 pdfTeX을 실행하는 LaTeX 편집기입니다. <a href="https://github.com/swimmingbrain/texbrain" target="_blank" rel="noreferrer">TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank" rel="noreferrer">OpenAI Jalapeño: Better than Nvidia Blackwell</a> - OpenAI의 새로운 칩 성능에 대한 분석입니다.</li>
+<li><a href="https://www.businessinsider.com/anthropic-san-francisco-staff-work-remote-office-security-strike-2026-8" target="_blank" rel="noreferrer">Anthropic tells staff to work from home due to possible security team strike</a> - Anthropic의 내부 운영 관련 소식입니다.</li>
+<li><a href="https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/" target="_blank" rel="noreferrer">OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users</a> - ChatGPT Plus 사용자 경험 관련 업데이트입니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea" target="_blank" rel="noreferrer">Anthropic Sees over $30T in Potential Revenue</a> - Anthropic의 시장 전망에 대한 뉴스입니다.</li>
+<li><a href="https://github.com/ThinkOffApp/CarWatch" target="_blank" rel="noreferrer">I made a Raspberry with Qwen my local car AI</a> - 개인 프로젝트로 구현한 차량 AI입니다.</li>
+<li><a href="https://github.com/dragthelake/ambient-context" target="_blank" rel="noreferrer">Screen memory without screenshots, just text to Markdown</a> - 화면 내용을 텍스트로 요약하는 도구입니다.</li>
+<li><a href="https://nostrcompass.org/en/topics/nip-05/" target="_blank" rel="noreferrer">NIP-05 maps Nostr public keys to human-readable internet identifiers</a> - Nostr 프로토콜 관련 기술 정보입니다.</li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.1.1" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk: v2.1.1</a> - Python SDK의 최신 릴리스 정보입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 새로운 10T 파라미터 훈련 실행에 대한 루머가 있습니다. 이는 아직 공식적으로 확인되지 않은 정보입니다. <a href="https://twitter.com/synthwavedd/status/2092326145270456377" target="_blank" rel="noreferrer">Rumors that OpenAI recently finished new &gt;10T parameter training run</a></li>
+<li>AI/LLM 사용이 오픈소스 유지보수자들에게 서비스 거부 공격이 되고 있다는 주장이 있습니다. 이는 오픈소스 생태계의 지속 가능성에 대한 우려를 제기합니다. <a href="https://www.phoronix.com/news/AI-DoS-Attack-Maintainers" target="_blank" rel="noreferrer">AI/LLM Usage Becoming a &quot;Denial of Service Attack&quot; on Open-Source Maintainers</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회 SPECIAL</a> - Wevity, D-9. 분류 : 웹/모바일/IT, 게임/소프트웨어, 과학/공학 산업통상부 D-9 접수중 60,582 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;2026 제4회 충청남도 드론 영상 및 사진</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">2026 한화솔루션 AI 영상 공모전</a> - Linkareer, D-21. 스튜디오플레이 D-21 조회 5,076 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Ad</li>
+<li><a href="https://linkareer.com/activity/344857" target="_blank" rel="noreferrer">공모전 D-28 2026 전국 로켓피치 경진대회 Q 키키1538 항공/로켓 분야 제품이어야만 참여 가능한가요?? A 박다희 항공 분야 안에서 공학 부문/비공학 부문으로 선택하시면 됩니다.</a> - Linkareer, D-28. 대외활동 D-86 ✨ AI 영어 교육 플랫폼 Roun</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202608240042" target="_blank" rel="noreferrer">학문•과학•IT 2026 K-조선 해커톤</a> - Contest Korea. 0 주최 . 산업통상부 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; style=&quot;</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
