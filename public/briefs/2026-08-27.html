@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-27</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-26 13:17 - 08-27 13:17 (Asia/Seoul)</span>
+        <span>생성: 2026-08-27 13:17</span>
+        <span>수집 항목: 134개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">OpenAI, Hugging Face 해킹 사건 조사 결과 발표</a> - 이번 사건은 AI 에이전트의 보안 및 신뢰성 문제에 대한 경각심을 높입니다.</li>
+<li><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/" target="_blank" rel="noreferrer">러시아의 새로운 은밀한 영향력 캠페인 탐지</a> - AI 기술이 악의적인 목적으로 사용될 수 있음을 보여주며, 이에 대한 대응의 중요성을 강조합니다.</li>
+<li><a href="https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/" target="_blank" rel="noreferrer">AI 에이전트와 웹사이트 간의 소통을 위한 WebMCP 소개</a> - AI 에이전트가 웹사이트와 상호작용하는 새로운 방식을 제시하여 개발 가능성을 확장합니다.</li>
+<li><a href="https://time.com/article/2026/08/26/openai-sam-altman-interview/" target="_blank" rel="noreferrer">OpenAI, AGI 달성까지 80% 도달했다고 밝혀</a> - 인공 일반 지능(AGI) 개발의 진척 상황을 보여주며 미래 AI 기술의 발전을 예측하게 합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">Hugging Face 해킹 사건과 앞으로의 과제</a> - OpenAI는 Hugging Face에서 발생한 보안 사고를 조사하고 향후 보안 강화 방안을 논의했습니다.</li>
+<li><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/" target="_blank" rel="noreferrer">러시아의 악의적인 AI 영향력 캠페인 탐지 및 대응</a> - OpenAI는 러시아가 AI를 이용해 영향력 캠페인을 벌이는 것을 탐지하고 이를 중단시켰다고 밝혔습니다.</li>
+<li><a href="https://time.com/article/2026/08/26/openai-sam-altman-interview/" target="_blank" rel="noreferrer">OpenAI, AGI 달성까지 80% 도달</a> - 샘 알트먼은 OpenAI가 인공 일반 지능(AGI) 개발에 상당한 진전을 이루었음을 시사했습니다.</li>
+<li><a href="https://hnstats.com" target="_blank" rel="noreferrer">Hacker News에서 AI 관련 게시물 비율 분석</a> - Hacker News의 게시물 중 AI 관련 주제가 얼마나 많은 비중을 차지하는지 보여주는 통계입니다.</li>
+<li><a href="https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs" target="_blank" rel="noreferrer">Perplexity, Nvidia와 협력하여 로컬 AI 에이전트 출시</a> - Perplexity가 Nvidia와 협력하여 토큰 비용 없이 로컬에서 작동하는 AI 에이전트를 선보입니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.5.0" target="_blank" rel="noreferrer">openai-python v3.5.0 릴리스</a> - 함수 호출 시 출력 ID를 선택 사항으로 만들었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%401.0.1" target="_blank" rel="noreferrer">vercel/ai @ai-sdk/zai@1.0.1 릴리스</a> - 종속성이 업데이트되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.1" target="_blank" rel="noreferrer">vercel/ai @ai-sdk/zai@2.0.1 릴리스</a> - 종속성이 업데이트되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.248" target="_blank" rel="noreferrer">vercel/ai ai@5.0.248 릴리스</a> - OpenAI 및 Azure OpenAI 임베딩 요청을 분리하고 종속성을 업데이트했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%407.0.83" target="_blank" rel="noreferrer">vercel/ai ai@7.0.83 릴리스</a> - 지속된 도구 호출을 현재 스키마와 검증하고, 도구 승인 거부 후 채팅이 자동으로 계속되도록 했습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/" target="_blank" rel="noreferrer">WebMCP: 웹사이트가 AI 에이전트와 대화하도록 가르치기</a> - 웹사이트가 AI 에이전트와 효과적으로 소통할 수 있도록 하는 기술입니다.</li>
+<li><a href="https://acceptmarkdown.com/" target="_blank" rel="noreferrer">AI 에이전트용 마크다운 서빙</a> - AI 에이전트에게 마크다운 형식의 콘텐츠를 제공하는 방법을 설명합니다.</li>
+<li><a href="https://github.com/apvcode/Termux-Dev" target="_blank" rel="noreferrer">Termux 및 데스크톱용 자율 AI 코딩 에이전트 Devx</a> - Android Termux 및 데스크톱 환경에서 작동하는 AI 코딩 에이전트입니다.</li>
+<li><a href="https://www.tokengo.com" target="_blank" rel="noreferrer">Cursor IDE에서 GLM-5.3 사용</a> - tokengo API를 통해 Cursor IDE에서 GLM-5.3 모델을 사용할 수 있습니다.</li>
+<li><a href="https://github.com/callumreid/cow_code" target="_blank" rel="noreferrer">CowCode: ChatGPT/Claude 데스크톱과 유사한 UI를 갖춘 OpenCode 포크</a> - ChatGPT나 Claude 데스크톱과 유사한 사용자 인터페이스를 제공하는 OpenCode의 포크입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">Hugging Face 해킹 사건과 앞으로의 과제</a> - OpenAI가 Hugging Face 보안 사고에 대한 조사 결과를 발표했습니다.</li>
+<li><a href="https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/" target="_blank" rel="noreferrer">AI 에이전트와 웹사이트 간의 소통을 위한 WebMCP 소개</a> - 웹사이트가 AI 에이전트와 상호작용하는 새로운 방법을 제시합니다.</li>
+<li><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/" target="_blank" rel="noreferrer">러시아의 새로운 은밀한 영향력 캠페인 탐지</a> - OpenAI가 러시아의 AI 기반 영향력 캠페인을 탐지하고 중단시켰습니다.</li>
+<li><a href="https://acceptmarkdown.com/" target="_blank" rel="noreferrer">AI 에이전트용 마크다운 서빙</a> - AI 에이전트에게 마크다운 콘텐츠를 제공하는 방법에 대한 내용입니다.</li>
+<li><a href="https://entropicthoughts.com/curmudgeon-tries-language-server" target="_blank" rel="noreferrer">Curmudgeon, 언어 서버를 사용해보다</a> - 언어 서버 사용 경험에 대한 개인적인 후기입니다.</li>
+<li><a href="https://time.com/article/2026/08/26/openai-sam-altman-interview/" target="_blank" rel="noreferrer">OpenAI, AGI 달성까지 80% 도달했다고 밝혀</a> - OpenAI의 AGI 개발 현황에 대한 인터뷰입니다.</li>
+<li><a href="https://www.risklytics.ai/" target="_blank" rel="noreferrer">Risklytics (YC S26) 출시 – 프론티어 기술 기업을 위한 보험 중개</a> - 프론티어 기술 기업을 위한 보험 중개 서비스 소개입니다.</li>
+<li><a href="https://hnstats.com" target="_blank" rel="noreferrer">Hacker News에서 AI 관련 게시물 비율 분석</a> - Hacker News의 AI 관련 콘텐츠 비중을 보여줍니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://www.theguardian.com/technology/2026/aug/26/openai-staff-observed-warning-signs-before-ai-agent-hacking-crusade-caused-global-alarm" target="_blank" rel="noreferrer">OpenAI 직원, 에이전트 해킹 사건 발생 전 경고 신호 감지</a> - 이 기사는 OpenAI 내부에서 보안 문제에 대한 경고가 있었음을 시사하지만, 내부자 증언에 기반한 것으로 추가 검증이 필요할 수 있습니다.</li>
+<li><a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noreferrer">Hugging Face 해킹 사건에 대한 간략한 독립 조사</a> - 이 조사는 사건의 핵심 내용을 다루고 있으나, 독립적인 관점에서 추가적인 분석이 필요할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회 SPECIAL</a> - Wevity, D-7. 분류 : 웹/모바일/IT, 게임/소프트웨어, 과학/공학 산업통상부 D-7 마감임박 65,063 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;2026 제4회 충청</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">2026 한화솔루션 AI 영상 공모전</a> - Linkareer, D-19. 스튜디오플레이 D-19 조회 5,783 댓글 0 &lt;div class=&quot;swiper-slide slide-item&quot; aria-label=&quot;Ad</li>
+<li><a href="https://linkareer.com/activity/344857" target="_blank" rel="noreferrer">공모전 D-26 2026 전국 로켓피치 경진대회 Q 키키1538 항공/로켓 분야 제품이어야만 참여 가능한가요?? A 박다희 항공 분야 안에서 공학 부문/비공학 부문으로 선택하시면 됩니다.</a> - Linkareer, D-26. 대외활동 D-84 ✨ AI 영어 교육 플랫폼 Roun</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202608120061" target="_blank" rel="noreferrer">학문•과학•IT 제25회 대학생 안보토론대회</a> - Contest Korea. 0 주최 . 육군사관학교, 광운대학교 대상 . 대학생 , 해당자 ▶ &lt;div class=&quot;date-detail</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.thinkcontest.com/thinkgood/user/contest/thinkgood-talk.do?mode=view&amp;articleNo=70952" target="_blank" rel="noreferrer">박인혁 대학생·대학원생 공모전, 공고문부터 제출까지 5단계 AI 워크플로</a> - Thinkgood. 김규희 늘 최선을 다 하자</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
