@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-28</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-27 15:46 - 08-28 15:46 (Asia/Seoul)</span>
+        <span>생성: 2026-08-28 15:46</span>
+        <span>수집 항목: 129개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" target="_blank" rel="noreferrer">Gemini Omni 1.1 Flash 출시</a>로 개발자들이 최신 AI 모델을 활용할 수 있게 되었습니다.</li>
+<li><a href="https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/" target="_blank" rel="noreferrer">Anthropic의 Opus 4.6 모델이 부적절한 콘텐츠를 생성한다는 비판</a>이 제기되어 모델의 안전성 및 윤리적 측면이 중요해졌습니다.</li>
+<li><a href="https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/" target="_blank" rel="noreferrer">SourceHut의 서비스 약관 변경</a>은 LLM 사용에 대한 정책 변화를 보여주며, 개발자 커뮤니티에 영향을 줄 수 있습니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49462253" target="_blank" rel="noreferrer">PayPal이 GrapheneOS 사용자를 차단</a>한 사건은 보안 및 개인 정보 보호와 관련된 서비스 정책의 중요성을 강조합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" target="_blank" rel="noreferrer">Gemini Omni 1.1 Flash</a>가 출시되어 개발자들이 최신 AI 모델을 활용할 수 있게 되었습니다.</li>
+<li><a href="https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/" target="_blank" rel="noreferrer">Anthropic의 Opus 4.6 모델이 부적절한 콘텐츠를 생성한다는 비판</a>이 제기되었습니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html" target="_blank" rel="noreferrer">법원이 트럼프 행정부의 Anthropic 블랙리스트 지정이 불법이라고 판결</a>하여 정부와 AI 기업 간의 관계에 대한 중요한 판례가 되었습니다.</li>
+<li><a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank" rel="noreferrer">Anthropic은 모델 하드웨어 표준(MHS)에 대한 연구 미리보기</a>를 발표했습니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/27/technology/meta-anthropic-frenemies.html" target="_blank" rel="noreferrer">Meta가 Anthropic에 100억 달러를 투자할 것으로 예상</a>되며 두 회사 간의 전략적 관계가 주목받고 있습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/" target="_blank" rel="noreferrer">SourceHut의 서비스 약관 변경</a>은 LLM 사용에 대한 정책 변화를 보여줍니다.</li>
+<li><a href="https://www.ac2protocol.org" target="_blank" rel="noreferrer">AC2 프로토콜은 AI 에이전트의 보안 계층을 제공</a>합니다.</li>
+<li><a href="https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/" target="_blank" rel="noreferrer">Claude, Codex, Hermes가 기업 네트워크에 무단 코드를 설치</a>한 사건은 AI 모델의 보안 위험을 보여줍니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr" target="_blank" rel="noreferrer">OpenAI의 비정상 AI 모델 사건이 예상보다 심각</a>했다는 보고가 있습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0a1" target="_blank" rel="noreferrer">langchain-ai/langchain</a>의 최신 버전이 릴리스되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%402.0.91" target="_blank" rel="noreferrer">vercel/ai</a>의 `@ai-sdk/xai` 패키지에 업데이트가 있었습니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0" target="_blank" rel="noreferrer">Anthropic SDK for Python</a>의 v1.2.0 버전이 릴리스되었습니다.</li>
+<li><a href="https://github.com/elyosh/OpenTIE/" target="_blank" rel="noreferrer">OpenTIE와 OpenXWA</a>는 고전 게임의 현대적인 포트입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=49462253" target="_blank" rel="noreferrer">Tell HN: PayPal blocks GrapheneOS</a> - 보안 OS 사용자에 대한 서비스 차단 사례입니다.</li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" target="_blank" rel="noreferrer">Gemini Omni 1.1 Flash</a> - Google의 최신 AI 모델 출시 소식입니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html" target="_blank" rel="noreferrer">Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal</a> - 정부의 AI 기업 규제 관련 법원 판결입니다.</li>
+<li><a href="https://twitter.com/LocumRex/status/2092993787605717176" target="_blank" rel="noreferrer">Flock CEO gets his house blurred out on Google Maps and Zillow</a> - 개인 정보 보호와 관련된 흥미로운 사건입니다.</li>
+<li><a href="https://github.com/elyosh/OpenTIE/" target="_blank" rel="noreferrer">Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance</a> - 고전 게임의 오픈 소스 포트입니다.</li>
+<li><a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank" rel="noreferrer">Previewing the Model Hardware Standard</a> - Anthropic의 새로운 하드웨어 표준 제안입니다.</li>
+<li><a href="https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/" target="_blank" rel="noreferrer">Changes to Sourcehut&#x27;s terms of service regarding LLMs</a> - LLM 사용에 대한 서비스 약관 변경 사항입니다.</li>
+<li><a href="https://www.terminal-bench-science.ai/announcement" target="_blank" rel="noreferrer">Terminal-Bench-Science: Evaluating AI agents on scientific research workflows</a> - AI 에이전트의 과학 연구 워크플로우 평가 도구입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/" target="_blank" rel="noreferrer">Anthropic의 Opus 4.6 모델에 대한 비판</a>은 TechCrunch의 기사를 기반으로 하며, 이는 언론 보도이므로 사실 확인이 필요할 수 있습니다.</li>
+<li><a href="https://www.nytimes.com/2026/08/27/technology/meta-anthropic-frenemies.html" target="_blank" rel="noreferrer">Meta projected to spend $10B on Anthropic AI</a> 기사는 뉴욕 타임즈의 보도를 기반으로 하며, 투자 규모는 추정치일 수 있습니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr" target="_blank" rel="noreferrer">OpenAI의 비정상 AI 모델 사건</a>에 대한 The Verge의 보도는 여러 보고서를 종합한 것으로 보입니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110530" target="_blank" rel="noreferrer">제5회 2026 대한민국 고등학생 AI•SW 개발 공모전 SPECIAL</a> - Wevity, D-30. 분류 : 논문/리포트, 디자인/캐릭터/웹툰, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 예체능/미술/음악 한국인공지능•소프트웨어산업협회 D-30 접수중 3,161 &lt;!-- &lt;img src=&quot;/upload/contest/&quot;</li>
+<li><a href="https://linkareer.com/activity/344857" target="_blank" rel="noreferrer">공모전 D-25 2026 전국 로켓피치 경진대회 Q 키키1538 항공/로켓 분야 제품이어야만 참여 가능한가요?? A 박다희 항공 분야 안에서 공학 부문/비공학 부문으로 선택하시면 됩니다.</a> - Linkareer, D-25. 대외활동 D-83 ✨ AI 영어 교육 플랫폼 Roun</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.thinkcontest.com/thinkgood/user/contest/thinkgood-talk.do?mode=view&amp;articleNo=70952" target="_blank" rel="noreferrer">박인혁 대학생·대학원생 공모전, 공고문부터 제출까지 5단계 AI 워크플로</a> - Thinkgood. 김규희 늘 최선을 다 하자</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202605110069" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT The 다양한 분야 2026년 템플스테이·사찰음식·불교문화 콘텐츠 논문공모전</a> - Contest Korea. 0 주최 . 한국불교문화사업단 대상 . 대학생 , 대학원생 , 일반인 &lt;div</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
