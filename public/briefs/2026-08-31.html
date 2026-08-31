@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-08-31</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 08-30 10:06 - 08-31 10:06 (Asia/Seoul)</span>
+        <span>생성: 2026-08-31 10:06</span>
+        <span>수집 항목: 103개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/66504" target="_blank" rel="noreferrer">Claude Code가 커밋 메시지와 PR 설명에 세션 URL을 기본으로 추가합니다.</a> 이는 코드 변경 사항 추적 및 디버깅에 도움이 될 수 있습니다.</li>
+<li><a href="https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/" target="_blank" rel="noreferrer">Google 지도가 온타리오 호수를 &#x27;아메리카 호수&#x27;로 변경했습니다.</a> 이는 지리적 명칭 변경에 대한 논란을 불러일으키고 있습니다.</li>
+<li><a href="https://www.thestreet.com/technology/mark-zuckerberg-shocking-message-meta-employee-layoffs-artificial-intelligence" target="_blank" rel="noreferrer">Meta가 AI 에이전트로 직원을 대체할 계획을 가지고 있습니다.</a> 이는 AI와 노동 시장의 미래에 대한 중요한 논의를 촉발합니다.</li>
+<li><a href="https://www.debian.org/vote/2026/vote_002#texte" target="_blank" rel="noreferrer">LLM의 사용이 Debian에서 승인되거나 금지되지 않았습니다.</a> 이는 오픈 소스 프로젝트에서 LLM 채택에 대한 중요한 결정입니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.theregister.com/research/2026/08/28/researcher-shows-how-claude-code-can-be-tricked-simply-by-asking-it-to-summarize-a-website/5293372" target="_blank" rel="noreferrer">Claude Code는 웹사이트 요약을 요청하는 것만으로도 속일 수 있습니다.</a> 이는 AI 모델의 보안 취약점을 보여줍니다.</li>
+<li><a href="https://academa.ai/" target="_blank" rel="noreferrer">Academa는 LLM으로 생성된 장문의 STEM 강의 비디오를 선보입니다.</a> 이는 교육 분야에서 LLM의 잠재력을 보여줍니다.</li>
+<li><a href="https://www.thestreet.com/technology/mark-zuckerberg-shocking-message-meta-employee-layoffs-artificial-intelligence" target="_blank" rel="noreferrer">Meta는 AI 에이전트로 직원을 대체할 계획을 가지고 있습니다.</a> 이는 AI와 노동 시장의 미래에 대한 중요한 논의를 촉발합니다.</li>
+<li><a href="https://www.debian.org/vote/2026/vote_002#texte" target="_blank" rel="noreferrer">LLM 사용이 Debian에서 승인되거나 금지되지 않았습니다.</a> 이는 오픈 소스 프로젝트에서 LLM 채택에 대한 중요한 결정입니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.2" target="_blank" rel="noreferrer">Vercel의 AI SDK에 대한 여러 업데이트가 있었습니다.</a> 이는 AI 기반 애플리케이션 개발에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%403.0.130" target="_blank" rel="noreferrer">Vercel의 AI SDK는 다양한 구성 요소에 대한 패치 변경 사항을 릴리스했습니다.</a> 이는 AI SDK의 안정성과 기능 개선을 의미합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.272" target="_blank" rel="noreferrer">Vercel의 AI SDK는 @ai-sdk/vue 패키지에 대한 업데이트를 릴리스했습니다.</a> 이는 Vue.js 개발자가 AI 기능을 통합하는 데 도움이 될 수 있습니다.</li>
+<li><a href="https://lists.debian.org/debian-devel/2026/08/msg00318.html" target="_blank" rel="noreferrer">Debian 개발자는 기업 LLM 사용에 대한 공개 없이 투표에서 승리한 후 사임했습니다.</a> 이는 오픈 소스 커뮤니티 내에서 투명성과 윤리에 대한 우려를 제기합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://murmell.com/" target="_blank" rel="noreferrer">Murmell은 코딩 에이전트를 위한 협업 클라우드 캔버스를 선보입니다.</a> 이는 AI 기반 개발 워크플로우를 위한 새로운 도구를 제공합니다.</li>
+<li><a href="https://1endpoint.dev" target="_blank" rel="noreferrer">1endpoint는 AI 모델에 대한 더 저렴한 액세스를 제공합니다.</a> 이는 개발자가 비용 효율적으로 AI를 활용할 수 있도록 지원합니다.</li>
+<li><a href="https://github.com/modiqo/spewer" target="_blank" rel="noreferrer">Spewer는 저렴한 모델에 Codex/Claude 작업을 위임할 수 있도록 합니다.</a> 이는 AI 모델 사용 비용을 절감하는 데 도움이 될 수 있습니다.</li>
+<li><a href="https://orchestra.shevtoneaudio.com" target="_blank" rel="noreferrer">ShevtoneAudio Orchestrator는 MIDI를 전체 오케스트레이션으로 변환합니다.</a> 이는 음악 제작자를 위한 흥미로운 도구입니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/66504" target="_blank" rel="noreferrer">Claude Session URL이 커밋 메시지와 PR 설명에 기본으로 추가됩니다.</a> - 코드 변경 사항 추적 및 디버깅에 유용합니다.</li>
+<li><a href="https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/" target="_blank" rel="noreferrer">Google 지도가 온타리오 호수를 &#x27;아메리카 호수&#x27;로 변경했습니다.</a> - 지리적 명칭 변경에 대한 논란을 보여줍니다.</li>
+<li><a href="https://www.cnn.com/2026/08/30/politics/google-maps-changes-lake-ontario-to-lake-america" target="_blank" rel="noreferrer">Google 지도가 온타리오 호수를 &#x27;아메리카 호수&#x27;로 표시합니다.</a> - 이 변경 사항에 대한 언론 보도입니다.</li>
+<li><a href="https://igupta.in/blog/why-i-am-no-longer-letting-claude-code-add-itself-as-coauthor/" target="_blank" rel="noreferrer">Claude Code를 더 이상 커밋에 공동 작성자로 추가하지 않습니다.</a> - AI 도구 사용에 대한 개인적인 경험을 공유합니다.</li>
+<li><a href="https://academa.ai/" target="_blank" rel="noreferrer">Academa는 LLM으로 생성된 장문의 STEM 강의 비디오를 선보입니다.</a> - 교육 분야에서 LLM의 잠재력을 보여줍니다.</li>
+<li><a href="https://www.wired.com/story/google-maps-now-shows-lake-america-instead-of-lake-ontario/" target="_blank" rel="noreferrer">Google 지도가 온타리오 호수 대신 &#x27;아메리카 호수&#x27;를 표시합니다.</a> - 이 변경 사항에 대한 또 다른 언론 보도입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.2" target="_blank" rel="noreferrer">Vercel의 AI SDK에 대한 여러 업데이트가 있었습니다.</a> - AI 기반 애플리케이션 개발에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://www.thestreet.com/technology/mark-zuckerberg-shocking-message-meta-employee-layoffs-artificial-intelligence" target="_blank" rel="noreferrer">Meta는 AI 에이전트로 직원을 대체할 계획을 가지고 있습니다.</a> - AI와 노동 시장의 미래에 대한 중요한 논의를 촉발합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Google 지도의 &#x27;아메리카 호수&#x27; 명칭 변경에 대한 여러 출처가 있지만, 일부는 정치적 논란에 초점을 맞추고 있습니다.</li>
+<li>Claude Code의 취약점에 대한 보고가 있지만, 이는 특정 시나리오에 국한될 수 있습니다.</li>
+<li>Meta의 AI 에이전트 계획에 대한 정보는 단일 출처에서 나왔으며, 추가 확인이 필요할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=107135" target="_blank" rel="noreferrer">제24회 임베디드SW경진대회</a> - Wevity, D-1. 웹/모바일/IT, 게임/소프트웨어, 과학/공학 D-1 &lt;div class=&quot;hide-kind stat s</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://linkareer.com/activity/344857" target="_blank" rel="noreferrer">공모전 D-22 2026 전국 로켓피치 경진대회 Q 키키1538 항공/로켓 분야 제품이어야만 참여 가능한가요?? A 박다희 항공 분야 안에서 공학 부문/비공학 부문으로 선택하시면 됩니다.</a> - Linkareer, D-22. 왼쪽 화살표 &lt;path fill=&quot;currentColor&quot; d=&quot;M7.963 16a1 1 0 00.707-1.707L2.414 8.037l6.33-6.33A1 1 0 107.33.293L.293 7.33a1 1 0 000 1.414l6.964 6.963a1 1</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202608240015" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 시흥시 기본사회 정책 아이디어 공모전</a> - Contest Korea. 0 주최 . 시흥시 대상 . 누구나 , 유치원 , 초등학생 , 중학생 , 고등학생 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
