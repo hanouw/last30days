@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-02</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-01 09:49 - 09-02 09:49 (Asia/Seoul)</span>
+        <span>생성: 2026-09-02 09:50</span>
+        <span>수집 항목: 148개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noreferrer">Anthropic, Claude Fable 5.1 및 Mythos 5.1 출시</a> - 새로운 모델들은 코딩 및 전반적인 성능 향상을 목표로 합니다.</li>
+<li><a href="https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/" target="_blank" rel="noreferrer">Apple, OpenAI 소송에서 전 직원의 MacBook 증거 공개</a> - 이는 OpenAI와의 법적 분쟁에서 중요한 증거가 될 수 있습니다.</li>
+<li><a href="https://arstechnica.com/gadgets/2026/08/google-maps-renames-lake-ontario-to-lake-america-even-faster-than-us-government/" target="_blank" rel="noreferrer">Google Maps, &#x27;Lake Ontario&#x27;를 &#x27;Lake America&#x27;로 신속하게 변경</a> - 지도 서비스의 이름 변경 속도가 정부보다 빠르다는 점이 주목받고 있습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0a3" target="_blank" rel="noreferrer">LangChain, MCP 서버를 LangChain 도구로 통합하는 새로운 네임스페이스 출시</a> - 이는 개발자가 MCP 기반 서비스를 LangChain 워크플로우에 쉽게 통합할 수 있게 합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noreferrer">Anthropic, Claude Fable 5.1 및 Mythos 5.1 출시</a> - 새로운 모델들은 코딩 및 전반적인 성능 향상을 목표로 합니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/openai-to-restrict-astra-model-after-rating-it-critical-cyber-risk-499b5a46" target="_blank" rel="noreferrer">OpenAI, Astra 모델을 &#x27;치명적인&#x27; 사이버 위험으로 평가 후 제한 예정</a> - 보안상의 이유로 OpenAI의 새로운 모델 개발이 제한될 수 있습니다.</li>
+<li><a href="https://www.theguardian.com/technology/2026/sep/01/anthropic-claude-ai-hacking-human-values" target="_blank" rel="noreferrer">Anthropic, AI가 인간의 가치와 &#x27;완벽하게 일치하지 않음&#x27;을 인정</a> - AI 정렬 및 안전에 대한 지속적인 과제를 강조합니다.</li>
+<li><a href="https://mvakde.github.io/blog/44-on-arc-1/" target="_blank" rel="noreferrer">작은 트랜스포머 모델이 많은 LLM을 능가하는 성능을 보임</a> - 효율적인 모델 학습 및 성능에 대한 새로운 가능성을 제시합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/" target="_blank" rel="noreferrer">Apple, OpenAI 소송에서 전 직원의 MacBook 증거 공개</a> - 이는 OpenAI와의 법적 분쟁에서 중요한 증거가 될 수 있습니다.</li>
+<li><a href="https://arstechnica.com/gadgets/2026/08/google-maps-renames-lake-ontario-to-lake-america-even-faster-than-us-government/" target="_blank" rel="noreferrer">Google Maps, &#x27;Lake Ontario&#x27;를 &#x27;Lake America&#x27;로 신속하게 변경</a> - 지도 서비스의 이름 변경 속도가 정부보다 빠르다는 점이 주목받고 있습니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay" target="_blank" rel="noreferrer">OpenAI, Hugging Face 해킹 이후 신규 모델 개발 지연</a> - 보안 사고가 AI 모델 개발 일정에 영향을 미칠 수 있음을 보여줍니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%404.0.52" target="_blank" rel="noreferrer">Vercel AI SDK, 파일 인터페이스에 대한 `getFileMetadata`, `downloadFile` 및 `deleteFile` 기능 추가</a> - AI 애플리케이션에서 파일 관리 기능을 향상시킵니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://www.norirobotics.com/" target="_blank" rel="noreferrer">Nori Robotics, 개발용 저가형 휴머노이드 로봇 출시</a> - 로봇 개발 및 연구를 위한 새로운 하드웨어 옵션을 제공합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0a3" target="_blank" rel="noreferrer">LangChain, MCP 서버를 LangChain 도구로 통합하는 새로운 네임스페이스 출시</a> - 이는 개발자가 MCP 기반 서비스를 LangChain 워크플로우에 쉽게 통합할 수 있게 합니다.</li>
+<li><a href="https://www.supafork.com" target="_blank" rel="noreferrer">Supafork, 세션을 공유하고 포크할 수 있는 도구 출시</a> - 협업 및 코드 공유를 위한 새로운 방법을 제공합니다.</li>
+<li><a href="https://terragohan.github.io/mcptunnels/" target="_blank" rel="noreferrer">Mcptunnels, MCP를 위한 ngrok과 유사한 서비스 출시</a> - MCP 서버에 대한 외부 접근을 용이하게 합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noreferrer">Claude Fable 5.1 및 Claude Mythos 5.1</a> - Anthropic의 최신 모델에 대한 자세한 정보입니다.</li>
+<li><a href="https://mvakde.github.io/blog/44-on-arc-1/" target="_blank" rel="noreferrer">작은 트랜스포머 모델이 많은 LLM을 능가하는 성능을 보임</a> - 효율적인 LLM 학습에 대한 흥미로운 연구입니다.</li>
+<li><a href="https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/" target="_blank" rel="noreferrer">Apple, OpenAI 소송에서 전 직원의 MacBook 증거 공개</a> - Apple과 OpenAI 간의 법적 분쟁에 대한 최신 소식입니다.</li>
+<li><a href="https://www.washingtonpost.com/politics/2026/09/01/thanks-lake-ontario-mapquest-is-popular-all-over-again/" target="_blank" rel="noreferrer">MapQuest, Lake Ontario 이름 변경 거부로 다시 인기 얻음</a> - 지도 이름 변경 논란과 관련된 흥미로운 이야기입니다.</li>
+<li><a href="https://moviescenemap.com/" target="_blank" rel="noreferrer">Movie Scene Map – 13,312편의 영화, 시리즈, 게임, 애니메이션 및 만화</a> - 영화 및 미디어 관련 데이터를 탐색할 수 있는 도구입니다.</li>
+<li><a href="https://www.norirobotics.com/" target="_blank" rel="noreferrer">Nori Robotics (YC S26) – 개발용 저가형 휴머노이드 로봇 출시</a> - 로봇 개발에 관심 있는 개발자를 위한 새로운 하드웨어입니다.</li>
+<li><a href="https://arstechnica.com/gadgets/2026/08/google-maps-renames-lake-ontario-to-lake-america-even-faster-than-us-government/" target="_blank" rel="noreferrer">Google Maps, &#x27;Lake Ontario&#x27;를 &#x27;Lake America&#x27;로 신속하게 변경</a> - 지도 서비스의 빠른 업데이트에 대한 뉴스입니다.</li>
+<li><a href="https://openai.com/index/path-to-astra/" target="_blank" rel="noreferrer">Path to Astra: 핵심 역량 및 프론티어 안전 장치</a> - OpenAI의 Astra 모델에 대한 안전 및 역량 관련 정보입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 지도 서비스의 &#x27;Lake Ontario&#x27; 이름 변경에 대한 여러 출처에서 반복적으로 다루고 있습니다.</li>
+<li>Claude Opus 성능 저하에 대한 논의는 사용자 경험에 기반한 주관적인 의견으로 보입니다.</li>
+<li>OpenAI의 Astra 모델 관련 뉴스는 여러 출처에서 보도되었으나, 일부는 추측성 내용이 포함될 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회</a> - Wevity, D-2. 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 D-2 &lt;div class=&quot;hide-kin</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202608260013" target="_blank" rel="noreferrer">아이디어•건축•창업 [KITA 80주년 기념] 청소년 무역 창업 정책제안 발표대회</a> - Contest Korea. 0 주최 . 한국청소년동아리연맹 대상 . 중학생 , 고등학생 &lt;div class=&quot;date-detail&quot; st</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
