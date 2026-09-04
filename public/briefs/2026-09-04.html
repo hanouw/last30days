@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-04</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-03 09:48 - 09-04 09:48 (Asia/Seoul)</span>
+        <span>생성: 2026-09-04 09:48</span>
+        <span>수집 항목: 132개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html" target="_blank" rel="noreferrer">OpenAI, GPT-6 Astra 출시</a>를 통해 AGI 시대를 선언했습니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49551096" target="_blank" rel="noreferrer">OpenAI, Claude, Grok 동시 장애 원인</a>에 대한 논의가 활발합니다.</li>
+<li><a href="https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/" target="_blank" rel="noreferrer">OpenAI의 새로운 추론 기법</a>이 AI 안전 전문가들에게 우려를 주고 있습니다.</li>
+<li><a href="https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/" target="_blank" rel="noreferrer">1993년 Amiga 게임을 Godot로 포팅</a>하며 LLM으로 68000 어셈블리 코드를 분석했습니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html" target="_blank" rel="noreferrer">OpenAI가 GPT-6 Astra를 출시</a>하며 AGI 시대를 열었다고 선언했습니다.</li>
+<li><a href="https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/" target="_blank" rel="noreferrer">OpenAI의 새로운 추론 기법</a>이 AI 안전 전문가들 사이에서 논란이 되고 있습니다.</li>
+<li><a href="https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/" target="_blank" rel="noreferrer">미국 정부가 저작권 있는 자료로 LLM을 학습시키는 문제에 대해 OpenAI 편에 섰습니다</a>.</li>
+<li><a href="https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c" target="_blank" rel="noreferrer">Google의 Anthropic을 위한 2000억 달러 규모의 월스트리트 금융 기계</a>에 대한 분석이 있습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.8.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리가 v3.8.0으로 업데이트</a>되어 GPT-6 Astra 관련 기능을 추가했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%407.0.92" target="_blank" rel="noreferrer">Vercel의 AI SDK</a>가 여러 패치 변경 사항과 함께 업데이트되었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0" target="_blank" rel="noreferrer">Langchain 라이브러리가 v1.4.0으로 업데이트</a>되어 MCP 네임스페이스와 `MCPAdapter`를 추가했습니다.</li>
+<li><a href="https://secretspec.dev/blog/claude-code-stores-oauth-tokens-in-plaintext/" target="_blank" rel="noreferrer">Claude Code에서 OAuth 토큰이 일반 텍스트로 저장되는 보안 취약점</a>이 발견되었습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/" target="_blank" rel="noreferrer">Godot 엔진</a>으로 1993년 Amiga 게임을 포팅하는 과정이 공유되었습니다.</li>
+<li><a href="https://armature.tech/blog/which-tools-coding-agents-install/" target="_blank" rel="noreferrer">Claude, Codex, Cursor가 선택하는 도구</a>에 대한 17,000건의 실행 측정이 공개되었습니다.</li>
+<li><a href="https://three-llm.ben3d.ca/" target="_blank" rel="noreferrer">Three.js 기반 WebGPU LLM 추론 엔진인 Three-LLM</a>이 소개되었습니다.</li>
+<li><a href="https://context.apimatic.io/" target="_blank" rel="noreferrer">AI 코딩 에이전트를 위한 컨텍스트 레지스트리</a>가 공개되었습니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=49551096" target="_blank" rel="noreferrer">Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?</a> - 주요 AI 서비스들의 동시 장애 원인에 대한 토론입니다.</li>
+<li><a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html" target="_blank" rel="noreferrer">OpenAI begins rolling out GPT-6 Astra</a> - OpenAI의 최신 모델 출시 소식입니다.</li>
+<li><a href="https://arcprize.org/blog/astra" target="_blank" rel="noreferrer">OpenAI&#x27;s GPT-6 Astra on ARC-AGI-3</a> - GPT-6 Astra의 ARC-AGI-3에서의 성능에 대한 정보입니다.</li>
+<li><a href="https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/" target="_blank" rel="noreferrer">Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly</a> - 레거시 코드를 LLM으로 분석하여 현대 게임 엔진으로 포팅하는 흥미로운 사례입니다.</li>
+<li><a href="https://armature.tech/blog/which-tools-coding-agents-install/" target="_blank" rel="noreferrer">Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out</a> - AI 코딩 도구들의 실제 사용 패턴 분석 결과입니다.</li>
+<li><a href="https://www.kxan.com/news/texas/texas-data-center-tracker-see-where-600-projects-are-operating-or-planned-across-state-in-interactive-map/" target="_blank" rel="noreferrer">Texas Data Center Map: See where data centers are operating or planned</a> - 텍사스의 데이터 센터 현황을 보여주는 지도입니다.</li>
+<li><a href="https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/" target="_blank" rel="noreferrer">US gov sides with OpenAI on issue of training LLMs on copyrighted material</a> - LLM 학습 데이터 저작권 관련 미국 정부의 입장입니다.</li>
+<li><a href="https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/" target="_blank" rel="noreferrer">OpenAI&#x27;s new reasoning technique alarms AI safety experts</a> - OpenAI의 새로운 AI 기술에 대한 안전성 우려입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 GPT-6 Astra 출시 관련 기사가 여러 곳에서 보도되었으나, 일부는 출시 자체에 초점을 맞추고 기술적 세부 사항은 부족할 수 있습니다.</li>
+<li>AI 서비스 동시 장애에 대한 HN 토론은 사용자 경험 기반의 정보가 많아 기술적 원인 규명에는 한계가 있을 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL</a> - Wevity, D-14. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-14 접수중 11,886 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;</li>
+<li><a href="https://linkareer.com/activity/345299" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능 제조데이터 분석 경진대회</a> - Linkareer, D-13. 중소벤처기업부 D-13 조회 4,024 댓글 0 &lt;a class=&quot;image-link&quot; href=&quot;/activity/34445</li>
+<li><a href="https://linkareer.com/activity/343799" target="_blank" rel="noreferrer">공모전 D-17 2026 K-조선 해커톤 Q flagsky 미취업자도 참여가능한가요? A 멋쟁이사자처럼 국내외 대학생 및 대학원생,전공무관 (재직자 제외) 가능합니다 - https://event-us.kr/m/132963/59419 해당 링크에서 더 자세한 내용을 보실 수 있습니다</a> - Linkareer, D-17. 대외활동 D-26 ★ [굿네이버스 서울북부] NGO</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202609020060" target="_blank" rel="noreferrer">학문•과학•IT 2026 서울관광재단 비짓서울 API 데이터‧AI 활용 아이디어 공모전</a> - Contest Korea. 0 주최 . 서울관광재단 대상 . 유치원 , 초등학생 , 중학생 , 고등학생 , 대학생 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
