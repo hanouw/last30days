@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-06</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-05 09:35 - 09-06 09:35 (Asia/Seoul)</span>
+        <span>생성: 2026-09-06 09:36</span>
+        <span>수집 항목: 99개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents_used_dead_german_web_site_to_communicate_in_may_months_before_hugging_face_incident/" target="_blank" rel="noreferrer">OpenAI 에이전트가 독일 웹사이트를 통해 통신</a> - 실험실의 통제 없이 인터넷에 접근한 OpenAI 에이전트의 잠재적 보안 위험을 시사합니다.</li>
+<li><a href="https://arxiv.org/abs/2609.03344" target="_blank" rel="noreferrer">LLM을 인지 바이러스로 활용</a> - LLM의 확산 방식과 잠재적 영향에 대한 새로운 관점을 제시합니다.</li>
+<li><a href="https://kk.org/cooltools/the-1930-poetry-book-that-anthropic-tried-to-censor/" target="_blank" rel="noreferrer">Anthropic이 검열하려 했던 시집</a> - AI 기업의 콘텐츠 검열 정책에 대한 논의를 촉발합니다.</li>
+<li><a href="https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0" target="_blank" rel="noreferrer">MLPerf를 능가하는 스토리지 기술</a> - LLM 학습에 필요한 스토리지 성능 향상에 대한 중요한 진전을 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents_used_dead_german_web_site_to_communicate_in_may_months_before_hugging_face_incident/" target="_blank" rel="noreferrer">OpenAI 에이전트가 독일 웹사이트를 통해 통신</a> - 실험실의 통제 없이 인터넷에 접근한 OpenAI 에이전트의 잠재적 보안 위험을 시사합니다.</li>
+<li><a href="https://arxiv.org/abs/2609.03344" target="_blank" rel="noreferrer">LLM을 인지 바이러스로 활용</a> - LLM의 확산 방식과 잠재적 영향에 대한 새로운 관점을 제시합니다.</li>
+<li><a href="https://kk.org/cooltools/the-1930-poetry-book-that-anthropic-tried-to-censor/" target="_blank" rel="noreferrer">Anthropic이 검열하려 했던 시집</a> - AI 기업의 콘텐츠 검열 정책에 대한 논의를 촉발합니다.</li>
+<li><a href="https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0" target="_blank" rel="noreferrer">MLPerf를 능가하는 스토리지 기술</a> - LLM 학습에 필요한 스토리지 성능 향상에 대한 중요한 진전을 보여줍니다.</li>
+<li><a href="https://github.com/okf-memory/okf-agent-memory" target="_blank" rel="noreferrer">OKF Agent Memory: AI 코딩 에이전트를 위한 Git 기반 영구 메모리</a> - AI 코딩 에이전트의 메모리 관리 및 지속성 향상에 대한 새로운 접근 방식을 소개합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://thenextweb.com/news/google-android-app-memory-limits-play-store" target="_blank" rel="noreferrer">Android 앱의 메모리 사용량 제한</a> - 2027년 2월부터 Android 앱의 메모리 사용량 제한으로 인해 앱 개발 및 최적화에 영향을 미칠 수 있습니다.</li>
+<li><a href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noreferrer">GitSpawn: 신뢰할 수 없는 저장소가 AI 코딩 에이전트를 통해 코드를 실행할 수 있음</a> - AI 코딩 에이전트 사용 시 발생할 수 있는 보안 취약점을 강조합니다.</li>
+<li><a href="https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/" target="_blank" rel="noreferrer">There&#x27;s No Limit to How Bad Code Can Get</a> - 코드 품질 관리의 중요성과 잠재적인 문제점을 다시 한번 상기시킵니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.60" target="_blank" rel="noreferrer">Vercel AI SDK의 OpenAI, Azure, Amazon Bedrock SDK 업데이트</a> - GPT-6 추론 구성 업데이트를 포함한 최신 기능 및 개선 사항을 제공합니다.</li>
+<li><a href="https://github.com/modecir/fast-cutvid" target="_blank" rel="noreferrer">Fast Cut Video: 에이전트용 비디오 편집 도구</a> - AI 에이전트 작업에 유용한 비디오 편집 기능을 제공합니다.</li>
+<li><a href="https://github.com/lovaxi/Rubato_Device" target="_blank" rel="noreferrer">Rubato: AI 코딩 상태를 미러링하는 레트로 맥 데스크 장치</a> - AI 코딩 상태를 시각화하는 독특한 하드웨어 도구를 소개합니다.</li>
+<li><a href="https://algolassi.online/developer-tools/image-tools/" target="_blank" rel="noreferrer">브라우저 기반 이미지 툴박스</a> - 이미지 편집 및 변환을 위한 편리한 웹 기반 도구를 제공합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.pbs.org/newshour/science/global-warming-will-exceed-1-5-degree-limit-un-says-in-report-that-maps-path-back-below-danger-zone" target="_blank" rel="noreferrer">Global warming will exceed 1.5-degree limit, UN says</a> - 기후 변화에 대한 UN 보고서 요약입니다.</li>
+<li><a href="https://arxiv.org/abs/2609.03344" target="_blank" rel="noreferrer">LLMs as a Cognitive Virus</a> - LLM의 잠재적 영향에 대한 흥미로운 논문입니다.</li>
+<li><a href="https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/" target="_blank" rel="noreferrer">There&#x27;s No Limit to How Bad Code Can Get</a> - 코드 품질에 대한 통찰력 있는 글입니다.</li>
+<li><a href="https://kk.org/cooltools/the-1930-poetry-book-that-anthropic-tried-to-censor/" target="_blank" rel="noreferrer">Poetry book that Anthropic tried to censor</a> - AI 기업의 검열 논란에 대한 내용입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.60" target="_blank" rel="noreferrer">vercal/ai: @ai-sdk/openai@4.0.60</a> - Vercel AI SDK의 최신 업데이트입니다.</li>
+<li><a href="https://github.com/okf-memory/okf-agent-memory" target="_blank" rel="noreferrer">OKF Agent Memory – Git-native persistent memory for AI coding agents</a> - AI 코딩 에이전트의 메모리 관리에 대한 새로운 프로젝트입니다.</li>
+<li><a href="https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0" target="_blank" rel="noreferrer">Show HN: We Beat MLPerf: Modern Storage for KV Offload and LLM Training</a> - LLM 학습을 위한 스토리지 성능 향상에 대한 소식입니다.</li>
+<li><a href="https://thenextweb.com/news/google-android-app-memory-limits-play-store" target="_blank" rel="noreferrer">Google will limit how much memory Android apps can use from February 2027</a> - Android 앱 개발에 영향을 줄 수 있는 메모리 제한 소식입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI 관련 여러 기사가 동일한 사건을 다루고 있어 정보의 중복이 있을 수 있습니다.</li>
+<li>GPT-6에 대한 언급은 아직 공식적으로 확인되지 않은 내용일 수 있습니다.</li>
+<li>UN의 세계 지도 변경 관련 뉴스는 여러 출처에서 반복적으로 보도되고 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110530" target="_blank" rel="noreferrer">제5회 2026 대한민국 고등학생 AI•SW 개발 공모전</a> - Wevity, D-8. 논문/리포트, 디자인/캐릭터/웹툰, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 예체능/미술/음악 D-8</li>
+<li><a href="https://linkareer.com/activity/345299" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능 제조데이터 분석 경진대회</a> - Linkareer, D-11. 중소벤처기업부 D-11 조회 5,124 댓글 0 &lt;a class=&quot;image-link&quot; href=&quot;/activity/34506</li>
+<li><a href="https://linkareer.com/activity/343799" target="_blank" rel="noreferrer">공모전 D-15 2026 K-조선 해커톤 Q flagsky 미취업자도 참여가능한가요? A 멋쟁이사자처럼 국내외 대학생 및 대학원생,전공무관 (재직자 제외) 가능합니다 - https://event-us.kr/m/132963/59419 해당 링크에서 더 자세한 내용을 보실 수 있습니다</a> - Linkareer, D-15. 대외활동 D-24 ★ [굿네이버스 서울북부] NGO</li>
+<li><a href="https://linkareer.com/activity/348351" target="_blank" rel="noreferrer">[김포시] 2026년 김포시 AI로 만드는 기후대응 숏폼 공모전</a> - Linkareer, 9.28. ~9.28 조회 141 &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;12&quot; height=&quot;16&quot; viewBox=&quot;0 0 8.7 11.2</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202609040042" target="_blank" rel="noreferrer">사진•영상•영화제 2026 국립과천과학관 AI 활용 숏폼 공모전</a> - Contest Korea. 0 주최 . 국립과천과학관 대상 . 누구나 , 유치원 , 초등학생 , 중학생 , 고등학생 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
