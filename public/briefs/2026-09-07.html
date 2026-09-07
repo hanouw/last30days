@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-07</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-06 09:42 - 09-07 09:42 (Asia/Seoul)</span>
+        <span>생성: 2026-09-07 09:42</span>
+        <span>수집 항목: 94개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI의 GPT-6 Astra가 로봇 팔 제어에서 99.95%의 높은 점수를 기록하며 AI의 로봇 공학 적용 가능성을 보여줍니다. <a href="https://openai.robocurve.org/gpt-6-astra/" target="_blank" rel="noreferrer">GPT-6 Astra on robot arms</a></li>
+<li>AI 코딩 에이전트의 안전성 문제가 제기되며, 스프레드시트에서도 프롬프트 주입 공격에 취약하다는 점이 드러났습니다. <a href="https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/" target="_blank" rel="noreferrer">AI agents aren&#x27;t safe from prompt injection, and spreadsheets prove it</a></li>
+<li>LLM의 내부 표현 방식에 암묵적인 기호 구조가 존재한다는 연구 결과는 LLM의 이해력과 추론 능력에 대한 통찰을 제공합니다. <a href="https://twitter.com/RTomMcCoy/status/2094870131939684488" target="_blank" rel="noreferrer">LLM representations have implicit symbolic structure</a></li>
+<li>UN이 아프리카의 상대적 크기를 더 정확하게 보여주는 새로운 지도를 지지하며, 이는 국제 사회의 지리적 인식 변화를 시사합니다. <a href="https://www.npr.org/2026/09/04/nx-s1-5958611/africa-world-map-un-vote" target="_blank" rel="noreferrer">UN backs new map showing Africa&#x27;s true relative size with US alone in opposition</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI는 연구 가속화에 대한 내부 관점을 공유하며, AI 연구 개발의 현재와 미래를 조망합니다. <a href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noreferrer">Research acceleration: The view inside OpenAI</a></li>
+<li>OpenAI는 내부 코딩 에이전트의 오작동을 어떻게 모니터링하는지에 대한 방법을 공개하여 AI 시스템의 안전성 확보 노력을 보여줍니다. <a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/" target="_blank" rel="noreferrer">How we monitor internal coding agents for misalignment</a></li>
+<li>AI가 인간성을 약화시킬 수 있다는 주장이 제기되며, AI와 인간의 관계에 대한 철학적 논의를 촉발합니다. <a href="https://www.theatlantic.com/ideas/2026/09/open-ai-consciousness-morality/688535/" target="_blank" rel="noreferrer">AI Is Making Us Less Human</a></li>
+<li>Anthropic의 IPO가 10월 중순으로 연기되었다는 소식은 AI 기업들의 시장 진출 전략과 투자 동향을 엿볼 수 있게 합니다. <a href="https://www.cnbc.com/2026/09/05/anthropic-ipo-launch-shifts-toward-mid-october-reuters.html" target="_blank" rel="noreferrer">Anthropic IPO launch shifts toward mid-October</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>LLM 게이트웨이 대신 자체적으로 속도 제한 및 폴백 기능을 구현하는 방식은 LLM 서비스의 안정성과 효율성을 높이는 대안을 제시합니다. <a href="https://github.com/LakBud/vernLLM" target="_blank" rel="noreferrer">I stopped using an LLM gateway and put rate-limits/fallback in-process</a></li>
+<li>AI 코딩 에이전트가 세션 간 코드베이스를 잊어버리는 문제는 현재 AI 에이전트 기술의 한계를 보여주며, 지속적인 학습 능력 개선의 필요성을 시사합니다. <a href="https://github.com/thecolourfoundation/rune" target="_blank" rel="noreferrer">AI coding agents forget the codebase between sessions</a></li>
+<li>새로운 북극 항로가 경제 및 지정학적 지도를 재편하고 있다는 분석은 글로벌 물류 및 지정학적 변화에 대한 이해를 돕습니다. <a href="https://english.elpais.com/international/2026-09/06/the-new-arctic-route-is-redrawing-the-economic-and-geopolitical-map.html" target="_blank" rel="noreferrer">The new Arctic route is redrawing the economic and geopolitical map</a></li>
+<li>LLM이 이미지, 오디오 등 다양한 분야에서 유용하게 활용될 수 있는지에 대한 질문은 LLM의 다재다능함과 응용 가능성을 탐구합니다. <a href="https://news.ycombinator.com/item?id=49588265" target="_blank" rel="noreferrer">Ask HN: (Why) Was the LLM breakthrough useful for images, audio, etc.?</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Mdmanager.ai는 여러 머신과 런타임에서 Claude.md 및 AGENTS.md 파일을 관리하는 데 유용한 도구입니다. <a href="https://github.com/manuelschipper/mdmanager" target="_blank" rel="noreferrer">Mdmanager.ai – Manage your Claude.md and AGENTS.md across machines and runtimes</a></li>
+<li>Slock은 CapsLock 키 내부에 구현된 원비트 메신저로, 독특한 사용자 인터페이스를 제공합니다. <a href="https://github.com/jonaraphael/slock" target="_blank" rel="noreferrer">Show HN: Slock – A one-bit messenger inside your capslock key</a></li>
+<li>Aria-Icons는 34만 개의 SVG 아이콘을 제공하는 MCP 서버로, 디자인 및 개발 프로젝트에 활용될 수 있습니다. <a href="https://github.com/LeulAria/Aria-Icons" target="_blank" rel="noreferrer">MCP server for 340k SVG icons</a></li>
+<li>MarkFlowy는 대규모 문서를 위해 재구축된 오픈소스 마크다운 편집기로, 문서 작업 효율성을 높일 수 있습니다. <a href="https://github.com/drl990114/MarkFlowy" target="_blank" rel="noreferrer">Show HN: MarkFlowy – A open source Markdown editor rebuilt for large documents</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://openai.com/index/an-alien-mind/" target="_blank" rel="noreferrer">An Alien Mind</a> - OpenAI의 새로운 AI 개념에 대한 심층적인 탐구.</li>
+<li><a href="https://openai.robocurve.org/gpt-6-astra/" target="_blank" rel="noreferrer">GPT-6 Astra on robot arms</a> - GPT-6 Astra가 로봇 팔 제어에서 보여준 뛰어난 성능.</li>
+<li><a href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noreferrer">Research acceleration: The view inside OpenAI</a> - OpenAI 내부의 연구 가속화 전략.</li>
+<li><a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/" target="_blank" rel="noreferrer">How we monitor internal coding agents for misalignment</a> - AI 코딩 에이전트의 오작동 모니터링 방법.</li>
+<li><a href="https://www.npr.org/2026/09/04/nx-s1-5958611/africa-world-map-un-vote" target="_blank" rel="noreferrer">UN backs new map showing Africa&#x27;s true relative size with US alone in opposition</a> - 아프리카의 실제 크기를 반영한 새로운 지도에 대한 UN의 지지.</li>
+<li><a href="https://github.com/manuelschipper/mdmanager" target="_blank" rel="noreferrer">Mdmanager.ai – Manage your Claude.md and AGENTS.md across machines and runtimes</a> - AI 에이전트 관련 파일 관리를 위한 도구.</li>
+<li><a href="https://www.theatlantic.com/ideas/2026/09/open-ai-consciousness-morality/688535/" target="_blank" rel="noreferrer">AI Is Making Us Less Human</a> - AI가 인간성에 미치는 영향에 대한 논의.</li>
+<li><a href="https://twitter.com/RTomMcCoy/status/2094870131939684488" target="_blank" rel="noreferrer">LLM representations have implicit symbolic structure</a> - LLM의 내부 구조에 대한 흥미로운 연구 결과.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 OpenAI와 관련된 내용이 많아 편향된 시각을 제공할 수 있습니다.</li>
+<li>MCP 관련 정보는 다양한 소스에서 파편적으로 제공되어 전체적인 맥락 파악이 어려울 수 있습니다.</li>
+<li>AI 에이전트 관련 정보는 개발 중이거나 실험적인 도구에 대한 내용이 포함되어 있어 실제 적용 가능성에 대한 추가 확인이 필요합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-11. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-11 접수중 26,340 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;</li>
+<li><a href="https://linkareer.com/activity/345299" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능 제조데이터 분석 경진대회</a> - Linkareer, D-10. 중소벤처기업부 D-10 조회 5,732 댓글 0 &lt;a class=&quot;image-link&quot; href=&quot;/activity/34506</li>
+<li><a href="https://linkareer.com/activity/343799" target="_blank" rel="noreferrer">공모전 D-14 2026 K-조선 해커톤 Q flagsky 미취업자도 참여가능한가요? A 멋쟁이사자처럼 국내외 대학생 및 대학원생,전공무관 (재직자 제외) 가능합니다 - https://event-us.kr/m/132963/59419 해당 링크에서 더 자세한 내용을 보실 수 있습니다</a> - Linkareer, D-14. 대외활동 D-23 ★ [굿네이버스 서울북부] NGO</li>
+<li><a href="https://linkareer.com/activity/348351" target="_blank" rel="noreferrer">[김포시] 2026년 김포시 AI로 만드는 기후대응 숏폼 공모전</a> - Linkareer, 9.28. ~9.28 조회 270 &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;12&quot; height=&quot;16&quot; viewBox=&quot;0 0 8.7 11.2</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202609040042" target="_blank" rel="noreferrer">사진•영상•영화제 2026 국립과천과학관 AI 활용 숏폼 공모전</a> - Contest Korea. 0 주최 . 국립과천과학관 대상 . 누구나 , 유치원 , 초등학생 , 중학생 , 고등학생 ,</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
