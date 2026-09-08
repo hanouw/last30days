@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-08</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-07 09:54 - 09-08 09:54 (Asia/Seoul)</span>
+        <span>생성: 2026-09-08 09:55</span>
+        <span>수집 항목: 93개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=49600233" target="_blank" rel="noreferrer">OpenAI, Plus 및 Business Standard 사용자에게 5시간 제한 복귀</a>는 유료 사용자 경험에 직접적인 영향을 미칩니다.</li>
+<li><a href="https://www.businessinsider.com/nvidia-jensen-huang-agi-openai-astra-ai-2026-9" target="_blank" rel="noreferrer">Jensen Huang, AGI 도래 선언 및 OpenAI 축하</a>는 AI 발전의 중요한 이정표를 시사합니다.</li>
+<li><a href="https://github.com/trailofbits/coop" target="_blank" rel="noreferrer">Claude Code 및 Codex를 위한 격리된 VM 환경인 Coop 출시</a>는 개발자의 안전한 테스트 환경을 개선합니다.</li>
+<li><a href="https://tiiny.ai/" target="_blank" rel="noreferrer">가장 작은 엣지 AI 기기, 로컬 LLM 지원</a>은 온디바이스 AI의 가능성을 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.businessinsider.com/nvidia-jensen-huang-agi-openai-astra-ai-2026-9" target="_blank" rel="noreferrer">Jensen Huang, AGI 도래 선언 및 OpenAI 축하</a>는 AI 기술의 현재 상태에 대한 업계 리더의 관점을 제공합니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49600233" target="_blank" rel="noreferrer">OpenAI, Plus 및 Business Standard 사용자에게 5시간 제한 복귀</a>는 OpenAI 서비스의 접근성에 대한 변경 사항을 나타냅니다.</li>
+<li><a href="https://www.anthropic.com/news/formalizing-fermats-last-theorem" target="_blank" rel="noreferrer">Anthropic AI, 11일 만에 페르마의 마지막 정리를 형식화</a>는 AI의 수학적 증명 능력을 보여줍니다.</li>
+<li><a href="https://tiiny.ai/" target="_blank" rel="noreferrer">가장 작은 엣지 AI 기기, 로컬 LLM 지원</a>은 AI 모델의 소형화 및 효율화 추세를 보여줍니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.2.0" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk v2.2.0 출시</a>는 HTTP 클라이언트 리디렉션 동작 변경을 포함하여 SDK의 새로운 기능을 소개합니다.</li>
+<li><a href="https://github.com/redhat-et/ripwire" target="_blank" rel="noreferrer">ripwire: 코딩 에이전트에게 모든 리포지토리 맵을 제공하는 AI 컨텍스트의 ripgrep (CLI+MCP)</a>는 AI 에이전트의 코드 이해 능력을 향상시킬 수 있습니다.</li>
+<li><a href="https://data4sci.com/blog/llms-are-the-new-wikipedia" target="_blank" rel="noreferrer">LLM은 새로운 위키피디아: 모든 오래된 비판이 다시 새롭게</a>는 LLM의 발전과 함께 반복되는 비판을 조명합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/trailofbits/coop" target="_blank" rel="noreferrer">Claude Code 및 Codex를 위한 격리된 VM 환경인 Coop 출시</a>는 개발자가 안전하게 코드를 실행할 수 있는 환경을 제공합니다.</li>
+<li><a href="https://askpod.ai/" target="_blank" rel="noreferrer">Pod – AI 에이전트가 검토하는 개발 도구 리뷰 사이트</a>는 AI를 활용한 개발 도구 평가 방식을 보여줍니다.</li>
+<li><a href="https://github.com/yayster/yayster.el" target="_blank" rel="noreferrer">El Yayster – Emacs에 거주하는 상주 LLM</a>은 Emacs 사용자를 위한 LLM 통합 도구입니다.</li>
+<li><a href="https://github.com/aispace-sh/aispace-client" target="_blank" rel="noreferrer">AI 에이전트 및 인간을 위한 안전한 임시 파일 공유</a>는 AI 에이전트 간의 안전한 데이터 교환을 지원합니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=49600233" target="_blank" rel="noreferrer">OpenAI, Plus 및 Business Standard 사용자에게 5시간 제한 복귀</a> - 유료 사용자 경험에 대한 변경 사항입니다.</li>
+<li><a href="https://www.businessinsider.com/nvidia-jensen-huang-agi-openai-astra-ai-2026-9" target="_blank" rel="noreferrer">Jensen Huang, AGI 도래 선언 및 OpenAI 축하</a> - AI 발전의 중요한 이정표입니다.</li>
+<li><a href="https://github.com/trailofbits/coop" target="_blank" rel="noreferrer">Claude Code 및 Codex를 위한 격리된 VM 환경인 Coop 출시</a> - 안전한 개발 환경을 제공합니다.</li>
+<li><a href="https://tiiny.ai/" target="_blank" rel="noreferrer">가장 작은 엣지 AI 기기, 로컬 LLM 지원</a> - 온디바이스 AI의 가능성을 보여줍니다.</li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.2.0" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk v2.2.0 출시</a> - SDK 업데이트 및 변경 사항입니다.</li>
+<li><a href="https://github.com/redhat-et/ripwire" target="_blank" rel="noreferrer">ripwire: 코딩 에이전트에게 모든 리포지토리 맵을 제공하는 AI 컨텍스트의 ripgrep (CLI+MCP)</a> - AI 에이전트의 코드 이해를 돕습니다.</li>
+<li><a href="https://askpod.ai/" target="_blank" rel="noreferrer">Pod – AI 에이전트가 검토하는 개발 도구 리뷰 사이트</a> - AI 기반 개발 도구 평가입니다.</li>
+<li><a href="https://www.anthropic.com/news/formalizing-fermats-last-theorem" target="_blank" rel="noreferrer">Anthropic AI, 11일 만에 페르마의 마지막 정리를 형식화</a> - AI의 수학적 능력입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 2025년 재무 정보는 IPO를 앞두고 유출된 정보로, 공식 발표 전까지는 잠정적인 수치로 간주해야 합니다.</li>
+<li>ChatGPT가 &#x27;대규모 불법 복제&#x27;를 기반으로 구축되었다는 주장은 법정에서 제기된 내용으로, 아직 확정된 사실은 아닙니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-10. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-10 접수중 36,180 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=&quot;</li>
+<li><a href="https://linkareer.com/activity/345299" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능 제조데이터 분석 경진대회</a> - Linkareer, D-9. 중소벤처기업부 D-9 조회 6,854 댓글 0 실시간 인기 채용 &lt;li class=&quot;PopularRecruit</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">공모전 D-7 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면...</a> - Linkareer, D-7. 공모전 D-7 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면 되겠습니다. *사전 참가 신청은 지금 해주셔도 됩니다. 대외활동 D-2 스트로 컬쳐메이트 5기 모집 &lt;</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202609070052" target="_blank" rel="noreferrer">사진•영상•영화제 AI와 소방안전의 융합, 일상을 지키는 재난안전 숏폼 공모전</a> - Contest Korea. 0 주최 . 세종사이버대학교 소방방재학과·소방행정학과 대상 . 누구나 , 유치원 , 초등학생 , 중학생 , 고</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
