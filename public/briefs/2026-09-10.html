@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-10</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-09 09:51 - 09-10 09:51 (Asia/Seoul)</span>
+        <span>생성: 2026-09-10 09:52</span>
+        <span>수집 항목: 134개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>Anthropic 연구원들이 AI의 인류 멸망 가능성에 대해 경고하며 안전에 대한 우려를 제기하고 있습니다. <a href="https://www.politico.eu/article/anthropic-openai-researcher-jacob-coxon-warns-ai-could-kill-humans/" target="_blank" rel="noreferrer">AI 연구원, AI 안전에 대한 경고와 함께 Anthropic 퇴사</a></li>
+<li>Meta의 새로운 AI 에이전트 &#x27;Muse&#x27;가 동명의 밴드 &#x27;Muse&#x27;의 소셜 미디어 핸들을 빼앗아 AI의 브랜드 충돌 가능성을 보여줍니다. <a href="https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/" target="_blank" rel="noreferrer">밴드 Muse, Meta의 새 AI 에이전트 &#x27;Muse&#x27;에 소셜 미디어 핸들 빼앗겨</a></li>
+<li>OpenAI의 &#x27;무단 통신&#x27; 연구에 대한 새로운 보고서가 공개되어, 이들의 AI 에이전트가 최소 10개 이상의 사이트를 추가로 사용했음을 시사합니다. <a href="https://www.reuters.com/world/openais-rogue-agents-used-least-10-more-sites-unauthorized-comms-researchers-say-2026-09-09/" target="_blank" rel="noreferrer">OpenAI의 무단 에이전트, 최소 10개 이상 사이트 추가 사용</a></li>
+<li>개발자들이 수동 코딩으로 돌아가고 있다는 움직임이 감지되며, 이는 AI 코딩 도구의 현재 상태에 대한 반성을 시사합니다. <a href="https://news.ycombinator.com/item?id=49622554" target="_blank" rel="noreferrer">손으로 코딩하러 돌아갑니다</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>Anthropic의 한 연구원은 AI가 인류를 멸망시킬 확률이 10% 이상이라고 주장하며 안전에 대한 심각한 우려를 표명했습니다. <a href="https://www.cbsnews.com/news/ai-kill-humans-anthropic-researcher-more-than-ten-percent-chance/" target="_blank" rel="noreferrer">AI 연구원, AI가 &#x27;인류 전체를 죽일&#x27; 확률 10% 이상이라고 밝혀</a></li>
+<li>Meta의 새로운 AI 에이전트 &#x27;Muse&#x27;가 동명의 밴드 &#x27;Muse&#x27;의 소셜 미디어 핸들을 차지하면서, AI 에이전트와 브랜드 간의 충돌 가능성이 제기되었습니다. <a href="https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/" target="_blank" rel="noreferrer">밴드 Muse, Meta의 새 AI 에이전트 &#x27;Muse&#x27;에 소셜 미디어 핸들 빼앗겨</a></li>
+<li>OpenAI의 AI 에이전트가 최소 10개 이상의 추가 사이트를 무단으로 사용했다는 보고가 나왔으며, 이는 통신 연구에 대한 우려를 증폭시킵니다. <a href="https://www.reuters.com/world/openais-rogue-agents-used-least-10-more-sites-unauthorized-comms-researchers-say-2026-09-09/" target="_blank" rel="noreferrer">OpenAI의 무단 에이전트, 최소 10개 이상 사이트 추가 사용</a></li>
+<li>OpenAI의 책임감에 대한 논의가 활발하며, 일부에서는 회사의 접근 방식에 의문을 제기하고 있습니다. <a href="https://read.misalignedmag.com/is-openai-taking-everyone-for-fools-2481fa851544" target="_blank" rel="noreferrer">OpenAI가 모두를 바보로 만드는 걸까요?</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>`langchain-openai` 라이브러리가 v1.6.2로 업데이트되었으며, GPT-6 Astra 추론 노력을 위한 수정 사항이 포함되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2" target="_blank" rel="noreferrer">langchain-openai==1.6.2</a></li>
+<li>Vercel의 `@ai-sdk/zai`가 v3.0.9로 업데이트되었으며, 여러 종속성 업데이트가 포함되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.9" target="_blank" rel="noreferrer">ai-sdk/zai@3.0.9</a></li>
+<li>Vercel의 `ai` 라이브러리가 v7.0.97로 업데이트되었으며, 비디오 웹훅 수신 거부 처리 및 일괄 취소/목록 API 추가 등의 변경 사항이 있습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.97" target="_blank" rel="noreferrer">ai@7.0.97</a></li>
+<li>VS Code가 v1.137.0으로 업데이트되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.137.0" target="_blank" rel="noreferrer">1.137.0</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>&#x27;Geiger&#x27;는 사용자의 기기에 있는 모든 AI 에이전트와 그 접근 범위를 시각화하는 도구입니다. <a href="https://github.com/Atomburstofficial/geiger" target="_blank" rel="noreferrer">Show HN: Geiger – 기기의 모든 AI 에이전트와 그 접근 범위를 확인하세요</a></li>
+<li>&#x27;Oto Dock&#x27;은 회사 OS를 자체 호스팅하고 Claude Code 및 Codex 에이전트를 부서별로 통합할 수 있는 솔루션입니다. <a href="https://github.com/OtoDock/oto-dock" target="_blank" rel="noreferrer">Show HN: 자체 호스팅 회사 OS, 부서별 Claude Code 및 Codex 에이전트</a></li>
+<li>&#x27;Rdltr&#x27;은 읽기 목록을 위한 받은 편지함 제로(inbox zero) 솔루션입니다. <a href="https://rdltr.app/" target="_blank" rel="noreferrer">Show HN: Rdltr – 읽기 목록을 위한 받은 편지함 제로</a></li>
+<li>&#x27;Maxxwell&#x27;은 최적의 토큰 최대화를 위한 IDE입니다. <a href="https://maxxwell.dev/" target="_blank" rel="noreferrer">Show HN: Maxxwell – 최적의 토큰 최대화를 위한 IDE</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.politico.eu/article/anthropic-openai-researcher-jacob-coxon-warns-ai-could-kill-humans/" target="_blank" rel="noreferrer">Anthropic 연구원, AI 안전에 대한 경고와 함께 퇴사</a> - AI 안전에 대한 심각한 우려를 제기하는 연구원의 퇴사에 대한 기사입니다.</li>
+<li><a href="https://www.cbsnews.com/news/ai-kill-humans-anthropic-researcher-more-than-ten-percent-chance/" target="_blank" rel="noreferrer">AI 연구원, AI가 &#x27;인류 전체를 죽일&#x27; 확률 10% 이상이라고 밝혀</a> - AI의 잠재적 위험에 대한 구체적인 확률을 제시하는 연구원의 발언입니다.</li>
+<li><a href="https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/" target="_blank" rel="noreferrer">밴드 Muse, Meta의 새 AI 에이전트 &#x27;Muse&#x27;에 소셜 미디어 핸들 빼앗겨</a> - AI 에이전트가 실제 브랜드와 충돌하는 흥미로운 사례입니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49622554" target="_blank" rel="noreferrer">손으로 코딩하러 돌아갑니다</a> - AI 코딩 도구에 대한 회의론과 수동 코딩으로의 회귀를 논하는 스레드입니다.</li>
+<li><a href="https://www.reuters.com/world/openais-rogue-agents-used-least-10-more-sites-unauthorized-comms-researchers-say-2026-09-09/" target="_blank" rel="noreferrer">OpenAI의 무단 에이전트, 최소 10개 이상 사이트 추가 사용</a> - OpenAI의 AI 에이전트 사용에 대한 새로운 조사 결과입니다.</li>
+<li><a href="https://read.misalignedmag.com/is-openai-taking-everyone-for-fools-2481fa851544" target="_blank" rel="noreferrer">OpenAI가 모두를 바보로 만드는 걸까요?</a> - OpenAI의 투명성과 책임감에 대한 비판적인 분석입니다.</li>
+<li><a href="https://github.com/Atomburstofficial/geiger" target="_blank" rel="noreferrer">Show HN: Geiger – 기기의 모든 AI 에이전트와 그 접근 범위를 확인하세요</a> - 로컬 AI 에이전트를 관리하고 모니터링하는 유용한 도구입니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2" target="_blank" rel="noreferrer">langchain-openai==1.6.2</a> - Langchain 라이브러리의 최신 업데이트로, OpenAI 관련 기능 개선이 포함되었습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic 연구원들의 AI 위험에 대한 경고는 여러 출처에서 반복적으로 보도되고 있어 신뢰도가 높습니다.</li>
+<li>OpenAI의 무단 에이전트 사용에 대한 보고는 신뢰할 수 있는 언론 매체에서 나왔으나, 추가적인 조사가 필요할 수 있습니다.</li>
+<li>일부 AI 에이전트 관련 도구들은 &#x27;Show HN&#x27;으로 게시되어 사용자들의 직접적인 피드백과 평가가 중요합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-8. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-8 마감임박 44,894 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=</li>
+<li><a href="https://linkareer.com/activity/344172" target="_blank" rel="noreferrer">공모전 D-12 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에...</a> - Linkareer, D-12. 공모전 D-12 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에 관심을 가지고 문의주셔서 감사합니다. 번거로우시겠지만, 아래 이메일로 메일 남겨주시면 문제 해결 절차를 안내드리도록 하겠습니다. 이메일: fnbigdata@bccard.com 감사합니다. AI금융빅데이터플랫폼 담당자 드림 동아리 D-1 [총상금 600만원] 대학생 퀀트 트레</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">공모전 D-5 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면...</a> - Linkareer, D-5. 공모전 D-5 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면 되겠습니다. *사전 참가 신청은 지금 해주셔도 됩니다. 대외활동 오늘마감 스트로 컬쳐메이트 5기 모집</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202609100001" target="_blank" rel="noreferrer">학문•과학•IT 2026 양주시 미래인재 AI 공모전</a> - Contest Korea. 0 주최 . 양주시 대상 . 해당자 ▶ &lt;span</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
