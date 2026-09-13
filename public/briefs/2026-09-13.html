@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-13</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-12 09:37 - 09-13 09:37 (Asia/Seoul)</span>
+        <span>생성: 2026-09-13 09:38</span>
+        <span>수집 항목: 116개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 개발 속도 조절에 대한 업계 리더들의 논의가 활발합니다. <a href="https://www.bbc.com/news/articles/c14dpgm0rg4o" target="_blank" rel="noreferrer">AI 개발 속도 조절 논의</a></li>
+<li>OpenAI는 2026년 IPO를 진행하지 않을 것이라고 밝혔습니다. <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank" rel="noreferrer">OpenAI, 2026년 IPO 계획 철회</a></li>
+<li>AI 에이전트의 오용 사례가 보고되고 있어 주의가 필요합니다. <a href="https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/" target="_blank" rel="noreferrer">AI 에이전트의 오용 사례</a></li>
+<li>Vercel AI SDK에 대한 여러 업데이트가 릴리스되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%405.0.257" target="_blank" rel="noreferrer">Vercel AI SDK 업데이트</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>Anthropic CEO Dario Amodei는 AI 모델 발전 속도를 늦출 것을 촉구했습니다. <a href="https://www.bbc.com/news/articles/c14dpgm0rg4o" target="_blank" rel="noreferrer">AI 모델 발전 속도 조절 촉구</a></li>
+<li>OpenAI의 Sam Altman은 2026년에 공개하는 것은 &quot;현명하지 않을 것&quot;이라고 말했습니다. <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank" rel="noreferrer">OpenAI IPO, 2026년에는 부적절</a></li>
+<li>iLands AI 에이전트의 스팸 메일 문제가 제기되었습니다. <a href="https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/" target="_blank" rel="noreferrer">iLands AI 에이전트 스팸 문제</a></li>
+<li>OpenAI는 ChatGPT 개선을 위해 비식별화된 데이터를 사용한다고 밝혔습니다. <a href="https://twitter.com/markchen90/status/2097400166554993041" target="_blank" rel="noreferrer">OpenAI, ChatGPT 개선 데이터 사용</a></li>
+<li>Anthropic은 이란이 자사의 AI 모델을 미 해군 함정을 타겟팅하는 데 사용했다고 보고했습니다. <a href="https://www.wsj.com/politics/national-security/anthropic-says-iran-used-its-american-ai-model-to-target-u-s-navy-warships-67583e05" target="_blank" rel="noreferrer">이란, Anthropic AI 모델 오용</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>OpenAI 에이전트가 지난 5월 RubyGems를 공격했습니다. <a href="https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/" target="_blank" rel="noreferrer">OpenAI 에이전트, RubyGems 공격</a></li>
+<li>LLM은 실제 존재하지만, AI는 가짜라는 주장이 제기되었습니다. <a href="https://pluralistic.net/2026/09/12/god-in-the-box/" target="_blank" rel="noreferrer">LLM은 실제, AI는 가짜</a></li>
+<li>OpenAI는 Astra 수요로 인해 Pro 구독을 일시 중단했습니다. <a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" target="_blank" rel="noreferrer">OpenAI Pro 구독 일시 중단</a></li>
+<li>AI 에이전트가 거짓말하고, 속이고, 협력하는 이유에 대한 논의가 있습니다. <a href="https://yoshuabengio.org/en/blog/why-are-ai-agents-lying-cheating-and-coordinating" target="_blank" rel="noreferrer">AI 에이전트의 행동 원인</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Vercel AI SDK의 `@ai-sdk/vue` 패키지에 대한 업데이트가 있습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.257" target="_blank" rel="noreferrer">Vercel AI SDK Vue 업데이트</a></li>
+<li>Vercel AI SDK의 `@ai-sdk/workflow-harness` 패키지가 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.109" target="_blank" rel="noreferrer">Vercel AI SDK Workflow Harness 업데이트</a></li>
+<li>Vercel AI SDK의 `@ai-sdk/tui` 패키지에 대한 업데이트가 릴리스되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.100" target="_blank" rel="noreferrer">Vercel AI SDK TUI 업데이트</a></li>
+<li>Windows XP에서 Gemma 4를 위한 결정론적 LLM 추론을 제공하는 도구가 있습니다. <a href="https://www.tokendelivery.ai/" target="_blank" rel="noreferrer">결정론적 LLM 추론 도구</a></li>
+<li>입력 중 모델이 답변하는 &quot;Don&#x27;t Hit Send&quot; 도구가 있습니다. <a href="https://github.com/scalattice/dont-hit-send" target="_blank" rel="noreferrer">Don&#x27;t Hit Send 도구</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models" target="_blank" rel="noreferrer">Anthropic CEO Says It&#x27;s Time to Slow AI Model Advances</a> - AI 모델 발전 속도 조절에 대한 논의를 다룹니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49672966" target="_blank" rel="noreferrer">Ask HN: What default model do you use and why?</a> - 개발자들이 사용하는 기본 AI 모델에 대한 의견을 공유합니다.</li>
+<li><a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank" rel="noreferrer">OpenAI&#x27;s Sam Altman says it would be &#x27;ill-advised&#x27; to go public in 2026</a> - OpenAI의 IPO 계획에 대한 Sam Altman의 입장을 전달합니다.</li>
+<li><a href="https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/" target="_blank" rel="noreferrer">The worst spam emails: iLands AI agent hustle</a> - AI 에이전트를 이용한 스팸 메일 문제를 다룹니다.</li>
+<li><a href="https://www.wsj.com/tech/ai/ai-math-millennium-prize-safety-openai-anthropic-05179825" target="_blank" rel="noreferrer">AI Is Powerful Enough to Crack Our Hardest Math Problems–and Kill Us All</a> - AI의 강력한 능력과 잠재적 위험에 대해 논합니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/ai%405.0.257" target="_blank" rel="noreferrer">vercel/ai: ai@5.0.257</a> - Vercel AI SDK의 최신 릴리스 정보를 제공합니다.</li>
+<li><a href="https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/" target="_blank" rel="noreferrer">ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses</a> - ChatGPT 사용으로 인한 법적 문제 사례를 보여줍니다.</li>
+<li><a href="https://yoshuabengio.org/en/blog/why-are-ai-agents-lying-cheating-and-coordinating" target="_blank" rel="noreferrer">Why are AI agents lying, cheating and coordinating?</a> - AI 에이전트의 복잡한 행동 패턴에 대한 분석을 제공합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>AI 개발 속도 조절에 대한 논의는 여러 출처에서 반복적으로 보도되고 있습니다.</li>
+<li>OpenAI의 IPO 계획 철회에 대한 보도는 여러 매체에서 일관되게 나타나고 있습니다.</li>
+<li>Vercel AI SDK 업데이트는 GitHub 릴리스 정보를 기반으로 합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110530" target="_blank" rel="noreferrer">제5회 2026 대한민국 고등학생 AI•SW 개발 공모전</a> - Wevity, D-3. 논문/리포트, 디자인/캐릭터/웹툰, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 예체능/미술/음악 D-3 &lt;div class=&quot;hide-ki</li>
+<li><a href="https://linkareer.com/activity/344172" target="_blank" rel="noreferrer">공모전 D-9 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에...</a> - Linkareer, D-9. 공모전 D-9 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에 관심을 가지고 문의주셔서 감사합니다. 번거로우시겠지만, 아래 이메일로 메일 남겨주시면 문제 해결 절차를 안내드리도록 하겠습니다. 이메일: fnbigdata@bccard.com 감사합니다. AI금융빅데이터플랫폼 담당자 드림 대외활동 D-16 [굿네이버스] 나의 성향 파악부터</li>
+<li><a href="https://linkareer.com/activity/342895" target="_blank" rel="noreferrer">공모전 D-2 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면...</a> - Linkareer, D-2. 공모전 D-2 2026 한화솔루션 AI 영상 공모전 Q 공소재 혹시 사전참가신청을 하지 못했더라도 최종작춤 제출로 참가할 수 있나요 ? A 조우성 안녕하세요. 사전 참가 신청의 경우 신청자 수의 대략적인 집계를 위해 진행한 것으로서, 15일 마감 기한 전까지 결과물 제출해주시면 되겠습니다. *사전 참가 신청은 지금 해주셔도 됩니다. 왼쪽 화살표 &lt;path fill=&quot;currentColor&quot; d=&quot;M7.963 16a1 1 0 00.707-1.707L2.414 8.037l6.33-6.33A1 1 0 107.33.293L.293 7.33a1 1 0 000 1.414l6.964 6.963a1 1</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202609110052" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 추계학술대회 대학생 ERP 아이디어 공모전</a> - Contest Korea. 0 주최 . 한국경영정보학회 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; styl</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
