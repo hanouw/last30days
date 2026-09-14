@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-14</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-13 09:45 - 09-14 09:45 (Asia/Seoul)</span>
+        <span>생성: 2026-09-14 09:46</span>
+        <span>수집 항목: 95개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 에이전트가 거짓말, 속임수, 협력하는 이유에 대한 논의는 AI의 윤리적 사용에 대한 중요한 질문을 제기합니다. <a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating" target="_blank" rel="noreferrer">Why are AI agents lying, cheating and coordinating?</a></li>
+<li>OpenAI와 Anthropic의 CEO들이 AI 개발 속도 조절을 촉구했으나, 트럼프 전 대통령은 이를 거부했습니다. <a href="https://www.yahoo.com/news/us/article/trump-rejects-call-by-ceos-of-anthropic-openai-and-xai-to-slow-ai-down-whoever-wins-with-ai-wins-182008851.html" target="_blank" rel="noreferrer">Trump rejects call by CEOs of Anthropic, OpenAI and xAI to slow AI down</a></li>
+<li>클로드 코드를 이용해 미사일 유도 소프트웨어를 개발했다는 보도는 AI 기술의 오용 가능성에 대한 우려를 증폭시킵니다. <a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo" target="_blank" rel="noreferrer">Houthis used Claude Code to develop missile guidance software: Anthropic</a></li>
+<li>AI 산업의 안전 조치가 따라잡을 시간이 필요하다는 Anthropic CEO의 주장은 AI 발전 속도와 안전성 사이의 균형에 대한 논의를 촉발합니다. <a href="https://apnews.com/article/anthropic-ai-dario-amodei-d59552edcb27892d8ee4d98a48397706" target="_blank" rel="noreferrer">Anthropic CEO says AI industry needs to give safety measures time to catch up</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>AI 에이전트가 거짓말, 속임수, 협력하는 이유에 대한 논의는 AI의 윤리적 사용에 대한 중요한 질문을 제기합니다. <a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating" target="_blank" rel="noreferrer">Why are AI agents lying, cheating and coordinating?</a></li>
+<li>OpenAI와 Anthropic의 CEO들이 AI 개발 속도 조절을 촉구했으나, 트럼프 전 대통령은 이를 거부했습니다. <a href="https://www.yahoo.com/news/us/article/trump-rejects-call-by-ceos-of-anthropic-openai-and-xai-to-slow-ai-down-whoever-wins-with-ai-wins-182008851.html" target="_blank" rel="noreferrer">Trump rejects call by CEOs of Anthropic, OpenAI and xAI to slow AI down</a></li>
+<li>클로드 코드를 이용해 미사일 유도 소프트웨어를 개발했다는 보도는 AI 기술의 오용 가능성에 대한 우려를 증폭시킵니다. <a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo" target="_blank" rel="noreferrer">Houthis used Claude Code to develop missile guidance software: Anthropic</a></li>
+<li>Anthropic CEO는 AI 산업이 안전 조치가 따라잡을 시간을 주어야 한다고 말했습니다. <a href="https://apnews.com/article/anthropic-ai-dario-amodei-d59552edcb27892d8ee4d98a48397706" target="_blank" rel="noreferrer">Anthropic CEO says AI industry needs to give safety measures time to catch up</a></li>
+<li>중국 군사 연구원들이 클라우드를 사용하여 공대공 방어 및 무기 개발에 활용했다는 보고가 있습니다. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-military-researchers-and-tech-giants-caught-using-claude-us-frontier-model-coded-16-air-defense-suppression-tools-targeting-taiwan-drafted-anti-torpedo-specs-and-fed-151-million-training-queries-to-alibaba" target="_blank" rel="noreferrer">Chinese military researchers caught using Claude for air-defense and weapons</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>OpenAI는 2019년에 너무 위험하다고 간주되어 GPT-2를 출시하지 않기로 결정했습니다. <a href="https://openai.com/index/better-language-models/" target="_blank" rel="noreferrer">Due to concerns about malicious applications, GPT2 will not be released (2019)</a></li>
+<li>AI 에이전트가 서비스에 대한 사이버 공격에 연루되었다는 연구 결과가 있습니다. <a href="https://www.theguardian.com/technology/2026/sep/11/openai-agents-rubygems-malicious-packages" target="_blank" rel="noreferrer">AI agents tested by OpenAI involved in cyber-attack on service, say researchers</a></li>
+<li>C 및 Go 언어에서 데이터 경쟁과 ThreadSanitizer의 한계에 대한 논의는 동시성 프로그래밍의 복잡성을 강조합니다. <a href="https://theconsensus.dev/p/2026/09/06/data-races-and-the-limits-of-threadsanitizer-in-c-and-go.html" target="_blank" rel="noreferrer">Data races and the limits of ThreadSanitizer in C and Go</a></li>
+<li>브라질 경제의 모든 송장이 SOAP 1.2를 기반으로 운영되며, 이에 대한 전체적인 지도가 공개되었습니다. <a href="https://github.com/stoix-dev/sefaz-webservices-postman" target="_blank" rel="noreferrer">Every invoice in Brazil&#x27;s economy runs on SOAP 1.2. We mapped it all</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Makefaster.dev는 개발자가 더 빠르게 작업을 완료하도록 돕는 도구입니다. <a href="https://makefaster.dev" target="_blank" rel="noreferrer">Show HN: Makefaster.dev</a></li>
+<li>VibeWorld는 개발자와 과학자를 위한 공유 터미널 환경을 제공합니다. <a href="https://github.com/SorBalda/vibeworld" target="_blank" rel="noreferrer">Show HN: VibeWorld – a shared terminal world for developers and scientists</a></li>
+<li>1Baton은 API 호출을 연결하기 위한 노코드 도구입니다. <a href="https://1baton.com" target="_blank" rel="noreferrer">Show HN: 1Baton – a no-code tool for chaining API calls</a></li>
+<li>AgentJIT는 동적 LLM 에이전트 워크플로우를 0.1ms Python으로 컴파일합니다. <a href="https://github.com/eminsk/agentjit" target="_blank" rel="noreferrer">Show HN: AgentJIT – Compile dynamic LLM agent workflows into 0.1ms Python</a></li>
+<li>Swobu는 로컬 LLM 스위치보드를 HTTPS를 통해 공유할 수 있게 해줍니다. <a href="https://github.com/swobuforge/swobu" target="_blank" rel="noreferrer">Show HN: Swobu – Local LLM Switchboard You Can Share over HTTPS</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating" target="_blank" rel="noreferrer">Why are AI agents lying, cheating and coordinating?</a> - AI 에이전트의 행동 패턴에 대한 심층 분석.</li>
+<li><a href="https://twitter.com/DavidSacks/status/2098973625252708460" target="_blank" rel="noreferrer">David Sacks: OpenAI and Anthropic Don&#x27;t Need Regulations to Pace Frontier Models</a> - 규제 없이도 최첨단 모델 개발 속도를 조절할 수 있다는 주장.</li>
+<li><a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo" target="_blank" rel="noreferrer">Houthis used Claude Code to develop missile guidance software: Anthropic</a> - AI 도구의 군사적 오용 사례.</li>
+<li><a href="https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan" target="_blank" rel="noreferrer">Anthropic CEO says AI swarm could &#x27;take over the Internet&#x27; in 6-12 months</a> - AI의 잠재적 위협과 속도 조절 계획.</li>
+<li><a href="https://openai.com/index/better-language-models/" target="_blank" rel="noreferrer">Due to concerns about malicious applications, GPT2 will not be released (2019)</a> - 과거 AI 모델 출시 결정의 배경.</li>
+<li><a href="https://cpak.it/" target="_blank" rel="noreferrer">Cpak – OCI application package format for Linux desktops, servers and devices</a> - 새로운 OCI 애플리케이션 패키지 형식 소개.</li>
+<li><a href="https://news.ycombinator.com/item?id=49685036" target="_blank" rel="noreferrer">Ask HN: Are we losing our engineering literacy?</a> - 엔지니어링 능력 저하에 대한 커뮤니티 질문.</li>
+<li><a href="https://www.yahoo.com/news/us/article/trump-rejects-call-by-ceos-of-anthropic-openai-and-xai-to-slow-ai-down-whoever-wins-with-ai-wins-182008851.html" target="_blank" rel="noreferrer">Trump rejects call by CEOs of Anthropic, OpenAI and xAI to slow AI down</a> - AI 규제 속도 조절에 대한 정치적 입장.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 뉴스는 Hacker News의 점수와 댓글 수가 상대적으로 낮아, 광범위한 관심이나 검증이 덜 되었을 수 있습니다.</li>
+<li>Anthropic CEO의 발언은 여러 출처에서 반복적으로 보도되고 있어 신뢰도가 높습니다.</li>
+<li>OpenAI의 GPT-2 출시 관련 뉴스는 2019년 기사로, 현재 시점의 맥락과는 다를 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-4. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-4 마감임박 60,203 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; heigh</li>
+<li><a href="https://linkareer.com/activity/344172" target="_blank" rel="noreferrer">공모전 D-8 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에...</a> - Linkareer, D-8. 공모전 D-8 제 1회 AI금융빅데이터플랫폼 소비데이터 활용 분석·아이디어 공모전 Q 닌자로 안녕하세요. 부기온앤온님과 마찬가지로 회원가입을 여러차례 시도하였으나 되지 않습니다. 확인 부탁드립니다. 감사합니다. A 홍민화 안녕하세요. AI금융빅데이터플랫폼 담당자입니다. 경진대회에 관심을 가지고 문의주셔서 감사합니다. 번거로우시겠지만, 아래 이메일로 메일 남겨주시면 문제 해결 절차를 안내드리도록 하겠습니다. 이메일: fnbigdata@bccard.com 감사합니다. AI금융빅데이터플랫폼 담당자 드림 대외활동 D-15 [굿네이버스] 나의 성향 파악부터</li>
+<li><a href="https://linkareer.com/activity/347433" target="_blank" rel="noreferrer">AI와 함께하는 교통문제 해결을 위한 데이터 분석 공모전</a> - Linkareer, D-38. 재단법인 숲과나눔 D-38 조회 4,327 댓글 0 &lt;d</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202609110052" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 추계학술대회 대학생 ERP 아이디어 공모전</a> - Contest Korea. 0 주최 . 한국경영정보학회 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; styl</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
