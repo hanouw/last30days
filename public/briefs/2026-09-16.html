@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-16</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-15 10:07 - 09-16 10:07 (Asia/Seoul)</span>
+        <span>생성: 2026-09-16 10:07</span>
+        <span>수집 항목: 121개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 에이전트가 인터넷을 파괴할 가능성이 100%라는 주장이 제기되었습니다. 이는 AI 에이전트의 광범위한 영향력을 시사합니다. <a href="https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/" target="_blank" rel="noreferrer">There&#x27;s a 100% Chance AI Agents Are Ruining the Internet</a></li>
+<li>OpenAI가 스마트폰 카메라 스타트업 Glass Imaging을 3억 달러에 인수했습니다. 이는 OpenAI의 하드웨어 및 AI 통합 전략을 보여줍니다. <a href="https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/" target="_blank" rel="noreferrer">OpenAI buys smartphone camera maker Glass Imaging for $300M</a></li>
+<li>Anthropic 공동 창립자는 AI &#x27;킬 스위치&#x27;가 의무화되어야 한다고 언급했습니다. 이는 AI 안전에 대한 규제 논의의 중요성을 강조합니다. <a href="https://www.bbc.com/news/articles/cqgk5e2j0gg8o" target="_blank" rel="noreferrer">AI &#x27;kill switch&#x27; may need to be mandatory, Anthropic co-founder tells BBC</a></li>
+<li>Hugging Face가 OpenAI를 상대로 1억 달러를 청구했습니다. 이는 AI 모델 학습 데이터 및 컴퓨팅 자원 관련 분쟁을 보여줍니다. <a href="https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand" target="_blank" rel="noreferrer">Hugging Face is billing OpenAI $100M for hacking it</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>AI 에이전트가 인터넷을 파괴할 가능성이 100%라는 주장이 제기되었습니다. <a href="https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/" target="_blank" rel="noreferrer">There&#x27;s a 100% Chance AI Agents Are Ruining the Internet</a></li>
+<li>F-Droid의 얼마나 많은 부분이 LLM으로 생성되었는지에 대한 질문이 제기되었습니다. <a href="https://tintotint.eu/whacky-corner/f-droid_slop/" target="_blank" rel="noreferrer">How much of F-Droid is LLM generated?</a></li>
+<li>OpenAI가 스마트폰 카메라 스타트업 Glass Imaging을 3억 달러에 인수했습니다. <a href="https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/" target="_blank" rel="noreferrer">OpenAI buys smartphone camera maker Glass Imaging for $300M</a></li>
+<li>Anthropic 공동 창립자는 AI &#x27;킬 스위치&#x27;가 의무화되어야 한다고 언급했습니다. <a href="https://www.bbc.com/news/articles/cqgk5e2j0gg8o" target="_blank" rel="noreferrer">AI &#x27;kill switch&#x27; may need to be mandatory, Anthropic co-founder tells BBC</a></li>
+<li>Hugging Face가 OpenAI를 상대로 1억 달러를 청구했습니다. <a href="https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand" target="_blank" rel="noreferrer">Hugging Face is billing OpenAI $100M for hacking it</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>OpenAI Python 라이브러리가 v3.14.1로 업데이트되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.14.1" target="_blank" rel="noreferrer">openai/openai-python: v3.14.1</a></li>
+<li>Vercel AI SDK의 @ai-sdk/xai가 5.0.0으로 업데이트되었으며 Chat Completions API가 제거되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.0" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/xai@5.0.0</a></li>
+<li>Vercel AI SDK의 @ai-sdk/workflow@2.0.33이 패치 변경 사항과 함께 릴리스되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.33" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/workflow@2.0.33</a></li>
+<li>Anthropic SDK for Python이 v1.6.0으로 업데이트되었으며 Managed Agents를 위한 자동 모드 도구 권한이 추가되었습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.6.0" target="_blank" rel="noreferrer">anthropics/anthropic-sdk-python: v1.6.0</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Sunk Cost는 로컬 LLM 리그가 자체 비용을 회수하는 데 얼마나 걸릴지 계산하는 도구입니다. <a href="https://sunkcost.ai/" target="_blank" rel="noreferrer">Show HN: Sunk Cost – How long until a local LLM rig pays for itself?</a></li>
+<li>Pizza Bot은 백그라운드에서 작동하는 AI 에이전트용 받은 편지함입니다. <a href="https://github.com/pizza-bot-app/pizza-bot" target="_blank" rel="noreferrer">Show HN: Pizza Bot – An inbox for AI agents that work in the background</a></li>
+<li>Chronicle은 작가를 위한 로컬 우선 오픈 소스 저작 소프트웨어입니다. <a href="https://pazvanti.github.io/Chronicle/" target="_blank" rel="noreferrer">Show HN: Chronicle – Local-first, open-source authoring software for writers</a></li>
+<li>Bough는 직장에서 Claude Code를 대체하기 위해 구축된 에이전트입니다. <a href="https://github.com/andreylukin/bough" target="_blank" rel="noreferrer">Show HN: Bough, the agent I built to replace Claude Code at work</a></li>
+<li>Amika는 코딩 에이전트와 인간을 위한 멀티플레이어 클라우드 워크스테이션입니다. <a href="https://www.amika.dev/" target="_blank" rel="noreferrer">Show HN: Amika – Multiplayer cloud workstations for coding agents and humans</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/" target="_blank" rel="noreferrer">There&#x27;s a 100% Chance AI Agents Are Ruining the Internet</a> - AI 에이전트가 인터넷에 미치는 영향에 대한 심층 분석입니다.</li>
+<li><a href="https://tintotint.eu/whacky-corner/f-droid_slop/" target="_blank" rel="noreferrer">How much of F-Droid is LLM generated?</a> - 오픈 소스 앱 스토어의 LLM 생성 콘텐츠 비율에 대한 탐구입니다.</li>
+<li><a href="https://dank.systems/posts/2026-09-15-ai-bear.html" target="_blank" rel="noreferrer">Why I&#x27;m still bearish on LLMs after Navier-Stokes</a> - LLM의 미래에 대한 비관적인 전망을 제시합니다.</li>
+<li><a href="https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/" target="_blank" rel="noreferrer">OpenAI buys smartphone camera maker Glass Imaging for $300M</a> - OpenAI의 하드웨어 시장 진출에 대한 소식입니다.</li>
+<li><a href="https://www.bbc.com/news/articles/cqgk5e2j0gg8o" target="_blank" rel="noreferrer">AI &#x27;kill switch&#x27; may need to be mandatory, Anthropic co-founder tells BBC</a> - AI 안전 규제에 대한 중요한 논의를 다룹니다.</li>
+<li><a href="https://sunkcost.ai/" target="_blank" rel="noreferrer">Show HN: Sunk Cost – How long until a local LLM rig pays for itself?</a> - 로컬 LLM 구축의 경제성을 평가하는 도구입니다.</li>
+<li><a href="https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand" target="_blank" rel="noreferrer">Hugging Face is billing OpenAI $100M for hacking it</a> - AI 업계의 잠재적 갈등을 보여줍니다.</li>
+<li><a href="https://twitter.com/brianchau57/status/2099580981271318606" target="_blank" rel="noreferrer">Israeli Effective Altruism Firm Behind OpenAI, Anthropic, and Meta Cyberattacks</a> - AI 기업을 둘러싼 사이버 공격 의혹에 대한 내용입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>AI 에이전트가 인터넷을 파괴할 가능성에 대한 주장은 &quot;100% 확실하다&quot;는 표현을 사용하지만, 이는 분석가의 의견일 수 있습니다. <a href="https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/" target="_blank" rel="noreferrer">There&#x27;s a 100% Chance AI Agents Are Ruining the Internet</a></li>
+<li>OpenAI의 Glass Imaging 인수 건은 보고서에 기반한 내용으로, 공식 발표는 아닙니다. <a href="https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/" target="_blank" rel="noreferrer">OpenAI buys smartphone camera maker Glass Imaging for $300M</a></li>
+<li>Hugging Face의 OpenAI에 대한 1억 달러 청구는 아직 확정되지 않은 주장일 수 있습니다. <a href="https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand" target="_blank" rel="noreferrer">Hugging Face is billing OpenAI $100M for hacking it</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-2. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-2 마감임박 67,530 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=</li>
+<li><a href="https://linkareer.com/activity/347433" target="_blank" rel="noreferrer">AI와 함께하는 교통문제 해결을 위한 데이터 분석 공모전</a> - Linkareer, D-36. 재단법인 숲과나눔 D-36 조회 5,416 댓글 0 &lt;div class=&quot;PopularActivity</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202609150046" target="_blank" rel="noreferrer">학문•과학•IT 2026 스페이스 해커톤</a> - Contest Korea. 0 주최 . 우주항공청 대상 . 대학생 , 대학원생 , 일반인 &lt;</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
