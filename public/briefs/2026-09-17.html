@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-17</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-16 10:05 - 09-17 10:05 (Asia/Seoul)</span>
+        <span>생성: 2026-09-17 10:06</span>
+        <span>수집 항목: 143개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>PS5 Linux 리드 개발자가 LLM을 제대로 이해하지 못하는 개발자들 때문에 사임했습니다. 이는 오픈소스 프로젝트의 미래에 대한 우려를 제기합니다. <a href="https://frvr.com/blog/news/ps5-linux-lead-quits-as-open-source-projects-have-become-a-bunch-of-noobs-using-llms-that-they-dont-even-understand/" target="_blank" rel="noreferrer">PS5 Linux lead quits: &quot;a bunch of noobs using LLMs&quot;</a></li>
+<li>OpenAI가 ChatGPT 광고에 &#x27;Sponsored Agents&#x27;를 도입하여 광고 모델을 재정의하고 있습니다. 이는 AI 기반 광고의 새로운 시대를 열 수 있습니다. <a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noreferrer">OpenAI expands ChatGPT ads with Sponsored Agents</a></li>
+<li>Ternary LLM에서 1.58비트 한계를 돌파하는 연구가 발표되었습니다. 이는 LLM의 효율성을 크게 향상시킬 수 있는 잠재력을 가지고 있습니다. <a href="https://arxiv.org/abs/2609.16338" target="_blank" rel="noreferrer">Breaking the 1.58-bit Barrier for Ternary LLMs</a></li>
+<li>AI 에이전트가 WhatsApp에 접근할 수 있게 하는 새로운 도구가 공개되었습니다. 이는 AI 에이전트의 활용 범위를 넓힐 수 있습니다. <a href="https://news.ycombinator.com/item?id=49728159" target="_blank" rel="noreferrer">Show HN: Give your AI agents access to WhatsApp</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI가 ChatGPT 광고에 &#x27;Sponsored Agents&#x27;를 도입하여 광고 모델을 재정의하고 있습니다. <a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noreferrer">OpenAI expands ChatGPT ads with Sponsored Agents</a></li>
+<li>Ternary LLM에서 1.58비트 한계를 돌파하는 연구가 발표되었습니다. <a href="https://arxiv.org/abs/2609.16338" target="_blank" rel="noreferrer">Breaking the 1.58-bit Barrier for Ternary LLMs</a></li>
+<li>AI 에이전트가 WhatsApp에 접근할 수 있게 하는 새로운 도구가 공개되었습니다. <a href="https://news.ycombinator.com/item?id=49728159" target="_blank" rel="noreferrer">Show HN: Give your AI agents access to WhatsApp</a></li>
+<li>Microsoft는 경쟁사인 Anthropic이 인류에게 &quot;재앙적인 영향&quot;을 미칠 수 있다고 경고했습니다. <a href="https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo" target="_blank" rel="noreferrer">Microsoft says AI rival Anthropic could have &#x27;disastrous impact&#x27; on humanity</a></li>
+<li>Danish 제약 회사 Novo가 AI 기반 신약 개발을 위해 Anthropic의 Claude를 사용합니다. <a href="https://www.euronews.com/health/2026/09/16/danish-pharma-giant-novo-to-use-anthropics-claude-to-advance-ai-drug-discovery" target="_blank" rel="noreferrer">Danish pharma giant Novo to use Anthropic&#x27;s Claude to advance AI drug discovery</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>PS5 Linux 리드 개발자가 LLM을 제대로 이해하지 못하는 개발자들 때문에 사임했습니다. <a href="https://frvr.com/blog/news/ps5-linux-lead-quits-as-open-source-projects-have-become-a-bunch-of-noobs-using-llms-that-they-dont-even-understand/" target="_blank" rel="noreferrer">PS5 Linux lead quits: &quot;a bunch of noobs using LLMs&quot;</a></li>
+<li>LLM 시대에 프로그래밍 학습에 대한 논의가 진행 중입니다. <a href="https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/" target="_blank" rel="noreferrer">Learning Programming in an Age of LLMs</a></li>
+<li>Vercel AI SDK의 `@ai-sdk/alibaba`가 멀티턴 요청에서 추론을 기본적으로 보존하도록 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/alibaba%402.0.49" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/alibaba@2.0.49</a></li>
+<li>Vercel AI SDK의 `ai` 패키지가 평가 모델 ID를 AI Gateway를 통해 해결하도록 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.105" target="_blank" rel="noreferrer">vercel/ai: ai@7.0.105</a></li>
+<li>Vercel AI SDK의 `ai` 패키지에 실험적인 평가 모델 별칭 및 레지스트리 해결 기능이 추가되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.104" target="_blank" rel="noreferrer">vercel/ai: ai@7.0.104</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Vercel AI SDK의 `@ai-sdk/alibaba`가 멀티턴 요청에서 추론을 기본적으로 보존하도록 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/alibaba%402.0.49" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/alibaba@2.0.49</a></li>
+<li>Vercel AI SDK의 `ai` 패키지가 평가 모델 ID를 AI Gateway를 통해 해결하도록 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.105" target="_blank" rel="noreferrer">vercel/ai: ai@7.0.105</a></li>
+<li>Vercel AI SDK의 `ai` 패키지에 실험적인 평가 모델 별칭 및 레지스트리 해결 기능이 추가되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.104" target="_blank" rel="noreferrer">vercel/ai: ai@7.0.104</a></li>
+<li>Langchain 라이브러리가 `langchain==1.4.1`로 업데이트되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain==1.4.1</a></li>
+<li>VS Code가 버전 1.138.0으로 업데이트되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.138.0" target="_blank" rel="noreferrer">microsoft/vscode: 1.138.0</a></li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://frvr.com/blog/news/ps5-linux-lead-quits-as-open-source-projects-have-become-a-bunch-of-noobs-using-llms-that-they-dont-even-understand/" target="_blank" rel="noreferrer">PS5 Linux lead quits: &quot;a bunch of noobs using LLMs&quot;</a> - PS5 Linux 리드 개발자가 LLM 사용 방식에 대한 불만으로 사임했습니다.</li>
+<li><a href="https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/" target="_blank" rel="noreferrer">Learning Programming in an Age of LLMs</a> - LLM 시대에 프로그래밍 학습 방법에 대한 고찰입니다.</li>
+<li><a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noreferrer">OpenAI expands ChatGPT ads with Sponsored Agents</a> - OpenAI가 ChatGPT 광고에 Sponsored Agents를 도입합니다.</li>
+<li><a href="https://arxiv.org/abs/2609.16338" target="_blank" rel="noreferrer">Breaking the 1.58-bit Barrier for Ternary LLMs</a> - Ternary LLM의 효율성을 높이는 새로운 연구입니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=49728159" target="_blank" rel="noreferrer">Show HN: Give your AI agents access to WhatsApp</a> - AI 에이전트가 WhatsApp에 접근할 수 있게 하는 도구입니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/alibaba%402.0.49" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/alibaba@2.0.49</a> - Vercel AI SDK의 alibaba 패키지 업데이트입니다.</li>
+<li><a href="https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo" target="_blank" rel="noreferrer">Microsoft says AI rival Anthropic could have &#x27;disastrous impact&#x27; on humanity</a> - Microsoft가 Anthropic의 AI에 대한 우려를 표명했습니다.</li>
+<li><a href="https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants/" target="_blank" rel="noreferrer">With 1 Extension: $20K in Bounties from Anthropic, Perplexity, Google, Microsoft</a> - AI 어시스턴트 취약점을 이용한 현상금 획득 사례입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>PS5 Linux 리드 개발자의 사임 이유는 LLM 사용 방식에 대한 개인적인 의견으로 보입니다. <a href="https://frvr.com/blog/news/ps5-linux-lead-quits-as-open-source-projects-have-become-a-bunch-of-noobs-using-llms-that-they-dont-even-understand/" target="_blank" rel="noreferrer">PS5 Linux lead quits: &quot;a bunch of noobs using LLMs&quot;</a></li>
+<li>OpenAI의 Sponsored Agents 도입은 광고 모델의 변화를 가져올 수 있으나, 실제 영향은 지켜봐야 합니다. <a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noreferrer">OpenAI expands ChatGPT ads with Sponsored Agents</a></li>
+<li>Ternary LLM 연구는 기술적인 진보를 보여주지만, 실제 적용까지는 추가적인 검증이 필요할 수 있습니다. <a href="https://arxiv.org/abs/2609.16338" target="_blank" rel="noreferrer">Breaking the 1.58-bit Barrier for Ternary LLMs</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110622" target="_blank" rel="noreferrer">2026년 제6회 K-인공지능(AI) 제조데이터 분석 경진대회 SPECIAL IDEA</a> - Wevity, D-1. 분류 : 기획/아이디어, 논문/리포트, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 기타 중소벤처기업부 D-1 마감임박 72,593 &lt;!-- &lt;img src=&quot;/upload/contest/&quot; width=&quot;10&quot; height=&quot;13&quot; alt=</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202609100012" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 대한건축사협회 대학(원)생 모듈러건축 공모전</a> - Contest Korea. 0 주최 . 대한건축사협회 대상 . 대학생 , 대학원생 &lt;div class=&quot;date-detail&quot; styl</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=11975" target="_blank" rel="noreferrer">제1회 정선여행 AI 영상 광고 공모전</a> - Contest Korea. MORE 이벤트 &lt;img src=&quot;/boad/bd_ev</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
