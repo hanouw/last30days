@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-09-26</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 09-25 10:12 - 09-26 10:12 (Asia/Seoul)</span>
+        <span>생성: 2026-09-26 10:12</span>
+        <span>수집 항목: 131개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://swarmtraces.org/" target="_blank" rel="noreferrer">OpenAI 에이전트가 Hugging Face를 해킹한 상세 내용</a>이 공개되어, AI 시스템의 보안 취약점을 시사합니다.</li>
+<li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html" target="_blank" rel="noreferrer">Anthropic이 공급망 위험으로 지정된 것에 대한 항소심에서 승소</a>하여, AI 기업의 규제 관련 중요한 판례가 되었습니다.</li>
+<li><a href="https://github.com/Avinash-jetwani/jevmem" target="_blank" rel="noreferrer">Claude Code의 새로운 메모리 관리 시스템인 Jevmem</a>이 공개되어, 코드 생성 모델의 효율성을 높일 수 있습니다.</li>
+<li><a href="https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html" target="_blank" rel="noreferrer">Plan mode가 종료</a>됨에 따라, AI 개발 도구 생태계의 변화를 주시해야 합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html" target="_blank" rel="noreferrer">미국 항소 법원이 Anthropic을 공급망 위험으로 지정한 결정을 지지</a>했습니다.</li>
+<li><a href="https://swarmtraces.org/" target="_blank" rel="noreferrer">OpenAI 에이전트가 Hugging Face를 해킹한 상세 내용</a>이 공개되었습니다.</li>
+<li><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noreferrer">Claude가 9번의 루프를 수행할 수 있다는 연구 결과</a>가 발표되었습니다.</li>
+<li><a href="https://mouse.dev/blog/muse-special/" target="_blank" rel="noreferrer">Meta의 Muse 모델이 OpenAI의 muse-special 모델을 사용하는 것으로 보임</a>이 확인되었습니다.</li>
+<li><a href="https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/" target="_blank" rel="noreferrer">OpenAI와 Microsoft가 LLM이 웹을 파괴하고 도용에 기반하고 있음을 인정</a>했다는 보도가 나왔습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=49851032" target="_blank" rel="noreferrer">OpenAI Codex가 일시적으로 다운되었으나 복구</a>되었습니다.</li>
+<li><a href="https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html" target="_blank" rel="noreferrer">Plan mode가 종료</a>되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.10" target="_blank" rel="noreferrer">Vercel AI SDK의 여러 패키지들이 업데이트</a>되었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3" target="_blank" rel="noreferrer">Langchain-fireworks 라이브러리가 업데이트</a>되었습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/Avinash-jetwani/jevmem" target="_blank" rel="noreferrer">Jevmem – Claude Code를 위한 자동 프로젝트 메모리</a>가 공개되었습니다.</li>
+<li><a href="https://www.doom-or-bloom.com" target="_blank" rel="noreferrer">Doom or Bloom – AI 세계관을 매핑하는 도구</a>가 소개되었습니다.</li>
+<li><a href="https://tui2web.com/" target="_blank" rel="noreferrer">Tui2web – 모든 TUI를 웹에서 사용할 수 있게 해주는 도구</a>가 공개되었습니다.</li>
+<li><a href="https://github.com/racetozero/kiss" target="_blank" rel="noreferrer">KISS – Rust로 구축된 고성능 에이전트 하네스</a>가 소개되었습니다.</li>
+<li><a href="https://recurse.run" target="_blank" rel="noreferrer">Recurse – 전문 에이전트를 더 빠르게 개발하고 배포</a>할 수 있는 도구가 소개되었습니다.</li>
+</ul>
+<h2>빠르게 열어볼 링크</h2>
+<ul>
+<li><a href="https://swarmtraces.org/" target="_blank" rel="noreferrer">OpenAI 에이전트가 Hugging Face를 해킹한 상세 내용</a></li>
+<li><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html" target="_blank" rel="noreferrer">Anthropic이 공급망 위험으로 지정된 것에 대한 항소심에서 승소</a></li>
+<li><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops" target="_blank" rel="noreferrer">Claude가 9번의 루프를 수행할 수 있다는 연구 결과</a></li>
+<li><a href="https://mouse.dev/blog/muse-special/" target="_blank" rel="noreferrer">Meta의 Muse 모델이 OpenAI의 muse-special 모델을 사용하는 것으로 보임</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49851032" target="_blank" rel="noreferrer">OpenAI Codex가 일시적으로 다운되었으나 복구</a></li>
+<li><a href="https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html" target="_blank" rel="noreferrer">Plan mode가 종료</a></li>
+<li><a href="https://github.com/Avinash-jetwani/jevmem" target="_blank" rel="noreferrer">Jevmem – Claude Code를 위한 자동 프로젝트 메모리</a></li>
+<li><a href="https://www.doom-or-bloom.com" target="_blank" rel="noreferrer">Doom or Bloom – AI 세계관을 매핑하는 도구</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI 에이전트의 Hugging Face 해킹 및 미국 정부 웹사이트 관련 보도는 여러 출처에서 유사한 내용으로 반복되고 있습니다.</li>
+<li>Anthropic의 공급망 위험 지정 관련 보도는 법적 판결에 대한 다양한 해석을 포함하고 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110530" target="_blank" rel="noreferrer">제5회 2026 대한민국 고등학생 AI•SW 개발 공모전 SPECIAL</a> - Wevity, D-2. 분류 : 논문/리포트, 디자인/캐릭터/웹툰, 웹/모바일/IT, 게임/소프트웨어, 과학/공학, 예체능/미술/음악 한국인공지능•소프트웨어산업협회 D-2 마감임박 118,469 &lt;!-- &lt;img src=&quot;/upload/contes</li>
+<li><a href="https://linkareer.com/activity/347433" target="_blank" rel="noreferrer">공모전 D-26 AI와 함께하는 교통문제 해결을 위한 데이터 분석 공모전 Q soio 안녕하세요. 공모전 참가 관련하여 문의드립니다. 한 참가자가 서로 다른 팀의 팀원으로 중복하여 참가하는 것이 가능한지 궁금합니다. 확인 부탁드립니다. A 재단법인 숲과나눔 안녕하세요....</a> - Linkareer, D-26. 공모전 D-26 AI와 함께하는 교통문제 해결을 위한 데이터 분석 공모전 Q soio 안녕하세요. 공모전 참가 관련하여 문의드립니다. 한 참가자가 서로 다른 팀의 팀원으로 중복하여 참가하는 것이 가능한지 궁금합니다. 확인 부탁드립니다. A 재단법인 숲과나눔 안녕하세요. 숲과나눔입니다. 중복 지원은 불가하며 한 참가자는 하나의 팀으로만 지원 가능합니다. 감사합니다. 대외활동 D-4 [NH선물] REST API Pione</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?displayrow=12&amp;int_gbn=1&amp;Txt_key=all&amp;Txt_word=&amp;Txt_sortkey=a.int_sort&amp;Txt_sortword=desc&amp;page=1&amp;Txt_bcode=030310001&amp;str_no=202609150046" target="_blank" rel="noreferrer">--&gt; 학문•과학•IT 2026 스페이스 해커톤</a> - Contest Korea. 1 주최 . 우주항공청 대상 . 대학생 , 대학원생 , 일반인 &lt;div clas</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea. &lt;a href=&quot;/boad/bd_movie/egoread.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea. [정보] 2026 요리대회 모음 총정리 [정보] 2026 청소년문학공모전과 청소년백일장 모음 총정리 MORE 공지사항 &lt;a href=&quot;/boad/bd_fr</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+</body>
+</html>
