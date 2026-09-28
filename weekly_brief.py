@@ -790,7 +790,7 @@ def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
     prompt = (
         "Create one visual metaphor for each Korean news item. Return JSON only, an array with exactly "
         f"{len(stories)} objects. Each object has keys palette (array of exactly 3 hex colors) "
-        "and shapes (array of 5 to 9 objects). Allowed shape types: circle, rect, line, arc. "
+        "and shapes (array of exactly 5 objects). Allowed shape types: circle, rect, line, arc. "
         "Each shape uses type, x, y, size, color; all coordinates and sizes are integers 0..100; "
         "line may also use x2,y2; arc may use start,end in degrees. "
         "Use visually distinct compositions that explain the article's subject through simple geometry. "
@@ -801,7 +801,7 @@ def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
     model = urllib.parse.quote(os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"), safe="")
     body = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
                        "generationConfig": {"responseMimeType": "application/json", "temperature": 0.5,
-                                            "maxOutputTokens": 1600}}).encode("utf-8")
+                                            "maxOutputTokens": 4096}}).encode("utf-8")
     request = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         data=body, method="POST",
@@ -814,6 +814,7 @@ def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
                                 for part in (candidate.get("content") or {}).get("parts", []))
         specs = json.loads(response_text)
         if not isinstance(specs, list):
+            print("Visual spec generation: model did not return a JSON array")
             return []
         valid = []
         for spec in specs[:4]:
@@ -839,8 +840,11 @@ def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
                 clean_shapes.append(clean)
             if len(colors) == 3 and clean_shapes:
                 valid.append({"palette": colors, "shapes": clean_shapes})
-        return valid if len(valid) == len(stories) else []
-    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError):
+        if len(valid) != len(stories):
+            print(f"Visual spec generation: {len(valid)} valid cards for {len(stories)} stories")
+        return valid
+    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError) as exc:
+        print(f"Visual spec generation failed: {type(exc).__name__}")
         return []
 
 
