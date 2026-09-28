@@ -7,27 +7,23 @@
   const usedUrls = new Set();
   let visuals = [];
   try { visuals = JSON.parse(document.getElementById('brief-visuals')?.textContent || '[]'); } catch { /* Text-only cards remain usable. */ }
-  function draw(canvas, spec) {
-    const ctx = canvas.getContext('2d');
-    if (!ctx || !spec || !Array.isArray(spec.palette) || !Array.isArray(spec.shapes)) return;
-    const w = canvas.width = 620, h = canvas.height = 530;
-    const gradient = ctx.createLinearGradient(0, 0, w, h);
-    gradient.addColorStop(0, spec.palette[0]);
-    gradient.addColorStop(1, spec.palette[1]);
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, w, h);
-    spec.shapes.forEach((shape) => {
-      const x = shape.x / 100 * w, y = shape.y / 100 * h;
-      const size = shape.size / 100 * Math.min(w, h);
-      ctx.strokeStyle = ctx.fillStyle = shape.color;
-      ctx.lineWidth = 5;
-      ctx.globalAlpha = .82;
-      if (shape.type === 'circle') { ctx.beginPath(); ctx.arc(x, y, size / 2, 0, Math.PI * 2); ctx.fill(); }
-      if (shape.type === 'rect') { ctx.fillRect(x, y, size, size * .72); }
-      if (shape.type === 'line') { ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(shape.x2 / 100 * w, shape.y2 / 100 * h); ctx.stroke(); }
-      if (shape.type === 'arc') { ctx.beginPath(); ctx.arc(x, y, size / 2, (shape.start || 0) * Math.PI / 180, (shape.end || 180) * Math.PI / 180); ctx.stroke(); }
+  function explainer(spec) {
+    if (!spec || !['flow', 'compare', 'facts'].includes(spec.kind) || !Array.isArray(spec.points)) return null;
+    const box = document.createElement('div');
+    box.className = `brief-explainer brief-explainer-${spec.kind}`;
+    box.setAttribute('aria-label', spec.kind === 'flow' ? '사건 흐름' : spec.kind === 'compare' ? '비교' : '핵심 사실');
+    spec.points.slice(0, 3).forEach((point) => {
+      if (!point || typeof point.label !== 'string' || typeof point.detail !== 'string') return;
+      const row = document.createElement('div');
+      row.className = 'brief-explainer-point';
+      const label = document.createElement('strong');
+      label.textContent = point.label;
+      const detail = document.createElement('span');
+      detail.textContent = point.detail;
+      row.append(label, detail);
+      box.appendChild(row);
     });
-    ctx.globalAlpha = 1;
+    return box.children.length >= 2 ? box : null;
   }
   if (top?.nextElementSibling?.tagName === 'UL') {
     const list = top.nextElementSibling;
@@ -43,23 +39,23 @@
       card.href = link.href;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
-      if (visuals[index]) {
-        const canvas = document.createElement('canvas');
-        canvas.className = 'brief-card-art';
-        canvas.setAttribute('aria-hidden', 'true');
-        card.appendChild(canvas);
-        draw(canvas, visuals[index]);
-      }
       const title = document.createElement('span');
       title.className = 'brief-card-title';
-      title.textContent = link.textContent.trim();
+      title.textContent = visuals[index]?.headline || link.textContent.trim();
       const summary = document.createElement('span');
       summary.className = 'brief-card-summary';
       summary.textContent = item.textContent.replace(link.textContent, '').replace(/^\s*[-–—]\s*/, '').trim();
       const label = document.createElement('span');
       label.className = 'brief-card-label';
       label.textContent = `핵심 ${index + 1}`;
-      card.append(label, title, summary);
+      const explanation = explainer(visuals[index]);
+      card.append(label, title);
+      if (!explanation) card.appendChild(summary);
+      if (explanation) card.appendChild(explanation);
+      const source = document.createElement('span');
+      source.className = 'brief-card-source';
+      source.textContent = '원문 보기 ↗';
+      card.appendChild(source);
       cards.appendChild(card);
     });
     if (cards.children.length) {

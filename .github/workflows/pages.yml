@@ -32,6 +32,10 @@ jobs:
       - name: Generate static brief site
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTHCENTER_API_KEY: ${{ secrets.YOUTHCENTER_API_KEY }}
+          USER_BIRTH_DATE: ${{ secrets.USER_BIRTH_DATE }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRIEF_TIMEZONE: Asia/Seoul
@@ -50,7 +54,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update daily AI dev brief"
-          file_pattern: public/index.html public/briefs/*.html public/brief-ui.css public/brief-ui.js
+          file_pattern: public/index.html public/briefs/*.html public/brief-ui.css public/brief-ui.js data/youth_seen.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

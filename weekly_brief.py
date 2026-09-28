@@ -773,35 +773,49 @@ def markdown_to_html(markdown: str) -> str:
     return "\n".join(output)
 
 
-def visual_stories(markdown: str) -> list[str]:
+def visual_stories(markdown: str, items: list[Item]) -> list[dict[str, str]]:
     section = re.search(r"(?ms)^## 오늘의 핵심\s*\n(.*?)(?=^## |\Z)", markdown)
     if not section:
         return []
-    return [re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", line).lstrip("-* ")[:220]
-            for line in section.group(1).splitlines() if re.match(r"^[-*]\s+", line)][:4]
+    by_url = {canonical_url(item.url): item for item in items}
+    stories = []
+    for line in section.group(1).splitlines():
+        match = re.search(r"\[([^]]+)\]\((https?://[^)]+)\)", line)
+        if not match:
+            continue
+        source = by_url.get(canonical_url(match.group(2)))
+        stories.append({"title": match.group(1)[:120],
+                        "brief": line.split(match.group(0), 1)[-1].lstrip(" -–—")[:240],
+                        "source_note": (source.summary if source else "")[:500]})
+        if len(stories) == 4:
+            break
+    return stories
 
 
-def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
-    """Ask the existing text model for bounded drawing instructions, never executable code."""
+def generate_visual_specs(markdown: str, items: list[Item]) -> list[dict[str, object]]:
+    """Ask Gemini for a concise, evidence-bound explainer for each lead story."""
     api_key = os.getenv("GEMINI_API_KEY")
-    stories = visual_stories(markdown)
+    stories = visual_stories(markdown, items)
     if not api_key or not stories:
         return []
     prompt = (
-        "Create one visual metaphor for each Korean news item. Return JSON only, an array with exactly "
-        f"{len(stories)} objects. Each object has keys palette (array of exactly 3 hex colors) "
-        "and shapes (array of exactly 5 objects). Allowed shape types: circle, rect, line, arc. "
-        "Each shape uses type, x, y, size, color; all coordinates and sizes are integers 0..100; "
-        "line may also use x2,y2; arc may use start,end in degrees. "
-        "Use visually distinct compositions that explain the article's subject through simple geometry. "
-        "Keep shapes mainly in the right 65 percent, leaving left space for readable title text. "
-        "No text, logos, people, identifiable brand marks, JavaScript or SVG. Items: "
+        "You are designing Korean news cards for quick comprehension, not decoration. "
+        f"Return a JSON array of exactly {len(stories)} objects, in story order. "
+        "Each object must contain headline (short Korean title, <=35 characters), "
+        "kind (one of flow, compare, facts, none), and points (array of 0-3 objects with label and detail). "
+        "A flow must show an actual cause/event/result or before/after sequence supported by evidence. "
+        "A compare must contrast two explicitly mentioned subjects or states. "
+        "Facts may show 2-3 distinct concrete facts. Choose none if the evidence cannot support a useful visual. "
+        "Use concise Korean: each label <=12 characters and each detail <=36 characters. "
+        "Do not invent dates, numbers, causal links, reactions, or conclusions. "
+        "Do not repeat the same sentence in headline and points. No artwork, colors, shapes, or code. "
+        "Evidence for each story: "
         + json.dumps(stories, ensure_ascii=False)
     )
     model = urllib.parse.quote(os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"), safe="")
     body = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
-                       "generationConfig": {"responseMimeType": "application/json", "temperature": 0.5,
-                                            "maxOutputTokens": 4096}}).encode("utf-8")
+                       "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1,
+                                            "maxOutputTokens": 2400}}).encode("utf-8")
     request = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         data=body, method="POST",
@@ -816,33 +830,24 @@ def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
         if not isinstance(specs, list):
             print("Visual spec generation: model did not return a JSON array")
             return []
-        valid = []
+        valid: list[dict[str, object]] = []
         for spec in specs[:4]:
             if not isinstance(spec, dict):
+                valid.append({"kind": "none", "points": []})
                 continue
-            palette = spec.get("palette")
-            shapes = spec.get("shapes")
-            if not isinstance(palette, list) or not isinstance(shapes, list):
-                continue
-            colors = [c for c in palette[:3] if isinstance(c, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", c)]
-            clean_shapes = []
-            for shape in shapes[:9]:
-                if not isinstance(shape, dict) or shape.get("type") not in {"circle", "rect", "line", "arc"}:
-                    continue
-                color = shape.get("color")
-                if not isinstance(color, str) or not re.fullmatch(r"#[0-9a-fA-F]{6}", color):
-                    continue
-                clean = {"type": shape["type"], "color": color}
-                for key in ("x", "y", "size", "x2", "y2", "start", "end"):
-                    value = shape.get(key)
-                    if isinstance(value, (int, float)):
-                        clean[key] = max(0, min(360 if key in {"start", "end"} else 100, int(value)))
-                clean_shapes.append(clean)
-            if len(colors) == 3 and clean_shapes:
-                valid.append({"palette": colors, "shapes": clean_shapes})
+            kind = spec.get("kind") if spec.get("kind") in {"flow", "compare", "facts"} else "none"
+            raw_points = spec.get("points") if isinstance(spec.get("points"), list) else []
+            points = []
+            for point in raw_points[:3]:
+                if isinstance(point, dict) and isinstance(point.get("label"), str) and isinstance(point.get("detail"), str):
+                    points.append({"label": point["label"].strip()[:24], "detail": point["detail"].strip()[:72]})
+            if (kind == "compare" and len(points) != 2) or (kind in {"flow", "facts"} and len(points) < 2):
+                kind, points = "none", []
+            headline = spec.get("headline") if isinstance(spec.get("headline"), str) else ""
+            valid.append({"headline": headline.strip()[:70], "kind": kind, "points": points})
         if len(valid) != len(stories):
             print(f"Visual spec generation: {len(valid)} valid cards for {len(stories)} stories")
-        return valid
+        return valid if len(valid) == len(stories) else []
     except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError) as exc:
         print(f"Visual spec generation failed: {type(exc).__name__}")
         return []
@@ -1040,7 +1045,7 @@ def generate_brief(days: int | None = None) -> GeneratedBrief:
             opportunity_limit,
         )
         synthesis = synthesis.rstrip() + opportunities_markdown(opportunities, opportunity_limit)
-    visual_specs = generate_visual_specs(synthesis)
+    visual_specs = generate_visual_specs(synthesis, items)
     html_body = render_html(synthesis, items, start, end, tz, visual_specs)
     return GeneratedBrief(
         stamp=now.strftime("%Y-%m-%d"),

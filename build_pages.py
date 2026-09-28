@@ -5,9 +5,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
-from weekly_brief import generate_brief
+from weekly_brief import generate_brief, markdown_to_html
+from youth_policies import find_candidates, markdown as youth_markdown, new_matches, notify_telegram, save_seen, today_seoul
 
 
 def brief_stamp(path: Path) -> str:
@@ -62,7 +64,23 @@ def build_site(public_dir: str = "public", keep: int = 28, generate: bool = True
     if generate:
         brief = generate_brief()
         html_path = briefs_dir / f"{brief.stamp}.html"
-        html_path.write_text(brief.html, encoding="utf-8")
+        html_body = brief.html
+        api_key = os.getenv("YOUTHCENTER_API_KEY", "")
+        birth = os.getenv("USER_BIRTH_DATE", "")
+        if api_key and birth:
+            try:
+                candidates = find_candidates(api_key, birth, today_seoul())
+                section = youth_markdown(candidates)
+                if section:
+                    html_body = html_body.replace("</article>", markdown_to_html(section) + "\n</article>", 1)
+                state_path = root.parent / "data" / "youth_seen.json"
+                fresh, seen = new_matches(candidates, state_path)
+                if notify_telegram(fresh):
+                    save_seen(state_path, seen)
+                print(f"Youth policy candidates: {len(candidates)}, new: {len(fresh)}")
+            except (OSError, ValueError, TypeError) as exc:
+                print(f"Youth policy lookup unavailable: {type(exc).__name__}")
+        html_path.write_text(html_body, encoding="utf-8")
         generated = {"stamp": brief.stamp, "items": brief.items_count, "html": str(html_path)}
 
     prune_briefs(briefs_dir, keep)

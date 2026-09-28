@@ -1,65 +1,33 @@
-.brief-cards {
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  padding: 2px 2px 12px;
-}
-.brief-cards::-webkit-scrollbar { display: none; }
-.brief-card {
-  position: relative;
-  display: flex;
-  flex: 0 0 min(82vw, 310px);
-  min-height: 265px;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-  border-radius: 18px;
-  padding: 22px;
-  color: #fff;
-  background: linear-gradient(140deg, #103c55 0%, #17243f 58%, #373154 100%);
-  text-decoration: none;
-  scroll-snap-align: start;
-  isolation: isolate;
-}
-.brief-card:nth-child(2) { background: linear-gradient(140deg, #124e50, #17344d 60%, #263159); }
-.brief-card:nth-child(3) { background: linear-gradient(140deg, #48315c, #252e55 65%, #12394f); }
-.brief-card:nth-child(4) { background: linear-gradient(140deg, #59402f, #3d3651 60%, #1c3851); }
-.brief-card::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(8, 17, 31, .88), rgba(8, 17, 31, .12) 90%);
-}
-.brief-card-art { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.brief-card:focus-visible, .brief-controls button:focus-visible { outline: 3px solid #f9bf55; outline-offset: 3px; }
-.brief-card-label { font-size: 12px; font-weight: 800; letter-spacing: .09em; opacity: .85; }
-.brief-card-title { margin-top: 10px; font-size: 21px; line-height: 1.25; font-weight: 800; overflow-wrap: anywhere; }
-.brief-card-summary { margin-top: 10px; font-size: 13px; line-height: 1.5; color: #e5edf5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.brief-card-source { margin-top: 16px; font-size: 12px; color: #c5d8e6; }
-.brief-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 2px 22px; }
-.brief-controls button { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); min-width: 40px; min-height: 40px; cursor: pointer; }
-.brief-position { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
-.brief-section-list { list-style: none; padding: 0; }
-.brief-section-list li { padding: 13px 0; border-bottom: 1px solid var(--line); margin: 0; }
-.brief-section-list li:last-child { border: 0; }
-.brief-section-list a { font-weight: 700; }
-body.embedded { background: var(--panel); }
-body.embedded main { max-width: 980px; padding: 22px clamp(14px, 3vw, 34px) 42px; }
-body.embedded header { margin-bottom: 20px; padding-bottom: 14px; }
-body.embedded header .badge, body.embedded header h1 { display: none; }
-body.embedded .meta span:not(:nth-child(2)), body.embedded .sources { display: none; }
-body.embedded article { border: 0; padding: 0; background: transparent; }
-body.embedded h2 { margin-top: 26px; }
-body.embedded h2:first-child { margin-top: 0; }
-@media (max-width: 640px) {
-  body.embedded main { padding: 12px 12px 36px; }
-  body.embedded .meta { font-size: 12px; }
-}
-@media (min-width: 1100px) {
-  .brief-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
-  .brief-card { min-height: 245px; }
-  .brief-controls { display: none; }
-}
+.brief-cards { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; padding:2px 2px 12px; }
+.brief-cards::-webkit-scrollbar { display:none; }
+.brief-card { display:flex; flex:0 0 min(82vw, 340px); flex-direction:column; gap:10px; min-height:310px; padding:22px; border:1px solid var(--line); border-radius:16px; background:var(--panel); color:var(--text); text-decoration:none; scroll-snap-align:start; }
+.brief-card:hover { border-color:var(--accent); }
+.brief-card:focus-visible, .brief-controls button:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.brief-card-label { color:var(--accent); font-size:12px; font-weight:800; }
+.brief-card-title { font-size:20px; line-height:1.35; font-weight:800; overflow-wrap:anywhere; }
+.brief-card-summary { color:var(--muted); font-size:14px; line-height:1.5; }
+.brief-card-source { margin-top:auto; color:var(--accent); font-size:13px; font-weight:700; }
+.brief-explainer { display:grid; gap:6px; margin:6px 0 4px; }
+.brief-explainer-point { display:grid; gap:2px; padding:9px 11px; border-radius:8px; background:var(--bg); font-size:12px; line-height:1.4; }
+.brief-explainer-point strong { color:var(--text); font-size:12px; }
+.brief-explainer-point span { color:var(--muted); }
+.brief-explainer-flow .brief-explainer-point + .brief-explainer-point::before { content:'↓'; display:block; height:8px; margin-top:-15px; color:var(--accent); font-weight:800; }
+.brief-explainer-compare { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.brief-explainer-compare .brief-explainer-point { min-width:0; }
+.brief-controls { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0 2px 22px; }
+.brief-controls button { border:1px solid var(--line); border-radius:8px; background:var(--panel); color:var(--text); min-width:40px; min-height:40px; cursor:pointer; }
+.brief-position { color:var(--muted); font-size:13px; font-variant-numeric:tabular-nums; }
+.brief-section-list { list-style:none; padding:0; }
+.brief-section-list li { padding:13px 0; border-bottom:1px solid var(--line); margin:0; }
+.brief-section-list li:last-child { border:0; }
+.brief-section-list a { font-weight:700; }
+body.embedded { background:var(--panel); }
+body.embedded main { max-width:980px; padding:22px clamp(14px,3vw,34px) 42px; }
+body.embedded header { margin-bottom:20px; padding-bottom:14px; }
+body.embedded header .badge, body.embedded header h1 { display:none; }
+body.embedded .meta span:not(:nth-child(2)), body.embedded .sources { display:none; }
+body.embedded article { border:0; padding:0; background:transparent; }
+body.embedded h2 { margin-top:26px; }
+body.embedded h2:first-child { margin-top:0; }
+@media (max-width:640px) { body.embedded main { padding:12px 12px 36px; } body.embedded .meta { font-size:12px; } }
+@media (min-width:1100px) { .brief-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); overflow:visible; } .brief-card { min-height:280px; } .brief-controls { display:none; } }
