@@ -36,7 +36,7 @@
     }
     .shell {
       display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
+      grid-template-columns: 214px minmax(0, 1fr);
       min-height: 100vh;
     }
     aside {
@@ -46,7 +46,7 @@
     }
     main {
       min-width: 0;
-      padding: 30px 24px 48px;
+      padding: 26px clamp(16px, 3vw, 42px) 48px;
     }
     header {
       display: flex;
@@ -57,7 +57,7 @@
       padding-bottom: 16px;
     }
     h1 {
-      font-size: clamp(24px, 4vw, 36px);
+      font-size: clamp(22px, 3vw, 30px);
       line-height: 1.14;
       letter-spacing: 0;
       margin: 0;
@@ -109,7 +109,7 @@
       width: 100%;
       min-height: calc(100vh - 112px);
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 12px;
       background: var(--panel);
     }
     .empty {
@@ -145,7 +145,7 @@
         place-items: center;
         flex: 0 0 auto;
       }
-      iframe { min-height: calc(100vh - 92px); }
+      iframe { min-height: calc(100vh - 92px); border: 0; }
     }
   </style>
 </head>
@@ -159,7 +159,7 @@
     <main>
       <header>
         <button id="menu" class="menu" type="button" aria-label="브리프 목록 열기">☰</button>
-        <h1>AI, 개발 이슈, 개발 도구 일간 브리프</h1>
+        <h1>오늘의 AI·개발 브리프</h1>
       </header>
       <section id="viewer"></section>
     </main>
@@ -204,6 +204,13 @@
 
     menu.addEventListener('click', () => setNav(true));
     backdrop.addEventListener('click', () => setNav(false));
+    window.addEventListener('message', (event) => {
+      if (event.origin !== window.location.origin || event.data?.type !== 'brief-height') return;
+      const iframe = viewer.querySelector('iframe');
+      if (iframe?.contentWindow === event.source && Number.isFinite(event.data.height)) {
+        iframe.style.height = `${Math.max(400, event.data.height + 4)}px`;
+      }
+    });
     renderList();
   </script>
 </body>

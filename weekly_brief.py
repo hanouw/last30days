@@ -297,7 +297,7 @@ def extract_opportunities_from_html(
             continue
 
         title = strip_html(match.group(2), 160)
-        if len(title) < 6:
+        if len(title) < 6 or len(title) > 90 or re.search(r"(?:\bQ\s|\bA\s|<path|&lt;|-->|댓글|문의드립니다)", title, re.IGNORECASE):
             continue
 
         url = canonical_url(urllib.parse.urljoin(base_url, href))
@@ -314,16 +314,13 @@ def extract_opportunities_from_html(
         if not has_dev_keyword(title, keywords) and not has_dev_keyword(title, ["해커톤", "hackathon"]):
             continue
 
-        summary = context
-        if title in summary:
-            summary = clean_text(summary.replace(title, " "), 260)
         opportunities.append(
             Opportunity(
                 title=title,
                 url=url,
                 source=source,
                 deadline=extract_deadline(context),
-                summary=summary,
+                summary="",
                 score=opportunity_score(title, context, keywords),
             )
         )
@@ -377,8 +374,7 @@ def opportunities_markdown(opportunities: list[Opportunity], limit: int = 12) ->
         meta = f"{item.source}"
         if item.deadline:
             meta += f", {item.deadline}"
-        summary = f" {item.summary}" if item.summary else ""
-        lines.append(f"- [{item.title}]({item.url}) - {meta}.{summary}")
+        lines.append(f"- [{item.title}]({item.url}) - {meta}.")
     return "\n".join(lines) + "\n"
 
 
@@ -528,7 +524,7 @@ Period: {start.astimezone(tz).strftime('%Y-%m-%d %H:%M')} to {end.astimezone(tz)
 Write the output in Korean Markdown with exactly these sections:
 
 ## 오늘의 핵심
-- 4-5 bullets only.
+- 4 bullets only.
 - Each bullet must explain why it matters in one compact sentence.
 - Use one inline Markdown link per bullet.
 
@@ -540,9 +536,6 @@ Write the output in Korean Markdown with exactly these sections:
 ### 개발 도구
 - 3-5 bullets about tools worth trying or watching.
 
-## 빠르게 열어볼 링크
-- 6-8 bullets, each starting with a Markdown link and then a short reason.
-
 ## 신뢰도 메모
 - 1-3 bullets about source gaps, rumors, weak evidence, or duplicated source patterns.
 
@@ -551,7 +544,7 @@ Rules:
 - If an item appears in "오늘의 핵심", do not mention it again in "자세히 보기".
 - Do not append a bare English title after a Korean sentence. Put the title inside the Markdown link instead.
 - Prefer fewer, stronger items over long exhaustive lists.
-- Keep the full brief under 22 bullets.
+- Keep the full brief under 18 bullets.
 - Skip low-signal rumors unless the evidence itself is the point.
 - Use normal Markdown only: headings, bullets, numbered lists, bold, and inline links.
 - Do not use footnotes or citation markers such as [^1], [1], or "source 1".
@@ -596,8 +589,8 @@ def gemini_synthesis(items: list[Item], start: dt.datetime, end: dt.datetime, tz
     try:
         with urllib.request.urlopen(request, timeout=90) as response:
             payload = json.loads(response.read().decode("utf-8"))
-    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError) as exc:
-        return f"## 신뢰도 메모\n\nGemini 요약 생성에 실패했습니다: `{exc}`\n"
+    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError):
+        return None
 
     chunks: list[str] = []
     for candidate in payload.get("candidates", []):
@@ -673,7 +666,7 @@ def fallback_synthesis(items: list[Item], tz: ZoneInfo) -> str:
         summary = f" {item.summary}" if item.summary else ""
         return f"- [{item.title}]({item.url}) - {item.source}.{detail}{summary}"
 
-    top_items = take(items, 5)
+    top_items = take(items, 4)
     ai_items = take(
         [item for item in items if any(k in item.title.lower() for k in ("ai", "llm", "openai", "anthropic", "agent", "model", "claude"))],
         4,
@@ -683,7 +676,6 @@ def fallback_synthesis(items: list[Item], tz: ZoneInfo) -> str:
         [item for item in items if item.kind == "github" or any(k in item.title.lower() for k in ("tool", "ide", "sdk", "release", "cursor", "code"))],
         4,
     )
-    quick_links = take(items, 8)
 
     lines = ["## 오늘의 핵심", ""]
     for item in top_items:
@@ -697,11 +689,6 @@ def fallback_synthesis(items: list[Item], tz: ZoneInfo) -> str:
             lines.extend([f"### {title}", ""])
             lines.extend(bullet(item) for item in group)
             lines.append("")
-
-    if quick_links:
-        lines.extend(["## 빠르게 열어볼 링크", ""])
-        for item in quick_links:
-            lines.append(f"- [{item.title}]({item.url}) - 더 살펴볼 만한 원문입니다.")
 
     lines.extend(
         [
@@ -786,7 +773,79 @@ def markdown_to_html(markdown: str) -> str:
     return "\n".join(output)
 
 
-def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.datetime, tz: ZoneInfo) -> str:
+def visual_stories(markdown: str) -> list[str]:
+    section = re.search(r"(?ms)^## 오늘의 핵심\s*\n(.*?)(?=^## |\Z)", markdown)
+    if not section:
+        return []
+    return [re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", line).lstrip("-* ")[:220]
+            for line in section.group(1).splitlines() if re.match(r"^[-*]\s+", line)][:4]
+
+
+def generate_visual_specs(markdown: str) -> list[dict[str, object]]:
+    """Ask the existing text model for bounded drawing instructions, never executable code."""
+    api_key = os.getenv("GEMINI_API_KEY")
+    stories = visual_stories(markdown)
+    if not api_key or not stories:
+        return []
+    prompt = (
+        "Create one visual metaphor for each Korean news item. Return JSON only, an array with exactly "
+        f"{len(stories)} objects. Each object has keys palette (array of exactly 3 hex colors) "
+        "and shapes (array of 5 to 9 objects). Allowed shape types: circle, rect, line, arc. "
+        "Each shape uses type, x, y, size, color; all coordinates and sizes are integers 0..100; "
+        "line may also use x2,y2; arc may use start,end in degrees. "
+        "Use visually distinct compositions that explain the article's subject through simple geometry. "
+        "Keep shapes mainly in the right 65 percent, leaving left space for readable title text. "
+        "No text, logos, people, identifiable brand marks, JavaScript or SVG. Items: "
+        + json.dumps(stories, ensure_ascii=False)
+    )
+    model = urllib.parse.quote(os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"), safe="")
+    body = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
+                       "generationConfig": {"responseMimeType": "application/json", "temperature": 0.5,
+                                            "maxOutputTokens": 1600}}).encode("utf-8")
+    request = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+        data=body, method="POST",
+        headers={"x-goog-api-key": api_key, "Content-Type": "application/json", "User-Agent": USER_AGENT},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=90) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        response_text = "".join(part.get("text", "") for candidate in payload.get("candidates", [])
+                                for part in (candidate.get("content") or {}).get("parts", []))
+        specs = json.loads(response_text)
+        if not isinstance(specs, list):
+            return []
+        valid = []
+        for spec in specs[:4]:
+            if not isinstance(spec, dict):
+                continue
+            palette = spec.get("palette")
+            shapes = spec.get("shapes")
+            if not isinstance(palette, list) or not isinstance(shapes, list):
+                continue
+            colors = [c for c in palette[:3] if isinstance(c, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", c)]
+            clean_shapes = []
+            for shape in shapes[:9]:
+                if not isinstance(shape, dict) or shape.get("type") not in {"circle", "rect", "line", "arc"}:
+                    continue
+                color = shape.get("color")
+                if not isinstance(color, str) or not re.fullmatch(r"#[0-9a-fA-F]{6}", color):
+                    continue
+                clean = {"type": shape["type"], "color": color}
+                for key in ("x", "y", "size", "x2", "y2", "start", "end"):
+                    value = shape.get(key)
+                    if isinstance(value, (int, float)):
+                        clean[key] = max(0, min(360 if key in {"start", "end"} else 100, int(value)))
+                clean_shapes.append(clean)
+            if len(colors) == 3 and clean_shapes:
+                valid.append({"palette": colors, "shapes": clean_shapes})
+        return valid if len(valid) == len(stories) else []
+    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError):
+        return []
+
+
+def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.datetime, tz: ZoneInfo,
+                visual_specs: list[dict[str, object]] | None = None) -> str:
     generated = dt.datetime.now(tz).strftime("%Y-%m-%d %H:%M")
     start_local = start.astimezone(tz)
     end_local = end.astimezone(tz)
@@ -799,6 +858,8 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily AI/Dev Brief - {brief_date}</title>
+  <script type="application/json" id="brief-visuals">{json.dumps(visual_specs or [], ensure_ascii=False).replace('<', '\\u003c')}</script>
+  <link rel="stylesheet" href="../brief-ui.css">
   <style>
     :root {{
       color-scheme: light dark;
@@ -935,6 +996,7 @@ def render_html(markdown: str, items: list[Item], start: dt.datetime, end: dt.da
     </article>
     <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
   </main>
+  <script src="../brief-ui.js" defer></script>
 </body>
 </html>
 """
@@ -974,7 +1036,8 @@ def generate_brief(days: int | None = None) -> GeneratedBrief:
             opportunity_limit,
         )
         synthesis = synthesis.rstrip() + opportunities_markdown(opportunities, opportunity_limit)
-    html_body = render_html(synthesis, items, start, end, tz)
+    visual_specs = generate_visual_specs(synthesis)
+    html_body = render_html(synthesis, items, start, end, tz, visual_specs)
     return GeneratedBrief(
         stamp=now.strftime("%Y-%m-%d"),
         timezone=tz.key,

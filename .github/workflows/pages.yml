@@ -50,7 +50,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update daily AI dev brief"
-          file_pattern: public/index.html public/briefs/*.html
+          file_pattern: public/index.html public/briefs/*.html public/brief-ui.css public/brief-ui.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

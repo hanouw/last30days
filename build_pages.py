@@ -40,6 +40,19 @@ def build_index(public_dir: Path, keep: int) -> None:
     )
 
 
+def upgrade_existing_briefs(briefs_dir: Path) -> None:
+    """Apply shared presentation to previously generated static briefs."""
+    for path in briefs_dir.glob("*.html"):
+        content = path.read_text(encoding="utf-8")
+        updated = content
+        if 'href="../brief-ui.css"' not in updated:
+            updated = updated.replace("  <style>", '  <link rel="stylesheet" href="../brief-ui.css">\n  <style>', 1)
+        if 'src="../brief-ui.js"' not in updated:
+            updated = updated.replace("</body>", '  <script src="../brief-ui.js" defer></script>\n</body>', 1)
+        if updated != content:
+            path.write_text(updated, encoding="utf-8")
+
+
 def build_site(public_dir: str = "public", keep: int = 28, generate: bool = True) -> dict[str, object]:
     root = Path(public_dir)
     briefs_dir = root / "briefs"
@@ -53,6 +66,7 @@ def build_site(public_dir: str = "public", keep: int = 28, generate: bool = True
         generated = {"stamp": brief.stamp, "items": brief.items_count, "html": str(html_path)}
 
     prune_briefs(briefs_dir, keep)
+    upgrade_existing_briefs(briefs_dir)
     build_index(root, keep)
     return {"generated": generated, "briefs": [path.name for path in sorted(briefs_dir.glob("*.html"), reverse=True)]}
 
