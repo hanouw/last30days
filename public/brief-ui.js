@@ -12,6 +12,10 @@
     const box = document.createElement('div');
     box.className = `brief-explainer brief-explainer-${spec.kind}`;
     box.setAttribute('aria-label', spec.kind === 'flow' ? '사건 흐름' : spec.kind === 'compare' ? '비교' : '핵심 사실');
+    const caption = document.createElement('span');
+    caption.className = 'brief-explainer-caption';
+    caption.textContent = spec.kind === 'flow' ? '무슨 변화가 있었나' : spec.kind === 'compare' ? '한눈에 비교' : '핵심 정보';
+    box.appendChild(caption);
     spec.points.slice(0, 3).forEach((point) => {
       if (!point || typeof point.label !== 'string' || typeof point.detail !== 'string') return;
       const row = document.createElement('div');
@@ -23,7 +27,7 @@
       row.append(label, detail);
       box.appendChild(row);
     });
-    return box.children.length >= 2 ? box : null;
+    return box.querySelectorAll('.brief-explainer-point').length >= 2 ? box : null;
   }
   if (top?.nextElementSibling?.tagName === 'UL') {
     const list = top.nextElementSibling;
@@ -39,22 +43,24 @@
       card.href = link.href;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
+      const summaryText = item.textContent.replace(link.textContent, '').replace(/^\s*[-–—]\s*/, '').trim();
       const title = document.createElement('span');
       title.className = 'brief-card-title';
-      title.textContent = visuals[index]?.headline || link.textContent.trim();
+      title.textContent = visuals[index]?.headline || summaryText || link.textContent.trim();
       const summary = document.createElement('span');
       summary.className = 'brief-card-summary';
-      summary.textContent = item.textContent.replace(link.textContent, '').replace(/^\s*[-–—]\s*/, '').trim();
+      summary.textContent = summaryText;
       const label = document.createElement('span');
       label.className = 'brief-card-label';
       label.textContent = `핵심 ${index + 1}`;
       const explanation = explainer(visuals[index]);
+      if (explanation) card.classList.add('has-explainer');
       card.append(label, title);
-      if (!explanation) card.appendChild(summary);
+      if (!explanation && title.textContent !== summaryText) card.appendChild(summary);
       if (explanation) card.appendChild(explanation);
       const source = document.createElement('span');
       source.className = 'brief-card-source';
-      source.textContent = '원문 보기 ↗';
+      source.textContent = `${link.hostname.replace(/^www\./, '')} · 원문 보기 ↗`;
       card.appendChild(source);
       cards.appendChild(card);
     });
@@ -97,6 +103,17 @@
       if (list.previousElementSibling?.tagName === 'H3') list.previousElementSibling.remove();
       list.remove();
     }
+  });
+  article.querySelectorAll('.brief-section-list li').forEach((item) => {
+    const link = item.querySelector('a[href]');
+    if (!link) return;
+    const lead = item.textContent.replace(link.textContent, '').trim().replace(/^[·\-–—\s]+|[·\-–—\s]+$/g, '');
+    if (!/[가-힣]/.test(lead) || lead.length < 12) return;
+    const summary = document.createElement('span');
+    summary.className = 'brief-list-summary';
+    summary.textContent = lead;
+    item.replaceChildren(summary, link);
+    link.classList.add('brief-list-source');
   });
   const opportunities = headings.find((node) => node.textContent.trim() === '개발자 해커톤·공모전');
   const opportunityList = opportunities?.nextElementSibling;
