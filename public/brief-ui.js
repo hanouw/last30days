@@ -56,6 +56,22 @@
       const explanation = explainer(visuals[index]);
       if (explanation) card.classList.add('has-explainer');
       card.append(label, title);
+      if (!explanation && typeof visuals[index]?.image === 'string') {
+        try {
+          const imageUrl = new URL(visuals[index].image);
+          if (imageUrl.protocol === 'https:') {
+            const image = document.createElement('img');
+            image.className = 'brief-card-image';
+            image.src = imageUrl.href;
+            image.alt = '';
+            image.loading = 'lazy';
+            image.referrerPolicy = 'no-referrer';
+            image.addEventListener('error', () => image.remove());
+            card.appendChild(image);
+            card.classList.add('has-image');
+          }
+        } catch { /* Keep the readable text card. */ }
+      }
       if (!explanation && title.textContent !== summaryText) card.appendChild(summary);
       if (explanation) card.appendChild(explanation);
       const source = document.createElement('span');

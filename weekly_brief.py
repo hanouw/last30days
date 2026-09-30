@@ -19,6 +19,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable
 from zoneinfo import ZoneInfo
@@ -784,12 +785,45 @@ def visual_stories(markdown: str, items: list[Item]) -> list[dict[str, str]]:
         if not match:
             continue
         source = by_url.get(canonical_url(match.group(2)))
-        stories.append({"title": match.group(1)[:120],
+        stories.append({"title": match.group(1)[:120], "url": match.group(2),
                         "brief": line.split(match.group(0), 1)[-1].lstrip(" -–—")[:240],
                         "source_note": (source.summary if source else "")[:500]})
         if len(stories) == 4:
             break
     return stories
+
+
+class PreviewImageParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.image = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "meta" or self.image:
+            return
+        values = dict(attrs)
+        if values.get("property") == "og:image" or values.get("name") == "twitter:image":
+            self.image = values.get("content") or ""
+
+
+def preview_image(article_url: str) -> str:
+    """Read an article's own social preview image when the page exposes one."""
+    if urllib.parse.urlsplit(article_url).scheme != "https":
+        return ""
+    try:
+        request = urllib.request.Request(article_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(request, timeout=6) as response:
+            content_type = response.headers.get("Content-Type", "")
+            if "html" not in content_type.lower():
+                return ""
+            page = response.read(250_000).decode("utf-8", errors="replace")
+        parser = PreviewImageParser()
+        parser.feed(page)
+        image_url = urllib.parse.urljoin(article_url, html.unescape(parser.image))
+        parsed = urllib.parse.urlsplit(image_url)
+        return image_url if parsed.scheme == "https" and parsed.netloc else ""
+    except (OSError, ValueError):
+        return ""
 
 
 def generate_visual_specs(markdown: str, items: list[Item]) -> list[dict[str, object]]:
@@ -1046,6 +1080,14 @@ def generate_brief(days: int | None = None) -> GeneratedBrief:
         )
         synthesis = synthesis.rstrip() + opportunities_markdown(opportunities, opportunity_limit)
     visual_specs = generate_visual_specs(synthesis, items)
+    stories = visual_stories(synthesis, items)
+    if len(visual_specs) != len(stories):
+        visual_specs = [{"kind": "none", "points": []} for _ in stories]
+    for story, spec in zip(stories, visual_specs):
+        if spec.get("kind") == "none":
+            image_url = preview_image(story["url"])
+            if image_url:
+                spec["image"] = image_url
     html_body = render_html(synthesis, items, start, end, tz, visual_specs)
     return GeneratedBrief(
         stamp=now.strftime("%Y-%m-%d"),
