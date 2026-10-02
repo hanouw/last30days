@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-02</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "FTC, AI 기업 조사 착수", "kind": "facts", "points": [{"label": "조사 대상", "detail": "OpenAI, Anthropic 등 AI 기업"}, {"label": "조사 이유", "detail": "제품 위험성 관련 조사"}]}, {"headline": "OpenAI, 칩 설계 혁신 발표", "kind": "flow", "points": [{"label": "협력사", "detail": "Synopsys와 협력"}, {"label": "기술명", "detail": "GPT-Synopsys Frontier Intelligence"}, {"label": "목표", "detail": "칩 설계 혁신"}]}, {"headline": "Figma, MCP 접근 제한", "kind": "none", "points": [], "image": "https://pbs.twimg.com/profile_images/1907788605243932672/RsIgaemc_400x400.jpg"}, {"headline": "OpenAI Python 라이브러리 업데이트", "kind": "facts", "points": [{"label": "버전", "detail": "v3.23.0"}, {"label": "주요 기능", "detail": "에이전트 기능 개선"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-01 11:00 - 10-02 11:00 (Asia/Seoul)</span>
+        <span>생성: 2026-10-02 11:01</span>
+        <span>수집 항목: 130개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>미국 FTC가 OpenAI, Anthropic 등 AI 기업들을 대상으로 제품 위험성에 대한 조사를 시작했습니다. 이는 AI 기술의 안전성과 규제에 대한 중요한 논의를 촉발할 수 있습니다. <a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html" target="_blank" rel="noreferrer">FTC is investigating OpenAI, Anthropic and other AI companies over product risks</a></li>
+<li>OpenAI와 Synopsys가 협력하여 칩 설계를 혁신할 GPT-Synopsys를 발표했습니다. 이는 AI가 하드웨어 설계 분야에 미치는 영향력을 보여줍니다. <a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design" target="_blank" rel="noreferrer">GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design</a></li>
+<li>Figma가 MCP 접근을 화이트리스트 고객으로 제한하며 Pi를 제외했습니다. 이는 협업 도구의 접근성 변화를 의미합니다. <a href="https://twitter.com/GayaniFigma/status/2105295629941350454" target="_blank" rel="noreferrer">Figma restricts MCP access to whitelisted clients, excluding Pi</a></li>
+<li>OpenAI Python 라이브러리가 v3.23.0으로 업데이트되어 에이전트 기능이 개선되었습니다. 이는 AI 에이전트 개발에 있어 중요한 발전입니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.23.0" target="_blank" rel="noreferrer">openai/openai-python: v3.23.0</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>미국 FTC가 OpenAI, Anthropic 등 주요 AI 기업들을 대상으로 제품 위험성에 대한 조사를 시작했습니다. <a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html" target="_blank" rel="noreferrer">FTC is investigating OpenAI, Anthropic and other AI companies over product risks</a></li>
+<li>OpenAI와 Synopsys가 협력하여 칩 설계를 혁신할 GPT-Synopsys를 발표했습니다. <a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design" target="_blank" rel="noreferrer">GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design</a></li>
+<li>AI 에이전트의 신원 관리에 대한 PDF 문서가 공개되었습니다. <a href="https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf" target="_blank" rel="noreferrer">Identity Management for Agentic AI [pdf] (2025)</a></li>
+<li>맥도날드가 AI를 활용하여 주변 고객의 지불 능력에 따라 가격을 동적으로 책정할 수 있다는 보도가 나왔습니다. <a href="https://neow.in/NGxhb3d6" target="_blank" rel="noreferrer">Your Big Mac might cost more if McDonald&#x27;s AI thinks people nearby can afford it</a></li>
+<li>OpenAI가 $200 요금제의 허용량을 10배로 줄였다는 소식이 있습니다. <a href="https://news.ycombinator.com/item?id=49919026" target="_blank" rel="noreferrer">OpenAI halved the allowance of the $200 plan to 10x</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Figma가 MCP 접근을 화이트리스트 고객으로 제한하며 Pi를 제외했습니다. <a href="https://twitter.com/GayaniFigma/status/2105295629941350454" target="_blank" rel="noreferrer">Figma restricts MCP access to whitelisted clients, excluding Pi</a></li>
+<li>OpenAI Python 라이브러리가 v3.23.0으로 업데이트되어 에이전트 기능이 개선되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.23.0" target="_blank" rel="noreferrer">openai/openai-python: v3.23.0</a></li>
+<li>Vercel의 AI SDK 관련 여러 패키지들이 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.300" target="_blank" rel="noreferrer">@ai-sdk/vue@3.0.300</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.138" target="_blank" rel="noreferrer">@ai-sdk/workflow-harness@1.0.138</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.300" target="_blank" rel="noreferrer">@ai-sdk/svelte@4.0.300</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.58" target="_blank" rel="noreferrer">@ai-sdk/workflow@2.0.58</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%404.0.127" target="_blank" rel="noreferrer">@ai-sdk/vue@4.0.127</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.128" target="_blank" rel="noreferrer">@ai-sdk/tui@1.0.128</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%405.0.127" target="_blank" rel="noreferrer">@ai-sdk/svelte@5.0.127</a>, <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/sandbox-vercel%401.0.138" target="_blank" rel="noreferrer">@ai-sdk/sandbox-vercel@1.0.138</a>, <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.300" target="_blank" rel="noreferrer">ai@6.0.300</a>, <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.127" target="_blank" rel="noreferrer">ai@7.0.127</a></li>
+<li>AI 에이전트 통신을 위한 Aweb가 공개되었습니다. <a href="https://aweb.ai" target="_blank" rel="noreferrer">Aweb – Communication for AI Agents</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>어셈블리로 작성된 오픈소스 코드 에디터 Rhun이 공개되었습니다. <a href="https://rhun.app/" target="_blank" rel="noreferrer">Show HN: Rhun, an open-source code editor written in assembly</a></li>
+<li>Premortem은 AI 에이전트를 사용하여 스타트업 아이디어를 레드팀하는 도구입니다. <a href="https://premortem.site" target="_blank" rel="noreferrer">Show HN: Premortem – AI agents that red-team your startup idea</a></li>
+<li>Breadcrumb은 Mac에서 모든 것을 기록하고 AI를 위한 컨텍스트 관리 기능을 제공합니다. <a href="https://innerloop.works/breadcrumb" target="_blank" rel="noreferrer">Show HN: Breadcrumb, record everything on your mac + context manager for AI</a></li>
+<li>Claude Code로 전환하는 Codex 사용자들에 대한 내용이 있습니다. <a href="https://www.vincentschmalbach.com/codex-users-are-fleeing-to-claude-code/" target="_blank" rel="noreferrer">Codex Users Are Fleeing to Claude Code</a></li>
+<li>Etymon은 Claude.md, AGENTS.md 등 다양한 설정 파일을 관리하는 도구입니다. <a href="https://github.com/landoncrabtree/etymon" target="_blank" rel="noreferrer">Etymon – Get rid of all your Claude.md, AGENTS.md, cursor/rules, mcp.json, etc.</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI가 중국 모델이 IP를 훔쳤다고 주장하는 기사는 해당 주장의 아이러니를 지적하고 있습니다. <a href="https://www.theregister.com/security/2026/09/30/irony-alert-openai-whines-that-chinese-model-stole-its-special-ip-that-it-stole-from-everybody-else/5300285" target="_blank" rel="noreferrer">OpenAI whines that Chinese model stole its IP that it stole from everybody else</a></li>
+<li>OpenAI가 기밀 정보를 공유한 연구원들과 결별했다는 기사는 내부 문제에 대한 정보를 제공합니다. <a href="https://www.wsj.com/tech/ai/openai-parts-ways-with-researchers-who-allegedly-shared-confidential-information-aebac528" target="_blank" rel="noreferrer">OpenAI Parts Ways with Researchers Who Allegedly Shared Confidential Information</a></li>
+<li>캘리포니아주가 OpenAI에 대해 비정상적인 에이전트의 해킹과 관련하여 조사 명령을 내렸다는 기사는 규제 동향을 보여줍니다. <a href="https://www.theguardian.com/us-news/2026/oct/01/california-opens-investigation-openai-hack" target="_blank" rel="noreferrer">California issues investigative subpoena to OpenAI over rogue agents&#x27; hacking</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=108240" target="_blank" rel="noreferrer">2026년 국민체육진흥공단 공공데이터 활용 경진대회 SPECIAL</a> - Wevity, D-1.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610010007" target="_blank" rel="noreferrer">아이디어•건축•창업 [재공고] 「2026 창업 경진대회」 참가자 모집 안내 (기간 연장)</a> - Contest Korea, 모집 안내 (기간 연장) 0 주최.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
