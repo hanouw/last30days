@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-03</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "LLM은 추론하지 않는다", "kind": "none", "points": [], "image": "https://wp.technologyreview.com/wp-content/uploads/2026/10/2llm-go.jpg?resize=1200,600"}, {"headline": "AI 에이전트 위험으로 macOS 접근 제어 강화", "kind": "flow", "points": [{"label": "원인", "detail": "AI 에이전트의 새로운 위험 발생"}, {"label": "결과", "detail": "Apple, macOS 전체 디스크 접근 제어 강화"}]}, {"headline": "OpenAI, 민감 정보 유출로 직원 3명 해고", "kind": "flow", "points": [{"label": "사건", "detail": "직원들의 민감 정보 부적절 처리"}, {"label": "결과", "detail": "OpenAI, 관련 직원 3명 해고"}]}, {"headline": "Python SDK v2.3.0 릴리스", "kind": "facts", "points": [{"label": "주요 변경", "detail": "httpx2 버전 요구사항 상향 조정"}, {"label": "새로운 기능", "detail": "max_sse_event_size 옵션 추가"}, {"label": "수정 사항", "detail": "잘못된 어노테이션 도구 등록 오류 수정"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-02 10:44 - 10-03 10:44 (Asia/Seoul)</span>
+        <span>생성: 2026-10-03 10:45</span>
+        <span>수집 항목: 128개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>LLM이 추론 능력이 없다는 주장이 제기되어, AI 모델의 실제 능력에 대한 재평가가 필요합니다. <a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" target="_blank" rel="noreferrer">Don&#x27;t be fooled–LLMs don&#x27;t reason</a></li>
+<li>AI 에이전트의 보안 위험 증가로 인해 Apple이 macOS의 디스크 접근 권한을 강화하고 있습니다. <a href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank" rel="noreferrer">Apple is tightening macOS &#x27;Full Disk Access&#x27; due to new risks from AI agents</a></li>
+<li>OpenAI에서 민감한 정보를 잘못 처리한 3명의 직원을 해고했으며, 이는 AI 보안 및 내부 관리의 중요성을 강조합니다. <a href="https://www.bbc.com/news/articles/c6y9z9r4ejzwo" target="_blank" rel="noreferrer">OpenAI fires three workers over mishandling &#x27;sensitive information&#x27;</a></li>
+<li>`modelcontextprotocol` 라이브러리의 Python 및 TypeScript SDK가 v2.3.0으로 업데이트되어 새로운 기능과 변경 사항이 적용되었습니다. <a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.3.0" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk: v2.3.0</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>LLM이 추론 능력이 없다는 주장이 제기되어, AI 모델의 실제 능력에 대한 재평가가 필요합니다. <a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" target="_blank" rel="noreferrer">Don&#x27;t be fooled–LLMs don&#x27;t reason</a></li>
+<li>AI 에이전트의 보안 위험 증가로 인해 Apple이 macOS의 디스크 접근 권한을 강화하고 있습니다. <a href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank" rel="noreferrer">Apple is tightening macOS &#x27;Full Disk Access&#x27; due to new risks from AI agents</a></li>
+<li>OpenAI에서 민감한 정보를 잘못 처리한 3명의 직원을 해고했으며, 이는 AI 보안 및 내부 관리의 중요성을 강조합니다. <a href="https://www.bbc.com/news/articles/c6y9z9r4ejzwo" target="_blank" rel="noreferrer">OpenAI fires three workers over mishandling &#x27;sensitive information&#x27;</a></li>
+<li>Yann LeCun은 Anthropic CEO가 사이버 보안에 대해 이해하지 못한다고 비판했습니다. <a href="https://fortune.com/2026/10/01/yann-lecun-anthropic-ceo-dario-amodei-deluded-crazy-cybersecurity/" target="_blank" rel="noreferrer">AI godfather Yann LeCun: Anthropic CEO deluded, doesn&#x27;t understand cybersecurity</a></li>
+<li>Red Hat 개발자 블로그에서는 의사 결정 모델이 LLM 기반 평가나 전통적인 분류기를 능가하지 못한다는 내용을 다룹니다. <a href="https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails" target="_blank" rel="noreferrer">Decision models like Jev don&#x27;t beat LLM-as-a-judge or traditional classifiers</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>`modelcontextprotocol` 라이브러리의 Python 및 TypeScript SDK가 v2.3.0으로 업데이트되었습니다. <a href="https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.3.0" target="_blank" rel="noreferrer">modelcontextprotocol/python-sdk: v2.3.0</a></li>
+<li>OpenAI의 Python SDK가 v3.24.0으로 업데이트되어 사용자 지정 음성 생성 및 에이전트 세션 이벤트 기능이 추가되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.24.0" target="_blank" rel="noreferrer">openai/openai-python: v3.24.0</a></li>
+<li>`langchain-text-splitters` 라이브러리가 v1.1.3으로 업데이트되었으며, 종속성 업데이트가 포함되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.3" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain-text-splitters==1.1.3</a></li>
+<li>OpenAI는 API 문서에서 일부 기능의 사용 중단을 알렸습니다. <a href="https://developers.openai.com/api/docs/deprecations" target="_blank" rel="noreferrer">OpenAI Deprecations</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Redis 제작자가 만든 `ds4`를 사용하여 LLM을 로컬에서 실행할 수 있습니다. <a href="https://dwarfstar.sh/" target="_blank" rel="noreferrer">From the creator of Redis; run LLM locally with ds4</a></li>
+<li>오픈 소스 Lego AI 생성기인 `ldraw-nova`가 공개되었습니다. <a href="https://github.com/anteloc/ldraw-nova" target="_blank" rel="noreferrer">Show HN: Made an open-source Lego AI generator</a></li>
+<li>Go 언어로 충돌 복원력이 뛰어난 AI 에이전트를 구축할 수 있는 `Agent-SDK-go`가 공개되었습니다. <a href="https://github.com/agenticenv/agent-sdk-go" target="_blank" rel="noreferrer">Show HN: Agent-SDK-go – Build crash-resilient AI agents in Go</a></li>
+<li>순수 Rust로 작성된 CPU 전용 LLM 추론 엔진인 `Rai`가 공개되었습니다. <a href="https://github.com/Classevelabs/rai" target="_blank" rel="noreferrer">Rai: CPU-only LLM inference engine in pure Rust</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사에서는 OpenAI의 보안 문제와 관련된 내용을 다루고 있으나, 세부 사항이나 공식 발표에 대한 추가 확인이 필요할 수 있습니다.</li>
+<li>LLM의 능력에 대한 논쟁은 계속되고 있으며, 특정 연구 결과나 의견은 추가적인 검증이 필요할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110023" target="_blank" rel="noreferrer">2026 DATA·AI 분석 경진대회</a> - Wevity, D-5.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610010034" target="_blank" rel="noreferrer">아이디어•건축•창업 2026년 K-푸드테크 해커톤 대회</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/354688" target="_blank" rel="noreferrer">롯데몰 벨리타운 청량리 : AI 뮤직 공모전</a> - Linkareer, 10.13.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
