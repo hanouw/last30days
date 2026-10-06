@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-06</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "OpenAI 봇, 위키미디어 프로젝트서 활동 적발", "kind": "facts", "points": [{"label": "활동 주체", "detail": "OpenAI 봇"}, {"label": "활동 장소", "detail": "위키미디어 프로젝트"}, {"label": "활동 내용", "detail": "승인 재개 시 도구 거부 결과 재사용"}]}, {"headline": "AI 일기장 내용 신고, 여성 기소", "kind": "flow", "points": [{"label": "사건 발생", "detail": "AI 일기장 내용으로 경찰 신고"}, {"label": "결과", "detail": "여성 중범죄 혐의 기소"}]}, {"headline": "AI SDK 워크플로우 업데이트", "kind": "facts", "points": [{"label": "패키지", "detail": "@ai-sdk/workflow"}, {"label": "버전", "detail": "2.0.60"}, {"label": "주요 변경 사항", "detail": "승인 재개 시 도구 거부 결과 재사용"}]}, {"headline": "타입스크립트 SDK 버전 업데이트", "kind": "facts", "points": [{"label": "패키지", "detail": "modelcontextprotocol/typescript-sdk"}, {"label": "버전", "detail": "2.3.1"}, {"label": "변경 사항", "detail": "requireBearerAuth 인증 방식 변경"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-05 11:42 - 10-06 11:42 (Asia/Seoul)</span>
+        <span>생성: 2026-10-06 11:42</span>
+        <span>수집 항목: 122개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI의 &#x27;무단&#x27; 봇이 위키미디어 프로젝트에서 발견되어 잠재적인 서비스 중단과 연관될 수 있습니다. <a href="https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/" target="_blank" rel="noreferrer">OpenAI &quot;rogue&quot; agent activities found on Wikimedia projects</a></li>
+<li>Anthropic은 경찰에 일기 내용을 신고했으며, 이로 인해 한 여성이 중범죄 혐의를 받게 되었습니다. <a href="https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html" target="_blank" rel="noreferrer">Anthropic reported diary entry to police, woman faces felony charge</a></li>
+<li>Vercel AI SDK는 워크플로우 에이전트의 견고한 비스트리밍 생성 기능과 도구 거부 결과 재사용을 개선했습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.60" target="_blank" rel="noreferrer">@ai-sdk/workflow@2.0.60</a></li>
+<li>ModelContextProtocol TypeScript SDK가 v2.3.1로 업데이트되어 `@modelcontextprotocol/server-legacy`의 `requireBearerAuth` 기능이 개선되었습니다. <a href="https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/v2.3.1" target="_blank" rel="noreferrer">modelcontextprotocol/typescript-sdk: 2.3.1</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI의 &#x27;무단&#x27; 봇 활동이 위키미디어 프로젝트에서 발견되었으며, 이는 5월 서비스 중단과 관련이 있을 수 있습니다. <a href="https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage" target="_blank" rel="noreferrer">Wikipedia operator says OpenAI&#x27;s &#x27;rogue&#x27; bots may be linked to a May outage</a></li>
+<li>Anthropic은 경찰에 일기 내용을 신고했으며, 이는 8월 이후 세 번째로 보고된 사건입니다. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-reports-florida-womans-claude-diary-threat-to-shoot-up-sheriffs-office-felony-charge-follows-its-at-least-the-third-such-conversation-to-reach-police-since-august" target="_blank" rel="noreferrer">Third conversation with Claude that Anthropic reported to police since August</a></li>
+<li>펜타곤은 Anthropic의 AI 도구 사용을 중단했습니다. <a href="https://www.bbc.co.uk/news/articles/c5j9x9pr0240o" target="_blank" rel="noreferrer">Pentagon stops using Anthropic AI tools after blacklisting company, BBC told</a></li>
+<li>OpenAI는 이미지 생성 시 ChatGPT에서 시각 광고를 표시할 예정입니다. <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-will-show-visual-ads-in-chatgpt-while-you-generate-images/" target="_blank" rel="noreferrer">OpenAI will show visual ads in ChatGPT while you generate images</a></li>
+<li>François Chollet는 OpenAI가 AGI 발전을 5~10년 후퇴시켰다고 비판했습니다. <a href="https://www.techradar.com/pro/quote-of-the-day-by-arc-prize-co-founder-francois-chollet-openai-basically-set-back-progress-to-agi-by-five-to-10-years-critiquing-the-industrys-overindulgence-in-large-language-models" target="_blank" rel="noreferrer">&quot;OpenAI basically set back progress to AGI by 5 to 10 years&quot;</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Vercel AI SDK의 `@ai-sdk/xai` 패키지에 grok-imagine-image-2.0 이미지 모델 ID, 자동 이미지 품질 옵션, 1.5k 이미지 해상도 옵션이 추가되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.15" target="_blank" rel="noreferrer">@ai-sdk/xai@5.0.15</a></li>
+<li>Vercel AI SDK의 `@ai-sdk/workflow`는 워크플로우 재개 시 지속된 도구 거부 결과를 재사용하도록 수정되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.60" target="_blank" rel="noreferrer">@ai-sdk/workflow@2.0.60</a></li>
+<li>Vercel AI SDK의 `@ai-sdk/workflow`는 견고한 비스트리밍 `WorkflowAgent.generate()` 기능을 추가하고, 도구 루프, 기본 20단계, 타입화된 출력 등을 포함합니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.59" target="_blank" rel="noreferrer">@ai-sdk/workflow@2.0.59</a></li>
+<li>ModelContextProtocol TypeScript SDK의 `@modelcontextprotocol/server-legacy`에서 `requireBearerAuth`가 `@modelcontextprotocol/server` 2.3.0의 `expectedResource`를 지원하도록 업데이트되었습니다. <a href="https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/server-legacy%402.3.1" target="_blank" rel="noreferrer">@modelcontextprotocol/server-legacy@2.3.1</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Vercel AI SDK는 `@ai-sdk/xai`에 새로운 이미지 및 오디오 모델 기능을 추가했습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.15" target="_blank" rel="noreferrer">@ai-sdk/xai@5.0.15</a></li>
+<li>ModelContextProtocol TypeScript SDK가 v2.3.1로 업데이트되어 여러 하위 패키지에 대한 변경 사항이 포함되었습니다. <a href="https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/v2.3.1" target="_blank" rel="noreferrer">modelcontextprotocol/typescript-sdk: 2.3.1</a></li>
+<li>Show HN: Abliterated LLM provider for cyber tasks가 소개되었습니다. <a href="https://refuseless.com" target="_blank" rel="noreferrer">Show HN: Abliterated LLM provider for cyber tasks</a></li>
+<li>Show HN: Halo – On-Device Harness, Memory 및 Browser Agent를 갖춘 개인 AI가 소개되었습니다. <a href="https://apps.apple.com/us/app/halo-personal-ai/id6783715054" target="_blank" rel="noreferrer">Show HN: Halo – A Personal AI with On-Device Harness, Memory and Browser Agent</a></li>
+<li>Show HN: Moching – Rust로 제작된 219개의 내장 도구를 갖춘 AI 데스크톱 에이전트가 소개되었습니다. <a href="https://github.com/moching-ai-dev/moching" target="_blank" rel="noreferrer">Show HN: Moching – AI desktop agent with 219 built-in tools (Rust)</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 &#x27;무단&#x27; 봇 활동에 대한 보고는 위키미디어 재단과 Hacker News 모두에서 언급되었습니다. <a href="https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/" target="_blank" rel="noreferrer">OpenAI &quot;rogue&quot; agent activities found on Wikimedia projects</a> 및 <a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/" target="_blank" rel="noreferrer">OpenAI &quot;rogue&quot; agent activities found on Wikimedia projects</a></li>
+<li>Anthropic이 경찰에 신고한 사건에 대한 보도는 여러 출처에서 반복적으로 언급되었습니다. <a href="https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html" target="_blank" rel="noreferrer">Anthropic reported diary entry to police, woman faces felony charge</a> 및 <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-reports-florida-womans-claude-diary-threat-to-shoot-up-sheriffs-office-felony-charge-follows-its-at-least-the-third-such-conversation-to-reach-police-since-august" target="_blank" rel="noreferrer">Third conversation with Claude that Anthropic reported to police since August</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110023" target="_blank" rel="noreferrer">2026 DATA·AI 분석 경진대회</a> - Wevity, D-13.</li>
+<li><a href="https://linkareer.com/activity/353364" target="_blank" rel="noreferrer">2026 SNU X Croche AI 앱 해커톤</a> - Linkareer, D-4.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202610060012" target="_blank" rel="noreferrer">사진•영상•영화제 생명안전 AI숏폼 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
