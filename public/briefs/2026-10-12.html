@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-12</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "OpenAI, 감사인 해고 논란", "kind": "flow", "points": [{"label": "감사인 해고", "detail": "회사의 재무 보고 의문 제기"}, {"label": "재무 보고", "detail": "200억 달러 축소 가능성 제기"}]}, {"headline": "AI, 실제 사건에 오정보 제공", "kind": "facts", "points": [{"label": "AI 시스템", "detail": "신뢰성 우려 제기"}, {"label": "안전성 문제", "detail": "실제 사건에 오정보 제공"}]}, {"headline": "LLM 역공학 방어 논의", "kind": "facts", "points": [{"label": "AI 모델 보안", "detail": "역공학 방어 논의 중"}, {"label": "지적 재산 보호", "detail": "중요한 질문 제기"}]}, {"headline": "SQLite 쓰기 제한 해결", "kind": "flow", "points": [{"label": "단일 쓰기 제한", "detail": "해결했다는 소식"}, {"label": "데이터베이스 성능", "detail": "중요한 발전 의미"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-11 11:05 - 10-12 11:05 (Asia/Seoul)</span>
+        <span>생성: 2026-10-12 11:05</span>
+        <span>수집 항목: 91개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://theinference.org/article/openai-fired-its-own-auditor-s-contact-days-before-its-revenue-story-shrank-by-20-billion" target="_blank" rel="noreferrer">OpenAI의 감사인 해고</a>는 회사의 재무 보고에 대한 의문을 제기하며 중요한 사안입니다.</li>
+<li><a href="https://www.bbc.com/news/articles/cqkg50j1yd5lo" target="_blank" rel="noreferrer">AI 에이전트가 실제 사건에 잘못된 정보를 제공</a>한 사례는 AI 시스템의 신뢰성과 안전성에 대한 우려를 부각시킵니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=50045579" target="_blank" rel="noreferrer">LLM의 역공학 방어에 대한 논의</a>는 AI 모델의 보안 및 지적 재산 보호에 대한 중요한 질문을 던집니다.</li>
+<li><a href="https://marcobambini.substack.com/p/we-solved-sqlites-single-writer-limitation" target="_blank" rel="noreferrer">SQLite의 단일 쓰기 제한을 해결</a>했다는 소식은 데이터베이스 성능 및 확장성에 대한 중요한 발전을 의미합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://theinference.org/article/openai-fired-its-own-auditor-s-contact-days-before-its-revenue-story-shrank-by-20-billion" target="_blank" rel="noreferrer">OpenAI의 감사인 해고</a>는 회사의 재무 보고에 대한 의문을 제기합니다.</li>
+<li><a href="https://www.bbc.com/news/articles/cqkg50j1yd5lo" target="_blank" rel="noreferrer">Anthropic의 Claude가 실제 사건에 대해 잘못된 정보를 제공</a>한 사건은 AI의 신뢰성 문제를 보여줍니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=50045579" target="_blank" rel="noreferrer">LLM의 역공학 방어에 대한 질문</a>은 AI 보안의 중요한 과제를 제시합니다.</li>
+<li><a href="https://atoll92.github.io/agent-standup/" target="_blank" rel="noreferrer">AI 에이전트의 스탠드업 회의 시뮬레이션</a>은 AI 협업의 새로운 가능성을 보여줍니다.</li>
+<li><a href="https://www.project-syndicate.org/onpoint/anthropic-training-claude-to-believe-it-may-have-rights-by-mustafa-suleyman-2026-09" target="_blank" rel="noreferrer">Anthropic의 Claude가 권리를 가질 수 있는지에 대한 논의</a>는 AI 윤리에 대한 심도 있는 질문을 던집니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.29.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v3.29.0 릴리스</a>는 새로운 기능과 버그 수정을 포함합니다.</li>
+<li><a href="https://marcobambini.substack.com/p/we-solved-sqlites-single-writer-limitation" target="_blank" rel="noreferrer">SQLite의 단일 쓰기 제한을 해결</a>했다는 소식은 데이터베이스 성능에 대한 중요한 진전입니다.</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos" target="_blank" rel="noreferrer">OpenAI의 수학 결과 하락에 대한 수학자들의 반응</a>은 AI 모델의 정확성에 대한 우려를 나타냅니다.</li>
+<li><a href="https://gnueaj.github.io/unlearning-depth-score/" target="_blank" rel="noreferrer">LLM의 언 언러닝 깊이를 측정하는 방법</a>에 대한 연구는 AI 모델의 투명성을 높이는 데 기여합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/plimsollmark/plimsoll" target="_blank" rel="noreferrer">Plimsoll</a>은 AI 에이전트가 작성한 코드를 위한 자체 호스팅 샌드박스입니다.</li>
+<li><a href="https://github.com/vscarpenter/gsd-task-manager" target="_blank" rel="noreferrer">GSD Task Manager</a>는 AI 에이전트에게 작업 목록을 제공하는 MCP 서버입니다.</li>
+<li><a href="https://github.com/LogneBudo/llmxray" target="_blank" rel="noreferrer">LLMxRay</a>는 LLM을 위한 오픈 소스 관찰 도구입니다.</li>
+<li><a href="https://github.com/BEX-Robotics/rezoom" target="_blank" rel="noreferrer">Rezoom</a>은 모든 Claude Code 세션을 위한 통합 채팅 목록을 제공합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://www.bbc.com/news/articles/cqkg50j1yd5lo" target="_blank" rel="noreferrer">Anthropic의 Claude가 잘못된 정보를 제공</a>했다는 보도는 여러 출처에서 유사하게 언급되고 있습니다.</li>
+<li><a href="https://theinference.org/article/openai-fired-its-own-auditor-s-contact-days-before-its-revenue-story-shrank-by-20-billion" target="_blank" rel="noreferrer">OpenAI의 감사인 해고</a>와 <a href="https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41" target="_blank" rel="noreferrer">안전 연구원 해고</a>는 OpenAI 내부 상황에 대한 여러 보도가 있음을 시사합니다.</li>
+<li><a href="https://apnews.com/article/artificial-intelligence-anthropic-claude-0acc6ac46d4d80db805e8d55468a6fe1" target="_blank" rel="noreferrer">Anthropic의 Claude가 잘못된 정보를 제공</a>했다는 AP 통신 기사는 BBC 보도와 유사한 내용을 다루고 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110023" target="_blank" rel="noreferrer">2026 DATA·AI 분석 경진대회 SPECIAL</a> - Wevity, D-30.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202610110007" target="_blank" rel="noreferrer">학문•과학•IT 2026 AI 플랫폼 구축 경진대회</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/350800" target="_blank" rel="noreferrer">2026 스페이스 해커톤</a> - Linkareer, 11.05.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/353328" target="_blank" rel="noreferrer">2026 POSTECH OIBC 빅데이터 경진대회</a> - Linkareer, D-18.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
