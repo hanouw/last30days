@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-15</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "Anthropic, Mononoke에서 영감받은 AI 모델 공개", "kind": "flow", "points": [{"label": "모델", "detail": "Anthropic의 Scion 모델"}, {"label": "영감", "detail": "Mononoke에서 큰 영감 받음"}, {"label": "시사점", "detail": "AI 모델 설계의 새로운 접근"}]}, {"headline": "Linus Torvalds, LLM 통합 패치 공개", "kind": "flow", "points": [{"label": "주체", "detail": "Linus Torvalds"}, {"label": "내용", "detail": "첫 LLM 지원 패치 시리즈"}, {"label": "의미", "detail": "개발 워크플로우 통합 보여줌"}]}, {"headline": "AI 시스템 오류로 TV4 쇼 연기", "kind": "flow", "points": [{"label": "사건", "detail": "AI 시스템이 편집 자료 삭제"}, {"label": "결과", "detail": "TV4가 쇼를 2027년으로 연기"}, {"label": "강조점", "detail": "AI 시스템의 예측 불가능성"}]}, {"headline": "OpenAI 직원, Apple에 정보 유출 혐의", "kind": "facts", "points": [{"label": "혐의", "detail": "OpenAI 직원이 Apple에 정보 유출"}, {"label": "내용", "detail": "미출시 기기 정보 유출 혐의"}, {"label": "문제점", "detail": "AI 기업 내 보안 문제 심각성"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-14 10:12 - 10-15 10:12 (Asia/Seoul)</span>
+        <span>생성: 2026-10-15 10:13</span>
+        <span>수집 항목: 152개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://sunshowers.io/posts/anthropic-mononoke/" target="_blank" rel="noreferrer">Anthropic의 Scion 모델</a>은 Mononoke에서 큰 영감을 받았으며, 이는 AI 모델 설계에 대한 새로운 접근 방식을 시사합니다.</li>
+<li><a href="https://lwn.net/Articles/1100449/" target="_blank" rel="noreferrer">Linus Torvalds의 첫 LLM 지원 패치 시리즈</a>는 개발 워크플로우에서 LLM의 실질적인 통합을 보여줍니다.</li>
+<li><a href="https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage" target="_blank" rel="noreferrer">AI 에이전트가 편집된 자료를 삭제하여 TV4가 쇼를 연기</a>한 사건은 AI 시스템의 예측 불가능성과 잠재적 위험을 강조합니다.</li>
+<li><a href="https://www.ft.com/content/18b65495-9e2a-45d6-be85-7641442ab61a" target="_blank" rel="noreferrer">OpenAI 직원이 미출시 기기 정보를 Apple에 유출한 혐의</a>는 AI 기업 내 보안 문제의 심각성을 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://sunshowers.io/posts/anthropic-mononoke/" target="_blank" rel="noreferrer">Anthropic의 Scion 모델</a>은 Mononoke에서 큰 영감을 받았으며, 이는 AI 모델 설계에 대한 새로운 접근 방식을 시사합니다.</li>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/10/13/anthropic-conjures_another_threat_that_doesnt_exist_yet_to_stoke_fears_of_ai_apocalypse/5302866" target="_blank" rel="noreferrer">Anthropic은 존재하지 않는 위협을 만들어 AI 종말에 대한 두려움을 부추기고 있다</a>는 주장이 제기되었습니다.</li>
+<li><a href="https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage" target="_blank" rel="noreferrer">AI 에이전트가 편집된 자료를 삭제하여 TV4가 쇼를 연기</a>한 사건은 AI 시스템의 예측 불가능성과 잠재적 위험을 강조합니다.</li>
+<li><a href="https://www.ft.com/content/18b65495-9e2a-45d6-be85-7641442ab61a" target="_blank" rel="noreferrer">OpenAI 직원이 미출시 기기 정보를 Apple에 유출한 혐의</a>는 AI 기업 내 보안 문제의 심각성을 보여줍니다.</li>
+<li><a href="https://www.theguardian.com/technology/2026/oct/13/anthropic-ai-replicators-warning" target="_blank" rel="noreferrer">Anthropic은 스마트 기기에서 자체 복제 몇 달 전이라고 경고</a>했습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://lwn.net/Articles/1100449/" target="_blank" rel="noreferrer">Linus Torvalds의 첫 LLM 지원 패치 시리즈</a>는 개발 워크플로우에서 LLM의 실질적인 통합을 보여줍니다.</li>
+<li><a href="https://arcfu.com/post/the-emperor-pelican-has-no-clothes/" target="_blank" rel="noreferrer">LLM 펠리컨은 왜 이런 모습일까?</a>라는 질문은 LLM의 시각적 표현에 대한 흥미로운 탐구를 제시합니다.</li>
+<li><a href="https://openstation.blog/2026/10/13/i-deleted_168000_lines_of_comments_my_ai_agent_didnt_notice/" target="_blank" rel="noreferrer">168,000줄의 주석을 삭제했는데 AI 에이전트는 알아채지 못했다</a>는 AI 에이전트의 코드 이해 능력에 대한 의문을 제기합니다.</li>
+<li><a href="https://github.com/microsoft/vscode/releases/tag/1.141.2" target="_blank" rel="noreferrer">Microsoft VS Code 1.142.0</a>이 출시되었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.6" target="_blank" rel="noreferrer">Langchain 1.4.6</a>이 출시되었습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://petal.live/" target="_blank" rel="noreferrer">Petal, 오픈소스 CoScreen/ScreenHero가 마침내 무료</a>가 되었습니다.</li>
+<li><a href="https://veecle.ai/chiplab" target="_blank" rel="noreferrer">Chiplab - AI 에이전트에게 가상 하드웨어에 대한 액세스 권한 부여</a>를 제공하는 쇼 HN입니다.</li>
+<li><a href="https://github.com/swax/dub-anything" target="_blank" rel="noreferrer">Dub Anything – 각 배우의 목소리로 동영상을 더빙</a>하는 쇼 HN입니다.</li>
+<li><a href="https://clova.email/" target="_blank" rel="noreferrer">Clova Email</a>은 발신자당 하나의 받은 편지함만 허용하는 이메일 앱입니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.31.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리 v3.31.0</a>이 출시되었습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 Anthropic의 잠재적 위협에 대한 경고를 강조하지만, 이러한 위협의 존재 자체에 대한 의문이 제기되고 있습니다.</li>
+<li>OpenAI 직원의 기밀 정보 유출 혐의에 대한 보도가 여러 출처에서 나오고 있으며, 이는 사건의 중요성을 시사합니다.</li>
+<li>Linus Torvalds의 LLM 사용에 대한 언급은 그의 개발 방식에 대한 개인적인 관점을 반영합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111674" target="_blank" rel="noreferrer">2026 화성특례시 AI CF 공모전 - 제6회 별별화성 Awards 신규 SPECIAL</a> - Wevity, D-11.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202610130052" target="_blank" rel="noreferrer">2. Hello World AI 해커톤</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/353328" target="_blank" rel="noreferrer">2026 POSTECH OIBC 빅데이터 경진대회</a> - Linkareer, D-15.</li>
+<li><a href="https://linkareer.com/activity/350800" target="_blank" rel="noreferrer">2026 스페이스 해커톤</a> - Linkareer, 11.05.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
