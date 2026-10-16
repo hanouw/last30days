@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-16</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "Anthropic Scion, Mononoke 모방 주장 제기", "kind": "none", "points": [], "image": "https://sunshowers.io/images/og-image.png"}, {"headline": "Claude Code 데스크톱, 데이터 유출 취약점 발견", "kind": "facts", "points": [{"label": "취약점 종류", "detail": "미리보기 창 통한 데이터 유출"}, {"label": "영향", "detail": "보안 민감 개발자 주의 필요"}]}, {"headline": "AI 코딩 에이전트 위한 Aidlc 공개", "kind": "facts", "points": [{"label": "목적", "detail": "적응형 워크플로우 제어 규칙"}, {"label": "기대 효과", "detail": "효율성 및 제어 가능성 향상"}]}, {"headline": "OpenAI 엔지니어, 사우디행 편도 항공권 예약", "kind": "none", "points": []}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-15 10:00 - 10-16 10:00 (Asia/Seoul)</span>
+        <span>생성: 2026-10-16 10:01</span>
+        <span>수집 항목: 144개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://sunshowers.io/posts/anthropic-mononoke-2/" target="_blank" rel="noreferrer">Anthropic의 Scion 모델이 Mononoke를 모방했다는 주장이 제기되었습니다.</a> 이는 AI 모델의 독창성과 윤리적 문제에 대한 중요한 논의를 촉발합니다.</li>
+<li><a href="https://noma.security/noma-labs/sneakpeek-how-the-preview-pane-in-claude-code-desktop-can-exfiltrate-your-data" target="_blank" rel="noreferrer">Claude Code 데스크톱 버전에서 미리보기 창을 통한 데이터 유출 취약점이 발견되었습니다.</a> 보안에 민감한 개발자에게는 즉각적인 주의가 필요합니다.</li>
+<li><a href="https://github.com/awslabs/aidlc-workflows" target="_blank" rel="noreferrer">AI 코딩 에이전트를 위한 적응형 워크플로우 제어 규칙인 Aidlc가 공개되었습니다.</a> 이는 AI 에이전트의 효율성과 제어 가능성을 향상시키는 데 기여할 수 있습니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-14/arrested-openai-engineer-booked-a-one-way-ticket-to-saudi-arabia" target="_blank" rel="noreferrer">OpenAI 엔지니어가 체포되기 전 사우디아라비아행 편도 항공권을 예약한 사실이 보도되었습니다.</a> 이는 AI 업계의 보안 및 내부 통제에 대한 우려를 제기합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noreferrer">Anthropic은 독립적인 평가자들에 대한 업데이트를 발표했습니다.</a> 이는 AI 모델의 신뢰성과 투명성을 높이는 데 중요한 역할을 합니다.</li>
+<li><a href="https://ailately.com/articles/anthropic-ipo-prospectus-economics" target="_blank" rel="noreferrer">Anthropic은 IPO 서류에 따르면 2025년에 73.3억 달러의 컴퓨팅 비용을 지출하고 46억 달러의 수익을 올렸습니다.</a> 이는 AI 개발의 막대한 비용과 수익성을 보여줍니다.</li>
+<li><a href="https://github.com/awslabs/aidlc-workflows" target="_blank" rel="noreferrer">Hacker News에서는 AI 코딩 에이전트의 워크플로우 제어를 위한 Aidlc에 대한 논의가 있었습니다.</a> 이는 AI 에이전트의 개발 및 활용에 대한 새로운 접근 방식을 제시합니다.</li>
+<li><a href="https://thenewstack.io/torvalds-claude-code-kernel/" target="_blank" rel="noreferrer">Hacker News에서는 Claude Code가 Linux 페이지 캐시를 수정했지만, 검토자들은 레이스 컨디션을 발견했다는 소식이 있었습니다.</a> 이는 AI 코드 생성의 정확성과 안정성에 대한 지속적인 검증의 필요성을 강조합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0" target="_blank" rel="noreferrer">Anthropic Python SDK가 v1.15.0으로 업데이트되어 모델 기능에 `between_tools`가 추가되고 `speed` 파라미터가 지원됩니다.</a> 이는 AI 모델과의 상호작용을 더욱 세밀하게 제어할 수 있게 합니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11" target="_blank" rel="noreferrer">Langchain-core가 v1.6.11로 업데이트되어 `LangChainTracer`에 주소를 포함할 수 있게 되었습니다.</a> 이는 Langchain의 추적 및 디버깅 기능을 향상시킵니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/%tag/%40ai-sdk/zai%402.0.12" target="_blank" rel="noreferrer">Vercel의 AI SDK (@ai-sdk/zai)가 v2.0.12로 업데이트되었습니다.</a> 이는 AI 애플리케이션 개발을 위한 Vercel 생태계의 지속적인 개선을 보여줍니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/%tag/ai%406.0.308" target="_blank" rel="noreferrer">Vercel의 AI SDK (ai)가 v6.0.308로 업데이트되어 OpenAI 커스텀 도구 입력 델타를 복원하고 스트리밍 입력을 텍스트로 표시할 수 있게 되었습니다.</a> 이는 AI 기반 애플리케이션의 사용자 경험을 개선합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/rlstech-ml/BlastLoop" target="_blank" rel="noreferrer">Hacker News에서는 구조 중심 코딩 방법론인 BlastLoop가 소개되었습니다.</a> 이는 AI 에이전트 개발에 대한 새로운 접근 방식을 제시합니다.</li>
+<li><a href="https://github.com/canaanmckenzie/sidelong" target="_blank" rel="noreferrer">Hacker News에서는 LLM 사용법에 대한 가이드가 공유되었습니다.</a> 이는 LLM을 효과적으로 활용하는 데 도움을 줄 수 있습니다.</li>
+<li><a href="https://machinelearning.apple.com/research/mlx-distributed-inference" target="_blank" rel="noreferrer">Hacker News에서는 MLX와 RDMA를 사용하여 Mac Studio에서 로컬 및 분산 LLM 추론을 수행하는 방법에 대한 연구가 공유되었습니다.</a> 이는 고성능 LLM 추론을 위한 새로운 가능성을 보여줍니다.</li>
+<li><a href="https://philippdubach.com/posts/model-atlas-capability-weights/" target="_blank" rel="noreferrer">Hacker News에서는 LLM 벤치마크를 비교하는 도구가 소개되었습니다.</a> 이는 다양한 LLM의 성능을 평가하고 비교하는 데 유용합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li><a href="https://sunshowers.io/posts/anthropic-mononoke-2/" target="_blank" rel="noreferrer">Anthropic의 Scion 모델이 Mononoke를 모방했다는 주장은 Hacker News에서 높은 점수를 받았으나, 추가적인 검증이 필요할 수 있습니다.</a></li>
+<li><a href="https://noma.security/noma-labs/sneakpeek-how-the-preview-pane-in-claude-code-desktop-can-exfiltrate-your-data" target="_blank" rel="noreferrer">Claude Code 데스크톱 버전의 취약점에 대한 보고는 Noma Security에서 나왔으며, 이는 보안 연구 기관의 분석에 기반합니다.</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-14/arrested-openai-engineer-booked-a-one-way-ticket-to-saudi-arabia" target="_blank" rel="noreferrer">OpenAI 엔지니어의 체포 및 사우디행 항공권 예약 관련 보도는 여러 매체에서 다루어졌으며, 이는 사실로 확인되고 있습니다.</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110023" target="_blank" rel="noreferrer">2026 DATA·AI 분석 경진대회</a> - Wevity, D-17.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610070068" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 청년정책 공모전</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/353328" target="_blank" rel="noreferrer">2026 POSTECH OIBC 빅데이터 경진대회</a> - Linkareer, D-14.</li>
+<li><a href="https://linkareer.com/activity/350800" target="_blank" rel="noreferrer">2026 스페이스 해커톤</a> - Linkareer, 11.05.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
