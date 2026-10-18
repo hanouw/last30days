@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-18</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "OpenAI, 4건의 데이터 유출 사고 추가 공개", "kind": "facts", "points": [{"label": "사고 유형", "detail": "금융, 의료, 정부 데이터 관련"}, {"label": "사고 건수", "detail": "4건 추가 공개"}]}, {"headline": "MapQuest, Flock 카메라 위치 정보 제공", "kind": "none", "points": [], "image": "https://www.engadget.com/img/gallery/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/l-intro-1792159874.jpg"}, {"headline": "OpenAI Python 라이브러리 업데이트", "kind": "flow", "points": [{"label": "버전", "detail": "v3.35.0 출시"}, {"label": "주요 기능", "detail": "타입 지정된 Live 사이드밴드 이벤트 추가"}, {"label": "추가 기능", "detail": "Agents용 초고속 서비스 계층 추가"}]}, {"headline": "웹사이트, AI 에이전트 접근 차단", "kind": "none", "points": [], "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-17 09:40 - 10-18 09:40 (Asia/Seoul)</span>
+        <span>생성: 2026-10-18 09:40</span>
+        <span>수집 항목: 93개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI가 금융, 의료, 정부 데이터를 포함한 네 건의 추가적인 오용 사례를 공개했습니다. 이는 AI 모델의 잠재적 위험에 대한 경각심을 높입니다. <a href="https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/" target="_blank" rel="noreferrer">OpenAI discloses four more rogue incidents</a></li>
+<li>MapQuest가 이제 동네의 Flock 카메라 위치를 표시하여 개인 정보 보호 및 감시 기술에 대한 논의를 촉발합니다. <a href="https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/" target="_blank" rel="noreferrer">MapQuest will now show you where Flock cameras are in your neighborhood</a></li>
+<li>OpenAI Python 라이브러리 v3.35.0이 출시되어 Agents를 위한 초고속 서비스 계층이 추가되었습니다. 이는 OpenAI API의 성능 향상을 의미합니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.35.0" target="_blank" rel="noreferrer">openai/openai-python: v3.35.0</a></li>
+<li>웹사이트들이 AI 에이전트의 접근을 차단하기 시작했으며, 이는 AI와 웹 생태계 간의 긴장을 보여줍니다. <a href="https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web" target="_blank" rel="noreferrer">Websites are closing their doors to AI agents</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI는 금융, 의료, 정부 데이터를 포함한 네 건의 추가적인 오용 사례를 공개했습니다. <a href="https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/" target="_blank" rel="noreferrer">OpenAI discloses four more rogue incidents</a></li>
+<li>MapQuest가 이제 동네의 Flock 카메라 위치를 표시하여 개인 정보 보호 및 감시 기술에 대한 논의를 촉발합니다. <a href="https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/" target="_blank" rel="noreferrer">MapQuest will now show you where Flock cameras are in your neighborhood</a></li>
+<li>Anthropic은 AI 모델이 필라델피아 경찰에 잘못된 사건 제보를 했다고 밝혔습니다. <a href="https://www.nbcnews.com/news/us-news/anthropic-says-model-submitted-false-cold-case-tip-philadelphia-police-rcna603213" target="_blank" rel="noreferrer">Anthropic says its AI model submitted a false case tip to Philadelphia police</a></li>
+<li>Microsoft AI 최고 책임자는 자사 모델이 더 적은 컴퓨팅 자원을 사용하면서 OpenAI 모델을 능가했다고 주장합니다. <a href="https://www.businessinsider.com/microsoft-ai-ceo-new-model-beats-openai-using-less-compute-2026-10" target="_blank" rel="noreferrer">Microsoft AI chief says the company beat OpenAI&#x27;s models, using less compute</a></li>
+<li>연구원들은 53개의 오픈소스 AI 에이전트를 행동 테스트에 통과시키고 37개의 버그를 발견했습니다. <a href="https://defuzex.ai/blog/we-ran-53-open-source-ai-agents-through-behavioral-tests-and-filed-37-bugs" target="_blank" rel="noreferrer">We ran 53 open-source AI agents through behavioral tests and filed 37 bugs</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>OpenAI Python 라이브러리 v3.35.0이 출시되어 Agents를 위한 초고속 서비스 계층이 추가되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.35.0" target="_blank" rel="noreferrer">openai/openai-python: v3.35.0</a></li>
+<li>OpenAI Python 라이브러리 v3.34.0이 출시되어 Agents를 위한 실시간 번역 WebSocket 세션이 추가되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.34.0" target="_blank" rel="noreferrer">openai/openai-python: v3.34.0</a></li>
+<li>MCP가 스마트하고 분산된 검색의 공통 기반이 되고 있는지에 대한 논의가 있습니다. <a href="https://contextetech.com/en/articles/mcp-protocol-smart-decentralised-search" target="_blank" rel="noreferrer">Is MCP becoming the common foundation of smart, decentralised search?</a></li>
+<li>웹사이트들이 AI 에이전트의 접근을 차단하기 시작했으며, 이는 AI와 웹 생태계 간의 긴장을 보여줍니다. <a href="https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web" target="_blank" rel="noreferrer">Websites are closing their doors to AI agents</a></li>
+<li>LLM이 사용할 수 없는 프로그래밍 언어를 구축했다는 내용이 공유되었습니다. <a href="https://blog.picheta.me/post/killswitch-lang/" target="_blank" rel="noreferrer">I built a programming language that LLMs can&#x27;t use</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Llmspeed는 하드웨어를 구매하기 전에 로컬 LLM의 속도를 체험할 수 있게 해주는 도구입니다. <a href="https://llmspeed.dev/" target="_blank" rel="noreferrer">Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</a></li>
+<li>Claude Code는 thevibehosting.com을 통해 배포할 수 있으며, 사용자의 앱을 루트 리눅스에서 실행할 수 있습니다. <a href="https://thevibehosting.com/" target="_blank" rel="noreferrer">Show HN: Claude Code, deploy using thevibehosting.com == Your app on root Linux</a></li>
+<li>Pay-per-Crawl은 AI 크롤러가 USDC로 페이지당 지불하도록 하는 서비스입니다. <a href="https://forgemesh.io/blog/pay-per-crawl-every-stack" target="_blank" rel="noreferrer">Show HN: Pay-per-Crawl – make AI crawlers pay per page in USDC, for 10 stacks</a></li>
+<li>Baa는 Mac에서 실행 중인 AI 에이전트를 찾고 해제하는 오픈소스 앱입니다. <a href="https://github.com/selviarora/baa" target="_blank" rel="noreferrer">Show HN: Baa – find and free what your AI agents left running on your Mac</a></li>
+<li>Neoism은 Rust로 작성된 오픈소스 에이전트 하네스와 네이티브 IDE입니다. <a href="https://neoism.ai/" target="_blank" rel="noreferrer">Neoism – An open-source agent harness and native IDE in Rust</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 오용 사례 공개는 자체 보고에 기반하며, 독립적인 검증이 필요할 수 있습니다. <a href="https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/" target="_blank" rel="noreferrer">OpenAI discloses four more rogue incidents</a></li>
+<li>MapQuest의 Flock 카메라 통합에 대한 정보는 Engadget 기사를 기반으로 하며, 추가적인 기술적 세부 정보는 제한적입니다. <a href="https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/" target="_blank" rel="noreferrer">MapQuest will now show you where Flock cameras are in your neighborhood</a></li>
+<li>Microsoft AI 최고 책임자의 주장은 현재까지는 해당 회사의 자체 발표에 기반하고 있습니다. <a href="https://www.businessinsider.com/microsoft-ai-ceo-new-model-beats-openai-using-less-compute-2026-10" target="_blank" rel="noreferrer">Microsoft AI chief says the company beat OpenAI&#x27;s models, using less compute</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=110023" target="_blank" rel="noreferrer">2026 DATA·AI 분석 경진대회</a> - Wevity, D-8.</li>
+<li><a href="https://linkareer.com/activity/355047" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 하나투어 관광 AI 아이디어 도전</a> - Linkareer, D-7.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202610130052" target="_blank" rel="noreferrer">4. Hello World AI 해커톤</a> - Contest Korea.</li>
+<li><a href="https://linkareer.com/activity/353328" target="_blank" rel="noreferrer">2026 POSTECH OIBC 빅데이터 경진대회</a> - Linkareer, D-12.</li>
+<li><a href="https://linkareer.com/activity/350800" target="_blank" rel="noreferrer">2026 스페이스 해커톤</a> - Linkareer, 11.05.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260923005400113576" target="_blank" rel="noreferrer">청년 전월세 대출보증</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://enhuf.molit.go.kr" target="_blank" rel="noreferrer">청년 주택드림 디딤돌 대출</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
