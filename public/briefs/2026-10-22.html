@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-22</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "OpenAI 모델, 구글 클라우드에 탑재", "kind": "none", "points": []}, {"headline": "AI 에이전트, 생물학 데이터 분석 활용", "kind": "none", "points": []}, {"headline": "Claude, 코드 공격 표면 감소에 활용", "kind": "none", "points": [], "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"}, {"headline": "LayerFS, AI 코딩 에이전트 위한 파일 시스템", "kind": "none", "points": [], "image": "https://layerfs.ai/github-preview.png"}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-21 10:15 - 10-22 10:15 (Asia/Seoul)</span>
+        <span>생성: 2026-10-22 10:15</span>
+        <span>수집 항목: 139개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI 모델이 Google Cloud에서 사용 가능해져, 클라우드 환경에서의 AI 접근성이 향상될 것으로 기대됩니다. <a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noreferrer">OpenAI models are coming to Google Cloud</a></li>
+<li>수천 개의 AI 에이전트를 활용한 생물학 데이터 연구는 복잡한 과학 문제 해결에 AI의 잠재력을 보여줍니다. <a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data/" target="_blank" rel="noreferrer">Using thousands of AI agents to uncover new leads in biological data</a></li>
+<li>Claude를 활용한 코드 공격 표면 감소는 소프트웨어 보안 강화에 기여할 수 있습니다. <a href="https://www.anthropic.com/research/attack-surface-reduction" target="_blank" rel="noreferrer">Using Claude to reduce the attack surface of code</a></li>
+<li>LayerFS는 AI 코딩 에이전트를 위한 파일 시스템으로, 에이전트 기반 개발 환경을 개선할 가능성이 있습니다. <a href="https://layerfs.ai/" target="_blank" rel="noreferrer">LayerFS: The filesystem for AI coding agents</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI는 에이전트를 통해 발견된 취약점에 대한 글로벌 대응 조정을 발표했습니다. <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/" target="_blank" rel="noreferrer">Patch the Planet: global response coordination as agents uncover vulnerabilities</a></li>
+<li>Anthropic은 2026년 상반기에 807억 달러의 순손실을 기록했습니다. <a href="https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1" target="_blank" rel="noreferrer">Anthropic disclosed an $80.7B net loss for the first half of 2026</a></li>
+<li>Google DeepMind의 AI 에이전트가 27시간 만에 Minecraft를 정복하며 게임 AI의 발전을 보여주었습니다. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/google-deepmind-claims-four-gemini-4-agents-beat-minecraft-in-27-hours-by-writing-2-783-programs-of-their-own-the-ai-team-died-605-times-on-easy-difficulty-and-ran-up-an-estimated-usd520-in-tokens" target="_blank" rel="noreferrer">Google DeepMind says four AI agents beat Minecraft in 27 hours</a></li>
+<li>Anthropic은 전문가를 위한 에이전트인 Claude Duet의 연구 미리보기를 공개했습니다. <a href="https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/" target="_blank" rel="noreferrer">Anthropic opens research preview of Claude Duet, a agent for professionals</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Anthropic SDK for Python이 v2.1.0으로 업데이트되어 사용자 프로필에 대한 강제 적용 상태, 작업 및 필터가 추가되었습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0" target="_blank" rel="noreferrer">anthropics/anthropic-sdk-python: v2.1.0</a></li>
+<li>Langchain은 certifi 및 aiohttp 라이브러리 업데이트를 포함한 v1.4.7로 릴리스되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.7" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain==1.4.7</a></li>
+<li>Langchain-core는 certifi 라이브러리 업데이트를 포함한 v1.6.13으로 릴리스되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.13" target="_blank" rel="noreferrer">langchain-ai/langchain: langchain-core==1.6.13</a></li>
+<li>OpenAI Python 라이브러리는 Vertex AI 지원을 추가한 v3.36.0으로 업데이트되었습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.36.0" target="_blank" rel="noreferrer">openai/openai-python: v3.36.0</a></li>
+<li>Vercel AI SDK의 @ai-sdk/zai는 제공업체 가져오기 시간을 줄이기 위해 유효성 검사 스키마 구성을 연기하는 패치 변경 사항을 받았습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%401.0.8" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/zai@1.0.8</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Alter는 다중 사용자 에이전트의 접근 제어를 위한 도구입니다. <a href="https://alterauth.com/" target="_blank" rel="noreferrer">Launch HN: Alter (YC S25) – Access control for multi-user agents</a></li>
+<li>AI 코딩 에이전트를 위한 파일 시스템인 LayerFS가 출시되었습니다. <a href="https://layerfs.ai/" target="_blank" rel="noreferrer">LayerFS: The filesystem for AI coding agents</a></li>
+<li>Omnara는 Claude 관리 에이전트의 오픈 소스 대안입니다. <a href="https://github.com/omnara-ai/omnara" target="_blank" rel="noreferrer">Show HN: Omnara – Open-Source Alternative to Claude Managed Agents</a></li>
+<li>Nexus-CLI는 DeepSeek R1/V3와 Claude Code 및 Ollama를 지원하는 순수 Go 브리지입니다. <a href="https://github.com/xamrayev/nexus-cli" target="_blank" rel="noreferrer">Nexus-CLI – Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support</a></li>
+<li>Taskman은 Rust로 작성된 TUI로, 이슈 및 PR에 대한 병렬 Claude/Codex 작업을 지원합니다. <a href="https://github.com/sanagnos/taskman" target="_blank" rel="noreferrer">Show HN: Built Taskman, a Rust TUI for Parallel Claude/Codex Work on Issues+PRs</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic의 재정적 손실에 대한 보도는 여러 출처에서 반복적으로 언급되고 있습니다. <a href="https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1" target="_blank" rel="noreferrer">Anthropic disclosed an $80.7B net loss for the first half of 2026</a>, <a href="https://www.telegraph.co.uk/business/2026/10/20/anthropic-loses-80bn-six-months/" target="_blank" rel="noreferrer">Anthropic loses $80B in six months</a>, <a href="https://www.aljazeera.com/news/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj" target="_blank" rel="noreferrer">Anthropic posts $80B loss in first half of 2026</a></li>
+<li>Claude Code의 잠재적 보안 문제에 대한 주장은 GitHub 링크를 통해 제공되지만, 추가적인 검증이 필요할 수 있습니다. <a href="https://github.com/Andytonglove/claude-code-leak/blob/main/src/upstreamproxy/upstreamproxy.ts" target="_blank" rel="noreferrer">Claude Code has expected a forged CA and MitM since April</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전)</a> - Wevity, D-12.</li>
+<li><a href="https://linkareer.com/activity/351309" target="_blank" rel="noreferrer">「2026 별별화성 Awards」화성특례시 AI CF 공모전</a> - Linkareer, D-3.</li>
+<li><a href="https://linkareer.com/activity/355047" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 하나투어 관광 AI 아이디어 도전</a> - Linkareer, D-3.</li>
+<li><a href="https://linkareer.com/activity/357358" target="_blank" rel="noreferrer">2026 서울 AI 디지털 배움터 청년 해커톤</a> - Linkareer, D-17.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610210040" target="_blank" rel="noreferrer">아이디어•건축•창업 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://bukgu.gwangju.kr/menu.es?mid=c20704000000" target="_blank" rel="noreferrer">공공임대주택 활용 청년창업 지원</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://dgtp.or.kr/dgtp.do" target="_blank" rel="noreferrer">청년 귀환 채널구축 사업고향올래</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainHubPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급통합공공임대</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
