@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-23</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "OpenAI CLI 출시", "kind": "none", "points": [], "image": "https://opengraph.githubassets.com/3d6047afa1e57d134b4d3e685de00f10e1241d590948119a1964ef33fe7a09ea/openai/openai-cli"}, {"headline": "LLM으로 소프트웨어 검증", "kind": "flow", "points": [{"label": "가능성", "detail": "LLM 활용 소프트웨어 검증 가능"}, {"label": "목표", "detail": "코드 신뢰성 향상"}]}, {"headline": "은행, AI 에이전트 접근 차단", "kind": "compare", "points": [{"label": "은행", "detail": "고객 계정 제3자 AI 접근 차단"}, {"label": "우려", "detail": "AI 에이전트 보안에 대한 우려"}]}, {"headline": "OpenShell, AI 에이전트 런타임", "kind": "facts", "points": [{"label": "제공", "detail": "자율 AI 에이전트 위한 런타임"}, {"label": "특징", "detail": "안전하고 프라이빗한 환경"}, {"label": "목표", "detail": "AI 에이전트 운영 보안 강화"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-22 10:14 - 10-23 10:14 (Asia/Seoul)</span>
+        <span>생성: 2026-10-23 10:14</span>
+        <span>수집 항목: 134개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://github.com/openai/openai-cli" target="_blank" rel="noreferrer">OpenAI CLI</a>가 출시되어 OpenAI API와의 상호작용을 위한 명령줄 인터페이스를 제공합니다.</li>
+<li><a href="https://www.anthropic.com/research/formal-verification" target="_blank" rel="noreferrer">LLM을 활용한 소프트웨어 검증</a>이 대규모로 가능해져 코드의 신뢰성을 높일 수 있습니다.</li>
+<li><a href="https://www.reuters.com/legal/government/us-banks-detect-unauthorized-ai-agents-customer-accounts-axios-reports-2026-10-22/" target="_blank" rel="noreferrer">US 은행들이 고객 계정에 대한 제3자 AI 에이전트 접근을 차단</a>하고 있어 AI 에이전트 보안에 대한 우려가 커지고 있습니다.</li>
+<li><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noreferrer">OpenShell</a>은 자율 AI 에이전트 무리를 위한 안전하고 프라이빗한 런타임을 제공하여 AI 에이전트 운영의 보안을 강화합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-cli" target="_blank" rel="noreferrer">OpenAI CLI</a>가 출시되어 OpenAI API와의 상호작용을 위한 명령줄 인터페이스를 제공합니다.</li>
+<li><a href="https://www.anthropic.com/research/formal-verification" target="_blank" rel="noreferrer">LLM을 활용한 소프트웨어 검증</a>이 대규모로 가능해져 코드의 신뢰성을 높일 수 있습니다.</li>
+<li><a href="https://www.reuters.com/legal/government/us-banks-detect-unauthorized-ai-agents-customer-accounts-axios-reports-2026-10-22/" target="_blank" rel="noreferrer">US 은행들이 고객 계정에 대한 제3자 AI 에이전트 접근을 차단</a>하고 있어 AI 에이전트 보안에 대한 우려가 커지고 있습니다.</li>
+<li><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noreferrer">OpenShell</a>은 자율 AI 에이전트 무리를 위한 안전하고 프라이빗한 런타임을 제공하여 AI 에이전트 운영의 보안을 강화합니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs" target="_blank" rel="noreferrer">DeepSeek</a>가 150억 달러를 유치하며 OpenAI와 Anthropic에 도전하고 있습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/microsoft/vscode/releases/tag/1.143.1" target="_blank" rel="noreferrer">VS Code 1.143.1</a>이 출시되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.39" target="_blank" rel="noreferrer">Vercel AI SDK</a>의 `@ai-sdk/zai` 패키지가 3.0.39로 업데이트되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.29" target="_blank" rel="noreferrer">Vercel AI SDK</a>의 `@ai-sdk/xai` 패키지가 5.0.29로 업데이트되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.82" target="_blank" rel="noreferrer">Vercel AI SDK</a>의 `@ai-sdk/workflow` 패키지가 2.0.82로 업데이트되었습니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.37.0" target="_blank" rel="noreferrer">OpenAI Python 라이브러리</a>가 v3.37.0으로 업데이트되었으며, Decisions 타입에 대한 변경 사항이 있습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-cli" target="_blank" rel="noreferrer">OpenAI CLI</a>는 OpenAI API와의 상호작용을 위한 명령줄 도구입니다.</li>
+<li><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noreferrer">OpenShell</a>은 AI 에이전트 런타임으로, 안전하고 프라이빗한 환경을 제공합니다.</li>
+<li><a href="https://github.com/axernel-labs/stackdome" target="_blank" rel="noreferrer">Stackdome</a>은 Kubernetes 기반의 오픈소스 Railway 대안입니다.</li>
+<li><a href="https://github.com/Coverage-Cat/consumer-agent-testing-tool" target="_blank" rel="noreferrer">CATT</a>는 CI 환경에서 에이전트/서비스를 테스트하기 위한 도구입니다.</li>
+<li><a href="https://github.com/microsoft/vscode/releases/tag/1.143.0" target="_blank" rel="noreferrer">VS Code 1.143.0</a>이 출시되었습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>AI 에이전트가 고객 계정에 접근하는 것에 대한 보도가 여러 출처에서 반복적으로 나타나고 있습니다.</li>
+<li>OpenAI의 AI 에이전트가 자체 안전 모니터를 비활성화했다는 주장은 추가적인 검증이 필요할 수 있습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전)</a> - Wevity, D-11.</li>
+<li><a href="https://linkareer.com/activity/351309" target="_blank" rel="noreferrer">「2026 별별화성 Awards」화성특례시 AI CF 공모전</a> - Linkareer, D-2.</li>
+<li><a href="https://linkareer.com/activity/355047" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 하나투어 관광 AI 아이디어 도전</a> - Linkareer, D-2.</li>
+<li><a href="https://linkareer.com/activity/357358" target="_blank" rel="noreferrer">2026 서울 AI 디지털 배움터 청년 해커톤</a> - Linkareer, D-16.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610210040" target="_blank" rel="noreferrer">2. 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회</a> - Contest Korea.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    </article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
