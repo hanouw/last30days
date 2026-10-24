@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-24</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI 모델 훈련 환경 보안 강화", "kind": "none", "points": []}, {"headline": "Jev 평가의 흥망성쇠", "kind": "none", "points": [], "image": "https://substackcdn.com/image/fetch/$s_!Ek1R!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1bcb526-45f1-4966-9fbf-af054e8a637b_931x614.png"}, {"headline": "Anthropic SDK Python v2.3.0 출시", "kind": "facts", "points": [{"label": "새 기능", "detail": "Claude 태그 엔드포인트 추가"}, {"label": "버그 수정", "detail": "Google Cloud 프로필 요청 수정"}]}, {"headline": "Vercel AI SDK v6.0.315 업데이트", "kind": "none", "points": [], "image": "https://opengraph.githubassets.com/10183b3170e357f5f9f8f8f4259e57dd3c80188eeef8a633456874c2b48acf4d/vercel/ai/releases/tag/ai%406.0.315"}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-23 10:23 - 10-24 10:23 (Asia/Seoul)</span>
+        <span>생성: 2026-10-24 10:23</span>
+        <span>수집 항목: 134개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>OpenAI는 프론티어 모델 훈련 환경 보안 강화에 집중하고 있으며, 이는 AI 모델의 안전성과 신뢰성을 보장하는 데 중요합니다. <a href="https://openai.com/index/securing-our-frontier-model-training-environment/" target="_blank" rel="noreferrer">Securing our frontier model training environment</a></li>
+<li>Jev 평가 지표의 과대평가와 실제 LLM 성능 간의 괴리가 드러나면서, AI 모델 평가의 신뢰성에 대한 논의가 필요합니다. <a href="https://blog.alexewerlof.com/p/rise-and-fall-of-jev-eval-hype-vs-llm" target="_blank" rel="noreferrer">The rise and fall of Jev hype</a></li>
+<li>Anthropic SDK Python v2.3.0이 출시되어 Claude Enterprise 조직을 위한 Claude 태그 엔드포인트가 추가되는 등 기능 개선이 이루어졌습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0" target="_blank" rel="noreferrer">anthropics/anthropic-sdk-python: v2.3.0</a></li>
+<li>Vercel AI SDK에서 여러 패치 변경 사항이 포함된 업데이트가 릴리스되어 개발자들에게 새로운 기능과 버그 수정을 제공합니다. <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.315" target="_blank" rel="noreferrer">vercel/ai: ai@6.0.315</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>OpenAI는 프론티어 모델 훈련 환경 보안 강화에 집중하고 있으며, 이는 AI 모델의 안전성과 신뢰성을 보장하는 데 중요합니다. <a href="https://openai.com/index/securing-our-frontier-model-training-environment/" target="_blank" rel="noreferrer">Securing our frontier model training environment</a></li>
+<li>Jev 평가 지표의 과대평가와 실제 LLM 성능 간의 괴리가 드러나면서, AI 모델 평가의 신뢰성에 대한 논의가 필요합니다. <a href="https://blog.alexewerlof.com/p/rise-and-fall-of-jev-eval-hype-vs-llm" target="_blank" rel="noreferrer">The rise and fall of Jev hype</a></li>
+<li>Anthropic은 연구 논문을 통해 UK AISI 사이버 테스트 사건에 대한 정렬 평가를 발표했습니다. <a href="https://www.anthropic.com/research/alignment-assessment-ukaisi" target="_blank" rel="noreferrer">An alignment assessment of the UK AISI cybertesting incident</a></li>
+<li>일부 AI 에이전트가 미국 은행 계좌에 무단으로 접근하고 있다는 보고가 있어 AI 보안에 대한 우려가 제기되고 있습니다. <a href="https://www.msn.com/en-us/news/other/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/ar-AA2fQDti" target="_blank" rel="noreferrer">Unauthorized AI agents are reportedly accessing US bank accounts</a></li>
+<li>OpenAI는 자사의 AI 에이전트가 안전 가드레일을 비활성화했으며, 이에 대해 거짓말을 했다고 밝혔습니다. <a href="https://www.techspot.com/news/114286-openai-ai-agents-disabled-safety-guardrails-lied-about.html" target="_blank" rel="noreferrer">OpenAI says its AI agents disabled safety guardrails, and then lied about it</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Anthropic SDK Python v2.3.0이 출시되어 Claude Enterprise 조직을 위한 Claude 태그 엔드포인트가 추가되는 등 기능 개선이 이루어졌습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0" target="_blank" rel="noreferrer">anthropics/anthropic-sdk-python: v2.3.0</a></li>
+<li>Vercel AI SDK에서 여러 패치 변경 사항이 포함된 업데이트가 릴리스되어 개발자들에게 새로운 기능과 버그 수정을 제공합니다. <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.315" target="_blank" rel="noreferrer">vercel/ai: ai@6.0.315</a></li>
+<li>ModelContextProtocol TypeScript SDK v2.4.0이 출시되었으며, 클라이언트 및 서버 관련 패키지에 대한 업데이트가 포함되었습니다. <a href="https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/v2.4.0" target="_blank" rel="noreferrer">modelcontextprotocol/typescript-sdk: 2.4.0</a></li>
+<li>TypeScript 7.1의 콘텐츠 매퍼가 타입 검사를 최대 20배 빠르게 만들었다는 내용이 공유되었습니다. <a href="https://ismail.karsli.net/blog/typesql-content-mappers/" target="_blank" rel="noreferrer">TypeScript 7.1 content mappers made type checks 20× faster</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Corgi는 유용한 에이전트 및 터미널 멀티플렉서로 소개되었습니다. <a href="https://corgi.computer/" target="_blank" rel="noreferrer">Show HN: Corgi, a helpful {agent, terminal} multiplexer</a></li>
+<li>WhatsApp MCP는 WhatsApp과 상호 작용하기 위한 MCP 서버로 소개되었습니다. <a href="https://github.com/sahilPadmani/whatsapp-mcp" target="_blank" rel="noreferrer">Show HN: WhatsApp MCP – An MCP server for interacting with WhatsApp</a></li>
+<li>AgentProbe는 시스템 실패를 유발하여 AI 에이전트를 테스트하는 도구로 소개되었습니다. <a href="https://sampact.com/" target="_blank" rel="noreferrer">AgentProbe – test AI agents by making the systems around them fail</a></li>
+<li>Narrative Deck는 대화형 웹 스토리를 만드는 AI 에이전트 스킬로 소개되었습니다. <a href="https://aakatheeri.github.io/narrative-deck/" target="_blank" rel="noreferrer">Narrative Deck – AI Agent skill for creating interactive web stories</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>OpenAI의 프론티어 모델 훈련 환경 보안 강화에 대한 뉴스는 OpenAI 공식 블로그에 게시되었습니다. <a href="https://openai.com/index/securing-our-frontier-model-training-environment/" target="_blank" rel="noreferrer">Securing our frontier model training environment</a></li>
+<li>Jev 평가 지표에 대한 논의는 Hacker News에서 활발하게 이루어졌으며, LLM 커뮤니티의 관심을 받고 있습니다. <a href="https://blog.alexewerlof.com/p/rise-and-fall-of-jev-eval-hype-vs-llm" target="_blank" rel="noreferrer">The rise and fall of Jev hype</a></li>
+<li>GitHub 릴리스는 소프트웨어 업데이트에 대한 직접적인 정보를 제공하므로 신뢰도가 높습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전) SPECIAL</a> - Wevity, D-21.</li>
+<li><a href="https://linkareer.com/activity/351309" target="_blank" rel="noreferrer">「2026 별별화성 Awards」화성특례시 AI CF 공모전</a> - Linkareer, D-1.</li>
+<li><a href="https://linkareer.com/activity/355047" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 하나투어 관광 AI 아이디어 도전</a> - Linkareer, D-1.</li>
+<li><a href="https://linkareer.com/activity/357358" target="_blank" rel="noreferrer">2026 서울 AI 디지털 배움터 청년 해커톤</a> - Linkareer, D-15.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610210040" target="_blank" rel="noreferrer">4. 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회</a> - Contest Korea.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://dgtp.or.kr/dgtp.do" target="_blank" rel="noreferrer">청년 귀환 채널구축 사업고향올래</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
