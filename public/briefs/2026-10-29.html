@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-10-29</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI, 세금 업무 평가서 가능성 입증", "kind": "facts", "points": [{"label": "평가 대상", "detail": "50개 전문 세금 과제"}, {"label": "평가 결과", "detail": "AI 에이전트의 가능성 확인"}]}, {"headline": "MicroZig, AI/LLM 사용 금지 정책 도입", "kind": "facts", "points": [{"label": "정책 내용", "detail": "AI 및 LLM 사용 엄격 금지"}, {"label": "적용 대상", "detail": "MicroZig 프로젝트"}]}, {"headline": "OpenAI Python 라이브러리 업데이트", "kind": "flow", "points": [{"label": "이전 버전", "detail": "v3.40.0"}, {"label": "업데이트 내용", "detail": "실시간 응답 입력에 타입 참조 허용"}, {"label": "새 버전", "detail": "v3.41.0"}]}, {"headline": "Vercel AI SDK 의존성 업데이트", "kind": "flow", "points": [{"label": "업데이트 대상", "detail": "@ai-sdk/gateway"}, {"label": "이전 버전", "detail": "4.0.129"}, {"label": "새 버전", "detail": "4.0.129 (업데이트됨)"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 10-28 11:07 - 10-29 11:07 (Asia/Seoul)</span>
+        <span>생성: 2026-10-29 11:07</span>
+        <span>수집 항목: 144개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 에이전트가 세금 관련 전문 업무를 수행하는 능력을 평가하는 연구가 진행 중입니다. <a href="https://surgehq.ai/blog/dayjob-tax" target="_blank" rel="noreferrer">Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</a></li>
+<li>MicroZig는 엄격한 LLM 및 AI 사용 금지 정책을 채택할 예정입니다. <a href="https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noreferrer">MicroZig to Adopt Strict No LLM / No AI Policy</a></li>
+<li>OpenAI Python 라이브러리가 v3.41.0으로 업데이트되어 Realtime 응답 입력에 타입 참조를 허용합니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.41.0" target="_blank" rel="noreferrer">openai/openai-python: v3.41.0</a></li>
+<li>Vercel의 AI SDK 관련 여러 패키지가 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.156" target="_blank" rel="noreferrer">ai@7.0.156</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>AI 에이전트가 세금 관련 전문 업무를 수행하는 능력을 평가하는 연구가 진행 중입니다. <a href="https://surgehq.ai/blog/dayjob-tax" target="_blank" rel="noreferrer">Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</a></li>
+<li>LLM이 지속적인 학습에서 지식을 유지하는 새로운 방법인 Sleep 프레임워크가 소개되었습니다. <a href="https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/" target="_blank" rel="noreferrer">Sleep framework: A new way for LLMs to retain knowledge in continual learning</a></li>
+<li>Claude Code를 사용하여 취약점을 발견하고 악용하는 연구가 진행 중입니다. <a href="https://www.anthropic.com/research/discovering-vulnerabilities-with-claude" target="_blank" rel="noreferrer">Discovering and exploiting vulnerabilities in critical software with Claude</a></li>
+<li>Anthropic은 IPO에 대한 설명을 제공했습니다. <a href="https://finshots.in/archive/anthropic-ipo-explained/" target="_blank" rel="noreferrer">Anthropic&#x27;s IPO Explained</a></li>
+<li>AI 에이전트가 이메일을 보내거나 이동하거나 삭제하기 전에 요청하도록 하는 Nuvrail이 개발되었습니다. <a href="https://github.com/agens-field/nuvrail" target="_blank" rel="noreferrer">Show HN: Nuvrail – make an AI agent ask before it sends, moves or deletes email</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>MicroZig는 엄격한 LLM 및 AI 사용 금지 정책을 채택할 예정입니다. <a href="https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noreferrer">MicroZig to Adopt Strict No LLM / No AI Policy</a></li>
+<li>OpenAI Python 라이브러리가 v3.41.0으로 업데이트되어 Realtime 응답 입력에 타입 참조를 허용합니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.41.0" target="_blank" rel="noreferrer">openai/openai-python: v3.41.0</a></li>
+<li>Vercel의 AI SDK 관련 여러 패키지가 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.156" target="_blank" rel="noreferrer">ai@7.0.156</a></li>
+<li>Langchain-core가 v1.7.1로 업데이트되어 게이트웨이 추적 메타데이터를 v3 스트림에서 보존합니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1" target="_blank" rel="noreferrer">langchain-core==1.7.1</a></li>
+<li>OpenAI는 &#x27;상당한 위험&#x27;을 이유로 더 이상 라이브 인터넷에서 AI 모델을 훈련하지 않을 것이라고 밝혔습니다. <a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/" target="_blank" rel="noreferrer">OpenAI no longer training AI models on live internet, citing &#x27;significant risks&#x27;</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>VS Code가 1.144.0 버전으로 업데이트되었습니다. <a href="https://github.com/microsoft/vscode/releases/tag/1.144.0" target="_blank" rel="noreferrer">microsoft/vscode: 1.144.0</a></li>
+<li>GitHub Copilot 앱 및 Universe가 릴리스되었습니다. <a href="https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/" target="_blank" rel="noreferrer">GitHub Copilot app, Universe releases</a></li>
+<li>Python Typing Survey 2026 결과가 발표되었습니다. <a href="https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/" target="_blank" rel="noreferrer">Python Typing Survey 2026 Results</a></li>
+<li>Rocus는 웹사이트, 메모 및 파일을 정리하는 브라우저 로컬 LLM입니다. <a href="https://rocus.io/" target="_blank" rel="noreferrer">Show HN: Rocus: Browser local LLM that organizes your websites, notes and files</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Claude Code가 사용자의 얼굴 사진 14,219개를 생성했다는 주장이 트위터에 게시되었습니다. <a href="https://twitter.com/coolerwave/status/2115393243458207755" target="_blank" rel="noreferrer">Claude Code found 14,219 photos of my face on my Android that I never took</a></li>
+<li>Anthropic이 비행기에서 낙하산 없이 뛰어내릴 수 있도록 허용한다는 기사가 있습니다. <a href="https://www.theregister.com/ai-and-ml/2026/10/27/anthropic-now-lets-claude-users-jump-out-of-plane-without-parachute/5305807" target="_blank" rel="noreferrer">Anthropic now lets Claude users jump out of plane without parachute</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전)</a> - Wevity, D-5.</li>
+<li><a href="https://linkareer.com/activity/357358" target="_blank" rel="noreferrer">2026 서울 AI 디지털 배움터 청년 해커톤</a> - Linkareer, D-10.</li>
+<li><a href="https://linkareer.com/activity/359538" target="_blank" rel="noreferrer">[CJ제일제당] 햇반 30주년 AI 공모전 ‘갓 지은 AI디어’</a> - Linkareer, D-15.</li>
+<li><a href="https://linkareer.com/activity/358198" target="_blank" rel="noreferrer">현대자동차그룹 차량용 앱 개발 공모전</a> - Linkareer, D-17.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202610270010" target="_blank" rel="noreferrer">9. The 6th Incheon Airport Travel Contest &quot;Korea, Made by You&quot;</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
