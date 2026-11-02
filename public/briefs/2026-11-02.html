@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-02</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI 마인크래프트 문명 건설 실패", "kind": "flow", "points": [{"label": "AI 에이전트 군집", "detail": "150개 에이전트 팀이 문명 건설 시도"}, {"label": "관료주의 함정", "detail": "마비되는 관료주의에 빠져 실패"}]}, {"headline": "LLM, 사고 대체 수단으로 사용?", "kind": "none", "points": [], "image": "https://eva.ac/blog/llms/"}, {"headline": "OmniDiff: Rust 기반 Git difftool", "kind": "facts", "points": [{"label": "오픈소스", "detail": "누구나 사용 가능한 오픈소스 도구"}, {"label": "빠른 속도", "detail": "콘텐츠 인식 기능으로 속도 향상"}, {"label": "Rust 언어", "detail": "Rust 언어로 개발됨"}]}, {"headline": "Altman: DRAM은 데이터센터에", "kind": "compare", "points": [{"label": "개인 PC", "detail": "개인 PC의 DRAM 용량 비효율적"}, {"label": "데이터센터", "detail": "데이터센터에 DRAM 용량 집중 필요"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-01 11:07 - 11-02 11:07 (Asia/Seoul)</span>
+        <span>생성: 2026-11-02 11:08</span>
+        <span>수집 항목: 108개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 에이전트들이 마인크래프트에서 문명을 건설하려 했으나 관료주의에 빠져 실패했습니다. 이는 AI 에이전트의 복잡한 환경에서의 한계를 보여줍니다. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy" target="_blank" rel="noreferrer">AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy</a></li>
+<li>LLM이 사고 과정에 널리 사용되고 있다는 논의가 있습니다. 이는 LLM이 개인의 인지 능력에 미치는 영향을 시사합니다. <a href="https://eva.ac/blog/llms/" target="_blank" rel="noreferrer">So I guess everyone uses LLMs to think now</a></li>
+<li>Rust로 작성된 빠르고 내용 인지적인 Git difftool인 OmniDiff가 오픈소스로 공개되었습니다. 이는 개발 생산성 향상에 기여할 수 있습니다. <a href="https://github.com/ivankovic/omnidiff" target="_blank" rel="noreferrer">Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust</a></li>
+<li>Sam Altman은 DRAM 용량이 개인용 컴퓨터가 아닌 데이터 센터에 집중되어야 한다고 주장했습니다. 이는 향후 하드웨어 투자 방향에 대한 시사점을 제공합니다. <a href="https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization" target="_blank" rel="noreferrer">Sam Altman says DRAM capacity should go to data centers, not personal computers</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>마인크래프트에서 AI 에이전트들이 문명을 건설하려 했으나 관료주의에 빠져 실패했습니다. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy" target="_blank" rel="noreferrer">AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy</a></li>
+<li>LLM이 사고 과정에 널리 사용되고 있다는 논의가 있습니다. <a href="https://eva.ac/blog/llms/" target="_blank" rel="noreferrer">So I guess everyone uses LLMs to think now</a></li>
+<li>Anthropic의 Mythos 클래스 모델이 Hugging Face에 유출되었다는 주장이 있습니다. <a href="https://news.ycombinator.com/item?id=50326727" target="_blank" rel="noreferrer">Anthropic&#x27;s Mythos-class model allegedly leaked on Hugging Face</a></li>
+<li>Meta의 Muse AI 에이전트가 상업적 감시 네트워크로 위장했다는 비판이 있습니다. <a href="https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial" target="_blank" rel="noreferrer">Muse AI agent is a commercial surveillance network disguised as an AI assistant</a></li>
+<li>DeepSeek가 Claude Code에 대항할 수 있는 고급 코딩 에이전트를 출시했습니다. <a href="https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic" target="_blank" rel="noreferrer">DeepSeek launches advanced coding agent to rival Claude Code</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Sam Altman은 DRAM 용량이 개인용 컴퓨터가 아닌 데이터 센터에 집중되어야 한다고 주장했습니다. <a href="https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization" target="_blank" rel="noreferrer">Sam Altman says DRAM capacity should go to data centers, not personal computers</a></li>
+<li>Hermantown 시의회가 논란이 많은 Google 데이터 센터 건설을 승인했습니다. <a href="https://www.mprnews.org/story/2026/10/31/hermantown-approves-controversial-google-data-center-during-late-night-meeting" target="_blank" rel="noreferrer">Hermantown approves controversial Google Data Center during late night meeting</a></li>
+<li>OpenAI Python 라이브러리가 v3.42.1로 업데이트되어 WebSocket 연결 동작을 수정했습니다. <a href="https://github.com/openai/openai-python/releases/tag/v3.42.1" target="_blank" rel="noreferrer">openai/openai-python: v3.42.1</a></li>
+<li>Google이 OpenAI, Anthropic과 함께 새로운 스크래핑 제어 기능을 약속했습니다. <a href="https://www.engadget.com/2303225/google-openai-anthropic-ai-crawling-controls/" target="_blank" rel="noreferrer">Google joins OpenAI and Anthropic in promising new scraping controls</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>Rust로 작성된 빠르고 내용 인지적인 Git difftool인 OmniDiff가 오픈소스로 공개되었습니다. <a href="https://github.com/ivankovic/omnidiff" target="_blank" rel="noreferrer">Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust</a></li>
+<li>Rust로 재구축된 IDE인 OpenIDEA가 공개되었습니다. <a href="https://github.com/l0ng-ai/openidea" target="_blank" rel="noreferrer">OpenIDEA: The IDE you know, rebuilt in Rust</a></li>
+<li>Friday는 Claude Code와 Codex를 컴퓨터에서 팀으로 실행할 수 있는 오픈소스 도구입니다. <a href="https://github.com/splashxmoon/friday" target="_blank" rel="noreferrer">Friday: Run Claude Code and Codex as a crew on your computer (open source)</a></li>
+<li>Sweet-search는 에이전트를 위한 로컬 코드 검색 도구로, 실행 비용을 절감할 수 있습니다. <a href="https://github.com/mrsladoje/sweet-search" target="_blank" rel="noreferrer">Show HN: Sweet-search – local code search for agents (5–33% cheaper runs)</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic의 Mythos 클래스 모델 유출에 대한 두 개의 출처가 있습니다. <a href="https://news.ycombinator.com/item?id=50326727" target="_blank" rel="noreferrer">Anthropic&#x27;s Mythos-class model allegedly leaked on Hugging Face</a> 및 <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noreferrer">Alleged Mythos Class Anthropic Checkpoint Leak</a></li>
+<li>Anthropic의 기업 가치에 대한 두 가지 출처가 있습니다. <a href="https://www.wsj.com/tech/ai/anthropic-ipo-dual-class-stock-founder-control-4c43a56d" target="_blank" rel="noreferrer">We&#x27;re Living in the Age of the Imperial CEO</a> 및 <a href="https://leonlins.com/writing/anthropic_ipo" target="_blank" rel="noreferrer">Ant: Can unprecedented revenue growth outrun irresponsibly large investment</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전) SPECIAL IDEA</a> - Wevity, D-12.</li>
+<li><a href="https://linkareer.com/activity/359538" target="_blank" rel="noreferrer">[CJ제일제당] 햇반 30주년 AI 공모전 ‘갓 지은 AI디어’</a> - Linkareer, D-11.</li>
+<li><a href="https://linkareer.com/activity/358856" target="_blank" rel="noreferrer">2026 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회</a> - Linkareer, D-18.</li>
+<li><a href="https://linkareer.com/activity/359512" target="_blank" rel="noreferrer">[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상</a> - Linkareer, D-28.</li>
+<li><a href="https://linkareer.com/activity/358198" target="_blank" rel="noreferrer">현대자동차그룹 차량용 앱 개발 공모전</a> - Linkareer, D-13.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202610250002" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 스마트시티(지식서비스산업) 아이디어 경진대회</a> - Contest Korea.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급전세임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
