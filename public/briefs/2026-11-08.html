@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-08</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI 코드, 깃허브서 비밀번호 1,122건 노출", "kind": "facts", "points": [{"label": "노출된 파일 수", "detail": "1,122개"}, {"label": "노출된 정보", "detail": "비밀번호"}]}, {"headline": "AI, 게임 계정 19만개 탈취", "kind": "facts", "points": [{"label": "탈취된 계정 수", "detail": "190,000개"}, {"label": "모델 개발 비용", "detail": "400달러 미만"}]}, {"headline": "Vercel AI, 텔레메트리 정보 강화", "kind": "flow", "points": [{"label": "이전", "detail": "녹음 출력 시 단어 타이밍 전송"}, {"label": "이후", "detail": "녹음 출력 시 단어 타이밍 미전송"}, {"label": "보안 강화", "detail": "API 요청 URL 검증"}]}, {"headline": "OpenAI, 1.25조 달러 가치로 110억 달러 추가 유치", "kind": "facts", "points": [{"label": "추가 유치 금액", "detail": "110억 달러"}, {"label": "기업 가치", "detail": "1.25조 달러"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-07 11:03 - 11-08 11:03 (Asia/Seoul)</span>
+        <span>생성: 2026-11-08 11:03</span>
+        <span>수집 항목: 94개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>Claude Code의 &quot;Don&#x27;t Ask Again&quot; 기능이 1,122개의 공개 GitHub 파일에서 비밀번호를 노출하여 보안 위험을 야기합니다. <a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noreferrer">Claude Code&#x27;s &quot;Don&#x27;t Ask Again&quot; exposes passwords in 1,122 public GitHub files</a></li>
+<li>AI 에이전트가 19만 개의 게임 자격 증명을 탈취하는 데 사용되었으며, 이는 사이버 범죄 캠페인의 자동화된 위협을 보여줍니다. <a href="https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/" target="_blank" rel="noreferrer">AI agents stole 190k gaming credentials for under $400 in model costs</a></li>
+<li>Vercel의 AI SDK에서 여러 패치 변경 사항이 릴리스되어 의존성 업데이트 및 기능 개선이 이루어졌습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.165" target="_blank" rel="noreferrer">ai@7.0.165</a></li>
+<li>OpenAI가 1.25조 달러의 가치로 110억 달러를 추가로 조달했다는 보고는 AI 산업의 막대한 투자와 성장을 시사합니다. <a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noreferrer">OpenAI reportedly raises an additional $11B at a $1.25T valuation</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noreferrer">Claude Code&#x27;s &quot;Don&#x27;t Ask Again&quot; exposes passwords in 1,122 public GitHub files</a>는 AI 코딩 에이전트의 보안 취약점을 강조합니다.</li>
+<li><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noreferrer">The Components of Agent Memory</a>는 AI 에이전트의 기억 메커니즘에 대한 심층적인 연구를 제공합니다.</li>
+<li><a href="https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/" target="_blank" rel="noreferrer">AI agents stole 190k gaming credentials for under $400 in model costs</a>는 AI 에이전트를 악용한 사이버 범죄의 증가를 보여줍니다.</li>
+<li><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noreferrer">OpenAI reportedly raises an additional $11B at a $1.25T valuation</a>는 OpenAI의 급격한 성장과 AI 시장의 잠재력을 보여줍니다.</li>
+<li><a href="https://twitter.com/make_claude/status/2119091439623721443" target="_blank" rel="noreferrer">Now Anthropic is blocking Russian users</a>는 AI 기업의 지정학적 결정에 대한 뉴스를 전달합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Vercel의 AI SDK에서 `@ai-sdk/zai` 버전 3.0.49가 릴리스되어 의존성 업데이트가 포함되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.49" target="_blank" rel="noreferrer">ai-sdk/zai@3.0.49</a></li>
+<li>Vercel의 AI SDK에서 `@ai-sdk/xai` 버전 5.0.40이 릴리스되었으며, `safetyIdentifier` 응답 제공자 옵션이 추가되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.40" target="_blank" rel="noreferrer">ai-sdk/xai@5.0.40</a></li>
+<li>Vercel의 AI SDK에서 `ai` 패키지 버전 7.0.165가 릴리스되었으며, URL 보안 및 원격 분석 관련 변경 사항이 포함되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%407.0.165" target="_blank" rel="noreferrer">ai@7.0.165</a></li>
+<li>Vercel의 AI SDK에서 `ai` 패키지 버전 6.0.325가 릴리스되었으며, 원격 분석에서 제공자 메타데이터 숨김 기능이 추가되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%406.0.325" target="_blank" rel="noreferrer">ai@6.0.325</a></li>
+<li>Vercel의 AI SDK에서 `ai` 패키지 버전 5.0.286이 릴리스되었으며, `toolChoice: &#x27;none&#x27;` 보존 및 Perplexity 도구 업데이트가 포함되었습니다. <a href="https://github.com/vercel/ai/releases/tag/ai%405.0.286" target="_blank" rel="noreferrer">ai@5.0.286</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://www.dopaminechic.com/" target="_blank" rel="noreferrer">Show HN: An online shop where your friends can hurry the courier</a>는 친구가 택배를 재촉할 수 있는 온라인 쇼핑몰을 소개합니다.</li>
+<li><a href="https://dontgetrekt.today/" target="_blank" rel="noreferrer">Show HN: I mapped all known crypto scams</a>는 알려진 모든 암호화폐 사기를 시각화한 도구를 제공합니다.</li>
+<li><a href="https://maildignity.com/" target="_blank" rel="noreferrer">Show HN: I made a guardrail against AI outreach slop (API/MCP)</a>는 AI 아웃리치 슬롭에 대한 가드레일을 만드는 도구를 선보입니다.</li>
+<li><a href="https://github.com/PersonaliAI/chatty" target="_blank" rel="noreferrer">Chatty – Open-source autonomous AI chat agent with tool calling</a>는 도구 호출 기능을 갖춘 오픈소스 자율 AI 챗 에이전트입니다.</li>
+<li><a href="https://github.com/lhadzic377-netizen/TokiRecur" target="_blank" rel="noreferrer">TokiRecur – llama.cpp LLM launcher with KV-cache recycling</a>는 KV 캐시 재활용 기능을 갖춘 llama.cpp LLM 런처입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 GitHub 릴리스 노트는 변경 사항에 대한 자세한 설명보다는 업데이트된 의존성 목록만 제공합니다.</li>
+<li>일부 기사는 HN의 점수 및 댓글 수가 적어 전반적인 관심도가 낮을 수 있습니다.</li>
+<li>일부 기사는 &quot;Show HN&quot;으로 분류되어 있어 개인 프로젝트 발표에 가깝습니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전)</a> - Wevity, D-3.</li>
+<li><a href="https://linkareer.com/activity/359538" target="_blank" rel="noreferrer">[CJ제일제당] 햇반 30주년 AI 공모전 ‘갓 지은 AI디어’</a> - Linkareer, D-5.</li>
+<li><a href="https://linkareer.com/activity/359512" target="_blank" rel="noreferrer">[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상</a> - Linkareer, D-22.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030110001&amp;str_no=202611040026" target="_blank" rel="noreferrer">5. GoodNovel 제2회 대형 웹소설 공모전｜WRITE YOUR WORLD</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=12847" target="_blank" rel="noreferrer">고성 해양심층수 AI영상 공모전의 주인공을 찾습니다!</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
