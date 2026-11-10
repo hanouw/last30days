@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-10</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "클로드 5.2, AI 분석서 최고점 기록", "kind": "facts", "points": [{"label": "AI 분석 점수", "detail": "클로드 5.2, 313점 기록"}, {"label": "최고 점수", "detail": "현재까지 가장 높은 점수"}]}, {"headline": "챗GPT 데스크톱, SSH 에이전트 전달 기능", "kind": "facts", "points": [{"label": "기능", "detail": "SSH 에이전트를 원격 머신으로 전달"}, {"label": "관련 정보", "detail": "206점, 72개 댓글"}]}, {"headline": "AI 의무화 1년 후, 코드 이해 난항", "kind": "flow", "points": [{"label": "이전", "detail": "100% AI 의무화 시행"}, {"label": "이후", "detail": "코드 이해에 어려움 발생"}]}, {"headline": "앤트로픽, IPO 강행 준비", "kind": "facts", "points": [{"label": "계획", "detail": "IPO 추진 준비 중"}, {"label": "시장 상황", "detail": "시장 불안에도 불구하고"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-09 13:29 - 11-10 13:29 (Asia/Seoul)</span>
+        <span>생성: 2026-11-10 13:29</span>
+        <span>수집 항목: 129개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>새로운 Claude Fable 5.2 및 Mythos 5.2 모델이 출시되어 AI 성능의 새로운 기준을 제시합니다. <a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noreferrer">Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far</a></li>
+<li>ChatGPT Desktop이 SSH 에이전트를 원격 머신으로 전달하는 기능을 추가하여 개발자 워크플로우를 간소화합니다. <a href="https://news.ycombinator.com/item?id=50422628" target="_blank" rel="noreferrer">ChatGPT Desktop forwards your SSH agent to remote machines</a></li>
+<li>100% AI 코드 의무화 1년 후, 코드 이해도에 대한 우려가 제기되며 AI 도입의 현실적인 과제를 강조합니다. <a href="https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/" target="_blank" rel="noreferrer">A year after the 100% AI mandate nobody understands our code</a></li>
+<li>Anthropic이 IPO를 추진하며 AI 산업의 성장과 잠재적 시장 변동성에 대한 논의를 촉발합니다. <a href="https://www.wsj.com/finance/stocks/anthropic-prepares-to-push-ahead-with-ipo-despite-market-jitters-843dd16c" target="_blank" rel="noreferrer">Anthropic Prepares to Push Ahead with IPO Despite Market Jitters</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>Anthropic이 새로운 <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noreferrer">Claude Fable 5.2 및 Mythos 5.2</a> 모델을 출시하여 AI 모델의 성능을 향상시켰습니다.</li>
+<li>Claude Fable 5.2는 Artificial Analysis에서 65점을 기록하며 현재까지 가장 높은 점수를 달성했습니다. <a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noreferrer">Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far</a></li>
+<li>Claude 모델은 실제 전자 제품 설계 테스트에서 유망한 결과를 보여주며, 복잡한 분야에서의 AI 적용 가능성을 시사합니다. <a href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noreferrer">Testing Claude on real-world electronics design</a></li>
+<li>Anthropic은 AI 데이터 센터를 위한 34억 달러 규모의 발전기 계약을 확보하여 AI 인프라 확장에 박차를 가하고 있습니다. <a href="https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/" target="_blank" rel="noreferrer">Anthropic secures $3.4B generator deal for AI data centers</a></li>
+<li>호주가 OpenAI 해킹 사건 이후 의무적인 사고 보고를 도입하여 사이버 보안 강화에 나섰습니다. <a href="https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack" target="_blank" rel="noreferrer">Australia to introduce mandatory incident reporting after OpenAI hack</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>ChatGPT Desktop은 SSH 에이전트 전달 기능을 추가하여 원격 개발 환경에서의 보안 및 편의성을 향상시켰습니다. <a href="https://news.ycombinator.com/item?id=50422628" target="_blank" rel="noreferrer">ChatGPT Desktop forwards your SSH agent to remote machines</a></li>
+<li>Langchain-core 라이브러리가 1.7.7 버전으로 업데이트되어 `load()` 함수에서 중첩 깊이를 제한하는 수정 사항이 포함되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7" target="_blank" rel="noreferrer">langchain-core==1.7.7</a></li>
+<li>Langchain-fireworks 라이브러리가 1.7.3 버전으로 업데이트되었으며, 모델 프로필에서 `max_tokens` 기본값이 수정되었습니다. <a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.3" target="_blank" rel="noreferrer">langchain-fireworks==1.7.3</a></li>
+<li>Vercel의 AI SDK Vue 컴포넌트가 2.0.287 버전으로 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.287" target="_blank" rel="noreferrer">@ai-sdk/vue@2.0.287</a></li>
+<li>Anthropic Python SDK가 v2.7.0으로 업데이트되어 Claude Fable 5.2 및 Mythos 5.2 모델 지원이 추가되었습니다. <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0" target="_blank" rel="noreferrer">v2.7.0</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>MeowDisplay는 아이폰 미러링을 역방향으로 구현하는 새로운 도구입니다. <a href="https://meowdisplay.app/" target="_blank" rel="noreferrer">MeowDisplay Is iPhone Mirroring, but in Reverse</a></li>
+<li>Thrum은 Claude Code, Codex 및 기타 코딩 에이전트를 팀으로 실행할 수 있는 도구입니다. <a href="https://thrum.team/" target="_blank" rel="noreferrer">Thrum – run Claude Code, Codex and other coding agents as one team</a></li>
+<li>USB는 AI 스킬 및 MCP 서버를 위한 신뢰 계층을 제공하는 프로젝트입니다. <a href="https://github.com/PeepSick/usbplus" target="_blank" rel="noreferrer">USB: A trust layer for AI skills and MCP servers</a></li>
+<li>PhysicsBase.ai는 에이전트를 관리하는 도구를 제공합니다. <a href="https://www.physicsbase.ai/" target="_blank" rel="noreferrer">I built a tool that babysits your agents</a></li>
+<li>Askaboard는 AI 에이전트가 그림을 그릴 수 있는 캔버스입니다. <a href="https://askaboard.com/" target="_blank" rel="noreferrer">Askaboard – A canvas your AI agent can draw on</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic의 IPO 관련 보도는 여러 출처에서 반복적으로 보도되고 있으며, 이는 높은 신뢰도를 시사합니다. <a href="https://www.wsj.com/finance/stocks/anthropic-prepares-to-push-ahead-with-ipo-despite-market-jitters-843dd16c" target="_blank" rel="noreferrer">Anthropic Prepares to Push Ahead with IPO Despite Market Jitters</a>, <a href="https://www.bloomberg.com/news/articles/2026-11-10/anthropic-seeks-to-raise-69-3-billion-via-its-ipo-reuters-says" target="_blank" rel="noreferrer">Anthropic Seeks to Raise $69.3B via Its IPO</a></li>
+<li>Claude Fable 5.2 및 Mythos 5.2 모델에 대한 뉴스는 여러 매체에서 다루어지고 있어 정보의 신뢰도가 높습니다. <a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noreferrer">Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far</a>, <a href="https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2" target="_blank" rel="noreferrer">Anthropic launches new Claude Fable and Mythos 5.2 models</a></li>
+<li>일부 개발 도구 관련 뉴스는 &quot;Show HN&quot;으로 분류되어 있어 사용자 제출 콘텐츠의 특성을 가집니다. <a href="https://meowdisplay.app/" target="_blank" rel="noreferrer">MeowDisplay Is iPhone Mirroring, but in Reverse</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=111768" target="_blank" rel="noreferrer">2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전) SPECIAL IDEA</a> - Wevity, D-3.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030110001&amp;str_no=202611040026" target="_blank" rel="noreferrer">8. GoodNovel 제2회 대형 웹소설 공모전｜WRITE YOUR WORLD</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202607200008" target="_blank" rel="noreferrer">[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
