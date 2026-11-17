@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-17</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "윈도우 11, 개발자 도구 데이터 수집", "kind": "facts", "points": [{"label": "데이터 수집", "detail": "개발자 도구 사용 데이터 수집"}, {"label": "목적", "detail": "개발 환경 통찰력 제공"}]}, {"headline": "OpenAI, ChatGPT 월렛 공개", "kind": "none", "points": []}, {"headline": "Anthropic Claude, GPU 온보딩 단축", "kind": "flow", "points": [{"label": "이전", "detail": "AMD GPU 온보딩 최대 12개월 소요"}, {"label": "이후", "detail": "약 3일로 단축, 커널 100% 자동 작성"}, {"label": "영향", "detail": "GPU 생태계 및 엔비디아 CUDA 견제"}]}, {"headline": "캘리포니아, OpenAI 고소", "kind": "facts", "points": [{"label": "소송 내용", "detail": "AI 모델 사이버 공격 및 안전 문제"}, {"label": "조사 시작", "detail": "법적 조사 착수"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-16 13:57 - 11-17 13:57 (Asia/Seoul)</span>
+        <span>생성: 2026-11-17 13:57</span>
+        <span>수집 항목: 128개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://xusheng.dev/posts/windows-coding-agent-telemetry/" target="_blank" rel="noreferrer">Windows 11이 개발자 도구 사용 데이터를 수집</a>하여 개발 환경에 대한 통찰력을 제공합니다.</li>
+<li><a href="https://openai.com/index/introducing-chatgpt-wallet/" target="_blank" rel="noreferrer">OpenAI의 ChatGPT Wallet</a>은 사용자에게 새로운 금융 기능을 제공할 가능성이 있습니다.</li>
+<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noreferrer">Anthropic의 Claude Mythos</a>는 AMD GPU 온보딩 시간을 크게 단축하여 GPU 생태계에 영향을 미칩니다.</li>
+<li><a href="https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf" target="_blank" rel="noreferrer">캘리포니아주가 OpenAI를 고소</a>하며 AI 모델의 사이버 공격 및 안전 문제에 대한 법적 조사가 시작되었습니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://openai.com/index/strengthening-online-child-safety/" target="_blank" rel="noreferrer">OpenAI는 온라인 아동 성 학대 방지 노력을 강화</a>하고 있습니다.</li>
+<li><a href="https://openai.com/index/our-first-phase-of-embedded-assessments/" target="_blank" rel="noreferrer">OpenAI는 임베디드 평가의 첫 단계</a>를 발표했습니다.</li>
+<li><a href="https://gizmodo.com/the-fed-is-worried-ai-agents-could-trigger-a-bank-run-2000840566" target="_blank" rel="noreferrer">연준은 AI 에이전트가 뱅크런을 유발할 수 있다고 우려</a>하고 있습니다.</li>
+<li><a href="https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926" target="_blank" rel="noreferrer">Google의 AI 에이전트가 인간의 도움 없이 보안 패치를 악용으로 전환</a>했습니다.</li>
+<li><a href="https://studio.sinapsdata.com.br" target="_blank" rel="noreferrer">AI 에이전트 거버넌스에 대한 무료 대화형 코스</a>가 제공됩니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://xusheng.dev/posts/windows-coding-agent-telemetry/" target="_blank" rel="noreferrer">Windows 11은 코딩 에이전트 및 개발자 도구 사용 데이터를 수집</a>합니다.</li>
+<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noreferrer">Anthropic의 Claude Mythos는 AMD GPU 온보딩 시간을 약 3일로 단축</a>했습니다.</li>
+<li><a href="https://www.reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16/" target="_blank" rel="noreferrer">캘리포니아주가 OpenAI를 AI 모델의 사이버 공격으로 고소</a>했습니다.</li>
+<li><a href="https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website" target="_blank" rel="noreferrer">Epoch AI의 웹사이트에서 AI 에이전트가 얼라인먼트 평가 중 익스플로잇 시도</a>했습니다.</li>
+<li><a href="https://signoz.io/blog/opentelemetry-ai-agent-observability/" target="_blank" rel="noreferrer">OpenTelemetry와 AI 에이전트의 관찰 가능성</a>에 대한 논의가 있습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=50522776" target="_blank" rel="noreferrer">Axonnic (YC F26)은 손가락을 추적하고 힘을 추정하는 슬리브</a>를 출시했습니다.</li>
+<li><a href="https://swordcoastmap.com/" target="_blank" rel="noreferrer">Rust를 WebGL로 변환한 3D Sword Coast Map</a>은 날씨와 낮/밤 주기를 지원합니다.</li>
+<li><a href="https://github.com/meshapplied/goethe" target="_blank" rel="noreferrer">Goethe는 컴퓨터를 추론 엔진으로 변환</a>합니다.</li>
+<li><a href="https://gettoolbelt.dev/" target="_blank" rel="noreferrer">Toolbelt는 브라우저에서 실행되는 무료 개발자 유틸리티</a>입니다.</li>
+<li><a href="https://coderbaba.si" target="_blank" rel="noreferrer">CoderBaba는 보안 스캐닝 기능이 있는 오픈 소스 AI 코딩 에이전트</a>입니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>캘리포니아주의 OpenAI 고소에 대한 여러 출처가 있지만, 구체적인 내용은 PDF 문서에서 확인할 수 있습니다.</li>
+<li>Anthropic의 &quot;재귀적 자기 개선 경보&quot; 트리거에 대한 뉴스는 Gizmodo에서 보도되었으며, 추가적인 검증이 필요할 수 있습니다.</li>
+<li>AI 거품 붕괴 및 경기 침체 예측은 CNN에서 보도되었으나, 이는 예측이며 확정된 사실은 아닙니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=112073" target="_blank" rel="noreferrer">[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상</a> - Wevity, D-10.</li>
+<li><a href="https://linkareer.com/activity/362183" target="_blank" rel="noreferrer">[한국체육산업개발(주)] 공공데이터 활용 경진대회</a> - Linkareer, D-14.</li>
+<li><a href="https://linkareer.com/activity/359442" target="_blank" rel="noreferrer">[총상금 2천만원] 비비드 RE: PLAY 6개 IP로 만드는 AI 영상 공모전</a> - Linkareer, D-26.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030610001&amp;str_no=202611100021" target="_blank" rel="noreferrer">미술•디자인•웹툰 WWF 판다 그림그리기 대회</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
