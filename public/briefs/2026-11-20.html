@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-20</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI 기업 앤트로픽, 나스닥 상장", "kind": "facts", "points": [{"label": "상장", "detail": "AI 기업 앤트로픽 나스닥 상장"}, {"label": "시험대", "detail": "AI 성장 가능성과 위험성 시험대"}]}, {"headline": "OpenAI SDK 실시간 통신 개선", "kind": "flow", "points": [{"label": "개선", "detail": "OpenAI Python SDK v3.57.0 출시"}, {"label": "기능", "detail": "Live WebRTC 대기 모드 지원"}, {"label": "결과", "detail": "실시간 통신 기능 개선"}]}, {"headline": "Langchain-openrouter, 파이썬 지원 변경", "kind": "flow", "points": [{"label": "변경", "detail": "Langchain-openrouter 0.3.0 출시"}, {"label": "중단", "detail": "Python 3.10 지원 중단"}, {"label": "상향", "detail": "최소 지원 버전 3.11로 상향"}]}, {"headline": "디자이너 위한 오픈소스 도구 출시", "kind": "facts", "points": [{"label": "출시", "detail": "디자이너 위한 오픈소스 도구 Onlook"}, {"label": "지원", "detail": "디자인과 개발 협업 지원"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-19 12:52 - 11-20 12:52 (Asia/Seoul)</span>
+        <span>생성: 2026-11-20 12:52</span>
+        <span>수집 항목: 133개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/" target="_blank" rel="noreferrer">Anthropic, 나스닥 상장</a>으로 AI 업계의 성장 가능성과 위험성을 시험대에 올렸습니다.</li>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.57.0" target="_blank" rel="noreferrer">OpenAI Python SDK v3.57.0</a>이 Live WebRTC 대기 모드를 지원하여 실시간 통신 기능이 개선되었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0" target="_blank" rel="noreferrer">langchain-openrouter 0.3.0</a>이 Python 3.10 지원을 중단하고 최소 지원 버전을 3.11로 상향 조정했습니다.</li>
+<li><a href="https://github.com/onlook-dev/onlook/" target="_blank" rel="noreferrer">Onlook (YC W25)</a>이 디자이너를 위한 오픈소스 개발 도구로 출시되어 디자인과 개발 간의 협업을 지원합니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/" target="_blank" rel="noreferrer">Anthropic, 나스닥 상장</a>으로 AI 기업의 가치 평가와 시장 영향에 대한 논의가 활발합니다.</li>
+<li><a href="https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/" target="_blank" rel="noreferrer">Arizona, OpenAI 등 기업 조사 착수</a>하여 AI 에이전트의 잠재적 위험 관리에 대한 규제 움직임을 보입니다.</li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding" target="_blank" rel="noreferrer">Apple, 기기 제어 및 코딩을 위한 AI 에이전트 개발 중</a>이라는 소식은 AI 에이전트의 활용 범위 확대를 시사합니다.</li>
+<li><a href="https://getagentmall.com" target="_blank" rel="noreferrer">AgentMall</a>은 AI 에이전트가 식료품을 구매하는 등 실생활에 적용될 수 있는 가능성을 보여줍니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/openai/openai-python/releases/tag/v3.57.0" target="_blank" rel="noreferrer">OpenAI Python SDK v3.57.0</a>에서 Live WebRTC 대기 모드 지원이 추가되어 실시간 통신 기능이 향상되었습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0" target="_blank" rel="noreferrer">langchain-openrouter 0.3.0</a>은 Python 3.10 지원을 중단하고 최소 지원 버전을 3.11로 올렸습니다.</li>
+<li><a href="https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.5" target="_blank" rel="noreferrer">langchain-openai 1.8.5</a>는 스트리밍 응답의 도구 호출 인자를 보존하는 수정 사항을 포함합니다.</li>
+<li><a href="https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/" target="_blank" rel="noreferrer">Arizona, OpenAI 등 기업 조사 착수</a>는 AI 에이전트의 규제 및 보안 이슈를 부각합니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/onlook-dev/onlook/" target="_blank" rel="noreferrer">Onlook (YC W25)</a>은 디자이너를 위한 오픈소스 개발 도구로, 디자인과 개발 간의 협업을 지원합니다.</li>
+<li><a href="https://github.com/rxolve/zpup" target="_blank" rel="noreferrer">Zpup</a>은 Zdog 스타일의 3D 장면을 JSON, SVG로 생성하는 도구입니다.</li>
+<li><a href="https://tooljet.com" target="_blank" rel="noreferrer">ToolJet 4.0</a>은 거버넌스를 갖춘 내부 도구를 코딩하는 데 사용될 수 있습니다.</li>
+<li><a href="https://github.com/leetheguy/purple_flow" target="_blank" rel="noreferrer">Purple Flow</a>는 n8n의 대안으로, 적은 리소스로 많은 워크플로우를 처리할 수 있습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic IPO 관련 기사들이 다수 존재하나, 일부는 상장 가격이나 가치 평가에 대한 상반된 정보를 제공합니다.</li>
+<li>OpenAI의 WebRTC 문제에 대한 언급이 있으나, 구체적인 해결 방안이나 영향에 대한 상세 정보는 부족합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=112474" target="_blank" rel="noreferrer">일상 속 아이디어를 AI로 웹·앱 서비스로! INNO-CODER AI HACKATHON 참가팀 모집 신규</a> - Wevity, D-9.</li>
+<li><a href="https://linkareer.com/activity/363236" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 현대건설과 함께하는 주거생활 AI 아이디어 도전</a> - Linkareer, D-9.</li>
+<li><a href="https://linkareer.com/activity/359442" target="_blank" rel="noreferrer">[총상금 2천만원] 비비드 RE: PLAY 6개 IP로 만드는 AI 영상 공모전</a> - Linkareer, D-23.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202611190035" target="_blank" rel="noreferrer">학문•과학•IT 제 3회 스마트그리드 아이디어 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
