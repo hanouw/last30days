@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-23</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "LLM 지능 평가 새 방법 제시", "kind": "none", "points": [], "image": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill"}, {"headline": "LLM 하위 에이전트 게임 소개", "kind": "none", "points": [], "image": "https://opengraph.githubassets.com/c35ce059183f3bc28d73d541b0237ee37de67a8acaf73ebb90dd22c3982f5154/gulivan/worker755"}, {"headline": "LLM, 성별 도덕적 프레이밍 분석", "kind": "none", "points": [], "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"}, {"headline": "Anthropic 에너지 소비 계획", "kind": "none", "points": [], "image": "https://i0.wp.com/betterdatacenterproject.com/wp-content/uploads/2026/11/anthropic-total-co2.png?fit=1200%2C1065&ssl=1"}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-22 12:30 - 11-23 12:30 (Asia/Seoul)</span>
+        <span>생성: 2026-11-23 12:31</span>
+        <span>수집 항목: 105개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://openai.com/index/perplexity-and-intelligence/" target="_blank" rel="noreferrer">Perplexity and Intelligence</a>는 LLM의 지능을 평가하는 새로운 방법을 제시합니다.</li>
+<li><a href="https://github.com/gulivan/worker755" target="_blank" rel="noreferrer">Show HN: I built a game where you are an LLM&#x27;s subagent</a>는 LLM의 하위 에이전트 역할을 하는 게임을 소개합니다.</li>
+<li><a href="https://arxiv.org/abs/2606.14068" target="_blank" rel="noreferrer">Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts</a>는 LLM이 성별 비대칭적 도덕적 프레이밍에 어떻게 반응하는지 분석합니다.</li>
+<li><a href="https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/" target="_blank" rel="noreferrer">87% of the Anthropic power will come from gas and 11% from coal in 2028</a>는 Anthropic의 에너지 소비 계획을 보여줍니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://openai.com/index/perplexity-and-intelligence/" target="_blank" rel="noreferrer">Perplexity and Intelligence</a>는 LLM의 지능을 측정하는 새로운 접근 방식을 탐구합니다.</li>
+<li><a href="https://arxiv.org/abs/2606.14068" target="_blank" rel="noreferrer">Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts</a>는 LLM이 성별에 따른 도덕적 판단에서 편향을 보이는지 조사합니다.</li>
+<li><a href="https://morethanamachine.com/posts/slinky-escalator-benchmark/" target="_blank" rel="noreferrer">A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence</a>는 LLM의 지능을 평가하기 위한 독특한 방법을 제안합니다.</li>
+<li><a href="https://dblc.fyi/blog/a-retrospective-on-ai-evaluations/" target="_blank" rel="noreferrer">What I Learned Building Evaluations for Coding Agents</a>는 코딩 에이전트 평가 구축에 대한 경험을 공유합니다.</li>
+<li><a href="https://oddsfy.ai/artigos/ml-agents-50k-bets/" target="_blank" rel="noreferrer">We trained Machine Learning agents and tested them on 50k+ bets. The result</a>는 머신러닝 에이전트의 베팅 성능을 분석합니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.336" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@3.0.336</a>는 Vue용 AI SDK에 대한 패치 변경 사항을 발표했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.336" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/svelte@4.0.336</a>는 Svelte용 AI SDK에 대한 패치 변경 사항을 공개했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%402.0.336" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/rsc@2.0.336</a>는 RSC용 AI SDK에 대한 패치 변경 사항을 업데이트했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.339" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/react@3.0.339</a>는 React용 AI SDK의 패치 변경 사항을 릴리스했습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.145" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/openai@3.0.145</a>는 GPT-6.2 Astra 및 GPT-6.2 Sol 모델 지원을 추가했습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/gulivan/worker755" target="_blank" rel="noreferrer">Show HN: I built a game where you are an LLM&#x27;s subagent</a>는 LLM의 하위 에이전트 역할을 하는 게임을 소개합니다.</li>
+<li><a href="https://www.taskless.io/" target="_blank" rel="noreferrer">Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks</a>는 AGENTS.md 및 PR 주석을 실행 가능한 검사로 변환하는 도구를 제공합니다.</li>
+<li><a href="https://trixapp.ai/" target="_blank" rel="noreferrer">Show HN: Trix - A terminal workspace that shows which coding agent needs you</a>는 어떤 코딩 에이전트가 도움이 필요한지 보여주는 터미널 워크스페이스를 선보입니다.</li>
+<li><a href="https://github.com/pkukielka/gitfold" target="_blank" rel="noreferrer">Show HN: Gitfold – every Git branch as a folder, ready in a second</a>는 모든 Git 브랜치를 폴더로 관리하여 빠르게 접근할 수 있게 합니다.</li>
+<li><a href="https://thegit.ai/tour" target="_blank" rel="noreferrer">Show HN: TheGitAI CLI/Desktop Agent with Computer Control on Linux (Wayland+X11)</a>는 Linux에서 컴퓨터 제어가 가능한 GitAI CLI/데스크톱 에이전트를 시연합니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>일부 기사는 [hn] 태그를 사용하여 Hacker News에서 가져왔으며, 이는 커뮤니티의 관심과 토론 수준을 나타냅니다.</li>
+<li><a href="https://github.com/vercel/ai/" target="_blank" rel="noreferrer">verce/ai</a> 관련 GitHub 릴리스는 패치 변경 사항에 대한 세부 정보를 제공하지만, 변경 사항의 영향이나 중요성에 대한 추가적인 맥락은 부족합니다.</li>
+<li><a href="https://news.ycombinator.com/item?id=50597005" target="_blank" rel="noreferrer">Anthropic</a>에 대한 논의는 공개 여부에 대한 질문을 포함하며, 이는 정보의 투명성과 관련된 잠재적 격차를 시사합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=112073" target="_blank" rel="noreferrer">[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상 SPECIAL IDEA</a> - Wevity, D-7.</li>
+<li><a href="https://linkareer.com/activity/363236" target="_blank" rel="noreferrer">『2026 SVC Seoul AI 해커톤』 | 현대건설과 함께하는 주거생활 AI 아이디어 도전</a> - Linkareer, D-6.</li>
+<li><a href="https://linkareer.com/activity/362988" target="_blank" rel="noreferrer">2026 대구 로컬AI그라운드 - 지역문제 해결형 AI활용 경진대회 공모전</a> - Linkareer, D-7.</li>
+<li><a href="https://linkareer.com/activity/359442" target="_blank" rel="noreferrer">[총상금 2천만원] 비비드 RE: PLAY 6개 IP로 만드는 AI 영상 공모전</a> - Linkareer, D-20.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=030310001&amp;str_no=202611220001" target="_blank" rel="noreferrer">학문•과학•IT 2026 대구 로컬AI그라운드 지역문제 해결형 AI활용 경진대회</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
