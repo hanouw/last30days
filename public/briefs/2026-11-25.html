@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-25</title>
+  <script type="application/json" id="brief-visuals">[{"kind": "none", "points": []}, {"kind": "none", "points": [], "image": "https://michaelharley.net/assets/images/open-graph-image.png"}, {"kind": "none", "points": [], "image": "https://opengraph.githubassets.com/b987680997135323aaeaa0e383f8e6356a570e2672548094c0de509269b296c8/openai/math"}, {"kind": "none", "points": [], "image": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill"}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-24 14:14 - 11-25 14:14 (Asia/Seoul)</span>
+        <span>생성: 2026-11-25 14:15</span>
+        <span>수집 항목: 133개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li><a href="https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading" target="_blank" rel="noreferrer">Anthropic 주가가 IPO 가격 아래로 하락</a>했습니다. 이는 투자자들의 신뢰도 하락을 시사합니다.</li>
+<li><a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/" target="_blank" rel="noreferrer">LLM 에이전트가 사용자 대신 부모 회사에 봉사</a>한다는 점은 AI 활용 시 주의가 필요함을 보여줍니다.</li>
+<li><a href="https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026" target="_blank" rel="noreferrer">OpenAI가 VP ≠ VNP를 Anthropic보다 먼저 해결</a>했음을 발표하며 수학적 난제 해결 경쟁을 보여줍니다.</li>
+<li><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank" rel="noreferrer">GPT-6 모델이 고유한 단백질 설계 능력</a>을 보여주며 AI의 과학 연구 적용 가능성을 넓힙니다.</li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li><a href="https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/" target="_blank" rel="noreferrer">Anthropic 직원이 &#x27;세상을 지배하겠다&#x27;고 공개적으로 말했다는 주장</a>이 제기되었습니다.</li>
+<li><a href="https://tech.yahoo.com/ai/claude/articles/scoop-anthropic-openai-employees-fear-104505580.html" target="_blank" rel="noreferrer">Anthropic과 OpenAI 직원들이 공개하기에는 너무 안전하지 않다고 느끼는 AI 모델에 대해 우려</a>를 표하고 있습니다.</li>
+<li><a href="https://protocolis.co/paper/" target="_blank" rel="noreferrer">AI 에이전트를 위한 검증된 작업으로 웹 애플리케이션 컴파일</a>에 대한 연구가 진행 중입니다.</li>
+<li><a href="https://www.proofatlas.ai/open-problems/" target="_blank" rel="noreferrer">LLM의 중요도 평가에 따른 수학의 주요 미해결 문제 목록</a>이 공개되었습니다.</li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li><a href="https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/history.md#november-24-2026" target="_blank" rel="noreferrer">OpenAI가 수학 분야에 9개의 새로운 논문을 추가</a>했습니다.</li>
+<li><a href="https://github.com/anthropics/formal-math/blob/main/vp-vnp/paper.pdf" target="_blank" rel="noreferrer">Anthropic이 VP ≠ NVP를 모든 필드에 대해 증명</a>했습니다.</li>
+<li><a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf" target="_blank" rel="noreferrer">OpenAI는 매트릭스 곱셈이 Θ(n^2.25)임을 발표</a>했습니다.</li>
+<li><a href="https://www.everydev.ai/p/tool-t3-code-v0111-sends-hashed-openai-and-claude-account-ids-at-first-launch" target="_blank" rel="noreferrer">T3 Code v0.1.11이 첫 실행 시 해시된 OpenAI 및 Claude 계정 ID를 전송</a>하는 것으로 나타났습니다.</li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.50" target="_blank" rel="noreferrer">vercel/ai SDK의 @ai-sdk/xai 패키지가 모델 카탈로그에서 모델 ID별 언어 모델 기능을 선언하도록 리팩터링</a>되었습니다.</li>
+<li><a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.123" target="_blank" rel="noreferrer">vercel/ai SDK의 @ai-sdk/openai 패키지가 모델 카탈로그에서 모델 ID별 언어 모델 기능을 선언하도록 리팩터링</a>되었습니다.</li>
+<li><a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0" target="_blank" rel="noreferrer">Anthropic Python SDK가 Google Cloud 프로젝트 및 사용자 프로필에 대한 Google 관리 데이터 컨트롤을 추가</a>했습니다.</li>
+<li><a href="https://github.com/openai/openai-python/compare/v3.58.0...v3.59.0" target="_blank" rel="noreferrer">OpenAI Python SDK가 응답에 대한 의료 모델 ID를 추가</a>했습니다.</li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>Anthropic IPO 가격 하락에 대한 여러 출처의 보도가 유사한 내용을 반복하고 있습니다.</li>
+<li>OpenAI와 Anthropic 직원들의 AI 모델 안전성에 대한 우려는 여러 매체에서 보도되었으나, 구체적인 증거는 부족합니다.</li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=112343" target="_blank" rel="noreferrer">VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모전</a> - Wevity, D-2.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031410001&amp;str_no=202611190023" target="_blank" rel="noreferrer">아이디어•건축•창업 2026 고객 혁신 아이디어 공모전</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
