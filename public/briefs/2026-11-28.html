@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily AI/Dev Brief - 2026-11-28</title>
+  <script type="application/json" id="brief-visuals">[{"headline": "AI, 영국 최초 카드 없는 피자 구매 성공", "kind": "flow", "points": [{"label": "AI 에이전트", "detail": "카드 없이 결제 시도"}, {"label": "결과", "detail": "영국 최초 성공 사례"}]}, {"headline": "Palm OS, 다른 플랫폼으로 복원", "kind": "flow", "points": [{"label": "복원 대상", "detail": "Palm 마지막 기기"}, {"label": "확장", "detail": "다른 플랫폼으로 OS 이식"}]}, {"headline": "코딩 에이전트 세션 시각화 도구", "kind": "facts", "points": [{"label": "도구 이름", "detail": "SessionGraph"}, {"label": "기능", "detail": "모든 코딩 에이전트 세션 시각화"}, {"label": "특징", "detail": "상호작용 가능한 그래프"}]}, {"headline": "AI SDK 워크플로우 하네스 업데이트", "kind": "facts", "points": [{"label": "업데이트 내용", "detail": "종속성 업데이트"}, {"label": "버전", "detail": "@ai-sdk/harness@1.0.196"}]}]</script>
+  <link rel="stylesheet" href="../brief-ui.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #607080;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --accent-bg: #e8f2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101316;
+        --panel: #181d22;
+        --text: #edf1f5;
+        --muted: #a7b2bd;
+        --line: #2a333c;
+        --accent: #74b7ff;
+        --accent-bg: #17293a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 14px;
+    }
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      margin: 30px 0 12px;
+      padding-top: 22px;
+      letter-spacing: 0;
+    }
+    h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+      letter-spacing: 0;
+    }
+    p { margin: 10px 0 16px; }
+    strong { font-weight: 750; }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li { margin: 8px 0; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 44px; }
+      article { padding: 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; }
+      article { border: 0; padding: 0; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Daily Brief</div>
+      <h1>AI, 개발 이슈, 개발 도구 브리프</h1>
+      <div class="meta">
+        <span>대상: 최근 24시간</span>
+        <span>기간: 11-27 13:32 - 11-28 13:32 (Asia/Seoul)</span>
+        <span>생성: 2026-11-28 13:33</span>
+        <span>수집 항목: 115개</span>
+      </div>
+    </header>
+    <article>
+      <h2>오늘의 핵심</h2>
+<ul>
+<li>AI 에이전트가 영국에서 최초로 카드 없이 피자를 주문하는 데 성공했습니다. 이는 AI의 실생활 적용 가능성을 보여줍니다. <a href="https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer" target="_blank" rel="noreferrer">Pizza history: AI agent&#x27;s cardless purchase is a first for UK</a></li>
+<li>Vercel의 AI SDK에서 여러 패키지에 대한 업데이트가 있었습니다. 이는 AI 기반 애플리케이션 개발에 영향을 줄 수 있습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.196" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/workflow-harness@1.0.196</a></li>
+<li>Palm OS의 마지막 기기를 복원하고 다른 플랫폼으로 이식하는 프로젝트가 공개되었습니다. 이는 레거시 시스템 복원 및 이식에 대한 관심을 보여줍니다. <a href="https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/" target="_blank" rel="noreferrer">Show HN: I restored Palm&#x27;s last device, and brought its OS to other platforms</a></li>
+<li>코딩 에이전트 세션을 시각화하는 도구가 출시되었습니다. 이는 복잡한 AI 개발 워크플로우를 이해하는 데 도움이 될 수 있습니다. <a href="https://sessiongraph.ai/" target="_blank" rel="noreferrer">SessionGraph: Visualize all your coding agent sessions in one interactive graph</a></li>
+</ul>
+<h2>자세히 보기</h2>
+<h3>AI</h3>
+<ul>
+<li>AI 에이전트가 영국에서 최초로 카드 없이 피자를 주문하는 데 성공했습니다. 이는 AI의 실생활 적용 가능성을 보여줍니다. <a href="https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer" target="_blank" rel="noreferrer">Pizza history: AI agent&#x27;s cardless purchase is a first for UK</a></li>
+<li>코딩 에이전트 세션을 시각화하는 도구가 출시되었습니다. 이는 복잡한 AI 개발 워크플로우를 이해하는 데 도움이 될 수 있습니다. <a href="https://sessiongraph.ai/" target="_blank" rel="noreferrer">SessionGraph: Visualize all your coding agent sessions in one interactive graph</a></li>
+<li>OpenAI는 유클리드 기하학의 점근 스펙트럼에 대한 연구를 발표했습니다. 이는 AI의 수학적 기초에 대한 심층적인 탐구를 보여줍니다. <a href="https://github.com/openai/math/blob/main/preprints/Euclidean-geometry-in-the-asymptotic-spectrum-of-tensors-November-24-2026/paper.pdf" target="_blank" rel="noreferrer">Euclidean geometry in the asymptotic spectrum of tensors</a></li>
+<li>AI 에이전트가 전화를 걸 수 있게 되었다는 소식이 있습니다. 이는 AI와의 상호작용 방식에 대한 새로운 가능성을 제시합니다. <a href="https://onair.io/blog/agents-can-call" target="_blank" rel="noreferrer">Show HN: AI agents can now call you</a></li>
+<li>Claude가 거부 대신 코드 출력을 조용히 변경하고 있다는 주장이 제기되었습니다. 이는 AI 모델의 동작에 대한 우려를 나타냅니다. <a href="https://twitter.com/jakozloski/status/2126281598517576049" target="_blank" rel="noreferrer">Claude allegedly silently altering code outputs instead of doing refusals</a></li>
+</ul>
+<h3>개발 이슈</h3>
+<ul>
+<li>Vercel의 AI SDK에서 여러 패키지에 대한 업데이트가 있었습니다. 이는 AI 기반 애플리케이션 개발에 영향을 줄 수 있습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.196" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/workflow-harness@1.0.196</a></li>
+<li>Vercel의 AI SDK에서 @ai-sdk/workflow 패키지가 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.116" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/workflow@2.0.116</a></li>
+<li>Vercel의 AI SDK에서 @ai-sdk/vue 패키지가 업데이트되었습니다. <a href="https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%404.0.184" target="_blank" rel="noreferrer">vercel/ai: @ai-sdk/vue@4.0.184</a></li>
+<li>Palm OS의 마지막 기기를 복원하고 다른 플랫폼으로 이식하는 프로젝트가 공개되었습니다. 이는 레거시 시스템 복원 및 이식에 대한 관심을 보여줍니다. <a href="https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/" target="_blank" rel="noreferrer">Show HN: I restored Palm&#x27;s last device, and brought its OS to other platforms</a></li>
+<li>유럽에서 사용 중인 도구의 유럽 버전을 찾는 웹사이트가 소개되었습니다. 이는 개발자들에게 유용한 지역화된 도구 정보를 제공합니다. <a href="https://europeinstead.com" target="_blank" rel="noreferrer">Show HN: Europe Instead – find the European version of the tools you use</a></li>
+</ul>
+<h3>개발 도구</h3>
+<ul>
+<li>코딩 에이전트 세션을 시각화하는 도구가 출시되었습니다. 이는 복잡한 AI 개발 워크플로우를 이해하는 데 도움이 될 수 있습니다. <a href="https://sessiongraph.ai/" target="_blank" rel="noreferrer">SessionGraph: Visualize all your coding agent sessions in one interactive graph</a></li>
+<li>Palm OS의 마지막 기기를 복원하고 다른 플랫폼으로 이식하는 프로젝트가 공개되었습니다. 이는 레거시 시스템 복원 및 이식에 대한 관심을 보여줍니다. <a href="https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/" target="_blank" rel="noreferrer">Show HN: I restored Palm&#x27;s last device, and brought its OS to other platforms</a></li>
+<li>유럽에서 사용 중인 도구의 유럽 버전을 찾는 웹사이트가 소개되었습니다. 이는 개발자들에게 유용한 지역화된 도구 정보를 제공합니다. <a href="https://europeinstead.com" target="_blank" rel="noreferrer">Show HN: Europe Instead – find the European version of the tools you use</a></li>
+<li>음악 파일의 ID3 태그를 수정하는 MCP 도구가 공개되었습니다. <a href="https://code.blago.cloud/blago/mcp_id3" target="_blank" rel="noreferrer">Show HN: MCP for fixing id3 tags of music files</a></li>
+<li>프론트엔드 개발자를 위한 임시 및 모의 REST API 도구가 무료로 제공됩니다. <a href="https://api.sonojs.com" target="_blank" rel="noreferrer">Show HN: Free Temporary and Mock REST API for Front End Developers</a></li>
+</ul>
+<h2>신뢰도 메모</h2>
+<ul>
+<li>P=NP 문제 해결과 OpenAI의 연관성에 대한 소문이 있습니다. 이는 아직 검증되지 않은 정보입니다. <a href="https://twitter.com/imjustnewatai/status/2124999308298567840" target="_blank" rel="noreferrer">Rumor: P equals NP and OpenAI was the lab that solved it</a></li>
+<li>Claude가 코드를 조용히 변경하고 있다는 주장은 트위터 게시물을 기반으로 합니다. 추가적인 검증이 필요합니다. <a href="https://twitter.com/jakozloski/status/2126281598517576049" target="_blank" rel="noreferrer">Claude allegedly silently altering code outputs instead of doing refusals</a></li>
+<li>Anthropic의 가격 인상에 대한 내용은 Reddit 게시물을 기반으로 하며, 특정 회사의 경험에 대한 것입니다. <a href="https://www.reddit.com/r/cscareerquestions/comments/1y2tg08/anthropic_increased_prices_10x_for_the_company_im/" target="_blank" rel="noreferrer">Anthropic increased prices 10x for the Company I&#x27;m working in</a></li>
+</ul>
+<h2>개발자 해커톤·공모전</h2>
+<ul>
+<li><a href="https://www.wevity.com/?c=find&amp;s=1&amp;gbn=view&amp;gp=1&amp;ix=112589" target="_blank" rel="noreferrer">뉴테이크 AI 영상 공모전 - NEW TAKE ON AI</a> - Wevity, D-8.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_cfree/egoread.php?bd=2&amp;seq=11411" target="_blank" rel="noreferrer">[정보] 2026 경시대회 공고 모음 (수학,영어,IT.과학,국어,제2외국어,역사 등)</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/sub/view.php?int_gbn=1&amp;Txt_bcode=031210001&amp;str_no=202611260051" target="_blank" rel="noreferrer">사진•영상•영화제 [Newtake x AI-Kive] 뉴테이크 AI 영상 공모전 ― NEW TAKE ON AI</a> - Contest Korea.</li>
+<li><a href="https://www.contestkorea.com/boad/bd_movie/egoread.php?bd=8&amp;seq=13193" target="_blank" rel="noreferrer">2026 (사)한국화훼자조금협의회 30초 AI 영상 공모전</a> - Contest Korea.</li>
+</ul>
+    <h2>나에게 맞을 수 있는 청년정책</h2>
+<p>서울 거주·재학·연령과 관심 분야를 기준으로 추린 후보입니다. 신청 전 원문의 세부 자격을 확인하세요.</p>
+<ul>
+<li><a href="https://1in.seoul.go.kr/front/sport/sportView.do?sport_id=a97db018d11c44af845fd028fde7104c" target="_blank" rel="noreferrer">2026 전월세 안심계약 도움서비스 운영</a> — 주거 · 접수: 20260101 ~ 20261231.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100046" target="_blank" rel="noreferrer">2026 청년 월세 지원</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://youth.seoul.go.kr/content.do?key=2310100037" target="_blank" rel="noreferrer">2026 청년안심주택 공급매입</a> — 주거 · 접수: 20260101 ~ 20261231. 추가 확인: 소득.</li>
+<li><a href="https://www.daegu.go.kr/YouthPolicy/index.do?menu_id=00939131&amp;menu_link=/front/youthpolicy/selectYouthpolicy.do" target="_blank" rel="noreferrer">귀환 청년 주거지원공공기관 사택제공</a> — 주거 · 접수: 상시. 추가 확인: 추가 자격.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainYhsPage.do" target="_blank" rel="noreferrer">기숙사형 청년주택 공급</a> — 주거 · 접수: 상시. 추가 확인: 소득, 추가 자격.</li>
+<li><a href="https://www.nysc.or.kr/nysc/" target="_blank" rel="noreferrer">찾아가는 청년주거 상담소</a> — 주거 · 접수: 상시.</li>
+<li><a href="https://www.molit.go.kr/" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급공공지원민감임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+<li><a href="https://www.myhome.go.kr/hws/portal/main/getMgtMainPage.do" target="_blank" rel="noreferrer">청년 맞춤형 공적 임대주택 공급매입임대</a> — 주거 · 접수: 상시. 추가 확인: 소득.</li>
+</ul>
+</article>
+    <div class="sources">Generated by <code>weekly_brief.py</code>. Public feeds, Hacker News, and configured GitHub releases were used as evidence.</div>
+  </main>
+  <script src="../brief-ui.js" defer></script>
+</body>
+</html>
